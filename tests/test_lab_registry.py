@@ -13,7 +13,7 @@ import zipfile
 
 
 PROJECT = Path(__file__).resolve().parents[1]
-PYTHON = PROJECT / "simulator" / ".signate_venv" / "Scripts" / "python.exe"
+PYTHON = Path(sys.executable)
 
 
 class LabCliTest(unittest.TestCase):
