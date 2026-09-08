@@ -1,0 +1,37 @@
+{
+  "date": "2026-09-09",
+  "repository": "https://github.com/Nevaseme/baggage-loading-lab",
+  "visibility_observed": "private",
+  "verified_code_commit": "3894cfa77dbfd77c8ffec774e659a5e873c8cd28",
+  "registry_revision": "d34182ab85c93c1383d7372e3b86036b23c5cf258f23aa87a6da3a49e1b6baff",
+  "artifacts": 4,
+  "evaluations": 4,
+  "original_submission_archives_available": 1,
+  "original_submission_archives_missing": 3,
+  "github_actions": {
+    "url": "https://github.com/Nevaseme/baggage-loading-lab/actions/runs/34243899480",
+    "observed_conclusion": "success",
+    "observed_total_seconds": 22,
+    "workflow_checks": ["51 isolated registry tests", "real registry and generated-view validation"],
+    "earlier_failure": "Run 34243611622 used a Windows-local Python path in the test harness. Commit 3894cfa uses sys.executable; the subsequent run succeeded."
+  },
+  "remote_clone": {
+    "head_verified": "3894cfa77dbfd77c8ffec774e659a5e873c8cd28",
+    "validate": true,
+    "isolated_ingest_smoke_test": true,
+    "local_zip_cache_required": false
+  },
+  "portable_bundle_verified_before_this_receipt": {
+    "name": "design-context-2026-09-09-3894cfa.zip",
+    "source_commit": "3894cfa77dbfd77c8ffec774e659a5e873c8cd28",
+    "sha256": "438b52b374a9d85a0f43bfa3282cd8e6208cbf4419867bdd1fba3813ebf00c52",
+    "file_count": 53,
+    "all_file_hashes_and_required_guidance_links_verified": true,
+    "purpose": "AI design context; not a SIGNATE submission ZIP"
+  },
+  "release_receipt": "knowledge/sync/2026-09-08-guarded-release.json",
+  "independent_review": "Astra integrated review and scoped re-reviews: ready after fixes",
+  "web_github_connector_read": "unverified; Codex connector returned 404",
+  "user_web_chat_bundle_open": "unverified",
+  "algorithm_development": "paused"
+}
