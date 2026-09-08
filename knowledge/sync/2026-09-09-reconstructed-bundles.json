@@ -1,0 +1,102 @@
+{
+  "kind": "reconstructed_source_and_result_bundles",
+  "date": "2026-09-09",
+  "not_original_submission_archives": true,
+  "new_evaluations_created": 0,
+  "bundles": [
+    {
+      "algorithm_name": "conservative_extreme_point_packing",
+      "filename": "conservative-extreme-point-packing-source-result-reconstructed.zip",
+      "sha256": "af5ef7eba78c7e9306c3f37da9bad3f9c2dad620e0f80e813590867090d12a5d",
+      "bytes": 9872,
+      "source_folder": "submit/Conservative Extreme-Point Packing_score29.7",
+      "artifact_id": "source-b6f7748093a98062bb7be085ee6b91276cabeb5d2411ebbc902b26e57d635ddc",
+      "evaluation_id": "evaluation-4509997d8de80585a45f09429d5828f97234bbf34ae958bc9fbd0be095fb5a04",
+      "historical_public_score": "29.74350010538",
+      "historical_rounded_public": null,
+      "raw_result_sha256": "230e234e4bf0a313b041d5cf2474903a7d15bd2820210747453f62f93084ca9c",
+      "omitted_cache_files": [
+        "high_score/__pycache__/agent.cpython-312.pyc"
+      ],
+      "files": {
+        "RECONSTRUCTION.md": "f1ee5f80907fe1fe7b9046795dd4cc1c59d8380d69335c7df540fecd9efac0bd",
+        "high_score/agent.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+        "result-log.txt": "230e234e4bf0a313b041d5cf2474903a7d15bd2820210747453f62f93084ca9c"
+      }
+    },
+    {
+      "algorithm_name": "guarded_extreme_point_beam",
+      "filename": "guarded-extreme-point-beam-source-result-reconstructed.zip",
+      "sha256": "a21bb06fb692aa402d3e8f5f9f2475064d1c27f5d36e658339e3e3d8cbf7e523",
+      "bytes": 19588,
+      "source_folder": "submit/highscore_guarded_20260813_score12.6",
+      "artifact_id": "artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+      "evaluation_id": "evaluation-786e70e5a08bbed8ff042c618439d19d94833d8994ac9df94d06be6c5c8c6825",
+      "historical_public_score": "12.622949582873819",
+      "historical_rounded_public": null,
+      "raw_result_sha256": "acaba61eacbc6a3f6b39c7337515f453434fa0e9c269780de2179e6a3d734cd1",
+      "omitted_cache_files": [],
+      "files": {
+        "RECONSTRUCTION.md": "180ae09973c4a75d8435df4406a34f908bedd00b6d09f04df2014747f3e212c9",
+        "highscore/__init__.py": "5f74db5e01ba7620d68f9f7579d4f5036bf7fafaf17703066a3e8f684147ddfb",
+        "highscore/agent.py": "0c0f9f3d9aef0160a9beda9cc0e3cf56d154be0bf0f3d0bb28694f342e98b2af",
+        "highscore/candidates.py": "9f9a154267d1790195bf207ccc63acb5a2404583bd5a44ac6de69d50cebdbfc2",
+        "highscore/free_space.py": "b0519be95e26eb44d0ec91b95864cf9524a596ca0ea4744881d05425cac1c463",
+        "highscore/geometry.py": "6446403b8c633fa22ff52a962a89989c4b1a13802c79a6b3baa4e6687a3c3fd5",
+        "highscore/model.py": "0e018cc6f1aaa57479864db2efd07c8db2bee01a005fa276b866b0c046ec130c",
+        "highscore/planner.py": "1c0a8eb53fc358c5f57bec7539eaf07a085e5b1fcad2cd93ce7a20ca21e8b644",
+        "highscore/scoring.py": "fd87b2e6479ed7c3e3a8a2e99ef45acb6dcf3fa5e7f320c1e22c878cbba973cc",
+        "highscore/settings.py": "2bfe9c955de111a0098cc23410d2047f716937d86c40f1497516edf8d5a1030b",
+        "highscore/state.py": "56395c10826275a02074eb4ee3a2fff21e1abf2051d3856063d13c4743169828",
+        "result-log.txt": "acaba61eacbc6a3f6b39c7337515f453434fa0e9c269780de2179e6a3d734cd1"
+      }
+    },
+    {
+      "algorithm_name": "ingress_preserving_column_scaffold",
+      "filename": "ingress-preserving-column-scaffold-source-result-reconstructed.zip",
+      "sha256": "95b44486a4380ac758b54c53aa085464648ae0d024d4216cc0d1610cd07e506c",
+      "bytes": 20669,
+      "source_folder": "submit/ingress_preserving_column_scaffold",
+      "artifact_id": "source-299def2d0317271a2133ce257c3992c46924ee09340713439de06701c5bbc0c8",
+      "evaluation_id": "evaluation-88aced57248f66a59566249df59d1e29be542e40a8ad053eea9bb2b5958eb69f",
+      "historical_public_score": null,
+      "historical_rounded_public": null,
+      "raw_result_sha256": "925d796b0de0736b08fac5a7ec2c7ff4345a852fa91f7d54699b4c5e0297be13",
+      "omitted_cache_files": [],
+      "files": {
+        "RECONSTRUCTION.md": "5a0dfe6ab61c1f55c2628726361157a5a7c10eff4d41cc67dcb8b4d838c85faa",
+        "agent.py": "a71f99239b6e1c11802503d88595cf23a48c0706a652ff617950ac4ff0236c66",
+        "column_scaffold_planner.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+        "result-log.txt": "925d796b0de0736b08fac5a7ec2c7ff4345a852fa91f7d54699b4c5e0297be13"
+      }
+    },
+    {
+      "algorithm_name": "surface_frontier_extreme_backfill",
+      "filename": "surface-frontier-extreme-backfill-source-result-reconstructed.zip",
+      "sha256": "4d91715f9f5aa4c7a387b4dfd29099a2a9e3639cec9dec84f82f1ea2dca94741",
+      "bytes": 23186,
+      "source_folder": "submit/surface_frontier_extreme_backfill_score11",
+      "artifact_id": "source-53a43e157ddbe6aaf783385204d7c4fe232f68e10d2c83a98b896ca140e83b2c",
+      "evaluation_id": "evaluation-aab03856884857c2254c2b654262ac8067b112cc6108b7860ebc7784a31168b1",
+      "historical_public_score": null,
+      "historical_rounded_public": "11",
+      "raw_result_sha256": "85cb9ed05cdec1c66c0585957811331c762ed5af6225b746badd83352e57bbd9",
+      "omitted_cache_files": [],
+      "files": {
+        "RECONSTRUCTION.md": "90de570030b091f8c4f5c6169983097d5d4a327a7d0ede5b8056c37b1f85326d",
+        "agent.py": "cda4fc3b4cd499a40242cacfe83d3130398635cf96ae7191bec023acc1d40769",
+        "offline_extreme_planner.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+        "result-log.txt": "85cb9ed05cdec1c66c0585957811331c762ed5af6225b746badd83352e57bbd9"
+      }
+    }
+  ],
+  "release_url": "https://github.com/Nevaseme/baggage-loading-lab/releases/tag/reconstructed-source-results-2026-09-09",
+  "remote_verification": {
+    "published": true,
+    "method": "GitHub displayed asset SHA-256 compared with local bytes",
+    "all_four_zip_digests_match": true,
+    "manifest_asset_sha256": "a464429cbf9ffdf3bdc2784cac93880e02b709cb1b17551ae9309c5558fd1dbe",
+    "release_tag_commit": "3dc73b11bd186837fa3da4085a6dfc591193d4cc",
+    "tag_commit_is_algorithm_provenance": false
+  }
+}

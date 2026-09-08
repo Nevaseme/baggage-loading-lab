@@ -30,6 +30,12 @@ Public値しか分からなくても記録できます。実行statusや成分�
 
 同じZIPに複数の評価を記録できます。同名でも中身が違うZIPは別の成果物です。訂正は元の証拠を残して追加します。
 
+### 保存ZIPのダウンロード
+
+- [4系統のコード＋result入り再構成ZIP](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/reconstructed-source-results-2026-09-09)：各Assetsの `*-source-result-reconstructed.zip` を選んでください。元フォルダのコードと `result-log.txt` を保持し、キャッシュを除外しています。提出原本や提出受入済みZIPではありません。
+- [Guardedの提出ZIP原本](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54)：`highscore_guarded_20260813.zip` が原本です。他の3系統は引き続き原本未発見です。
+- [再構成ZIPと既存評価の対応・ハッシュ照合記録](knowledge/sync/2026-09-09-reconstructed-bundles.json)。再構成で新しい評価は作成せず、過去のPublic値を新ZIPの評価値へ転用していません。
+
 接続できないWebチャットには、Codexから現状・コード・台帳をまとめた引き継ぎZIPを渡せます。通常のGit認証とWebのGitHub連携は別の接続なので、それぞれの読み取り確認が必要です。
 
 ## ローカルでの確認
