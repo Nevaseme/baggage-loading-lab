@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "artifact_id": "artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+  "repository": "Nevaseme/baggage-loading-lab",
+  "visibility": "private",
+  "release_url": "https://github.com/Nevaseme/baggage-loading-lab/releases/tag/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+  "release_tag_commit": "930f3d58f929394e599eab8ccc587c6582a897bd",
+  "release_published": true,
+  "verified_at": "2026-09-08",
+  "verification_method": "GitHub release UI displays SHA-256 per asset; compared against locally computed original-file SHA-256",
+  "zip": {
+    "filename": "highscore_guarded_20260813.zip",
+    "url": "https://github.com/Nevaseme/baggage-loading-lab/releases/download/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54/highscore_guarded_20260813.zip",
+    "sha256": "3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+    "remote_digest_matches": true
+  },
+  "manifest": {
+    "filename": "manifest.json",
+    "sha256": "9a36712d2673f8aa297fce61eac1e07b6ebae670b7a59cadfb327ba50d17966f",
+    "remote_digest_matches": true
+  },
+  "notes": "The tag points to the initial registry bootstrap commit, not algorithm provenance. Attached ZIP and manifest identify the original. GitHub-generated Source code archives are not the submission. Server-side immutable-release protection was not configured or claimed."
+}

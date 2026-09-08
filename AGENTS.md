@@ -37,5 +37,5 @@ Run checks proportionate to the change. Documentation edits need consistency/lin
 ## Context map
 
 - [Documentation map](docs/README.md): current references and historical plans.
-- [Simulator reference](simulator/README.md) and `simulator/src/ground_handling/`: interface and authoritative local implementation.
+- [Agent interface](contracts/agent-interface.md): portable contract. The user-provided `simulator/README.md` and `simulator/src/ground_handling/` remain the authoritative local implementation; official distribution files are not part of the initial GitHub upload.
 - [Instruction audit](docs/2026-09-08-instruction-audit.md): rationale, sources, and remaining limits; read when revising this agreement.

@@ -1,0 +1,87 @@
+{
+  "date": "2026-09-08",
+  "registry_revision": "d34182ab85c93c1383d7372e3b86036b23c5cf258f23aa87a6da3a49e1b6baff",
+  "real_artifacts": 4,
+  "real_evaluations": 4,
+  "guarded_original_zip_sha256": "3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+  "guarded_exact_payload_matches": 10,
+  "original_archives_missing": 3,
+  "records": [
+    {
+      "algorithm_name": "guarded_extreme_point_beam",
+      "artifact_id": "artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54",
+      "evaluation_id": "evaluation-786e70e5a08bbed8ff042c618439d19d94833d8994ac9df94d06be6c5c8c6825",
+      "original_result_path": "submit/highscore_guarded_20260813_score12.6/result-log.txt",
+      "raw_sha256": "acaba61eacbc6a3f6b39c7337515f453434fa0e9c269780de2179e6a3d734cd1",
+      "public_score": "12.622949582873819",
+      "rounded_public": null,
+      "status": "stopped",
+      "metrics": {
+        "cog_score": "7.752735993389973",
+        "fill_score": "24.805389462909353",
+        "num_placed_items": "0.391133534340056",
+        "placement_score": "6.2",
+        "soft_item_score": "8.0",
+        "stability_score": "8.61384277614205"
+      },
+      "retry_deduplicated": true
+    },
+    {
+      "algorithm_name": "conservative_extreme_point_packing",
+      "artifact_id": "source-b6f7748093a98062bb7be085ee6b91276cabeb5d2411ebbc902b26e57d635ddc",
+      "evaluation_id": "evaluation-4509997d8de80585a45f09429d5828f97234bbf34ae958bc9fbd0be095fb5a04",
+      "original_result_path": "submit/Conservative Extreme-Point Packing_score29.7/result-log.txt",
+      "raw_sha256": "230e234e4bf0a313b041d5cf2474903a7d15bd2820210747453f62f93084ca9c",
+      "public_score": "29.74350010538",
+      "rounded_public": null,
+      "status": "stopped",
+      "metrics": {
+        "cog_score": "32.48358437295867",
+        "fill_score": "33.67772631786438",
+        "num_placed_items": "0.45828610097631833",
+        "placement_score": "20.2",
+        "soft_item_score": "14.85",
+        "stability_score": "38.049114361662156"
+      },
+      "retry_deduplicated": true
+    },
+    {
+      "algorithm_name": "ingress_preserving_column_scaffold",
+      "artifact_id": "source-299def2d0317271a2133ce257c3992c46924ee09340713439de06701c5bbc0c8",
+      "evaluation_id": "evaluation-88aced57248f66a59566249df59d1e29be542e40a8ad053eea9bb2b5958eb69f",
+      "original_result_path": "submit/ingress_preserving_column_scaffold/result-log.txt",
+      "raw_sha256": "925d796b0de0736b08fac5a7ec2c7ff4345a852fa91f7d54699b4c5e0297be13",
+      "public_score": null,
+      "rounded_public": null,
+      "status": "stopped",
+      "metrics": {
+        "cog_score": "10.50470170295986",
+        "fill_score": "25.248019992978836",
+        "num_placed_items": "0.34577263014763016",
+        "placement_score": "7.75",
+        "soft_item_score": "3.1",
+        "stability_score": "12.527632008436015"
+      },
+      "retry_deduplicated": true
+    },
+    {
+      "algorithm_name": "surface_frontier_extreme_backfill",
+      "artifact_id": "source-53a43e157ddbe6aaf783385204d7c4fe232f68e10d2c83a98b896ca140e83b2c",
+      "evaluation_id": "evaluation-aab03856884857c2254c2b654262ac8067b112cc6108b7860ebc7784a31168b1",
+      "original_result_path": "submit/surface_frontier_extreme_backfill_score11/result-log.txt",
+      "raw_sha256": "85cb9ed05cdec1c66c0585957811331c762ed5af6225b746badd83352e57bbd9",
+      "public_score": null,
+      "rounded_public": "11",
+      "status": "stopped",
+      "metrics": {
+        "cog_score": "7.542593734657922",
+        "fill_score": "23.413267049753124",
+        "num_placed_items": "0.3128520151346238",
+        "placement_score": "1.15",
+        "soft_item_score": "5.25",
+        "stability_score": "8.398448003865242"
+      },
+      "retry_deduplicated": true
+    }
+  ]
+}
