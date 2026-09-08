@@ -249,11 +249,13 @@ def _matches_legacy_association_metadata(
     existing_record: Any,
     replayed_record: dict[str, Any],
 ) -> bool:
-    """Compare a replay against records written before override provenance keys.
+    """Compare replay evidence while preserving descriptive legacy metadata.
 
     The added keys refine how already-identical evidence was associated; they
     do not change the legacy evaluation identity.  Missing keys may therefore
-    be filled only for this comparison.  The stored record remains untouched.
+    be filled only for this comparison.  The original result filename is also
+    descriptive rather than evidence identity, so a byte-identical renamed
+    input may replay.  The stored record remains untouched.
     """
 
     if not isinstance(existing_record, dict):
@@ -271,47 +273,10 @@ def _matches_legacy_association_metadata(
     ):
         if key not in normalized_basis and key in replayed_basis:
             normalized_basis[key] = replayed_basis[key]
+    if "source_path_name" in normalized_basis and "source_path_name" in replayed_basis:
+        normalized_basis["source_path_name"] = replayed_basis["source_path_name"]
     normalized["association_basis"] = normalized_basis
     return normalized == replayed_record
-
-
-def _record_feedback_consistency_errors(record: dict[str, Any]) -> list[str]:
-    """Check final score fields against preserved raw feedback when possible."""
-
-    feedback = record.get("raw_feedback")
-    basis = record.get("association_basis")
-    if not isinstance(feedback, dict) or not isinstance(basis, dict):
-        return []
-    score_override = basis.get("score_override")
-    # An explicit command-line score intentionally supersedes an invalid or
-    # conflicting source score; association-basis validation checks the
-    # override itself below.
-    if score_override is not None:
-        return []
-    try:
-        if "text" in feedback:
-            text = feedback.get("text")
-            if not isinstance(text, str):
-                return ["raw feedback text type invalid"]
-            expected_score, expected_rounded = _parse_plain_note(text)
-        else:
-            extracted = _extract_public_score(feedback)
-            expected_rounded = None
-            if extracted is None:
-                expected_score = None
-            else:
-                try:
-                    expected_score = _validate_score(extracted)
-                except LabError:
-                    expected_score, expected_rounded = _parse_plain_note(str(extracted))
-        errors: list[str] = []
-        if expected_score != record.get("public_score"):
-            errors.append("recorded score does not match preserved feedback")
-        if expected_rounded is not None and expected_rounded != record.get("rounded_public"):
-            errors.append("recorded rounded score does not match preserved feedback")
-        return errors
-    except LabError as exc:
-        return [f"preserved feedback score is invalid: {exc}"]
 
 
 def _raw_result_consistency_errors(
@@ -1416,8 +1381,6 @@ class Registry:
                         parser_name = basis.get("parser")
                         if not isinstance(parser_name, str) or parser_name not in {"json", "plain_score_note"}:
                             errors.append(f"evaluation parser invalid: {child.name}")
-                    for consistency_error in _record_feedback_consistency_errors(record):
-                        errors.append(f"evaluation feedback mismatch ({child.name}): {consistency_error}")
                     refs = record.get("evidence_refs")
                     if not isinstance(refs, list) or not refs:
                         errors.append(f"evaluation evidence references missing: {child.name}")

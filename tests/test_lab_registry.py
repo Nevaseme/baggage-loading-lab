@@ -321,6 +321,27 @@ class LabCliTest(unittest.TestCase):
             self.assertTrue(json.loads(retry.stdout)["deduplicated"])
             self.assertEqual(record_path.read_bytes(), preserved)
 
+    def test_same_evidence_deduplicates_after_result_file_is_renamed(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            original = Path(temp) / "original-result.json"
+            renamed = Path(temp) / "renamed-result.json"
+            raw = b'{"public_score":"42.123","status":"completed"}'
+            original.write_bytes(raw)
+            renamed.write_bytes(raw)
+            first = self.run_cli(root, "record", "--artifact", artifact, "--result", original)
+            self.assertEqual(first.returncode, 0, first.stderr)
+            evaluation_id = json.loads(first.stdout)["evaluation_id"]
+            record_path = root / "evaluations" / evaluation_id / "record.json"
+            preserved = record_path.read_bytes()
+
+            retry = self.run_cli(root, "record", "--artifact", artifact, "--result", renamed)
+
+            self.assertEqual(retry.returncode, 0, retry.stdout)
+            self.assertTrue(json.loads(retry.stdout)["deduplicated"])
+            self.assertEqual(record_path.read_bytes(), preserved)
+
     def test_correction_links_old_evaluation_without_deleting_it(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp) / "registry"
@@ -354,7 +375,11 @@ class LabCliTest(unittest.TestCase):
                 self.assertEqual(self.run_cli(root, "render").returncode, 0)
                 invalid = self.run_cli(root, "validate")
                 self.assertNotEqual(invalid.returncode, 0)
-                self.assertTrue("identity" in invalid.stdout or "feedback mismatch" in invalid.stdout)
+                self.assertTrue(
+                    "identity" in invalid.stdout
+                    or "feedback mismatch" in invalid.stdout
+                    or "raw-derived field mismatch" in invalid.stdout
+                )
 
     def test_validate_reparses_raw_feedback_before_accepting_derived_fields(self):
         mutations = {
@@ -473,6 +498,25 @@ class LabCliTest(unittest.TestCase):
 
             self.assertNotEqual(invalid.returncode, 0)
             self.assertIn("raw-derived field", invalid.stdout)
+
+    def test_scalar_json_string_score_validates_against_its_raw_bytes(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            result = Path(temp) / "score.json"
+            result.write_text('"42.123"', encoding="utf-8")
+            recorded = self.run_cli(root, "record", "--artifact", artifact, "--result", result)
+            self.assertEqual(recorded.returncode, 0, recorded.stderr)
+            evaluation_id = json.loads(recorded.stdout)["evaluation_id"]
+            record = json.loads(
+                (root / "evaluations" / evaluation_id / "record.json").read_text(encoding="utf-8")
+            )
+            self.assertEqual(record["public_score"], "42.123")
+            self.assertEqual(self.run_cli(root, "render").returncode, 0)
+
+            valid = self.run_cli(root, "validate")
+
+            self.assertEqual(valid.returncode, 0, valid.stdout)
 
     def test_validate_requires_artifact_id_to_match_zip_identity(self):
         with tempfile.TemporaryDirectory() as temp:
