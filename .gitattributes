@@ -1,0 +1,10 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+# Raw evidence and extracted payload keep their bytes for SHA-256 verification.
+artifacts/** -text
+evaluations/** -text
+experiments/** -text
+knowledge/history/** -text
+*.zip binary

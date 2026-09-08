@@ -1,0 +1,23 @@
+# Track only the curated project record and tooling; historical local workspace stays intact.
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/START_HERE.md
+!/AGENTS.md
+!/progress.md
+!/artifacts/
+!/evaluations/
+!/experiments/
+!/knowledge/
+!/contracts/
+!/tools/
+!/tests/
+!/docs/
+!/.github/
+**/__pycache__/
+**/*.pyc
+**/.env
+**/.env.*
+**/.venv/
+**/node_modules/
