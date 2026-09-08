@@ -36,6 +36,8 @@ Run checks proportionate to the change. Documentation edits need consistency/lin
 
 ## Context map
 
+For the submission/result feedback loop, use [START_HERE.md](START_HERE.md) and [registry operations](docs/registry-operations.md). A user-provided submitted ZIP together with its result is an intake request unless they specify another purpose: preserve the originals, use `tools.lab`, add the method/evidence notes, validate, and synchronize to the agreed private repository. Ask only when the artifact/result association or required authority is genuinely ambiguous. Intake alone does not resume algorithm development or submit to SIGNATE.
+
 - [Documentation map](docs/README.md): current references and historical plans.
 - [Agent interface](contracts/agent-interface.md): portable contract. The user-provided `simulator/README.md` and `simulator/src/ground_handling/` remain the authoritative local implementation; official distribution files are not part of the initial GitHub upload.
 - [Instruction audit](docs/2026-09-08-instruction-audit.md): rationale, sources, and remaining limits; read when revising this agreement.

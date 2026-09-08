@@ -245,6 +245,36 @@ def _evaluation_id_candidates(record: dict[str, Any]) -> set[str]:
     return candidates
 
 
+def _matches_legacy_association_metadata(
+    existing_record: Any,
+    replayed_record: dict[str, Any],
+) -> bool:
+    """Compare a replay against records written before override provenance keys.
+
+    The added keys refine how already-identical evidence was associated; they
+    do not change the legacy evaluation identity.  Missing keys may therefore
+    be filled only for this comparison.  The stored record remains untouched.
+    """
+
+    if not isinstance(existing_record, dict):
+        return False
+    existing_basis = existing_record.get("association_basis")
+    replayed_basis = replayed_record.get("association_basis")
+    if not isinstance(existing_basis, dict) or not isinstance(replayed_basis, dict):
+        return False
+    normalized = dict(existing_record)
+    normalized_basis = dict(existing_basis)
+    for key in (
+        "rounded_public_override",
+        "submission_id_override",
+        "supersedes_override",
+    ):
+        if key not in normalized_basis and key in replayed_basis:
+            normalized_basis[key] = replayed_basis[key]
+    normalized["association_basis"] = normalized_basis
+    return normalized == replayed_record
+
+
 def _record_feedback_consistency_errors(record: dict[str, Any]) -> list[str]:
     """Check final score fields against preserved raw feedback when possible."""
 
@@ -282,6 +312,135 @@ def _record_feedback_consistency_errors(record: dict[str, Any]) -> list[str]:
         return errors
     except LabError as exc:
         return [f"preserved feedback score is invalid: {exc}"]
+
+
+def _raw_result_consistency_errors(
+    record: dict[str, Any],
+    raw_path: Path,
+    raw_bytes: bytes,
+) -> list[str]:
+    """Reparse preserved result bytes and compare every derived record field."""
+
+    basis = record.get("association_basis")
+    if not isinstance(basis, dict):
+        return []
+    try:
+        parsed = _parse_result_bytes(raw_bytes)
+    except (LabError, UnicodeDecodeError, ValueError) as exc:
+        return [f"preserved raw result cannot be reparsed: {exc}"]
+
+    errors: list[str] = []
+    parser_name = basis.get("parser")
+    if parser_name != parsed["parser"]:
+        errors.append("recorded parser does not match preserved raw result")
+    if record.get("raw_feedback") != parsed["payload"]:
+        errors.append("recorded raw feedback does not match preserved raw result")
+
+    score_override: str | None = None
+    score_override_value = basis.get("score_override")
+    if isinstance(score_override_value, dict):
+        value = score_override_value.get("public_score")
+        if isinstance(value, str):
+            score_override = value
+
+    extracted_score = parsed["extracted_score"]
+    raw_score_error: str | None = None
+    try:
+        expected_score = _validate_score(extracted_score)
+    except LabError as exc:
+        raw_score_error = str(exc)
+        if isinstance(extracted_score, str) and re.search(
+            r"(?i)(?:about|around|approximately|approx\.?|roughly|~|約)\s*[0-9]",
+            extracted_score,
+        ):
+            expected_score = None
+        elif score_override is None:
+            errors.append(f"preserved raw result score is invalid: {exc}")
+            expected_score = None
+        else:
+            # An explicit CLI score is allowed to supersede an invalid source
+            # score, but the invalid source remains part of the raw evidence.
+            expected_score = score_override
+    if score_override is not None:
+        expected_score = score_override
+        try:
+            original_score = _validate_score(extracted_score)
+        except LabError as exc:
+            original_score = None
+            raw_score_error = str(exc)
+        expected_conflict = extracted_score is not None and original_score != score_override
+        if basis.get("score_override_conflicted_with_input") != expected_conflict:
+            errors.append("score override conflict marker does not match preserved raw result")
+        if basis.get("input_score_error") != raw_score_error:
+            errors.append("score override input error does not match preserved raw result")
+    if record.get("public_score") != expected_score:
+        errors.append("recorded public score does not match preserved raw result")
+
+    expected_rounded = parsed["rounded_from_payload"]
+    if expected_rounded is None and isinstance(extracted_score, str) and re.search(
+        r"(?i)(?:about|around|approximately|approx\.?|roughly|~|約)\s*[0-9]",
+        extracted_score,
+    ):
+        expected_rounded = extracted_score.strip()
+    if "rounded_public_override" in basis:
+        rounded_override = basis.get("rounded_public_override")
+        if rounded_override is not None:
+            expected_rounded = rounded_override
+    elif expected_rounded is None and record.get("rounded_public") is not None:
+        # Legacy records did not retain whether rounded text came from the
+        # CLI.  Their evaluation ID still covers the stored rounded value.
+        expected_rounded = record.get("rounded_public")
+    elif expected_rounded is not None and record.get("rounded_public") != expected_rounded:
+        # A legacy CLI rounded override is likewise distinguishable only by
+        # the immutable evaluation ID, so preserve that compatibility path.
+        expected_rounded = record.get("rounded_public")
+    if record.get("rounded_public") != expected_rounded:
+        errors.append("recorded rounded score does not match preserved raw result")
+
+    try:
+        expected_status_raw, expected_status_normalized = _normalise_status(parsed["status_value"])
+    except LabError as exc:
+        errors.append(f"preserved raw result status is invalid: {exc}")
+        expected_status_raw, expected_status_normalized = None, "unknown"
+    expected_metrics = _normalise_numeric_payload(parsed["metrics"])
+    expected_timing = _normalise_numeric_payload(parsed["timing"])
+    expected_kind = parsed["evaluation_kind"]
+    if expected_kind is None:
+        expected_kind = "public" if (expected_score is not None or expected_rounded is not None) else (
+            "external_feedback" if expected_metrics is not None else "unknown"
+        )
+    elif isinstance(expected_kind, str):
+        expected_kind = expected_kind.strip()
+    else:
+        errors.append("preserved raw result evaluation kind is invalid")
+        expected_kind = None
+
+    for field, expected in (
+        ("evaluation_kind", expected_kind),
+        ("competition_id", parsed["competition_id"]),
+        ("evaluated_at", parsed["evaluated_at"]),
+        ("status_raw", expected_status_raw),
+        ("status_normalized", expected_status_normalized),
+        ("metrics", expected_metrics),
+        ("timing", expected_timing),
+    ):
+        if record.get(field) != expected:
+            errors.append(f"recorded {field} does not match preserved raw result")
+
+    if "submission_id_override" in basis:
+        submission_override = basis.get("submission_id_override")
+        raw_submission = parsed["input_submission_id"]
+        expected_submission = submission_override
+        if expected_submission is None and raw_submission is not None:
+            expected_submission = str(raw_submission)
+        if record.get("submission_id") != expected_submission:
+            errors.append("recorded submission ID does not match preserved raw result")
+    if "supersedes_override" in basis:
+        supersedes_override = basis.get("supersedes_override")
+        expected_correction = supersedes_override if supersedes_override is not None else parsed["correction"]
+        if record.get("supersedes_evaluation_id") != expected_correction:
+            errors.append("recorded supersession does not match preserved raw result")
+    return errors
 
 
 def _single_value(payload: dict[str, Any], keys: tuple[str, ...], label: str) -> Any:
@@ -336,6 +495,121 @@ def _parse_plain_note(text: str) -> tuple[str | None, str | None]:
     if re.search(r"(?i)(?:public(?:\s+score)?|score)\s*[:=]", stripped):
         raise LabError("plain score note has an invalid score")
     return None, None
+
+
+def _parse_result_bytes(raw_bytes: bytes) -> dict[str, Any]:
+    """Parse result bytes into the fields derived by :meth:`Registry.record`.
+
+    Keeping this parser shared by record creation and validation is important:
+    validation must not treat the mutable ``raw_feedback`` copy as the source
+    of truth.  The original bytes and their parser selection are the evidence.
+    """
+
+    parsed: Any = None
+    stripped = raw_bytes.lstrip()
+    json_syntax_hint = stripped.startswith((b"{", b"[", b'"'))
+    valid_json_payload = False
+    try:
+        parsed = json.loads(
+            raw_bytes.decode("utf-8"),
+            parse_int=str,
+            parse_float=str,
+            object_pairs_hook=_pairs_without_duplicates,
+        )
+        valid_json_payload = True
+    except (UnicodeDecodeError, json.JSONDecodeError):
+        # Parser selection depends on the immutable bytes, never on mutable
+        # source-name metadata.  Malformed JSON syntax still fails unless it
+        # also carries an unambiguous plain score note.
+        try:
+            text = raw_bytes.decode("utf-8")
+        except UnicodeDecodeError as exc:
+            raise LabError("result is neither valid UTF-8 JSON nor a score note") from exc
+        note_score, note_rounded = _parse_plain_note(text)
+        if json_syntax_hint and note_score is None and note_rounded is None:
+            raise LabError("result looks like JSON but is invalid JSON")
+        parsed = None
+
+    if isinstance(parsed, dict):
+        payload = _normalise_numeric_payload(parsed)
+        extracted_score = _extract_public_score(payload)
+        rounded_from_payload = _single_value(
+            payload,
+            ("rounded_public", "roundedPublic", "public_score_rounded", "rounded_score"),
+            "rounded public score",
+        )
+        status_value = _single_value(payload, ("status_raw", "status"), "status")
+        metrics = payload.get("metrics")
+        if metrics is None:
+            metric_keys = (
+                "fill_score",
+                "cog_score",
+                "stability_score",
+                "placement_score",
+                "soft_item_score",
+                "num_placed_items",
+            )
+            inferred_metrics = {key: payload[key] for key in metric_keys if key in payload}
+            metrics = inferred_metrics or None
+        timing = payload.get("timing")
+        if timing is None and "time_results" in payload:
+            timing = payload["time_results"]
+        evaluation_kind = payload.get("evaluation_kind") or payload.get("kind")
+        competition_id = payload.get("competition_id")
+        input_submission_id = payload.get("submission_id")
+        evaluated_at = payload.get("evaluated_at")
+        correction = _single_value(
+            payload,
+            ("supersedes", "supersedes_evaluation_id", "correction_of", "corrects"),
+            "superseded evaluation",
+        )
+    elif parsed is not None:
+        # A scalar JSON decimal is a valid score-only result note; other
+        # scalar JSON payloads cannot supply the registry's feedback fields.
+        scalar_score = parsed.strip() if isinstance(parsed, str) else None
+        if scalar_score is None or not _SCORE_RE.fullmatch(scalar_score):
+            raise LabError("JSON result must be an object or a decimal score note")
+        extracted_score = _validate_score(scalar_score)
+        rounded_from_payload = None
+        payload = {"text": raw_bytes.decode("utf-8", errors="strict")}
+        status_value = None
+        metrics = None
+        timing = None
+        evaluation_kind = None
+        competition_id = None
+        input_submission_id = None
+        evaluated_at = None
+        correction = None
+    else:
+        if valid_json_payload:
+            raise LabError("JSON result must be an object or a decimal score note")
+        text = raw_bytes.decode("utf-8", errors="strict")
+        extracted_score, rounded_from_payload = _parse_plain_note(text)
+        payload = {"text": text}
+        status_value = None
+        metrics = None
+        timing = None
+        evaluation_kind = None
+        competition_id = None
+        input_submission_id = None
+        evaluated_at = None
+        correction = None
+
+    return {
+        "parsed": parsed,
+        "payload": payload,
+        "extracted_score": extracted_score,
+        "rounded_from_payload": rounded_from_payload,
+        "status_value": status_value,
+        "metrics": metrics,
+        "timing": timing,
+        "evaluation_kind": evaluation_kind,
+        "competition_id": competition_id,
+        "input_submission_id": input_submission_id,
+        "evaluated_at": evaluated_at,
+        "correction": correction,
+        "parser": "json" if isinstance(parsed, dict) else "plain_score_note",
+    }
 
 
 def _git_commit(root: Path) -> str | None:
@@ -699,94 +973,20 @@ class Registry:
             raise LabError(f"result path is not a regular file: {result}")
         raw_bytes = result.read_bytes()
         raw_digest = sha256_bytes(raw_bytes)
-        parsed: Any = None
-        looks_like_json = result.suffix.casefold() == ".json" or raw_bytes.lstrip().startswith((b"{", b"["))
-        valid_json_payload = False
-        if looks_like_json:
-            try:
-                parsed = json.loads(
-                    raw_bytes.decode("utf-8"),
-                    parse_int=str,
-                    parse_float=str,
-                    object_pairs_hook=_pairs_without_duplicates,
-                )
-                valid_json_payload = True
-            except (UnicodeDecodeError, json.JSONDecodeError):
-                # A malformed JSON-looking file is still permitted as a plain
-                # result note only when it carries an unambiguous score.
-                try:
-                    text = raw_bytes.decode("utf-8")
-                except UnicodeDecodeError as exc:
-                    raise LabError(f"result is neither valid UTF-8 JSON nor a score note: {result}") from exc
-                note_score, note_rounded = _parse_plain_note(text)
-                if note_score is None and note_rounded is None:
-                    raise LabError(f"result looks like JSON but is invalid JSON: {result}")
-                parsed = None
-        if isinstance(parsed, dict):
-            payload = _normalise_numeric_payload(parsed)
-            extracted_score = _extract_public_score(payload)
-            rounded_from_payload = _single_value(
-                payload,
-                ("rounded_public", "roundedPublic", "public_score_rounded", "rounded_score"),
-                "rounded public score",
-            )
-            status_value = _single_value(payload, ("status_raw", "status"), "status")
-            metrics = payload.get("metrics")
-            if metrics is None:
-                metric_keys = (
-                    "fill_score",
-                    "cog_score",
-                    "stability_score",
-                    "placement_score",
-                    "soft_item_score",
-                    "num_placed_items",
-                )
-                inferred_metrics = {key: payload[key] for key in metric_keys if key in payload}
-                metrics = inferred_metrics or None
-            timing = payload.get("timing")
-            if timing is None and "time_results" in payload:
-                timing = payload["time_results"]
-            evaluation_kind = payload.get("evaluation_kind") or payload.get("kind")
-            competition_id = payload.get("competition_id")
-            input_submission_id = payload.get("submission_id")
-            evaluated_at = payload.get("evaluated_at")
-            correction = _single_value(
-                payload,
-                ("supersedes", "supersedes_evaluation_id", "correction_of", "corrects"),
-                "superseded evaluation",
-            )
-        elif parsed is not None:
-            # A scalar JSON decimal is a valid score-only result note; other
-            # scalar JSON payloads cannot supply the registry's feedback
-            # fields and fail rather than being guessed at.
-            scalar_score = parsed.strip() if isinstance(parsed, str) else None
-            if scalar_score is None or not _SCORE_RE.fullmatch(scalar_score):
-                raise LabError("JSON result must be an object or a decimal score note")
-            extracted_score = _validate_score(scalar_score)
-            rounded_from_payload = None
-            payload = {"text": raw_bytes.decode("utf-8", errors="strict")}
-            status_value = None
-            metrics = None
-            timing = None
-            evaluation_kind = None
-            competition_id = None
-            input_submission_id = None
-            evaluated_at = None
-            correction = None
-        else:
-            if valid_json_payload:
-                raise LabError("JSON result must be an object or a decimal score note")
-            text = raw_bytes.decode("utf-8", errors="strict")
-            extracted_score, rounded_from_payload = _parse_plain_note(text)
-            payload = {"text": text}
-            status_value = None
-            metrics = None
-            timing = None
-            evaluation_kind = None
-            competition_id = None
-            input_submission_id = None
-            evaluated_at = None
-            correction = None
+        parsed_fields = _parse_result_bytes(raw_bytes)
+        parsed = parsed_fields["parsed"]
+        payload = parsed_fields["payload"]
+        extracted_score = parsed_fields["extracted_score"]
+        rounded_from_payload = parsed_fields["rounded_from_payload"]
+        status_value = parsed_fields["status_value"]
+        metrics = parsed_fields["metrics"]
+        timing = parsed_fields["timing"]
+        evaluation_kind = parsed_fields["evaluation_kind"]
+        competition_id = parsed_fields["competition_id"]
+        input_submission_id = parsed_fields["input_submission_id"]
+        evaluated_at = parsed_fields["evaluated_at"]
+        correction = parsed_fields["correction"]
+        cli_submission_id = submission_id
         if submission_id is not None and (not isinstance(submission_id, str) or not submission_id.strip()):
             raise LabError("submission ID must be a non-empty string when supplied")
         if input_submission_id is not None and submission_id is None:
@@ -871,6 +1071,9 @@ class Registry:
             ),
             "score_override_conflicted_with_input": score_conflict,
             "input_score_error": original_score_error,
+            "rounded_public_override": rounded_public,
+            "submission_id_override": cli_submission_id,
+            "supersedes_override": supersedes,
             "parser": "json" if isinstance(parsed, dict) else "plain_score_note",
         }
         record = {
@@ -902,7 +1105,11 @@ class Registry:
                 if not existing_record_path.is_file() or not existing_raw.is_file():
                     raise LabError(f"existing evaluation is incomplete: {evaluation_id}")
                 existing_record = _read_json(existing_record_path)
-                if existing_record != record or existing_raw.read_bytes() != raw_bytes:
+                records_match = existing_record == record or _matches_legacy_association_metadata(
+                    existing_record,
+                    record,
+                )
+                if not records_match or existing_raw.read_bytes() != raw_bytes:
                     raise LabError(f"immutable evaluation ID conflicts with existing evidence: {evaluation_id}")
                 return {
                     "evaluation_id": evaluation_id,
@@ -1215,6 +1422,7 @@ class Registry:
                     if not isinstance(refs, list) or not refs:
                         errors.append(f"evaluation evidence references missing: {child.name}")
                     else:
+                        raw_evidence_paths: list[Path] = []
                         for reference in refs:
                             if not isinstance(reference, dict):
                                 errors.append(f"evaluation evidence reference invalid: {child.name}")
@@ -1232,8 +1440,31 @@ class Registry:
                                     raise ArchiveError("evidence hash mismatch")
                                 if raw_metadata_digest is not None and raw_metadata_digest != expected_digest:
                                     raise ArchiveError("raw-result hash metadata mismatch")
+                                kind = reference.get("kind")
+                                if kind != "raw_result":
+                                    errors.append(f"evaluation evidence kind is unknown: {child.name}")
+                                else:
+                                    raw_evidence_paths.append(raw_path)
                             except (ArchiveError, OSError) as exc:
                                 errors.append(f"evaluation evidence invalid ({child.name}): {exc}")
+                        if len(raw_evidence_paths) != 1:
+                            errors.append(f"evaluation must have exactly one raw-result evidence reference: {child.name}")
+                        else:
+                            raw_evidence_path = raw_evidence_paths[0]
+                            try:
+                                raw_bytes = raw_evidence_path.read_bytes()
+                                if raw_metadata_digest is None or sha256_bytes(raw_bytes) == raw_metadata_digest:
+                                    for consistency_error in _raw_result_consistency_errors(
+                                        record,
+                                        raw_evidence_path,
+                                        raw_bytes,
+                                    ):
+                                        errors.append(
+                                            f"evaluation raw-derived field mismatch ({child.name}): "
+                                            + consistency_error
+                                        )
+                            except OSError as exc:
+                                errors.append(f"evaluation raw evidence cannot be read ({child.name}): {exc}")
                     correction = record.get("supersedes_evaluation_id")
                     if correction is not None:
                         try:

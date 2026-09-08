@@ -159,6 +159,9 @@ class LabCliTest(unittest.TestCase):
             self.assertEqual(record["association_basis"]["artifact_identity"]["zip_sha256"], json.loads((root / "artifacts" / artifact / "manifest.json").read_text())["zip_sha256"])
             self.assertTrue(record["association_basis"]["score_override"]["recorded_with_raw_result"])
             self.assertEqual((record_path.parent / "raw" / "result.json").read_bytes(), raw)
+            self.assertEqual(self.run_cli(root, "render").returncode, 0)
+            valid = self.run_cli(root, "validate")
+            self.assertEqual(valid.returncode, 0, valid.stdout)
 
     def test_json_feedback_in_a_result_log_text_file_is_normalized(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -240,6 +243,9 @@ class LabCliTest(unittest.TestCase):
             record = json.loads((root / "evaluations" / evaluation_id / "record.json").read_text())
             self.assertEqual(record["public_score"], "29.74350010538")
             self.assertTrue(record["association_basis"]["score_override_conflicted_with_input"])
+            self.assertEqual(self.run_cli(root, "render").returncode, 0)
+            valid = self.run_cli(root, "validate")
+            self.assertEqual(valid.returncode, 0, valid.stdout)
 
     def test_ambiguous_plain_score_fails_without_mutating_evaluations(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -267,6 +273,53 @@ class LabCliTest(unittest.TestCase):
             self.assertEqual(first_id, json.loads(retry.stdout)["evaluation_id"])
             self.assertTrue(json.loads(retry.stdout)["deduplicated"])
             self.assertNotEqual(first_id, json.loads(other.stdout)["evaluation_id"])
+
+    def test_same_evidence_deduplicates_against_legacy_association_metadata(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            result = Path(temp) / "feedback.json"
+            result.write_text('{"status":"completed"}', encoding="utf-8")
+            first = self.run_cli(
+                root,
+                "record",
+                "--artifact",
+                artifact,
+                "--result",
+                result,
+                "--public-score",
+                "12.300",
+            )
+            self.assertEqual(first.returncode, 0, first.stderr)
+            evaluation_id = json.loads(first.stdout)["evaluation_id"]
+            record_path = root / "evaluations" / evaluation_id / "record.json"
+            legacy = json.loads(record_path.read_text(encoding="utf-8"))
+            for field in (
+                "rounded_public_override",
+                "submission_id_override",
+                "supersedes_override",
+            ):
+                del legacy["association_basis"][field]
+            record_path.write_text(
+                json.dumps(legacy, ensure_ascii=False, sort_keys=True, separators=(",", ":")) + "\n",
+                encoding="utf-8",
+            )
+            preserved = record_path.read_bytes()
+
+            retry = self.run_cli(
+                root,
+                "record",
+                "--artifact",
+                artifact,
+                "--result",
+                result,
+                "--public-score",
+                "12.300",
+            )
+
+            self.assertEqual(retry.returncode, 0, retry.stdout)
+            self.assertTrue(json.loads(retry.stdout)["deduplicated"])
+            self.assertEqual(record_path.read_bytes(), preserved)
 
     def test_correction_links_old_evaluation_without_deleting_it(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -302,6 +355,124 @@ class LabCliTest(unittest.TestCase):
                 invalid = self.run_cli(root, "validate")
                 self.assertNotEqual(invalid.returncode, 0)
                 self.assertTrue("identity" in invalid.stdout or "feedback mismatch" in invalid.stdout)
+
+    def test_validate_reparses_raw_feedback_before_accepting_derived_fields(self):
+        mutations = {
+            "public_score": lambda record: (
+                record.update(public_score="2.00"),
+                record["raw_feedback"].update(public_score="2.00"),
+            ),
+            "metrics": lambda record: (
+                record["metrics"].update(fill_score="99.0"),
+                record["raw_feedback"].update(fill_score="99.0"),
+            ),
+            "timing": lambda record: (
+                record["timing"].update(policy="99.0"),
+                record["raw_feedback"]["time_results"].update(policy="99.0"),
+            ),
+            "status": lambda record: (
+                record.update(status_raw="changed", status_normalized="unknown"),
+                record["raw_feedback"].update(status="changed"),
+            ),
+            "competition": lambda record: (
+                record.update(competition_id="changed"),
+                record["raw_feedback"].update(competition_id="changed"),
+            ),
+            "evaluated_at": lambda record: (
+                record.update(evaluated_at="changed"),
+                record["raw_feedback"].update(evaluated_at="changed"),
+            ),
+            "kind": lambda record: (
+                record.update(evaluation_kind="changed"),
+                record["raw_feedback"].update(kind="changed"),
+            ),
+        }
+        for field, mutate in mutations.items():
+            with self.subTest(field=field), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp) / "registry"
+                artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+                result = Path(temp) / "feedback.json"
+                result.write_text(
+                    json.dumps(
+                        {
+                            "public_score": "1.00",
+                            "fill_score": 2.5,
+                            "cog_score": 3.5,
+                            "time_results": {"optimization": 4.5, "policy": 0.25},
+                            "status": "completed",
+                            "submission_id": "raw-submission",
+                            "competition_id": "raw-competition",
+                            "evaluated_at": "2026-09-08T00:00:00Z",
+                            "kind": "public",
+                        }
+                    ),
+                    encoding="utf-8",
+                )
+                recorded = self.run_cli(root, "record", "--artifact", artifact, "--result", result)
+                self.assertEqual(recorded.returncode, 0, recorded.stderr)
+                evaluation_id = json.loads(recorded.stdout)["evaluation_id"]
+                record_path = root / "evaluations" / evaluation_id / "record.json"
+                record = json.loads(record_path.read_text(encoding="utf-8"))
+                mutate(record)
+                record_path.write_text(json.dumps(record), encoding="utf-8")
+                self.assertEqual(self.run_cli(root, "render").returncode, 0)
+                invalid = self.run_cli(root, "validate")
+                self.assertNotEqual(invalid.returncode, 0, field)
+
+    def test_validate_requires_one_known_raw_result_reference(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            result = Path(temp) / "feedback.json"
+            result.write_text(
+                '{"public_score":"1.00","fill_score":2.5,"status":"completed"}',
+                encoding="utf-8",
+            )
+            recorded = self.run_cli(root, "record", "--artifact", artifact, "--result", result)
+            self.assertEqual(recorded.returncode, 0, recorded.stderr)
+            evaluation_id = json.loads(recorded.stdout)["evaluation_id"]
+            record_path = root / "evaluations" / evaluation_id / "record.json"
+            record = json.loads(record_path.read_text(encoding="utf-8"))
+            record["public_score"] = "2.00"
+            record["metrics"]["fill_score"] = "99.0"
+            record["status_raw"] = "changed"
+            record["status_normalized"] = "unknown"
+            record["raw_feedback"].update(
+                public_score="2.00",
+                fill_score="99.0",
+                status="changed",
+            )
+            record["evidence_refs"][0]["kind"] = "not_raw_result"
+            record_path.write_text(json.dumps(record), encoding="utf-8")
+            self.assertEqual(self.run_cli(root, "render").returncode, 0)
+
+            invalid = self.run_cli(root, "validate")
+
+            self.assertNotEqual(invalid.returncode, 0)
+            self.assertIn("evidence kind", invalid.stdout)
+            self.assertIn("raw-result evidence", invalid.stdout)
+
+    def test_validate_binds_parser_selection_to_recorded_source_name(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            result = Path(temp) / "score.json"
+            result.write_text('"1.250"', encoding="utf-8")
+            recorded = self.run_cli(root, "record", "--artifact", artifact, "--result", result)
+            self.assertEqual(recorded.returncode, 0, recorded.stderr)
+            evaluation_id = json.loads(recorded.stdout)["evaluation_id"]
+            record_path = root / "evaluations" / evaluation_id / "record.json"
+            record = json.loads(record_path.read_text(encoding="utf-8"))
+            record["public_score"] = None
+            record["evaluation_kind"] = "unknown"
+            record["association_basis"]["source_path_name"] = "score.txt"
+            record_path.write_text(json.dumps(record), encoding="utf-8")
+            self.assertEqual(self.run_cli(root, "render").returncode, 0)
+
+            invalid = self.run_cli(root, "validate")
+
+            self.assertNotEqual(invalid.returncode, 0)
+            self.assertIn("raw-derived field", invalid.stdout)
 
     def test_validate_requires_artifact_id_to_match_zip_identity(self):
         with tempfile.TemporaryDirectory() as temp:
@@ -365,15 +536,17 @@ class LabCliTest(unittest.TestCase):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp) / "registry"
             self.ingest(root, self.make_zip(temp))
+            fixture_dir = root / "experiments" / "secret-fixtures"
+            fixture_dir.mkdir(parents=True)
             for name in ("token.txt", "secrets.env", "id_rsa", ".npmrc", "settings.env"):
-                (root / name).write_text("secret\n", encoding="utf-8")
+                (fixture_dir / name).write_text("secret\n", encoding="utf-8")
             output = Path(temp) / "context.zip"
             completed = self.run_cli(root, "export-context", "--output", output)
             self.assertEqual(completed.returncode, 0, completed.stderr)
             with zipfile.ZipFile(output) as archive:
                 names = set(archive.namelist())
                 for name in ("token.txt", "secrets.env", "id_rsa", ".npmrc", "settings.env"):
-                    self.assertNotIn(name, names)
+                    self.assertNotIn(f"experiments/secret-fixtures/{name}", names)
 
     def test_supersedes_requires_same_artifact_and_immutable_target(self):
         with tempfile.TemporaryDirectory() as temp:
