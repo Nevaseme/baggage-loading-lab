@@ -38,7 +38,7 @@ On this PC, use `simulator/.signate_venv/Scripts/python.exe` if Python is not on
 
 ## Saved archives
 
-- [Support recovery candidate, 2026-09-16](experiments/submission_candidate/README.md): new local submission ZIP, validation, and hashes; Public score pending.
+- [Support recovery submission, 2026-09-16](deliverables/2026-09-16-support-recovery-packing/README.md): exact ZIP, submitted feedback, validation, and hashes; Public aggregate pending.
 - [Guarded original submission](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54): `highscore_guarded_20260813.zip`.
 - [Four reconstructed source/result bundles](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/reconstructed-source-results-2026-09-09): choose `*-source-result-reconstructed.zip`. These preserve code and result logs but are not original submission ZIPs.
 - [Bundle identities and verification record](knowledge/sync/2026-09-09-reconstructed-bundles.json).

@@ -1,0 +1,20 @@
+{
+  "repository": "Nevaseme/baggage-loading-lab",
+  "visibility": "private",
+  "project_commit": "f4193abe4f0b54c4fcd80bc3bc9577b79bdcea6f",
+  "project_url": "https://github.com/Nevaseme/baggage-loading-lab/tree/f4193abe4f0b54c4fcd80bc3bc9577b79bdcea6f",
+  "tracked_files_at_project_commit": 990,
+  "registry_revision": "ad6da7fc8bab8ee8f4368cac4ee2d34c22eccdf2fe31bd415b97a647837e4ac1",
+  "artifact_id": "artifact-40da95f00f099605fd9eeaa9abf211fa70e2b1b4f17a85ebb2b8a14f85a07e90",
+  "evaluation_id": "evaluation-071bf83d0161662641bdd0f5576019a9b76dc187119831b04d7b3117493ee571",
+  "verification": "Fresh clone from origin validated the registry and reproduced the exact local ZIP and result bytes.",
+  "verified_files": {
+    "deliverables/2026-09-16-support-recovery-packing/support-recovery-packing-2026-09-16.zip": "40da95f00f099605fd9eeaa9abf211fa70e2b1b4f17a85ebb2b8a14f85a07e90",
+    "deliverables/2026-09-16-support-recovery-packing/result-log.txt": "205e66528b62bad9d9c8f563236974a6a346305e480c6186d1a8ed71305dcee5"
+  },
+  "local_registry_tests": {"passed": 53, "failed": 0},
+  "release_status": "not_created_auto_review_requires_explicit_release_destination_approval",
+  "release_tag_requested": "artifact-40da95f00f099605fd9eeaa9abf211fa70e2b1b4f17a85ebb2b8a14f85a07e90",
+  "release_block_reason": "Automatic approval review rejected the additional GitHub Release upload and requested user approval explicitly naming that destination. Repository-folder upload is complete; no release workaround was attempted.",
+  "excluded_material": "Installed dependencies/runtimes, caches, duplicate checkouts/exports, authentication; the excluded old private-staging result is byte-identical to the registered evaluation. See .gitignore and workspace inventory."
+}

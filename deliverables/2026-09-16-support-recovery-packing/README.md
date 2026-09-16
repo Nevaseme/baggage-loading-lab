@@ -12,3 +12,8 @@ artifact build; the external evaluation timestamp is not present in the log.
 The result reports early termination and a placed-item ratio of
 0.46453610097631837. Public aggregate score is unavailable.
 `verified-extraction/` preserves the exact extracted package used for local tests.
+
+The project folder and originals are uploaded to the private repository and were
+verified by a fresh clone. [Synchronization receipt](../../knowledge/sync/2026-09-16-support-recovery-submission.json).
+An additional Release copy is pending explicit destination approval requested by
+automatic review; the repository copy is complete.
