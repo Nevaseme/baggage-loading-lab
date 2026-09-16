@@ -19,14 +19,21 @@ through the supplied official runner. Detailed smoke results are in its logs.
 The separate [clean Linux report](2026-09-16-clean-linux-smoke.json) preserves
 dependency versions, timings, hashes, process settings, and task results.
 
-This establishes that the repository contains the source and operational steps
-needed for design/implementation, local comparison, and ZIP production in a
-provisioned Linux cloud environment. It does not establish algorithm quality on
-new scenes or the Public target. The tiny tests are runtime checks, not benchmarks.
+These checks cover setup, packaging, and runtime compatibility. The two-item
+tasks are smoke checks; algorithm comparisons use full episodes.
 
-The user's particular web ChatGPT session was not opened or tested. A GitHub
-connector can supply context without supplying a checkout or executable PyBullet.
-Check the session's actual tools, file availability, and packages using
-[cloud development](../../docs/cloud-development.md). If those are available,
-use the provided workflow; if they are missing, identify the missing capability
-instead of claiming physics was run. No Release or release approval is required.
+## Earlier web ChatGPT execution
+
+The referenced conversation, [Branch · Branch · Branch · ZIP提出と最終検証結果](https://chatgpt.com/c/6a90548b-7a90-83e8-9010-f8f612022fd0),
+records creation of the Ingress-Preserving Column Scaffold submission ZIP
+(SHA-256 `8f395465f592e3f001c6e305a3e613ac29a8d6aeb99ab40f5edc7a4e86ea9f25`).
+It later records extraction of an uploaded self-contained Python 3.11.16 runtime
+with PyBullet 3.2.7, Gymnasium 1.2.3, NumPy 1.26.4, and Pillow 10.3.0.
+The official runner completed four items with all inclusion, validity, and safety
+flags true; maximum policy time was 0.0862 seconds. The extracted simulator copy
+needed one f-string quotation change for Python 3.11 compatibility. The current
+reference setup uses Python 3.12.
+
+This provides a demonstrated offline runtime workflow alongside the current
+Linux and GitHub Actions checks. Follow [cloud development](../../docs/cloud-development.md)
+to continue from repository context through implementation, comparison, and ZIP creation.

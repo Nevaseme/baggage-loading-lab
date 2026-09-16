@@ -14,7 +14,9 @@ Scale skills, planning, reviews, and tests to the work. Skip redundant ceremonie
 
 Delegate bounded work when useful. Choose models for the task; give each worker an outcome, file ownership, and acceptance check. Reconcile their work before handoff.
 
-Communicate with the user in concise Japanese, including progress updates and final responses. Keep project documents in English unless requested otherwise. State the result, evidence, and next decision; mention limitations that affect the decision. On pause, preserve the checkpoint and stop owned workers and runs.
+Communicate with the user in concise Japanese, including progress updates and final responses. Keep project documents in English unless requested otherwise. State the result, evidence, and next decision. On pause, preserve the checkpoint and stop owned workers and runs.
+
+In responses and project documents, include constraints only when they materially affect the result, next action, or a required user decision. Consult existing evidence and attempt authorized work before declaring a blocker. Describe concrete blockers and how to resolve them. Omit speculative caveats, repeated qualifications, and generic capability disclaimers that do not change the work.
 
 ## Develop from evidence
 
@@ -50,6 +52,5 @@ GitHub is a shared submission/result notebook for this project. Store exact ZIPs
 and feedback in submission folders; GitHub Releases, release tags, semantic
 versions, and release approvals are unnecessary unless the user explicitly asks.
 Keep existing Git history as implementation plumbing, not a required user workflow.
-For cloud development, start with [cloud setup](docs/cloud-development.md), check
-actual execution capabilities, then run the portable smoke check. Repository
-access alone is not evidence of a working physics runtime.
+For cloud development, follow [cloud setup](docs/cloud-development.md), reuse an
+available runtime or prepare one, and run the portable smoke check.

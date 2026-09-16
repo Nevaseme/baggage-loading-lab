@@ -6,37 +6,18 @@ its result in a separate `deliverables/YYYY-MM-DD-technique/` folder.
 
 [Verification record](../knowledge/validation/2026-09-16-cloud-readiness.md):
 the standalone setup, ZIP build, and official A/B smoke passed both in a clean
-Linux environment and on GitHub-hosted Ubuntu. Connected GitHub file access was
-also verified. The user's individual web ChatGPT execution session remains untested.
+Linux environment and on GitHub-hosted Ubuntu. Earlier web ChatGPT work also
+produced a submission ZIP and subsequently ran official physics using an uploaded
+self-contained Python/PyBullet runtime.
 
-## What a ChatGPT session needs
+## Start in web ChatGPT
 
-GitHub access provides project context. Execution additionally needs a writable
-copy of the relevant files, Python, NumPy, Gymnasium, PyBullet, Pillow, and enough
-time to run physics. The current algorithm needs no GPU, model API, or Torch.
-
-Check the actual session tools first. GitHub search snippets are not a filesystem
-checkout: obtain full file contents with paths intact. Use a connected checkout,
-an authorized repository download, or a source archive uploaded into the session.
-Do not assume the GitHub connector's credentials are available to a shell.
-
-- **GitHub-connected ChatGPT:** can read repository context. This alone does not
-  establish that packages, binary modules, subprocesses, or repository files are
-  available inside its execution environment.
-- **Data-analysis Python:** can generate source and ZIP files from available
-  files. Its documented environment cannot make external web/API requests, so
-  dependencies must already be installed or supplied as compatible offline wheels.
-  If PyBullet or full source is missing, say which step is unavailable; do not
-  label an untested ZIP physically verified.
-- **A provisioned Linux cloud workspace:** run the commands below. Codex cloud
-  supports repository checkout and dependency installation during setup. Set up
-  dependencies before any network-disabled execution phase.
-
-These distinctions come from official [GitHub access](https://help.openai.com/en/articles/11145903-connecting-github-to-chatgpt),
-[data analysis](https://help.openai.com/en/articles/8437071-data-analysis-with-chatgpt),
-and [cloud environment](https://learn.chatgpt.com/docs/environments/cloud-environment)
-documentation. A clean Linux smoke test verifies this repository's portability;
-it is not a test of the user's particular web ChatGPT session.
+Read the repository's handoff and obtain the working files with their paths intact,
+using the connected repository or an uploaded source archive. Reuse an available
+Python runtime with NumPy, Gymnasium, PyBullet, and Pillow. The demonstrated offline
+workflow extracts an uploaded self-contained runtime and invokes its Python
+directly; no network installation is needed. For a fresh environment, use the
+setup below. The current algorithm needs no GPU, model API, or Torch.
 
 ## Set up once
 
@@ -96,8 +77,6 @@ put that directory on `PYTHONPATH`, then run the official lifecycle from `simula
 using `python -m scripts.run_test --module-path PACKAGE_NAME/` and a fresh result
 filename. Keep module paths importable and ending with `/`.
 
-Return the downloadable ZIP, its SHA-256, measured results, and remaining limits.
+Return the downloadable ZIP, its SHA-256, measured results, and experiment notes.
 Later place the user's external `result-log.txt` beside it and register the pair
 through `tools.lab`. Do not invent a Public aggregate from component scores.
-Pushing changes is optional for a read-only ChatGPT session; handing the ZIP and
-notes back to the user satisfies file delivery. Releases are unnecessary.
