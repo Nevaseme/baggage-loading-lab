@@ -45,3 +45,11 @@ failures, historical plans, analysis, and submissions. Preserve evidence bytes.
 Exclude installed runtimes/dependencies, disposable caches, nested Git databases,
 and authentication material. Keep [the AI handoff](docs/ai-handoff.md) current and
 verify remote commit and submission/result hashes after synchronization.
+
+GitHub is a shared submission/result notebook for this project. Store exact ZIPs
+and feedback in submission folders; GitHub Releases, release tags, semantic
+versions, and release approvals are unnecessary unless the user explicitly asks.
+Keep existing Git history as implementation plumbing, not a required user workflow.
+For cloud development, start with [cloud setup](docs/cloud-development.md), check
+actual execution capabilities, then run the portable smoke check. Repository
+access alone is not evidence of a working physics runtime.

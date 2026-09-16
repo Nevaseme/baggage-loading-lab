@@ -31,6 +31,10 @@ See the [evaluation contract](evaluation-contract.md) before promotion.
 
 ## Local commands
 
+For a fresh Linux/cloud environment, use [the portable setup](cloud-development.md)
+and `requirements-cloud.txt`. The following WSL commands are this PC's convenience
+paths, not prerequisites for development.
+
 Run registry commands from the project root with `simulator/.signate_venv/Scripts/python.exe`. Physics uses Ubuntu WSL and the existing Linux dependency bundle; the Windows environment does not have the physics packages.
 
 Verified runtime: Python 3.12.3, NumPy 2.5.2, Gymnasium 1.2.3, and PyBullet. From PowerShell at the project root:

@@ -1,0 +1,6 @@
+# CPU-only runtime for the supplied simulator and current packing candidates.
+# Torch is unnecessary for these candidates; add it only for an algorithm that imports it.
+numpy==2.5.2
+gymnasium==1.2.3
+pybullet==3.2.7
+pillow==10.3.0

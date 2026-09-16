@@ -3,6 +3,10 @@
 Updated 2026-09-16. Read this file before proposing the next packing experiment.
 Communicate with the user in Japanese; write project documents in English.
 
+To design, run physics, and produce a ZIP in a cloud execution session, follow
+[cloud development](cloud-development.md). Use submission folders only; GitHub
+Releases and release approvals are unnecessary for this project.
+
 ## Current result
 
 Goal: physically reliable packing and a verified Public score of at least 60.

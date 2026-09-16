@@ -12,6 +12,7 @@ project's simulator source, experiments, failed approaches, and historical plans
 | Improve an algorithm | [Development guide](docs/development.md), [packing evidence](knowledge/lessons/packing-evidence.md), relevant source |
 | Compare results | [Generated results](progress.md), linked evaluation records and raw feedback |
 | Prepare a submission | [Agent contract](contracts/agent-interface.md), [evaluation contract](docs/evaluation-contract.md) |
+| Develop and build in a cloud session | [Portable cloud setup and smoke check](docs/cloud-development.md) |
 | Record a submitted ZIP and result | [Registry operations](docs/registry-operations.md) |
 | Find historical work | [Documentation map](docs/README.md) |
 
@@ -21,5 +22,5 @@ For a compact offline handoff, use `tools.lab export-context` and identify the
 revision in `REGISTRY.json`; `FILE_HASHES.json` identifies its files. That compact
 export is not a full workspace backup. Use the repository for complete project
 history. Exact submissions and their result logs live together in `deliverables/`
-and are linked to registry records; Release assets provide an additional copy.
+and are linked to registry records. New submissions do not use GitHub Releases.
 Reconstructed historical source bundles are identified separately in the [README](README.md).

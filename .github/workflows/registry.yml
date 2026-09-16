@@ -22,5 +22,33 @@ jobs:
         run: python3 -m unittest discover -s tests -p 'test_benchmark.py' -v
       - name: Test reproducible submission packaging
         run: python3 -m unittest discover -s tests -p 'test_package_agent.py' -v
+      - name: Test cloud completion checks
+        run: python3 -m unittest discover -s tests -p 'test_cloud_smoke.py' -v
       - name: Check real registry and generated views
         run: python3 -m tools.lab --root . validate
+
+  cloud-smoke:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Install standalone CPU physics runtime
+        run: |
+          python3 -m venv .venv
+          .venv/bin/python -m pip install -r requirements-cloud.txt
+      - name: Build ZIP and execute the extracted Agent in official workers
+        run: .venv/bin/python -m tools.cloud_smoke --output .lab/cloud-smoke/ci
+      - name: Show smoke evidence
+        if: always()
+        run: |
+          if test -f .lab/cloud-smoke/ci/smoke-report.json; then
+            cat .lab/cloud-smoke/ci/smoke-report.json
+          fi
+          if test -f .lab/cloud-smoke/ci/official-run.log; then
+            tail -n 60 .lab/cloud-smoke/ci/official-run.log
+          fi

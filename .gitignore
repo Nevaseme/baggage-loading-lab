@@ -23,3 +23,4 @@
 /.lab/views.json
 /.lab/migration-errors/evaluation-786e70-private-staging/
 /.lab/audit-2026-09-16/upload-inventory-summary.json
+/.lab/cloud-smoke/

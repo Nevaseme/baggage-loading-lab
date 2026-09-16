@@ -34,13 +34,16 @@ Write the method, parent candidate, changes, and evidence in the artifact's `alg
 ## Synchronize
 
 1. Run registry tests and validation. Review the selected changes, then commit and push the intake files using existing authentication.
-2. For an original ZIP, attach `.lab/assets/<sha256>.zip` and its manifest to the artifact's GitHub Release. Preserve its original filename in the manifest.
-3. Verify the remote asset digest or downloaded bytes against the local hash.
-4. Record the commit, Release URL, and verification result under `knowledge/sync/`, then push that record.
+2. Keep the exact ZIP and `result-log.txt` together in its `deliverables/` folder.
+3. Verify the uploaded files by fetching them and comparing their hashes.
+4. Record the repository path and verification result under `knowledge/sync/`, then push that record.
 
 Resume partial synchronization using existing IDs and assets. GitHub's automatic
-Source code ZIP is not the original submission. The exact ZIP and result also
+Source code ZIP is not the original submission. The exact ZIP and result
 live together under `deliverables/`, directly readable in the repository.
+GitHub Releases, release tags, version numbering, and release approvals are not
+part of this workflow. The user needs submission-to-score correspondence, not a
+release-management process. Existing historical Release links may remain as evidence.
 
 The user expanded sharing on 2026-09-16 to the complete project record: include
 the official simulator source/configuration/tests, local experiments and logs,

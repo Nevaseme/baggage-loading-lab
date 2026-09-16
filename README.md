@@ -49,3 +49,7 @@ For another AI reading this private repository, use [the AI handoff](docs/ai-han
 It separates the latest submitted result, local experimental evidence, rejected
 approaches, and next decisions. Installed runtimes and authentication are not
 part of the shared project; source and recorded results are.
+
+[Cloud development](docs/cloud-development.md) provides a standalone dependency
+file and a ZIP-to-official-run smoke check. GitHub Actions repeats that check on
+Linux. GitHub Releases and release versioning are unnecessary for submission records.
