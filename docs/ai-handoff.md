@@ -6,6 +6,9 @@ Communicate with the user in Japanese; write project documents in English.
 To design, run physics, and produce a ZIP in a cloud execution session, follow
 [cloud development](cloud-development.md). Use submission folders only; GitHub
 Releases and release approvals are unnecessary for this project.
+Follow [AGENTS.md](../AGENTS.md) in web ChatGPT as well: name each new algorithm
+after its technique and its ZIP `<technique>-YYYY-MM-DD-HHMMSS-JST.zip`, using
+the actual creation time in Asia/Tokyo.
 
 ## Current result
 

@@ -41,6 +41,13 @@ ZIP, `result-log.txt`, hashes, and links to registry records. Use a fresh suffix
 folder for a repeat; never place unrelated result logs beside each other or
 overwrite feedback. Build new submission ZIPs directly into their bundle folder.
 
+Name every newly designed algorithm after its defining technique. Name its
+submission ZIP `<technique>-YYYY-MM-DD-HHMMSS-JST.zip`, using a descriptive English
+kebab-case technique and the actual creation time in Asia/Tokyo. For example:
+`support-recovery-packing-2026-09-16-153045-JST.zip`. Keep the Python package name
+in snake_case. This rule applies to every agent, including web ChatGPT. Preserve
+the names of historical submitted artifacts.
+
 The user authorizes the complete project record in the private GitHub repository:
 source, official simulator source/configuration, tests, experiments including
 failures, historical plans, analysis, and submissions. Preserve evidence bytes.

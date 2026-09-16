@@ -12,7 +12,7 @@ self-contained Python/PyBullet runtime.
 
 ## Start in web ChatGPT
 
-Read the repository's handoff and obtain the working files with their paths intact,
+Read `AGENTS.md` and the repository's handoff, then obtain the working files with their paths intact,
 using the connected repository or an uploaded source archive. Reuse an available
 Python runtime with NumPy, Gymnasium, PyBullet, and Pillow. The demonstrated offline
 workflow extracts an uploaded self-contained runtime and invokes its Python
@@ -67,11 +67,17 @@ Use `docs/evaluation-contract.md` for full submission verification.
 
 ## Build and return the deliverable
 
+Web ChatGPT follows the same naming rule as local agents: name the algorithm
+after its defining technique and its ZIP `<technique>-YYYY-MM-DD-HHMMSS-JST.zip`.
+Use English kebab-case and the actual creation time in Asia/Tokyo; the importable
+Python package uses snake_case. For example:
+
 ```sh
-.venv/bin/python -m tools.package_agent --source experiments/submission_candidate/source --package-name support_recovery_packing --output deliverables/YYYY-MM-DD-technique/submission.zip
+artifact_time=$(TZ=Asia/Tokyo date +%Y-%m-%d-%H%M%S)
+.venv/bin/python -m tools.package_agent --source experiments/submission_candidate/source --package-name support_recovery_packing --output "deliverables/${artifact_time%-*}-support-recovery-packing-${artifact_time##*-}/support-recovery-packing-${artifact_time}-JST.zip"
 ```
 
-Substitute the new source, technique, and date. The builder creates the parent
+Substitute the new source and technique. The builder creates the parent
 folder and refuses overwrites. Extract the exact ZIP into a fresh directory;
 put that directory on `PYTHONPATH`, then run the official lifecycle from `simulator/`
 using `python -m scripts.run_test --module-path PACKAGE_NAME/` and a fresh result
