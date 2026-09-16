@@ -1,0 +1,4323 @@
+{
+  "authoritative_exact_exhaustion": {
+    "classification": "candidate_exposure_cap",
+    "default_scans": [
+      {
+        "build_seconds": 0.0010353540000096473,
+        "deadline_reached": false,
+        "repeat": 0,
+        "root_count": 0,
+        "roots": [],
+        "scan_seconds": 1.0648697860000311,
+        "stats": {
+          "accepted_roots": 0,
+          "deadline_reached": false,
+          "deferred_roots": 0,
+          "duplicate_roots": 0,
+          "exact_attempts": 7226,
+          "first_root_stage": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "fixed_exact_attempt_cap": 0,
+          "fixed_pools_attempted": 0,
+          "fixed_pools_covered": 0,
+          "fixed_quota_exhausted": false,
+          "global_cap_reached": false,
+          "item_exceptions": [],
+          "normal_roots": 0,
+          "passes_completed": [
+            "coverage",
+            "scarcity",
+            "rescue"
+          ],
+          "per_pool_raw": [
+            724,
+            724,
+            724,
+            724,
+            720,
+            720,
+            720,
+            722,
+            724,
+            724
+          ],
+          "per_pool_roots": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_examined": 7226,
+          "rejection_counts": {
+            "collision_or_clearance": 6667,
+            "depth_map": 57,
+            "plane_inclusion": 210,
+            "protection": 10,
+            "support_ratio": 191,
+            "transport": 91
+          },
+          "rescue_roots": 0,
+          "stage_attempts": {
+            "normal.compact": 360,
+            "normal.free_deepen": 1060,
+            "normal.free_probe": 160,
+            "normal.legacy": 906,
+            "normal.obstacle_deepen": 960,
+            "normal.obstacle_probe": 144,
+            "normal.plane_deepen": 1096,
+            "normal.plane_probe": 160,
+            "rescue.dense_last": 2380
+          },
+          "stage_roots": {}
+        },
+        "total_seconds": 1.0659051400000408
+      },
+      {
+        "build_seconds": 0.0012451300000293486,
+        "deadline_reached": false,
+        "repeat": 1,
+        "root_count": 0,
+        "roots": [],
+        "scan_seconds": 0.9140070159999709,
+        "stats": {
+          "accepted_roots": 0,
+          "deadline_reached": false,
+          "deferred_roots": 0,
+          "duplicate_roots": 0,
+          "exact_attempts": 7226,
+          "first_root_stage": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "fixed_exact_attempt_cap": 0,
+          "fixed_pools_attempted": 0,
+          "fixed_pools_covered": 0,
+          "fixed_quota_exhausted": false,
+          "global_cap_reached": false,
+          "item_exceptions": [],
+          "normal_roots": 0,
+          "passes_completed": [
+            "coverage",
+            "scarcity",
+            "rescue"
+          ],
+          "per_pool_raw": [
+            724,
+            724,
+            724,
+            724,
+            720,
+            720,
+            720,
+            722,
+            724,
+            724
+          ],
+          "per_pool_roots": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_examined": 7226,
+          "rejection_counts": {
+            "collision_or_clearance": 6667,
+            "depth_map": 57,
+            "plane_inclusion": 210,
+            "protection": 10,
+            "support_ratio": 191,
+            "transport": 91
+          },
+          "rescue_roots": 0,
+          "stage_attempts": {
+            "normal.compact": 360,
+            "normal.free_deepen": 1060,
+            "normal.free_probe": 160,
+            "normal.legacy": 906,
+            "normal.obstacle_deepen": 960,
+            "normal.obstacle_probe": 144,
+            "normal.plane_deepen": 1096,
+            "normal.plane_probe": 160,
+            "rescue.dense_last": 2380
+          },
+          "stage_roots": {}
+        },
+        "total_seconds": 0.9152521460000003
+      },
+      {
+        "build_seconds": 0.0009060059999796977,
+        "deadline_reached": false,
+        "repeat": 2,
+        "root_count": 0,
+        "roots": [],
+        "scan_seconds": 0.9040950970000381,
+        "stats": {
+          "accepted_roots": 0,
+          "deadline_reached": false,
+          "deferred_roots": 0,
+          "duplicate_roots": 0,
+          "exact_attempts": 7226,
+          "first_root_stage": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "fixed_exact_attempt_cap": 0,
+          "fixed_pools_attempted": 0,
+          "fixed_pools_covered": 0,
+          "fixed_quota_exhausted": false,
+          "global_cap_reached": false,
+          "item_exceptions": [],
+          "normal_roots": 0,
+          "passes_completed": [
+            "coverage",
+            "scarcity",
+            "rescue"
+          ],
+          "per_pool_raw": [
+            724,
+            724,
+            724,
+            724,
+            720,
+            720,
+            720,
+            722,
+            724,
+            724
+          ],
+          "per_pool_roots": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_examined": 7226,
+          "rejection_counts": {
+            "collision_or_clearance": 6667,
+            "depth_map": 57,
+            "plane_inclusion": 210,
+            "protection": 10,
+            "support_ratio": 191,
+            "transport": 91
+          },
+          "rescue_roots": 0,
+          "stage_attempts": {
+            "normal.compact": 360,
+            "normal.free_deepen": 1060,
+            "normal.free_probe": 160,
+            "normal.legacy": 906,
+            "normal.obstacle_deepen": 960,
+            "normal.obstacle_probe": 144,
+            "normal.plane_deepen": 1096,
+            "normal.plane_probe": 160,
+            "rescue.dense_last": 2380
+          },
+          "stage_roots": {}
+        },
+        "total_seconds": 0.9050011030000178
+      }
+    ],
+    "dense_sweep": [
+      {
+        "accepted": 0,
+        "elapsed_seconds": 0.18940039399996067,
+        "generated": 2560,
+        "per_pool": [
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 0
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 1
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 2
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 3
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 4
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 5
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 6
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 7
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 8
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 9
+          }
+        ],
+        "raw_work_limit": 256,
+        "rejections": {
+          "collision_or_clearance": 2521,
+          "transport": 39
+        }
+      },
+      {
+        "accepted": 6,
+        "elapsed_seconds": 2.362979676000009,
+        "generated": 30660,
+        "per_pool": [
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 0
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 1
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 2
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 3
+          },
+          {
+            "accepted": 2,
+            "first_accepted_sorted_ordinal": 2574,
+            "generated": 3066,
+            "pool_index": 4
+          },
+          {
+            "accepted": 2,
+            "first_accepted_sorted_ordinal": 2574,
+            "generated": 3066,
+            "pool_index": 5
+          },
+          {
+            "accepted": 2,
+            "first_accepted_sorted_ordinal": 2574,
+            "generated": 3066,
+            "pool_index": 6
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 7
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 8
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 3066,
+            "pool_index": 9
+          }
+        ],
+        "raw_work_limit": 3072,
+        "rejections": {
+          "collision_or_clearance": 28258,
+          "depth_map": 117,
+          "plane_inclusion": 1141,
+          "protection": 64,
+          "support_ratio": 541,
+          "transport": 533
+        }
+      },
+      {
+        "accepted": 283,
+        "elapsed_seconds": 3.7247058340000194,
+        "generated": 40900,
+        "per_pool": [
+          {
+            "accepted": 24,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 0
+          },
+          {
+            "accepted": 24,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 1
+          },
+          {
+            "accepted": 24,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 2
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 3
+          },
+          {
+            "accepted": 53,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 4
+          },
+          {
+            "accepted": 53,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 5
+          },
+          {
+            "accepted": 53,
+            "first_accepted_sorted_ordinal": 538,
+            "generated": 4090,
+            "pool_index": 6
+          },
+          {
+            "accepted": 26,
+            "first_accepted_sorted_ordinal": 528,
+            "generated": 4090,
+            "pool_index": 7
+          },
+          {
+            "accepted": 26,
+            "first_accepted_sorted_ordinal": 571,
+            "generated": 4090,
+            "pool_index": 8
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 9
+          }
+        ],
+        "raw_work_limit": 4096,
+        "rejections": {
+          "collision_or_clearance": 37687,
+          "depth_map": 117,
+          "plane_inclusion": 1141,
+          "protection": 64,
+          "support_ratio": 1045,
+          "transport": 563
+        }
+      }
+    ],
+    "diagnostic_dense_catalog": {
+      "records": [
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            -0.1250250473114235,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            0.004975432706085525,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 7,
+          "min_clearance": 0.12702438712018715,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 0,
+          "position": [
+            -0.060024807302669014,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            0,
+            7,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            -0.1250250473114235,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            0.004975432706085525,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 8,
+          "min_clearance": 0.12702438712018715,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 1,
+          "position": [
+            -0.060024807302669014,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            1,
+            8,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.044637837708701555,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.0896386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            -0.1250250473114235,
+            -0.11263723368586165,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1126372,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            0.004975432706085525,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 9,
+          "min_clearance": 0.12702438712018715,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 2,
+          "position": [
+            -0.060024807302669014,
+            -0.15763808258013395,
+            0.41499618751165057
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            2,
+            9,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1576381,
+              0.4149962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9500084889427228
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            0.06997567271484006,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            -0.190025287320178,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              -0.1900253,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9727290182454873
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 17,
+          "min_clearance": 0.047023907102678064,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 4,
+          "position": [
+            0.06997567271484006,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            4,
+            17,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8545467636841155
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9500084889427228
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            0.06997567271484006,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            -0.190025287320178,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              -0.1900253,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9727290182454873
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 19,
+          "min_clearance": 0.047023907102678064,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 5,
+          "position": [
+            0.06997567271484006,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            5,
+            19,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8545467636841155
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9500084889427228
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            0.06997567271484006,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9241008247741338
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.019637837708701533,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            -0.190025287320178,
+            -0.0676363847915894,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              -0.1900253,
+              -0.0676364,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8118266796984407
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9727290182454873
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.06463868660297378,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 21,
+          "min_clearance": 0.047023907102678064,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 6,
+          "position": [
+            0.06997567271484006,
+            -0.11263723368586165,
+            0.4199961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            6,
+            21,
+            0,
+            0,
+            [
+              0.0699757,
+              -0.1126372,
+              0.4199962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.8545467636841155
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.024636988814429245,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            -0.060024807302669014,
+            -0.022635535897317094,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0226355,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9500084889427229
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.06963783770870155,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            0.004975432706085525,
+            -0.0676363847915894,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.0676364,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9333349333916968
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.06963783770870155,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            -0.060024807302669014,
+            -0.0676363847915894,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.0676364,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.06963783770870155,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            -0.1250250473114235,
+            -0.0676363847915894,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.0676364,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9333349333916967
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.08702414711143264,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9333349333916968
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.1146386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.1146386866029738,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            -0.1250250473114235,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9333349333916967
+        },
+        {
+          "container_index": 0,
+          "item_index": 22,
+          "min_clearance": 0.08702414711143264,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 7,
+          "position": [
+            0.004975432706085525,
+            -0.15763808258013395,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            7,
+            22,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1576381,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9333349333916968
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.03963868660297379,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            0.004975432706085525,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.03963868660297379,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            -0.060024807302669014,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 1.0
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.03963868660297379,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            -0.1250250473114235,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.900001476976951
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.03963868660297379,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            -0.190025287320178,
+            -0.11263723368586165,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              -0.1900253,
+              -0.1126372,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.800001107732713
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.062024147111432615,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            0.004975432706085525,
+            -0.15763808258013395,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              0.0049754,
+              -0.1576381,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.810008120444579
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.0846395354972461,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            -0.060024807302669014,
+            -0.15763808258013395,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              -0.0600248,
+              -0.1576381,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9000075457268648
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.0846395354972461,
+          "orientation": 0,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            -0.1250250473114235,
+            -0.15763808258013395,
+            0.4249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            0,
+            [
+              -0.125025,
+              -0.1576381,
+              0.4249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.810008120444579
+        },
+        {
+          "container_index": 0,
+          "item_index": 23,
+          "min_clearance": 0.04963698881442924,
+          "orientation": 1,
+          "pass_name": "diagnostic_dense",
+          "pool_index": 8,
+          "position": [
+            0.004975432706085525,
+            -0.022635535897317094,
+            0.5249961875116506
+          ],
+          "sources": [
+            "dense_support_lattice"
+          ],
+          "stable_key": [
+            8,
+            23,
+            0,
+            1,
+            [
+              0.0049754,
+              -0.0226355,
+              0.5249962
+            ],
+            "diagnostic_dense"
+          ],
+          "support_ratio": 0.9000014769769509
+        }
+      ],
+      "roots": 64,
+      "stats": {
+        "accepted_roots": 64,
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 9358,
+        "first_root_stage": [
+          "diagnostic.dense",
+          "diagnostic.dense",
+          "diagnostic.dense",
+          null,
+          "diagnostic.dense",
+          "diagnostic.dense",
+          "diagnostic.dense",
+          "diagnostic.dense",
+          "diagnostic.dense",
+          null
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "diagnostic_dense"
+        ],
+        "per_pool_raw": [
+          584,
+          584,
+          584,
+          4090,
+          574,
+          574,
+          574,
+          583,
+          1211,
+          0
+        ],
+        "per_pool_roots": [
+          8,
+          8,
+          8,
+          0,
+          8,
+          8,
+          8,
+          8,
+          8,
+          0
+        ],
+        "raw_examined": 9358,
+        "rejection_counts": {
+          "collision_or_clearance": 8726,
+          "depth_map": 7,
+          "plane_inclusion": 136,
+          "protection": 6,
+          "support_ratio": 266,
+          "transport": 153
+        },
+        "rescue_roots": 64,
+        "stage_attempts": {
+          "diagnostic.dense": 9358
+        },
+        "stage_roots": {
+          "diagnostic.dense": 64
+        }
+      }
+    }
+  },
+  "failure_metadata": {
+    "exception_category": "candidate_zero",
+    "exception_message": "strict root catalog is empty",
+    "exception_type": "CandidateZeroError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 15,
+    "task": "001"
+  },
+  "frozen_replay": {
+    "initial": {
+      "deterministic_choice": true,
+      "name": "initial",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 64,
+          "chosen": {
+            "container_index": 0,
+            "item_index": 2,
+            "min_clearance": 1.0,
+            "orientation": 0,
+            "pass_name": "normal",
+            "pool_index": 2,
+            "position": [
+              -0.5685,
+              0.477,
+              1.0070000000000001
+            ],
+            "sources": [
+              "free_rectangle_boundary"
+            ],
+            "stable_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ],
+            "support_ratio": 1.0
+          },
+          "repeat": 0,
+          "scan_deadline": false,
+          "scan_seconds": 0.10506215499998461,
+          "selector_trace": {
+            "branch_exceptions": 0,
+            "candidate_quota_exhausted": false,
+            "candidates": 260,
+            "deadline_reached": true,
+            "deepest": 1,
+            "fit_quota_exhausted": false,
+            "fit_tests": 416,
+            "invalid_lineages": 0,
+            "largest_free_region": 1.0,
+            "lineage_count": 24,
+            "node_quota_exhausted": false,
+            "nodes": 24,
+            "predicted_count": 1,
+            "predicted_volume": 0.07312500000000001,
+            "top_ranked_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ]
+          },
+          "total_seconds": 0.7522535849999485
+        },
+        {
+          "catalog_roots": 64,
+          "chosen": {
+            "container_index": 0,
+            "item_index": 2,
+            "min_clearance": 1.0,
+            "orientation": 0,
+            "pass_name": "normal",
+            "pool_index": 2,
+            "position": [
+              -0.5685,
+              0.477,
+              1.0070000000000001
+            ],
+            "sources": [
+              "free_rectangle_boundary"
+            ],
+            "stable_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ],
+            "support_ratio": 1.0
+          },
+          "repeat": 1,
+          "scan_deadline": false,
+          "scan_seconds": 0.1118387419999749,
+          "selector_trace": {
+            "branch_exceptions": 0,
+            "candidate_quota_exhausted": false,
+            "candidates": 255,
+            "deadline_reached": true,
+            "deepest": 1,
+            "fit_quota_exhausted": false,
+            "fit_tests": 408,
+            "invalid_lineages": 0,
+            "largest_free_region": 1.0,
+            "lineage_count": 24,
+            "node_quota_exhausted": false,
+            "nodes": 24,
+            "predicted_count": 1,
+            "predicted_volume": 0.07312500000000001,
+            "top_ranked_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ]
+          },
+          "total_seconds": 0.7518841719999614
+        }
+      ]
+    },
+    "step15": {
+      "deterministic_choice": true,
+      "name": "step15",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 0,
+          "chosen": null,
+          "repeat": 0,
+          "scan_deadline": false,
+          "scan_seconds": 0.8869082319999961,
+          "selector_trace": null,
+          "total_seconds": 0.886912164000023
+        },
+        {
+          "catalog_roots": 0,
+          "chosen": null,
+          "repeat": 1,
+          "scan_deadline": false,
+          "scan_seconds": 0.8725782120000076,
+          "selector_trace": null,
+          "total_seconds": 0.8725828550000188
+        }
+      ]
+    },
+    "step8": {
+      "deterministic_choice": true,
+      "name": "step8",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 64,
+          "chosen": {
+            "container_index": 0,
+            "item_index": 16,
+            "min_clearance": 0.39376174161219835,
+            "orientation": 0,
+            "pass_name": "normal",
+            "pool_index": 8,
+            "position": [
+              0.003125648731994224,
+              -0.42199999999999993,
+              0.19300000000000006
+            ],
+            "sources": [
+              "free_rectangle_boundary"
+            ],
+            "stable_key": [
+              8,
+              16,
+              0,
+              0,
+              [
+                0.0031256,
+                -0.422,
+                0.193
+              ],
+              "normal"
+            ],
+            "support_ratio": 1.0
+          },
+          "repeat": 0,
+          "scan_deadline": false,
+          "scan_seconds": 0.22047553799995967,
+          "selector_trace": {
+            "branch_exceptions": 0,
+            "candidate_quota_exhausted": false,
+            "candidates": 41,
+            "deadline_reached": true,
+            "deepest": 1,
+            "fit_quota_exhausted": false,
+            "fit_tests": 248,
+            "invalid_lineages": 0,
+            "largest_free_region": 0.3124033337815376,
+            "lineage_count": 24,
+            "node_quota_exhausted": false,
+            "nodes": 24,
+            "predicted_count": 1,
+            "predicted_volume": 0.11340000000000001,
+            "top_ranked_key": [
+              8,
+              16,
+              0,
+              0,
+              [
+                0.0031256,
+                -0.422,
+                0.193
+              ],
+              "normal"
+            ]
+          },
+          "total_seconds": 0.7522615319999773
+        },
+        {
+          "catalog_roots": 64,
+          "chosen": {
+            "container_index": 0,
+            "item_index": 16,
+            "min_clearance": 0.39376174161219835,
+            "orientation": 0,
+            "pass_name": "normal",
+            "pool_index": 8,
+            "position": [
+              0.003125648731994224,
+              -0.42199999999999993,
+              0.19300000000000006
+            ],
+            "sources": [
+              "free_rectangle_boundary"
+            ],
+            "stable_key": [
+              8,
+              16,
+              0,
+              0,
+              [
+                0.0031256,
+                -0.422,
+                0.193
+              ],
+              "normal"
+            ],
+            "support_ratio": 1.0
+          },
+          "repeat": 1,
+          "scan_deadline": false,
+          "scan_seconds": 0.22352632300004416,
+          "selector_trace": {
+            "branch_exceptions": 0,
+            "candidate_quota_exhausted": false,
+            "candidates": 38,
+            "deadline_reached": true,
+            "deepest": 1,
+            "fit_quota_exhausted": false,
+            "fit_tests": 240,
+            "invalid_lineages": 0,
+            "largest_free_region": 0.3124033337815376,
+            "lineage_count": 24,
+            "node_quota_exhausted": false,
+            "nodes": 24,
+            "predicted_count": 1,
+            "predicted_volume": 0.11340000000000001,
+            "top_ranked_key": [
+              8,
+              16,
+              0,
+              0,
+              [
+                0.0031256,
+                -0.422,
+                0.193
+              ],
+              "normal"
+            ]
+          },
+          "total_seconds": 0.7513599100000192
+        }
+      ]
+    }
+  },
+  "generated_at_unix": 1787069421.574272,
+  "interpretation": {
+    "exact_mask_relaxation_supported": false,
+    "ranked_single_factor_hypotheses": [
+      "increase dense-rescue raw exposure only when the strict catalog is globally empty",
+      "make zero-root dense exposure adaptive and stop after the first exact root per occurrence",
+      "add earlier-state future-support avoidance only after candidate-exposure recovery is measured"
+    ],
+    "terminal_cause": "candidate_exposure_cap",
+    "terminal_selector_invoked": false
+  },
+  "placed_items_at_snapshot": 15,
+  "pool_size_at_snapshot": 10,
+  "run": {
+    "evaluation": {
+      "fill_score": 15.051133837261006,
+      "num_placed_items": 0.35714285714285715
+    },
+    "exception": {
+      "category": "candidate_zero",
+      "message": "strict root catalog is empty",
+      "step": 15,
+      "type": "CandidateZeroError"
+    },
+    "failure_step": 15,
+    "final_packed_count": 15,
+    "policy_count": 16,
+    "policy_max": 5.316662460000003,
+    "policy_p50": 5.305961201500011,
+    "policy_p95": 5.314548871500008,
+    "policy_p99": 5.316239742300004,
+    "safe_placements": 15,
+    "selector_candidate_quota_steps": 0,
+    "selector_deadline_steps": 13,
+    "selector_fit_quota_steps": 0,
+    "selector_node_quota_steps": 0,
+    "selector_trace_by_step": [
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 1356,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 2312,
+        "node_quota_exhausted": false,
+        "nodes": 312,
+        "step": 0
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 1050,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1944,
+        "node_quota_exhausted": false,
+        "nodes": 312,
+        "step": 1
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 771,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 3240,
+        "node_quota_exhausted": false,
+        "nodes": 225,
+        "step": 2
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 362,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 3672,
+        "node_quota_exhausted": false,
+        "nodes": 122,
+        "step": 3
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 24,
+        "deadline_reached": false,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 2496,
+        "node_quota_exhausted": false,
+        "nodes": 36,
+        "step": 4
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 327,
+        "deadline_reached": true,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1392,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 5
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 315,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 38,
+        "step": 6
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 339,
+        "deadline_reached": true,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1120,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 7
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 162,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 2872,
+        "node_quota_exhausted": false,
+        "nodes": 96,
+        "step": 8
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 147,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 2456,
+        "node_quota_exhausted": false,
+        "nodes": 96,
+        "step": 9
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 162,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 72,
+        "step": 10
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 5,
+        "deadline_reached": false,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1984,
+        "node_quota_exhausted": false,
+        "nodes": 28,
+        "step": 11
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 123,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 32,
+        "step": 12
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 120,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 44,
+        "step": 13
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 48,
+        "deadline_reached": true,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 2688,
+        "node_quota_exhausted": false,
+        "nodes": 60,
+        "step": 14
+      }
+    ],
+    "status": "candidate_zero"
+  },
+  "schema": "support-extreme-fusion-task18d-v1",
+  "selector_stage_profile": {
+    "elapsed_seconds": 5.305180095000026,
+    "input_root_count": 64,
+    "profile": {
+      "by_depth_lineage": {
+        "depth0:lineage-1": {
+          "depth0_fresh_apply_calls": 24,
+          "depth0_fresh_apply_outputs": 24,
+          "fair_prune_calls": 4,
+          "fair_prune_outputs": 112,
+          "from_sim_state_calls": 24,
+          "from_sim_state_outputs": 24,
+          "maximal_rectangles_calls": 2136,
+          "maximal_rectangles_outputs": 7250,
+          "metrics_calls": 108,
+          "metrics_outputs": 108,
+          "proxy_apply_calls": 84,
+          "proxy_apply_outputs": 84
+        },
+        "depth1:lineage0": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage1": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage10": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage11": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage12": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage13": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage14": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 366,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage15": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage16": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 438,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage17": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 438,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage18": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 438,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage19": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 369,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage2": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage20": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 369,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage21": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 369,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage22": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 369,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage23": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 430,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage3": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage4": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage5": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 363,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage6": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 3,
+          "candidates": 3,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 3,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 69,
+          "maximal_rectangles_outputs": 366,
+          "metrics_calls": 3,
+          "metrics_outputs": 3,
+          "proxy_apply_calls": 3,
+          "proxy_apply_outputs": 3,
+          "rank_maximal_rectangles_calls": 3,
+          "rank_maximal_rectangles_outputs": 54
+        },
+        "depth1:lineage7": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage8": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth1:lineage9": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 4,
+          "candidates": 4,
+          "enumerate_item_calls": 9,
+          "enumerate_item_outputs": 4,
+          "fit_tests": 72,
+          "maximal_rectangles_calls": 89,
+          "maximal_rectangles_outputs": 434,
+          "metrics_calls": 4,
+          "metrics_outputs": 4,
+          "proxy_apply_calls": 4,
+          "proxy_apply_outputs": 4,
+          "rank_maximal_rectangles_calls": 4,
+          "rank_maximal_rectangles_outputs": 72
+        },
+        "depth2:lineage15": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 0,
+          "candidates": 0,
+          "enumerate_item_calls": 8,
+          "enumerate_item_outputs": 0,
+          "fit_tests": 64,
+          "maximal_rectangles_calls": 8,
+          "maximal_rectangles_outputs": 168
+        },
+        "depth2:lineage23": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 0,
+          "candidates": 0,
+          "enumerate_item_calls": 6,
+          "enumerate_item_outputs": 0,
+          "fit_tests": 48,
+          "maximal_rectangles_calls": 6,
+          "maximal_rectangles_outputs": 126
+        },
+        "depth2:lineage7": {
+          "analyze_node_calls": 1,
+          "analyze_node_outputs": 0,
+          "candidates": 0,
+          "enumerate_item_calls": 8,
+          "enumerate_item_outputs": 0,
+          "fit_tests": 64,
+          "maximal_rectangles_calls": 8,
+          "maximal_rectangles_outputs": 168
+        }
+      },
+      "scheduling": [
+        {
+          "input_by_depth": {
+            "1": 24
+          },
+          "input_nodes": 24,
+          "output_by_depth": {
+            "1": 24
+          },
+          "output_by_lineage": {
+            "0": 1,
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "output_nodes": 24
+        },
+        {
+          "input_by_depth": {
+            "1": 24
+          },
+          "input_nodes": 24,
+          "output_by_depth": {
+            "1": 24
+          },
+          "output_by_lineage": {
+            "0": 1,
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 1,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 1,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 1,
+            "8": 1,
+            "9": 1
+          },
+          "output_nodes": 24
+        },
+        {
+          "input_by_depth": {
+            "2": 84
+          },
+          "input_nodes": 84,
+          "output_by_depth": {
+            "2": 32
+          },
+          "output_by_lineage": {
+            "0": 1,
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 4,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 3,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 4,
+            "8": 1,
+            "9": 1
+          },
+          "output_nodes": 32
+        },
+        {
+          "input_by_depth": {
+            "2": 32
+          },
+          "input_nodes": 32,
+          "output_by_depth": {
+            "2": 32
+          },
+          "output_by_lineage": {
+            "0": 1,
+            "1": 1,
+            "10": 1,
+            "11": 1,
+            "12": 1,
+            "13": 1,
+            "14": 1,
+            "15": 4,
+            "16": 1,
+            "17": 1,
+            "18": 1,
+            "19": 1,
+            "2": 1,
+            "20": 1,
+            "21": 1,
+            "22": 1,
+            "23": 3,
+            "3": 1,
+            "4": 1,
+            "5": 1,
+            "6": 1,
+            "7": 4,
+            "8": 1,
+            "9": 1
+          },
+          "output_nodes": 32
+        }
+      ],
+      "totals": {
+        "analyze_node": {
+          "calls": 27,
+          "outputs": 84,
+          "seconds": 3.1181623280000395
+        },
+        "depth0_fresh_apply": {
+          "calls": 24,
+          "outputs": 24,
+          "seconds": 0.05436985699992647
+        },
+        "enumerate_item": {
+          "calls": 238,
+          "outputs": 84,
+          "seconds": 1.12176928800028
+        },
+        "fair_prune": {
+          "calls": 4,
+          "outputs": 112,
+          "seconds": 0.00035422599995627024
+        },
+        "from_sim_state": {
+          "calls": 24,
+          "outputs": 24,
+          "seconds": 0.013502772999970603
+        },
+        "maximal_rectangles": {
+          "calls": 4054,
+          "outputs": 17314,
+          "seconds": 2.5797359839999103
+        },
+        "metrics": {
+          "calls": 192,
+          "outputs": 192,
+          "seconds": 3.6444626390003236
+        },
+        "proxy_apply": {
+          "calls": 168,
+          "outputs": 168,
+          "seconds": 0.1471599779998769
+        },
+        "rank_maximal_rectangles": {
+          "calls": 84,
+          "outputs": 1512,
+          "seconds": 0.3044416740001452
+        }
+      }
+    },
+    "returned_root_count": 24,
+    "selected": {
+      "container_index": 0,
+      "item_index": 23,
+      "min_clearance": 0.03963868660297379,
+      "orientation": 0,
+      "pass_name": "diagnostic_dense",
+      "pool_index": 8,
+      "position": [
+        -0.190025287320178,
+        -0.11263723368586165,
+        0.4249961875116506
+      ],
+      "sources": [
+        "dense_support_lattice"
+      ],
+      "stable_key": [
+        8,
+        23,
+        0,
+        0,
+        [
+          -0.1900253,
+          -0.1126372,
+          0.4249962
+        ],
+        "diagnostic_dense"
+      ],
+      "support_ratio": 0.800001107732713
+    },
+    "trace": {
+      "branch_exceptions": 0,
+      "candidate_quota_exhausted": false,
+      "candidates": 84,
+      "deadline_reached": true,
+      "deepest": 2,
+      "expanded_lineages": [
+        23,
+        7,
+        15,
+        19,
+        20,
+        21,
+        3,
+        4,
+        5,
+        11,
+        12,
+        13,
+        16,
+        17,
+        18,
+        0,
+        1,
+        2,
+        8,
+        9,
+        10,
+        22,
+        6,
+        14,
+        7,
+        15,
+        23
+      ],
+      "expanded_occurrences": [
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        5,
+        6,
+        7,
+        4,
+        6,
+        7,
+        4,
+        5,
+        7,
+        5,
+        6,
+        7,
+        4,
+        6,
+        7,
+        4,
+        5,
+        7,
+        5,
+        6,
+        7,
+        4,
+        6,
+        7,
+        4,
+        5,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        7,
+        4,
+        5,
+        6,
+        4,
+        5,
+        6,
+        4,
+        5,
+        6
+      ],
+      "fit_quota_exhausted": false,
+      "fit_tests": 1904,
+      "invalid_lineages": 0,
+      "largest_free_region": 0.2116464828723569,
+      "node_quota_exhausted": false,
+      "nodes": 108,
+      "predicted_count": 2,
+      "predicted_volume": 0.125925,
+      "ranked_keys": [
+        [
+          8,
+          23,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          8,
+          23,
+          0,
+          1,
+          [
+            0.0049754,
+            -0.0226355,
+            0.5249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          8,
+          23,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1576381,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ]
+      ],
+      "root_lineages": [
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          8,
+          23,
+          0,
+          0,
+          [
+            -0.1900253,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.0676364,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          8,
+          23,
+          0,
+          1,
+          [
+            0.0049754,
+            -0.0226355,
+            0.5249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          0,
+          7,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          1,
+          8,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          2,
+          9,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1576381,
+            0.4149962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          4,
+          17,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          5,
+          19,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          6,
+          21,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4199962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          7,
+          22,
+          0,
+          0,
+          [
+            -0.0600248,
+            -0.1126372,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ],
+        [
+          8,
+          23,
+          0,
+          0,
+          [
+            -0.125025,
+            -0.1576381,
+            0.4249962
+          ],
+          "diagnostic_dense"
+        ]
+      ]
+    }
+  },
+  "sources": {
+    "failure_snapshot": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-maxrects-regret-seed42-failure.npz",
+    "failure_snapshot_sha256": "6faec9292ce2a0197c6ed580e84f8537b23a0c92b8eafc5c6fcb86492ceed14d",
+    "run_json": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-maxrects-regret-seed42.json",
+    "run_json_sha256": "662871e313f2ebe5b4b5494c139a46a2445e2ffa885f32de6a48de06b7bdac12",
+    "step8_snapshot": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-seed42-failure.npz",
+    "step8_snapshot_sha256": "eaf7753f42403e5265554c3e9fdeb26711b718e372e5f8413f7a9edd1a1df82b"
+  },
+  "step8_metadata": {
+    "exception_category": "planning_error",
+    "exception_message": "B beam returned no root",
+    "exception_type": "PlanningError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 8,
+    "task": "001"
+  }
+}

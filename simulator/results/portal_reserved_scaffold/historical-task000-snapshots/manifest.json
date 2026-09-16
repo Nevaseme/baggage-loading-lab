@@ -1,0 +1,532 @@
+{
+  "action_sequence_sha256": "7ee567f2de74d1462be66e51375e2755b57cf987c31b3a2ca009404ac1ed2327",
+  "config_sha256": "f321c87bbd5c0b715e1f124e08620e50360634b274a2a38ee16b8be77dd19436",
+  "historical_source_sha256": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+  "requested_mode": "A",
+  "resolved_mode": "A",
+  "runner_sha256": "9a21ca63619617552b8c45650da2e79d0862d5e1ac84899cd3f193d526f612d3",
+  "seed": 42,
+  "snapshots": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.3970000147819519,
+          0.18299999833106995
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-000.npz",
+      "sha256": "68376ee3fedcacb78ee96854a0cc61d8b33c7a4401c3961624c6beb572982582",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 0
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.17299999296665192
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-001.npz",
+      "sha256": "36e314951416f77be4835a233fc7f7131edb2553dacd8cbcd4451a7e7072632b",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 1
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.18299999833106995
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-002.npz",
+      "sha256": "e88625759d38303cecadf2d149b20b47f7e5aa49ced1ee12dfef4b3640ea8198",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 2
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.3970000147819519,
+          0.45899999141693115
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-003.npz",
+      "sha256": "d2566867c9846bbdc59b800094ca5fc8e9e3c67083790a065db906333a15b2c7",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 3
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.42899999022483826
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-004.npz",
+      "sha256": "ab1d4354908e3037e04b18eb752bf923fb69c834c6d75b1e5f5fbb0d2b719a95",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 4
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.17299999296665192
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-005.npz",
+      "sha256": "0577c4b970a288cdfa7594bcb7e6e13fb3cbf1fca8378869e5c1b8652130248f",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 5
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.45899999141693115
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-006.npz",
+      "sha256": "b6367fe130f818afa1b9127d861e1b8d1db2141a7509e60f59d2dd94c197fbd4",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 6
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.4519999921321869,
+          0.7249999642372131
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-007.npz",
+      "sha256": "1c1d906e001eebda30138e7ca43700271abb2c77dc3ea731f17030838c890541",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 7
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.6850000023841858
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-008.npz",
+      "sha256": "6081eb058c7496a4004fe19ed179dd9d85b0b9bcc7ae4daac08571bbe1913af7",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 8
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.42899999022483826
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-009.npz",
+      "sha256": "026cb9e1ef99f805ed5cb8ba8f60a571eaef4981406dfeafbe4a7e9aad8bf326",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 9
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.6850000023841858
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-010.npz",
+      "sha256": "8041909c0af48d11b4838c9044edf4869d61fcd9d1865825166f07cc7b747f49",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 10
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.7250000238418579
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-011.npz",
+      "sha256": "3fa4c2d4aa96333ed34e67b8a5aacc5a301f98f7038417c0c5c95edc496ccff7",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 11
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -6.009154731145827e-06,
+          0.4519999921321869,
+          0.960960328578949
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-012.npz",
+      "sha256": "20a8b6b002aedd2476eb847e92a70935ff2ac45b482a472d78683ba1684bfd30",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 12
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6178341507911682,
+          0.3520432412624359,
+          0.9159500002861023
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-013.npz",
+      "sha256": "15169ee431485eb081e9835458488847793c4c6f750f4194ece451e7f29739ef",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 13
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          -0.7519999742507935,
+          -0.5649999976158142,
+          1.1380000114440918
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-014.npz",
+      "sha256": "d0476a8b4933ec34add886653923c941c7059972b420071d293b2984772a1027",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 14
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0004301285953260958,
+          0.47699999809265137,
+          1.2059123516082764
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-015.npz",
+      "sha256": "e608a01959763fcc677a6e212f401caf2368458d597c6d4d6fe68c1574a8a229",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 15
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5848402380943298,
+          0.4020000100135803,
+          1.1559535264968872
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-016.npz",
+      "sha256": "581123572fb9fb80094996be27f331c177d92206677648cfec1ebacc51d6eca2",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 16
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          0.0,
+          -0.5849999785423279,
+          0.1979999989271164
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-017.npz",
+      "sha256": "48c44cac34b52a4e0fb9ef15bc0ed2a6a4e4827e7917925e16876050b1e52119",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 17
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          -0.7269999980926514,
+          -0.004000000189989805,
+          1.187999963760376
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-018.npz",
+      "sha256": "b41649c5d8481cfff9b99713d1cd33865a3f3199006aa502df7f2cb2cee1caba",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 18
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5555762052536011,
+          0.35199999809265137,
+          1.400926947593689
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-019.npz",
+      "sha256": "75ac8c74ae0328547e6ee62098b12bb1fd007c318624fea1ef8821b0225fd983",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 19
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          0.9159415364265442
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-020.npz",
+      "sha256": "dc06dce9859211fbf19c12a1919a791b79f5614c9aa4ed723136dce8163fa0a7",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 20
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          1.1558876037597656
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-021.npz",
+      "sha256": "081c43746e57aba99b385fac0ed38431af84d3b3dd8200988f50903c3e6d7a37",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 21
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          1.395804762840271
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-022.npz",
+      "sha256": "c20c9fbb46ea8b2a3c971a0c66cd662a2700af7ccd0b1901dc28df1638347b20",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 22
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.00042188609950244427,
+          -0.18164405226707458,
+          0.9559730887413025
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-023.npz",
+      "sha256": "19722907ea03f993102242efa4f543f1d36bdd7a91181d92ba452e242f05f481",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 23
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.00045620344462804496,
+          -0.15835769474506378,
+          1.1959607601165771
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-024.npz",
+      "sha256": "cb62ba5f11574b3fc6cc3bff4f61149d9d6e15b17d746d9c323666952cd5aa80",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 24
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.47699999809265137,
+          0.1720000058412552
+        ]
+      },
+      "path": "simulator/results/portal_reserved_scaffold/historical-task000-snapshots/step-025.npz",
+      "sha256": "f9bb8f8419c6b503fb703eac0cbcb34e78c794def1886266ac62f60ef67b52b1",
+      "status": {
+        "is_included": true,
+        "is_placed_safe": false,
+        "is_valid": false
+      },
+      "step": 25
+    }
+  ],
+  "task": "000"
+}

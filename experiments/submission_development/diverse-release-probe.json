@@ -1,0 +1,198 @@
+{
+  "action": {
+    "item_idx": 0,
+    "container_idx": 0,
+    "orientation": 0,
+    "place_pos": [
+      0.010671843774616718,
+      -0.43568849563598633,
+      1.0647382736206055
+    ]
+  },
+  "native": {
+    "included": true,
+    "plane_max_dot": -0.12431150436401367,
+    "target_clear": true,
+    "transport": true,
+    "effective_lift": 0.08,
+    "path_z": 1.1447382736206055,
+    "start_x": 0.010671843774616718,
+    "samples": 36,
+    "failure_segment": null,
+    "failure_distance": null,
+    "deadline_exceeded": false,
+    "seconds": 0.01902586900000003
+  },
+  "preview": {
+    "safe": true,
+    "displacement": 0.25781312185271676,
+    "angle_degrees": 7.491465074349905,
+    "final_position": [
+      -0.16807258777313044,
+      -0.37961030832607895,
+      0.8876132587352104
+    ],
+    "final_orientation": [
+      -0.06196529051987531,
+      -0.01128014116685517,
+      0.017346879883607776,
+      0.9978637917793926
+    ],
+    "seconds": 2.4029442770000013,
+    "steps": 300,
+    "deadline_exceeded": false,
+    "previously_inside": 17,
+    "newly_outside": [],
+    "lost_volume": 0.0,
+    "max_previous_displacement": 0.3701730695658462,
+    "inclusion_margin": -0.005,
+    "previous_motion": [
+      {
+        "index": 13,
+        "linear_speed": 0.25089579649215704,
+        "angular_speed": 0.1684257951891393,
+        "displacement": 0.3701730695658462
+      },
+      {
+        "index": 12,
+        "linear_speed": 0.171681660204008,
+        "angular_speed": 0.22974720045438332,
+        "displacement": 0.3027316821385273
+      },
+      {
+        "index": 23,
+        "linear_speed": 0.05730721675645656,
+        "angular_speed": 0.10366842526051921,
+        "displacement": 0.07322633753551946
+      },
+      {
+        "index": 17,
+        "linear_speed": 0.05299720453914635,
+        "angular_speed": 0.11933828573104663,
+        "displacement": 0.0756626975024909
+      },
+      {
+        "index": 22,
+        "linear_speed": 0.03398199083620688,
+        "angular_speed": 0.08604532646671671,
+        "displacement": 0.0655215397737486
+      },
+      {
+        "index": 27,
+        "linear_speed": 0.021698067731712123,
+        "angular_speed": 0.08290135435384659,
+        "displacement": 0.01984059827131584
+      },
+      {
+        "index": 8,
+        "linear_speed": 0.01609535354658592,
+        "angular_speed": 0.04154769487583376,
+        "displacement": 0.04949750568624389
+      },
+      {
+        "index": 9,
+        "linear_speed": 0.008160792495845465,
+        "angular_speed": 0.04462029505494412,
+        "displacement": 0.003665537341632358
+      },
+      {
+        "index": 0,
+        "linear_speed": 0.0035180167846739037,
+        "angular_speed": 0.009341728250235552,
+        "displacement": 0.02974612491786787
+      },
+      {
+        "index": 7,
+        "linear_speed": 0.002222551744495251,
+        "angular_speed": 0.0005859812049209303,
+        "displacement": 0.0018405935961089005
+      },
+      {
+        "index": 15,
+        "linear_speed": 0.0002351482063387612,
+        "angular_speed": 0.0003315869981406962,
+        "displacement": 0.001020778643646959
+      },
+      {
+        "index": 6,
+        "linear_speed": 0.0001361780303619583,
+        "angular_speed": 0.0010759518524841155,
+        "displacement": 0.0010024329923703779
+      },
+      {
+        "index": 20,
+        "linear_speed": 0.00012322441448224801,
+        "angular_speed": 0.00034548972963885366,
+        "displacement": 4.800448530647237e-06
+      },
+      {
+        "index": 10,
+        "linear_speed": 7.15109116147029e-05,
+        "angular_speed": 0.00138088741260126,
+        "displacement": 0.0009945429435637102
+      },
+      {
+        "index": 2,
+        "linear_speed": 7.082512510145959e-05,
+        "angular_speed": 0.0005102168354203909,
+        "displacement": 0.0009943389239763906
+      },
+      {
+        "index": 16,
+        "linear_speed": 4.839763887429175e-05,
+        "angular_speed": 0.0002954354432639894,
+        "displacement": 2.3868078678191783e-06
+      },
+      {
+        "index": 1,
+        "linear_speed": 2.301795801829703e-05,
+        "angular_speed": 6.746821315324768e-05,
+        "displacement": 0.001015398821617977
+      },
+      {
+        "index": 19,
+        "linear_speed": 9.50973448406281e-06,
+        "angular_speed": 8.482558041310076e-05,
+        "displacement": 5.039142623115999e-06
+      },
+      {
+        "index": 3,
+        "linear_speed": 6.9192799298504485e-06,
+        "angular_speed": 0.00010202117933007876,
+        "displacement": 4.636772251746043e-06
+      },
+      {
+        "index": 11,
+        "linear_speed": 3.549913430874035e-06,
+        "angular_speed": 5.7508274735595174e-05,
+        "displacement": 8.905838534638734e-06
+      },
+      {
+        "index": 5,
+        "linear_speed": 3.141034513139555e-06,
+        "angular_speed": 1.0441860985454199e-05,
+        "displacement": 0.0010001148158727071
+      },
+      {
+        "index": 4,
+        "linear_speed": 2.717713023566713e-06,
+        "angular_speed": 3.093814204567916e-05,
+        "displacement": 1.916464657289239e-06
+      }
+    ],
+    "inferred_velocity_count": 22,
+    "motion_residual_gain": 0.0
+  },
+  "source_hashes": {
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "ab4cc2078e90e6cd30e3001f020103a16d267c0dd7d8d4521171b13f346c6c01",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "mesh.py": "d979764cddda924defcc9d7da5ab2f7d428de509dd74eac962eacb3931787a37",
+    "motion.py": "eec238be877e1655cae82c83f593eaf71794d4c31359f522cecb691b2902e7bc",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "a00d17b909162d07e9a32720246534da9ff3757dc43fbbc738d1dd48edd86d94"
+  },
+  "snapshot_sha256": "b933627106d1ce24aed07e03bf48fdb7b42497c39e236ad5285e8ca68d75859c"
+}

@@ -1,0 +1,152 @@
+{
+  "agent_module": "agents.support_extreme_fusion_beam_exact_mask.agent",
+  "all_safe": false,
+  "completed_steps": 5,
+  "effective_items": 42,
+  "evaluation": {
+    "fill_score": 4.414925151919372,
+    "num_placed_items": 0.11904761904761904
+  },
+  "exception": {
+    "category": "candidate_zero",
+    "message": "strict root catalog is empty",
+    "step": 5,
+    "type": "CandidateZeroError"
+  },
+  "failure_snapshot": {
+    "path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-c-seed42-failure.npz",
+    "sha256": "0cfdbdcceaced046b6234a762fd9a192a9f1d913ed71be50ce7b281f90e6cca4"
+  },
+  "final_packed_count": 5,
+  "first_failure_predicate": null,
+  "first_failure_status": null,
+  "first_failure_step": null,
+  "outcome": "candidate_zero",
+  "policy_time_seconds": {
+    "count": 6,
+    "max": 5.486672377999994,
+    "p50": 1.1925324165000006,
+    "p95": 4.581414561749995,
+    "p99": 5.305620814749995
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.2221941351890564,
+          0.5270000100135803,
+          0.17299999296665192
+        ]
+      },
+      "policy_seconds": 0.14234417500000518,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.3958077132701874,
+          0.5019999742507935,
+          0.17800000309944153
+        ]
+      },
+      "policy_seconds": 0.6197624020000063,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.4458416998386383,
+          0.47699999809265137,
+          0.41499757766723633
+        ]
+      },
+      "policy_seconds": 1.1270158890000062,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.39584168791770935,
+          0.5018280744552612,
+          1.0019999742507935
+        ]
+      },
+      "policy_seconds": 1.2580489439999951,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.39584049582481384,
+          0.501829206943512,
+          1.2199909687042236
+        ]
+      },
+      "policy_seconds": 1.8656411129999952,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    }
+  ],
+  "requested_items": 42,
+  "requested_mode": "C",
+  "resolved_mode": "C",
+  "safe_placements": 5,
+  "seed": 42,
+  "task": "001",
+  "terminated": false,
+  "truncated": false
+}

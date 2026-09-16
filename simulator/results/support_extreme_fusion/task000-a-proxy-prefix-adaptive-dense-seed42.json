@@ -1,0 +1,2060 @@
+{
+  "a_candidate_rescue": "global-zero-adaptive-dense-12288",
+  "a_candidate_rescue_settings": {
+    "covered_occurrence_target": 8,
+    "effective": "global-zero-adaptive-dense-12288",
+    "enabled": true,
+    "output_reserve_seconds": 0.75,
+    "raw_work_limit": 12288,
+    "requested": "global-zero-adaptive-dense-12288"
+  },
+  "a_order_fallback": "proxy-prefix",
+  "a_order_fallback_settings": {
+    "effective": "proxy-prefix",
+    "enabled": true,
+    "requested": "proxy-prefix"
+  },
+  "agent_module": "agents.support_extreme_fusion_beam_exact_mask.agent",
+  "all_safe": false,
+  "b_planner": "beam",
+  "b_planner_settings": {
+    "effective": "beam",
+    "enabled": false,
+    "requested": "beam"
+  },
+  "b_rank_objective": "legacy",
+  "b_rank_objective_settings": {
+    "effective": "legacy",
+    "enabled": false,
+    "requested": "legacy"
+  },
+  "candidate_rescue": "legacy",
+  "candidate_rescue_settings": {
+    "effective": "legacy",
+    "enabled": false,
+    "requested": "legacy"
+  },
+  "completed_steps": 15,
+  "diagnostic": {
+    "adaptive_dense_scans": [
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 14,
+        "first_root_stage": [
+          "normal.free_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          14
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 14,
+        "rejection_counts": [
+          [
+            "support_ratio",
+            6
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            1
+          ],
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.plane_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            11
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.free_probe",
+            1
+          ],
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.plane_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            5
+          ]
+        ],
+        "step": 0
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 79,
+        "first_root_stage": [
+          "normal.free_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          79
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 79,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            31
+          ],
+          [
+            "plane_inclusion",
+            2
+          ],
+          [
+            "support_ratio",
+            16
+          ],
+          [
+            "transport",
+            22
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            11
+          ],
+          [
+            "normal.obstacle_probe",
+            9
+          ],
+          [
+            "normal.plane_probe",
+            7
+          ],
+          [
+            "normal.free_deepen",
+            52
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.free_probe",
+            1
+          ],
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.plane_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            5
+          ]
+        ],
+        "step": 1
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 94,
+        "first_root_stage": [
+          "normal.free_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          94
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 94,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            55
+          ],
+          [
+            "support_ratio",
+            17
+          ],
+          [
+            "transport",
+            14
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            11
+          ],
+          [
+            "normal.obstacle_probe",
+            9
+          ],
+          [
+            "normal.plane_probe",
+            10
+          ],
+          [
+            "normal.free_deepen",
+            64
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.free_probe",
+            1
+          ],
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.plane_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            5
+          ]
+        ],
+        "step": 2
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 181,
+        "first_root_stage": [
+          "normal.free_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          181
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 181,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            136
+          ],
+          [
+            "plane_inclusion",
+            1
+          ],
+          [
+            "support_ratio",
+            18
+          ],
+          [
+            "transport",
+            18
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            11
+          ],
+          [
+            "normal.obstacle_probe",
+            9
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            39
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.free_probe",
+            1
+          ],
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            5
+          ],
+          [
+            "normal.obstacle_deepen",
+            1
+          ]
+        ],
+        "step": 3
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 283,
+        "first_root_stage": [
+          "normal.obstacle_deepen"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          283
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 283,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            206
+          ],
+          [
+            "support_ratio",
+            59
+          ],
+          [
+            "transport",
+            10
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            15
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            100
+          ],
+          [
+            "normal.obstacle_deepen",
+            102
+          ],
+          [
+            "normal.plane_deepen",
+            34
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.obstacle_deepen",
+            5
+          ],
+          [
+            "normal.plane_deepen",
+            3
+          ]
+        ],
+        "step": 4
+      },
+      {
+        "accepted_roots": 3,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 443,
+        "first_root_stage": [
+          "normal.plane_deepen"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 3,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          443
+        ],
+        "per_pool_roots": [
+          3
+        ],
+        "raw_examined": 443,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            311
+          ],
+          [
+            "plane_inclusion",
+            14
+          ],
+          [
+            "support_ratio",
+            60
+          ],
+          [
+            "transport",
+            55
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            15
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            100
+          ],
+          [
+            "normal.obstacle_deepen",
+            103
+          ],
+          [
+            "normal.plane_deepen",
+            61
+          ],
+          [
+            "normal.compact",
+            24
+          ],
+          [
+            "normal.legacy",
+            108
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.plane_deepen",
+            2
+          ],
+          [
+            "normal.compact",
+            1
+          ]
+        ],
+        "step": 5
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 288,
+        "first_root_stage": [
+          "normal.obstacle_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          288
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 288,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            223
+          ],
+          [
+            "plane_inclusion",
+            13
+          ],
+          [
+            "support_ratio",
+            38
+          ],
+          [
+            "transport",
+            6
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            11
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            104
+          ],
+          [
+            "normal.obstacle_deepen",
+            104
+          ],
+          [
+            "normal.plane_deepen",
+            37
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            2
+          ],
+          [
+            "normal.obstacle_deepen",
+            4
+          ],
+          [
+            "normal.plane_deepen",
+            1
+          ]
+        ],
+        "step": 6
+      },
+      {
+        "accepted_roots": 8,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 230,
+        "first_root_stage": [
+          "normal.obstacle_probe"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 8,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          230
+        ],
+        "per_pool_roots": [
+          8
+        ],
+        "raw_examined": 230,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            193
+          ],
+          [
+            "plane_inclusion",
+            5
+          ],
+          [
+            "support_ratio",
+            16
+          ],
+          [
+            "transport",
+            8
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            11
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            104
+          ],
+          [
+            "normal.obstacle_deepen",
+            83
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.obstacle_probe",
+            1
+          ],
+          [
+            "normal.free_deepen",
+            2
+          ],
+          [
+            "normal.obstacle_deepen",
+            5
+          ]
+        ],
+        "step": 7
+      },
+      {
+        "accepted_roots": 3,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 487,
+        "first_root_stage": [
+          "normal.obstacle_deepen"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 3,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          487
+        ],
+        "per_pool_roots": [
+          3
+        ],
+        "raw_examined": 487,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            356
+          ],
+          [
+            "plane_inclusion",
+            42
+          ],
+          [
+            "support_ratio",
+            38
+          ],
+          [
+            "transport",
+            48
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            108
+          ],
+          [
+            "normal.compact",
+            24
+          ],
+          [
+            "normal.legacy",
+            101
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.obstacle_deepen",
+            2
+          ],
+          [
+            "normal.plane_deepen",
+            1
+          ]
+        ],
+        "step": 8
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [
+          0
+        ],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [
+          0
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 492,
+        "first_root_stage": [
+          "normal.plane_deepen"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 1,
+        "passes_completed": [
+          "coverage",
+          "scarcity"
+        ],
+        "per_pool_raw": [
+          492
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 492,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            375
+          ],
+          [
+            "plane_inclusion",
+            45
+          ],
+          [
+            "support_ratio",
+            26
+          ],
+          [
+            "transport",
+            45
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            108
+          ],
+          [
+            "normal.compact",
+            24
+          ],
+          [
+            "normal.legacy",
+            106
+          ]
+        ],
+        "stage_roots": [
+          [
+            "normal.plane_deepen",
+            1
+          ]
+        ],
+        "step": 9
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 1,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": true,
+        "adaptive_dense_exact_attempts": 727,
+        "adaptive_dense_exact_per_pool": [
+          727
+        ],
+        "adaptive_dense_raw_generated": 7986,
+        "adaptive_dense_raw_per_pool": [
+          7986
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 1223,
+        "first_root_stage": [
+          "adaptive.dense_global_zero"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          1223
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 1223,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            747
+          ],
+          [
+            "plane_inclusion",
+            287
+          ],
+          [
+            "support_ratio",
+            121
+          ],
+          [
+            "transport",
+            67
+          ]
+        ],
+        "rescue_roots": 1,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            102
+          ],
+          [
+            "adaptive.dense_global_zero",
+            727
+          ]
+        ],
+        "stage_roots": [
+          [
+            "adaptive.dense_global_zero",
+            1
+          ]
+        ],
+        "step": 10
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 1,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": true,
+        "adaptive_dense_exact_attempts": 650,
+        "adaptive_dense_exact_per_pool": [
+          650
+        ],
+        "adaptive_dense_raw_generated": 8712,
+        "adaptive_dense_raw_per_pool": [
+          8712
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 1144,
+        "first_root_stage": [
+          "adaptive.dense_global_zero"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          1144
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 1144,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            718
+          ],
+          [
+            "plane_inclusion",
+            287
+          ],
+          [
+            "support_ratio",
+            77
+          ],
+          [
+            "transport",
+            61
+          ]
+        ],
+        "rescue_roots": 1,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            100
+          ],
+          [
+            "adaptive.dense_global_zero",
+            650
+          ]
+        ],
+        "stage_roots": [
+          [
+            "adaptive.dense_global_zero",
+            1
+          ]
+        ],
+        "step": 11
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 1,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": true,
+        "adaptive_dense_exact_attempts": 576,
+        "adaptive_dense_exact_per_pool": [
+          576
+        ],
+        "adaptive_dense_raw_generated": 9438,
+        "adaptive_dense_raw_per_pool": [
+          9438
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 1066,
+        "first_root_stage": [
+          "adaptive.dense_global_zero"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          1066
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 1066,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            660
+          ],
+          [
+            "plane_inclusion",
+            287
+          ],
+          [
+            "support_ratio",
+            53
+          ],
+          [
+            "transport",
+            65
+          ]
+        ],
+        "rescue_roots": 1,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            96
+          ],
+          [
+            "adaptive.dense_global_zero",
+            576
+          ]
+        ],
+        "stage_roots": [
+          [
+            "adaptive.dense_global_zero",
+            1
+          ]
+        ],
+        "step": 12
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 1,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": true,
+        "adaptive_dense_exact_attempts": 536,
+        "adaptive_dense_exact_per_pool": [
+          536
+        ],
+        "adaptive_dense_raw_generated": 10164,
+        "adaptive_dense_raw_per_pool": [
+          10164
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 1038,
+        "first_root_stage": [
+          "adaptive.dense_global_zero"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          1038
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 1038,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            664
+          ],
+          [
+            "plane_inclusion",
+            287
+          ],
+          [
+            "support_ratio",
+            21
+          ],
+          [
+            "transport",
+            65
+          ]
+        ],
+        "rescue_roots": 1,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            101
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            107
+          ],
+          [
+            "adaptive.dense_global_zero",
+            536
+          ]
+        ],
+        "stage_roots": [
+          [
+            "adaptive.dense_global_zero",
+            1
+          ]
+        ],
+        "step": 13
+      },
+      {
+        "accepted_roots": 1,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 1,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": true,
+        "adaptive_dense_exact_attempts": 3343,
+        "adaptive_dense_exact_per_pool": [
+          3343
+        ],
+        "adaptive_dense_raw_generated": 7986,
+        "adaptive_dense_raw_per_pool": [
+          7986
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 3833,
+        "first_root_stage": [
+          "adaptive.dense_global_zero"
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          3833
+        ],
+        "per_pool_roots": [
+          1
+        ],
+        "raw_examined": 3833,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            2324
+          ],
+          [
+            "plane_inclusion",
+            1145
+          ],
+          [
+            "support_ratio",
+            289
+          ],
+          [
+            "transport",
+            74
+          ]
+        ],
+        "rescue_roots": 1,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            96
+          ],
+          [
+            "adaptive.dense_global_zero",
+            3343
+          ]
+        ],
+        "stage_roots": [
+          [
+            "adaptive.dense_global_zero",
+            1
+          ]
+        ],
+        "step": 14
+      },
+      {
+        "accepted_roots": 0,
+        "adaptive_dense_activated": true,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 8556,
+        "adaptive_dense_exact_per_pool": [
+          8556
+        ],
+        "adaptive_dense_raw_generated": 8712,
+        "adaptive_dense_raw_per_pool": [
+          8712
+        ],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 9064,
+        "first_root_stage": [
+          null
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "adaptive_rescue"
+        ],
+        "per_pool_raw": [
+          9064
+        ],
+        "per_pool_roots": [
+          0
+        ],
+        "raw_examined": 9064,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            5765
+          ],
+          [
+            "depth_map",
+            32
+          ],
+          [
+            "plane_inclusion",
+            3079
+          ],
+          [
+            "protection",
+            6
+          ],
+          [
+            "support_ratio",
+            182
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            16
+          ],
+          [
+            "normal.obstacle_probe",
+            16
+          ],
+          [
+            "normal.plane_probe",
+            16
+          ],
+          [
+            "normal.free_deepen",
+            106
+          ],
+          [
+            "normal.obstacle_deepen",
+            100
+          ],
+          [
+            "normal.plane_deepen",
+            112
+          ],
+          [
+            "normal.compact",
+            28
+          ],
+          [
+            "normal.legacy",
+            114
+          ],
+          [
+            "adaptive.dense_global_zero",
+            8556
+          ]
+        ],
+        "stage_roots": [],
+        "step": 15
+      }
+    ],
+    "b_search_traces": []
+  },
+  "effective_items": 41,
+  "evaluation": {
+    "fill_score": 13.117747648101709,
+    "num_placed_items": 0.36585365853658536
+  },
+  "exception": {
+    "category": "candidate_zero",
+    "message": "strict root catalog is empty",
+    "step": 15,
+    "type": "CandidateZeroError"
+  },
+  "failure_snapshot": {
+    "path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task000-a-proxy-prefix-adaptive-dense-seed42-failure.npz",
+    "sha256": "369a0db12e3bb42f6f2d337dbe4ef6d772280ae6eba9047d58af572545a83cf2"
+  },
+  "final_packed_count": 15,
+  "first_failure_predicate": null,
+  "first_failure_status": null,
+  "first_failure_step": null,
+  "mode_a_order_fallback_trace": {
+    "seed_lane": 1,
+    "selected_depth": 8
+  },
+  "mode_a_plan_trace": null,
+  "optimize_time_seconds": 43.36824361400001,
+  "optimized_order": [
+    3,
+    17,
+    21,
+    33,
+    1,
+    28,
+    5,
+    2,
+    9,
+    11,
+    19,
+    20,
+    22,
+    23,
+    35,
+    39,
+    0,
+    4,
+    6,
+    10,
+    12,
+    18,
+    24,
+    27,
+    29,
+    32,
+    36,
+    38,
+    8,
+    13,
+    30,
+    14,
+    16,
+    31,
+    34,
+    40,
+    15,
+    25,
+    26,
+    37,
+    7
+  ],
+  "outcome": "candidate_zero",
+  "policy_time_seconds": {
+    "count": 16,
+    "max": 0.8114283710000052,
+    "p50": 0.08233725650000423,
+    "p95": 0.5348984180000187,
+    "p99": 0.7561223804000078
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.16644287109375,
+          -0.3970000147819519,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 0.024645996999993258,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.8169999718666077,
+          0.3970000147819519,
+          0.4230000078678131
+        ]
+      },
+      "policy_seconds": 0.0359918579999885,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.6829450130462646,
+          -0.3970000147819519,
+          0.4230000078678131
+        ]
+      },
+      "policy_seconds": 0.042372587999992106,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.36099234223365784,
+          0.3970000147819519,
+          0.4230000078678131
+        ]
+      },
+      "policy_seconds": 0.05352681399999426,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.7519999742507935,
+          -0.14992381632328033,
+          1.0670000314712524
+        ]
+      },
+      "policy_seconds": 0.0737854260000006,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          -0.7519999742507935,
+          0.47699999809265137,
+          1.1169999837875366
+        ]
+      },
+      "policy_seconds": 0.08110163699998907,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 5,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.8270000219345093,
+          0.4519999921321869,
+          1.1149929761886597
+        ]
+      },
+      "policy_seconds": 0.08162674500000833,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 6,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 5,
+        "place_pos": [
+          0.3610953092575073,
+          -0.4519999921321869,
+          0.1979999989271164
+        ]
+      },
+      "policy_seconds": 0.05256316400000571,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 7,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.3509923219680786,
+          0.4519999921321869,
+          1.1149990558624268
+        ]
+      },
+      "policy_seconds": 0.08954506000000606,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 8,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          -0.7269999980926514,
+          -0.5519999861717224,
+          1.1920000314712524
+        ]
+      },
+      "policy_seconds": 0.08304776800000013,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 9,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.14832237362861633,
+          -0.2508067190647125,
+          0.43499472737312317
+        ]
+      },
+      "policy_seconds": 0.35731645199999207,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 10,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.14831732213497162,
+          -0.1536557674407959,
+          0.6849833726882935
+        ]
+      },
+      "policy_seconds": 0.2749151929999982,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 11,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.14818038046360016,
+          -0.06363604962825775,
+          0.934961199760437
+        ]
+      },
+      "policy_seconds": 0.29311885699999607,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 12,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.14768436551094055,
+          0.02705814130604267,
+          1.1849154233932495
+        ]
+      },
+      "policy_seconds": 0.3155035679999969,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 13,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          0.6829545497894287,
+          -0.25099772214889526,
+          1.1149924993515015
+        ]
+      },
+      "policy_seconds": 0.4427217670000232,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 14,
+      "terminated": false,
+      "truncated": false
+    }
+  ],
+  "requested_items": 41,
+  "requested_mode": "A",
+  "resolved_mode": "A",
+  "safe_placements": 15,
+  "seed": 42,
+  "task": "000",
+  "terminated": false,
+  "truncated": false
+}

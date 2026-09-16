@@ -1,0 +1,113 @@
+{
+  "source_hashes": {
+    "agent.py": "006b965fbafd235fa093227169210c1694f5a337883e21cefa8097dce2cf10b6",
+    "authorizer.py": "d324c70ac36c15871c782d7b987c5d44363ccc954868dc54583fc7a72ac7a441",
+    "candidates.py": "f91c58df5d8b18c2cf43a1958024b52c0c63a983c716adf86c5b6c23e9a45466",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "preview.py": "2690714a50f5ed48ee8800cbbc866b59eab8ca62c05f274aa7de4da243f4426f",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+  "actual_failure": {
+    "step": 17,
+    "action": {
+      "item_idx": 0,
+      "container_idx": 0,
+      "place_pos": [
+        0.5826834440231323,
+        -0.2478378713130951,
+        1.033853530883789
+      ],
+      "orientation": 0
+    },
+    "status": {
+      "is_included": true,
+      "is_valid": true,
+      "is_placed_safe": false
+    },
+    "policy_seconds": 3.3461283979999052,
+    "terminated": true,
+    "truncated": false
+  },
+  "trials": [
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ],
+        "orientation": 0
+      },
+      "safe": true,
+      "displacement": 0.1896641094764806,
+      "angle_degrees": 10.290445426464263,
+      "final_position": [
+        0.422959685981614,
+        -0.20737435529447354,
+        0.939920046907032
+      ],
+      "final_orientation": [
+        -0.01647938860622661,
+        -0.08810892699524145,
+        0.0027975328147885814,
+        0.9959705922089579
+      ],
+      "seconds": 0.8369549530000313,
+      "steps": 150,
+      "previously_inside": 15,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.039516320978104286,
+      "inclusion_margin": 0.01
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ],
+        "orientation": 0
+      },
+      "safe": false,
+      "displacement": 0.4711238923477874,
+      "angle_degrees": 22.861214261231176,
+      "final_position": [
+        0.15253029179422292,
+        -0.1496714122898531,
+        0.8686586947317457
+      ],
+      "final_orientation": [
+        -0.01628876013071673,
+        -0.19748540907845077,
+        0.0031441526024682254,
+        0.9801654471562101
+      ],
+      "seconds": 1.6507124199999907,
+      "steps": 300,
+      "previously_inside": 15,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.03980193181504901,
+      "inclusion_margin": 0.01
+    }
+  ],
+  "recovery": {
+    "outcome": "NoValidAction",
+    "error": "No authorized candidate: {'candidate_checks': 32, 'combinations_visited': 32, 'authorizations': 0, 'rejections': {}, 'previews': [], 'elapsed': 1.5225734160000002}",
+    "seconds": 1.523096172999999,
+    "diagnostics": {
+      "candidate_checks": 32,
+      "combinations_visited": 32,
+      "authorizations": 0,
+      "rejections": {},
+      "previews": [],
+      "elapsed": 1.5225734160000002
+    }
+  }
+}

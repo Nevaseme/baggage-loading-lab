@@ -1,0 +1,1297 @@
+transport item 3
+place item 3
+item 3 not inside (hit boundary plane), [ 9.55408206e-06 -5.84843587e-01 -1.53000955e+00 -1.33515641e+00
+ -6.18644811e-01 -1.40175206e+00 -8.24793934e-03]
+transport item 5
+place item 5
+item 3 not inside (hit boundary plane), [ 9.68566512e-06 -5.84843556e-01 -1.53000969e+00 -1.33515644e+00
+ -6.18644734e-01 -1.40175126e+00 -8.24873588e-03]
+item 5 not inside (hit boundary plane), [ 9.04017629e-06 -5.67082812e-01 -1.53000904e+00 -1.35291719e+00
+ -6.30592381e-01 -1.40281859e+00 -7.18140662e-03]
+transport item 17
+place item 17
+item 3 not inside (hit boundary plane), [ 9.74772674e-06 -5.84843513e-01 -1.53000975e+00 -1.33515649e+00
+ -6.18644717e-01 -1.40174968e+00 -8.25032200e-03]
+item 5 not inside (hit boundary plane), [ 9.03712146e-06 -5.67082813e-01 -1.53000904e+00 -1.35291719e+00
+ -6.30592382e-01 -1.40281859e+00 -7.18140952e-03]
+item 17 not inside (hit boundary plane), [ 8.42251562e-06 -5.85387775e-01 -1.53000842e+00 -1.33461222e+00
+ -6.18279587e-01 -8.24832979e-01 -5.85167021e-01]
+transport item 21
+place item 21
+item 3 not inside (hit boundary plane), [ 2.69408561e-05 -5.84840719e-01 -1.53002694e+00 -1.33515928e+00
+ -6.18633875e-01 -1.40175124e+00 -8.24875537e-03]
+item 5 not inside (hit boundary plane), [ 9.03375142e-06 -5.67082815e-01 -1.53000903e+00 -1.35291719e+00
+ -6.30592384e-01 -1.40281859e+00 -7.18141240e-03]
+item 17 not inside (hit boundary plane), [ 8.42257305e-06 -5.85387775e-01 -1.53000842e+00 -1.33461222e+00
+ -6.18279587e-01 -8.24832979e-01 -5.85167021e-01]
+transport item 9
+place item 9
+item 3 not inside (hit boundary plane), [ 2.70556869e-05 -5.84840716e-01 -1.53002706e+00 -1.33515928e+00
+ -6.18633792e-01 -1.40175125e+00 -8.24874982e-03]
+item 5 not inside (hit boundary plane), [ 8.75761352e-06 -5.67082889e-01 -1.53000876e+00 -1.35291711e+00
+ -6.30592539e-01 -1.40281869e+00 -7.18131222e-03]
+item 17 not inside (hit boundary plane), [ 8.42263045e-06 -5.85387775e-01 -1.53000842e+00 -1.33461222e+00
+ -6.18279587e-01 -8.24832979e-01 -5.85167021e-01]
+transport item 11
+place item 11
+item 3 not inside (hit boundary plane), [ 2.71670020e-05 -5.84840714e-01 -1.53002717e+00 -1.33515929e+00
+ -6.18633711e-01 -1.40175126e+00 -8.24874432e-03]
+item 5 not inside (hit boundary plane), [ 8.83341516e-06 -5.67082919e-01 -1.53000883e+00 -1.35291708e+00
+ -6.30592462e-01 -1.40281872e+00 -7.18127738e-03]
+item 17 not inside (hit boundary plane), [ 8.42268781e-06 -5.85387775e-01 -1.53000842e+00 -1.33461222e+00
+ -6.18279587e-01 -8.24832979e-01 -5.85167021e-01]
+item 11 not inside (hit boundary plane), [ 1.00519927e-05 -5.67000175e-01 -1.53001005e+00 -1.35299983e+00
+ -6.30647220e-01 -7.33490713e-01 -6.76509287e-01]
+transport item 33
+place item 33
+item 3 not inside (hit boundary plane), [ 2.72774942e-05 -5.84840711e-01 -1.53002728e+00 -1.33515929e+00
+ -6.18633631e-01 -1.40175126e+00 -8.24873886e-03]
+item 5 not inside (hit boundary plane), [ 8.90998258e-06 -5.67082950e-01 -1.53000891e+00 -1.35291705e+00
+ -6.30592385e-01 -1.40281876e+00 -7.18124206e-03]
+item 17 not inside (hit boundary plane), [ 6.91004561e-06 -5.85389497e-01 -1.53000691e+00 -1.33461050e+00
+ -6.18279548e-01 -8.24828009e-01 -5.85171991e-01]
+item 11 not inside (hit boundary plane), [ 1.00519928e-05 -5.67000175e-01 -1.53001005e+00 -1.35299983e+00
+ -6.30647220e-01 -7.33490713e-01 -6.76509287e-01]
+transport item 19
+place item 19
+item 3 not inside (hit boundary plane), [ 3.03809108e-05 -5.84834333e-01 -1.53003038e+00 -1.33516567e+00
+ -6.18635625e-01 -1.40174639e+00 -8.25360702e-03]
+item 5 not inside (hit boundary plane), [ 8.98696503e-06 -5.67082980e-01 -1.53000899e+00 -1.35291702e+00
+ -6.30592307e-01 -1.40281879e+00 -7.18120705e-03]
+item 17 not inside (hit boundary plane), [ 6.64721649e-06 -5.85391522e-01 -1.53000665e+00 -1.33460848e+00
+ -6.18278381e-01 -8.24822464e-01 -5.85177536e-01]
+item 11 not inside (hit boundary plane), [ 1.00519929e-05 -5.67000175e-01 -1.53001005e+00 -1.35299983e+00
+ -6.30647220e-01 -7.33490713e-01 -6.76509287e-01]
+transport item 20
+place item 20
+item 3 not inside (hit boundary plane), [ 3.03955008e-05 -5.84830218e-01 -1.53003040e+00 -1.33516978e+00
+ -6.18638382e-01 -1.40174072e+00 -8.25927611e-03]
+item 5 not inside (hit boundary plane), [ 8.73377302e-06 -5.67084232e-01 -1.53000873e+00 -1.35291577e+00
+ -6.30591653e-01 -1.40282212e+00 -7.17787976e-03]
+item 17 not inside (hit boundary plane), [ 6.55090940e-06 -5.85393545e-01 -1.53000655e+00 -1.33460645e+00
+ -6.18277091e-01 -8.24816910e-01 -5.85183090e-01]
+item 11 not inside (hit boundary plane), [ 1.00519930e-05 -5.67000175e-01 -1.53001005e+00 -1.35299983e+00
+ -6.30647220e-01 -7.33490713e-01 -6.76509287e-01]
+transport item 22
+place item 22
+item 3 not inside (hit boundary plane), [ 3.03996021e-05 -5.84826085e-01 -1.53003040e+00 -1.33517391e+00
+ -6.18641159e-01 -1.40173504e+00 -8.26495811e-03]
+item 5 not inside (hit boundary plane), [ 8.77604912e-06 -5.67093306e-01 -1.53000878e+00 -1.35290669e+00
+ -6.30585517e-01 -1.40282342e+00 -7.17658104e-03]
+item 17 not inside (hit boundary plane), [ 6.65202077e-06 -5.85395566e-01 -1.53000665e+00 -1.33460443e+00
+ -6.18275657e-01 -8.24811357e-01 -5.85188643e-01]
+item 11 not inside (hit boundary plane), [ 1.05214973e-05 -5.67000116e-01 -1.53001052e+00 -1.35299988e+00
+ -6.30646912e-01 -7.33490875e-01 -6.76509125e-01]
+transport item 8
+place item 8
+item 3 not inside (hit boundary plane), [ 3.03980701e-05 -5.84821950e-01 -1.53003040e+00 -1.33517805e+00
+ -6.18643942e-01 -1.40172936e+00 -8.27064489e-03]
+item 5 not inside (hit boundary plane), [ 2.99478612e-05 -5.67111115e-01 -1.53002995e+00 -1.35288888e+00
+ -6.30557872e-01 -1.40281185e+00 -7.18815337e-03]
+item 17 not inside (hit boundary plane), [ 6.56238238e-06 -5.85397597e-01 -1.53000656e+00 -1.33460240e+00
+ -6.18274357e-01 -8.24805795e-01 -5.85194205e-01]
+item 11 not inside (hit boundary plane), [-1.03139767e-05 -5.66999934e-01 -1.52998969e+00 -1.35300007e+00
+ -6.30662452e-01 -7.33484099e-01 -6.76515901e-01]
+transport item 13
+place item 13
+item 3 not inside (hit boundary plane), [ 3.03965379e-05 -5.84817817e-01 -1.53003040e+00 -1.33518218e+00
+ -6.18646724e-01 -1.40172367e+00 -8.27633125e-03]
+item 5 not inside (hit boundary plane), [ 3.71226970e-05 -5.67142576e-01 -1.53003712e+00 -1.35285742e+00
+ -6.30531400e-01 -1.40278620e+00 -7.21380255e-03]
+item 17 not inside (hit boundary plane), [-2.09112095e-06 -5.85402987e-01 -1.52999791e+00 -1.33459701e+00
+ -6.18277134e-01 -8.24791799e-01 -5.85208201e-01]
+item 11 not inside (hit boundary plane), [-1.03463653e-05 -5.66999338e-01 -1.52998965e+00 -1.35300066e+00
+ -6.30662876e-01 -7.33476954e-01 -6.76523046e-01]
+transport item 23
+place item 23
+item 3 not inside (hit boundary plane), [ 6.81896706e-05 -5.84813852e-01 -1.53006819e+00 -1.33518615e+00
+ -6.18621425e-01 -1.40175895e+00 -8.24104989e-03]
+item 5 not inside (hit boundary plane), [ 3.71061470e-05 -5.67175589e-01 -1.53003711e+00 -1.35282441e+00
+ -6.30509205e-01 -1.40275993e+00 -7.24006702e-03]
+item 17 not inside (hit boundary plane), [-2.34785948e-06 -5.85408679e-01 -1.52999765e+00 -1.33459132e+00
+ -6.18273495e-01 -8.24776873e-01 -5.85223127e-01]
+item 11 not inside (hit boundary plane), [-1.03269676e-05 -5.66998734e-01 -1.52998967e+00 -1.35300127e+00
+ -6.30663269e-01 -7.33469699e-01 -6.76530301e-01]
+transport item 0
+place item 0
+item 3 not inside (hit boundary plane), [ 6.57961110e-05 -5.84743543e-01 -1.53006580e+00 -1.33525646e+00
+ -6.18670492e-01 -1.40176862e+00 -8.23137772e-03]
+item 5 not inside (hit boundary plane), [ 1.79651179e-05 -5.67210242e-01 -1.53001797e+00 -1.35278976e+00
+ -6.30500059e-01 -1.40277883e+00 -7.22117464e-03]
+item 17 not inside (hit boundary plane), [-1.81547738e-06 -5.85414460e-01 -1.52999818e+00 -1.33458554e+00
+ -6.18269213e-01 -8.24761731e-01 -5.85238269e-01]
+item 11 not inside (hit boundary plane), [-1.43471230e-05 -5.66990977e-01 -1.52998565e+00 -1.35300902e+00
+ -6.30671461e-01 -7.33445550e-01 -6.76554450e-01]
+transport item 4
+place item 4
+item 3 not inside (hit boundary plane), [ 6.82801566e-05 -5.84675006e-01 -1.53006828e+00 -1.33532499e+00
+ -6.18714757e-01 -1.40178299e+00 -8.21701054e-03]
+item 5 not inside (hit boundary plane), [ 1.09148734e-05 -5.67249140e-01 -1.53001091e+00 -1.35275086e+00
+ -6.30479110e-01 -1.40279908e+00 -7.20092369e-03]
+item 17 not inside (hit boundary plane), [-1.70431538e-06 -5.85420307e-01 -1.52999830e+00 -1.33457969e+00
+ -6.18265197e-01 -8.24746545e-01 -5.85253455e-01]
+item 11 not inside (hit boundary plane), [-3.84687143e-06 -5.66981892e-01 -1.52999615e+00 -1.35301811e+00
+ -6.30669803e-01 -7.33391123e-01 -6.76608877e-01]
+transport item 6
+place item 6
+item 3 not inside (hit boundary plane), [ 9.37182392e-05 -5.84594056e-01 -1.53009372e+00 -1.33540594e+00
+ -6.18750387e-01 -1.40179614e+00 -8.20385708e-03]
+item 5 not inside (hit boundary plane), [ 1.86749468e-05 -5.67286503e-01 -1.53001867e+00 -1.35271350e+00
+ -6.30448234e-01 -1.40282060e+00 -7.17939722e-03]
+item 17 not inside (hit boundary plane), [-1.97613431e-06 -5.85426125e-01 -1.52999802e+00 -1.33457387e+00
+ -6.18261485e-01 -8.24731455e-01 -5.85268545e-01]
+item 11 not inside (hit boundary plane), [-9.94204729e-06 -5.66976046e-01 -1.52999006e+00 -1.35302395e+00
+ -6.30678245e-01 -7.33364636e-01 -6.76635364e-01]
+transport item 10
+place item 10
+item 3 not inside (hit boundary plane), [ 9.35381555e-05 -5.84543817e-01 -1.53009354e+00 -1.33545618e+00
+ -6.18784315e-01 -1.40182832e+00 -8.17168286e-03]
+item 5 not inside (hit boundary plane), [ 6.82183171e-05 -5.67399436e-01 -1.53006822e+00 -1.35260056e+00
+ -6.30335609e-01 -1.40280157e+00 -7.19842896e-03]
+item 17 not inside (hit boundary plane), [-2.15434075e-06 -5.85431938e-01 -1.52999785e+00 -1.33456806e+00
+ -6.18257706e-01 -8.24716344e-01 -5.85283656e-01]
+item 11 not inside (hit boundary plane), [-9.18561126e-06 -5.66970835e-01 -1.52999081e+00 -1.35302917e+00
+ -6.30681191e-01 -7.33346720e-01 -6.76653280e-01]
+transport item 2
+place item 2
+item 3 not inside (hit boundary plane), [ 9.42887609e-05 -5.84485610e-01 -1.53009429e+00 -1.33551439e+00
+ -6.18822914e-01 -1.40184933e+00 -8.15067328e-03]
+item 5 not inside (hit boundary plane), [ 7.52436037e-05 -5.67511859e-01 -1.53007524e+00 -1.35248814e+00
+ -6.30254787e-01 -1.40278625e+00 -7.21375143e-03]
+item 17 not inside (hit boundary plane), [-2.77222307e-06 -5.85437930e-01 -1.52999723e+00 -1.33456207e+00
+ -6.18254133e-01 -8.24701057e-01 -5.85298943e-01]
+item 11 not inside (hit boundary plane), [-7.11499584e-06 -5.66973945e-01 -1.52999289e+00 -1.35302605e+00
+ -6.30677567e-01 -7.33334068e-01 -6.76665932e-01]
+item 2 not inside (hit boundary plane), [ 0.00804751 -0.73499996 -1.53804751 -1.18500004 -0.51169109 -0.04000008
+ -1.36999992]
+transport item 35
+place item 35
+item 3 not inside (hit boundary plane), [ 9.57789303e-05 -5.84425327e-01 -1.53009578e+00 -1.33557467e+00
+ -6.18862362e-01 -1.40186659e+00 -8.13341094e-03]
+item 5 not inside (hit boundary plane), [ 5.28106214e-05 -5.67568000e-01 -1.53005281e+00 -1.35243200e+00
+ -6.30233621e-01 -1.40275539e+00 -7.24460879e-03]
+item 17 not inside (hit boundary plane), [-2.01418948e-06 -5.85443562e-01 -1.52999799e+00 -1.33455644e+00
+ -6.18249783e-01 -8.24686206e-01 -5.85313794e-01]
+item 11 not inside (hit boundary plane), [-7.09843798e-06 -5.66978964e-01 -1.52999290e+00 -1.35302104e+00
+ -6.30674178e-01 -7.33322670e-01 -6.76677330e-01]
+item 2 not inside (hit boundary plane), [ 0.00813023 -0.73499996 -1.53813023 -1.18500004 -0.51162989 -0.04000008
+ -1.36999992]
+transport item 39
+place item 39
+item 3 not inside (hit boundary plane), [ 9.42238861e-05 -5.84361450e-01 -1.53009422e+00 -1.33563855e+00
+ -6.18906481e-01 -1.40188270e+00 -8.11729720e-03]
+item 5 not inside (hit boundary plane), [ 1.27904424e-04 -5.67608486e-01 -1.53012790e+00 -1.35239151e+00
+ -6.30150822e-01 -1.40273350e+00 -7.26649698e-03]
+item 17 not inside (hit boundary plane), [-1.72635078e-06 -5.85449565e-01 -1.52999827e+00 -1.33455043e+00
+ -6.18245533e-01 -8.24670903e-01 -5.85329097e-01]
+item 11 not inside (hit boundary plane), [-6.57746203e-06 -5.66984126e-01 -1.52999342e+00 -1.35301587e+00
+ -6.30670320e-01 -7.33311481e-01 -6.76688519e-01]
+item 2 not inside (hit boundary plane), [ 0.00813151 -0.73499996 -1.53813151 -1.18500004 -0.51162894 -0.04000008
+ -1.36999992]
+transport item 12
+place item 12
+item 3 not inside (hit boundary plane), [ 9.21741375e-05 -5.84285879e-01 -1.53009217e+00 -1.33571412e+00
+ -6.18958832e-01 -1.40189292e+00 -8.10708014e-03]
+item 5 not inside (hit boundary plane), [ 1.46992482e-04 -5.67593603e-01 -1.53014699e+00 -1.35240640e+00
+ -6.30146709e-01 -1.40277103e+00 -7.22896573e-03]
+item 17 not inside (hit boundary plane), [-2.50801792e-06 -5.85455473e-01 -1.52999749e+00 -1.33454453e+00
+ -6.18242137e-01 -8.24655745e-01 -5.85344255e-01]
+item 11 not inside (hit boundary plane), [-2.85116441e-05 -5.66985904e-01 -1.52997149e+00 -1.35301410e+00
+ -6.30685355e-01 -7.33249288e-01 -6.76750712e-01]
+item 2 not inside (hit boundary plane), [ 0.00813153 -0.73499996 -1.53813153 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+transport item 18
+place item 18
+item 3 not inside (hit boundary plane), [ 9.45201513e-05 -5.84188143e-01 -1.53009452e+00 -1.33581186e+00
+ -6.19022840e-01 -1.40190043e+00 -8.09957182e-03]
+item 5 not inside (hit boundary plane), [ 1.09152852e-04 -5.67586220e-01 -1.53010915e+00 -1.35241378e+00
+ -6.30179675e-01 -1.40280853e+00 -7.19147171e-03]
+item 17 not inside (hit boundary plane), [-2.41169497e-06 -5.85461556e-01 -1.52999759e+00 -1.33453844e+00
+ -6.18237974e-01 -8.24640352e-01 -5.85359648e-01]
+item 11 not inside (hit boundary plane), [-4.88874082e-05 -5.66920892e-01 -1.52995111e+00 -1.35307911e+00
+ -6.30744163e-01 -7.33125771e-01 -6.76874229e-01]
+item 2 not inside (hit boundary plane), [ 0.00813154 -0.73499996 -1.53813154 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+transport item 24
+place item 24
+item 3 not inside (hit boundary plane), [ 9.40941929e-05 -5.84087535e-01 -1.53009409e+00 -1.33591246e+00
+ -6.19090832e-01 -1.40191063e+00 -8.08937108e-03]
+item 5 not inside (hit boundary plane), [ 1.22722708e-04 -5.67602001e-01 -1.53012272e+00 -1.35239800e+00
+ -6.30159018e-01 -1.40284250e+00 -7.15749790e-03]
+item 17 not inside (hit boundary plane), [-2.45241962e-06 -5.85467685e-01 -1.52999755e+00 -1.33453232e+00
+ -6.18233881e-01 -8.24624896e-01 -5.85375104e-01]
+item 11 not inside (hit boundary plane), [-7.12674872e-05 -5.66852213e-01 -1.52992873e+00 -1.35314779e+00
+ -6.30806922e-01 -7.32997794e-01 -6.77002206e-01]
+item 2 not inside (hit boundary plane), [ 0.00813154 -0.73499996 -1.53813154 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+transport item 27
+place item 27
+item 3 not inside (hit boundary plane), [ 9.80849893e-05 -5.83990746e-01 -1.53009808e+00 -1.33600925e+00
+ -6.19152986e-01 -1.40191931e+00 -8.08068626e-03]
+item 5 not inside (hit boundary plane), [ 1.25702477e-04 -5.67602016e-01 -1.53012570e+00 -1.35239798e+00
+ -6.30156804e-01 -1.40287703e+00 -7.12296551e-03]
+item 17 not inside (hit boundary plane), [-1.22714895e-06 -5.85469603e-01 -1.52999877e+00 -1.33453040e+00
+ -6.18231684e-01 -8.24618684e-01 -5.85381316e-01]
+item 11 not inside (hit boundary plane), [-8.29648672e-05 -5.66801821e-01 -1.52991704e+00 -1.35319818e+00
+ -6.30849474e-01 -7.32773665e-01 -6.77226335e-01]
+item 2 not inside (hit boundary plane), [ 0.00813154 -0.73499996 -1.53813154 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+transport item 29
+place item 29
+item 3 not inside (hit boundary plane), [ 8.64943847e-05 -5.83865986e-01 -1.53008649e+00 -1.33613401e+00
+ -6.19245485e-01 -1.40191036e+00 -8.08964246e-03]
+item 5 not inside (hit boundary plane), [ 1.29060749e-04 -5.67600359e-01 -1.53012906e+00 -1.35239964e+00
+ -6.30155433e-01 -1.40291152e+00 -7.08847506e-03]
+item 17 not inside (hit boundary plane), [-2.07001660e-05 -5.85560614e-01 -1.52997930e+00 -1.33443939e+00
+ -6.18184872e-01 -8.24584282e-01 -5.85415718e-01]
+item 11 not inside (hit boundary plane), [-8.47411902e-05 -5.66754607e-01 -1.52991526e+00 -1.35324539e+00
+ -6.30882548e-01 -7.32523558e-01 -6.77476442e-01]
+item 2 not inside (hit boundary plane), [ 0.00813154 -0.73499996 -1.53813154 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+item 3 not inside (hit boundary plane), [ 8.64943847e-05 -5.83865986e-01 -1.53008649e+00 -1.33613401e+00
+ -6.19245485e-01 -1.40191036e+00 -8.08964246e-03]
+item 5 not inside (hit boundary plane), [ 1.29060749e-04 -5.67600359e-01 -1.53012906e+00 -1.35239964e+00
+ -6.30155433e-01 -1.40291152e+00 -7.08847506e-03]
+item 17 not inside (hit boundary plane), [-2.07001660e-05 -5.85560614e-01 -1.52997930e+00 -1.33443939e+00
+ -6.18184872e-01 -8.24584282e-01 -5.85415718e-01]
+item 11 not inside (hit boundary plane), [-8.47411902e-05 -5.66754607e-01 -1.52991526e+00 -1.35324539e+00
+ -6.30882548e-01 -7.32523558e-01 -6.77476442e-01]
+item 2 not inside (hit boundary plane), [ 0.00813154 -0.73499996 -1.53813154 -1.18500004 -0.51162892 -0.04000008
+ -1.36999992]
+close env.
+{
+  "action_prefix_divergence": [],
+  "action_prefix_expected_count": 25,
+  "action_prefix_expected_sha256": "a2074e7439ce83c0af6e0c9a75d8c59eed71c18e5d009e89fa7d465fd218cdab",
+  "action_prefix_returned_count": 25,
+  "action_prefix_sha256": "a2074e7439ce83c0af6e0c9a75d8c59eed71c18e5d009e89fa7d465fd218cdab",
+  "algorithm_name": "portal_reserved_scaffold_dag",
+  "config_sha256": "f321c87bbd5c0b715e1f124e08620e50360634b274a2a38ee16b8be77dd19436",
+  "evaluation": {
+    "fill_score": 33.94392679167531,
+    "num_placed_items": 0.6097560975609756
+  },
+  "exception": null,
+  "first_rejection_reason": "target_penetration",
+  "historical_artifact_integrity": {
+    "after_manifest_sha256": "95e6acacfb773b80b26df4d18a9ecaa514cd8cfeea4623f46aebd830b01b870c",
+    "after_matches_baseline": true,
+    "before_manifest_sha256": "95e6acacfb773b80b26df4d18a9ecaa514cd8cfeea4623f46aebd830b01b870c",
+    "before_matches_baseline": true,
+    "expected_baseline_sha256": "95e6acacfb773b80b26df4d18a9ecaa514cd8cfeea4623f46aebd830b01b870c",
+    "unchanged": true
+  },
+  "historical_seed_sha256": "5be62aa1aa1982d129a57a0872971673e381023f1de033b7b05f27f07d443ff5",
+  "historical_source_descriptor": {
+    "adaptation": "standalone historical virtual-plan seed",
+    "algorithm": "conservative_extreme_point_packing_historical_control",
+    "runtime_artifact_dependency": false,
+    "runtime_result_dependency": false
+  },
+  "historical_source_expected_sha256": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+  "historical_source_path": "submit/Conservative Extreme-Point Packing_score29.7/high_score/agent.py",
+  "historical_source_sha256": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+  "local_fill": 33.94392679167531,
+  "no_unchecked_fallback": true,
+  "optimize_time_seconds": 27.716886734000582,
+  "outcome": "shield_rejection",
+  "package_manifest": [
+    [
+      "__init__.py",
+      "53d9662cf6eda7a756f801b34e28cad5f71b23a9f2977307ec95c2c5124db3a8"
+    ],
+    [
+      "agent.py",
+      "7707df6a0d1f26fd7775255172ed7843fed83c624eaa8fc15e48a8d3a1c53b78"
+    ],
+    [
+      "authorizer.py",
+      "4dd589f26cb5884cb087021b3a7db06e87353210801b85fda32f0b0911c79e7a"
+    ],
+    [
+      "historical_seed.py",
+      "5be62aa1aa1982d129a57a0872971673e381023f1de033b7b05f27f07d443ff5"
+    ]
+  ],
+  "package_sha256": "2727211ea9ab51aacb9c5190ce0c2e292587d8bcce502448668dd84bd4ed4701",
+  "policy_time_seconds": {
+    "count": 26,
+    "max": 1.8223025380029867,
+    "p50": 1.1021322929991584,
+    "p95": 1.7195006487499995,
+    "p99": 1.7987806682522205
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.3970000147819519,
+          0.18299999833106995
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.0,
+        "packed_count": 1,
+        "packed_volume": 0.11340000000000001
+      },
+      "policy_seconds": 0.10652343299807399,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.17299999296665192
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.0,
+        "packed_count": 2,
+        "packed_volume": 0.18652500000000002
+      },
+      "policy_seconds": 0.1360870310018072,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.18299999833106995
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.0,
+        "packed_count": 3,
+        "packed_volume": 0.29992500000000005
+      },
+      "policy_seconds": 0.17569332999846665,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.3970000147819519,
+          0.45899999141693115
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.11340000000000001,
+        "packed_count": 4,
+        "packed_volume": 0.41332500000000005
+      },
+      "policy_seconds": 0.23098596599811572,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.42899999022483826
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.18652500000000002,
+        "packed_count": 5,
+        "packed_volume": 0.48645000000000005
+      },
+      "policy_seconds": 0.2541102199975285,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.17299999296665192
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.18652500000000002,
+        "packed_count": 6,
+        "packed_volume": 0.559575
+      },
+      "policy_seconds": 0.4754943580010149,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 5,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.45899999141693115
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.29992500000000005,
+        "packed_count": 7,
+        "packed_volume": 0.6729750000000001
+      },
+      "policy_seconds": 0.22768204100066214,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 6,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.4519999921321869,
+          0.7249999642372131
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.37305000000000005,
+        "packed_count": 8,
+        "packed_volume": 0.7461000000000001
+      },
+      "policy_seconds": 0.276730238001619,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 7,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          0.35199999809265137,
+          0.6850000023841858
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.44617500000000004,
+        "packed_count": 9,
+        "packed_volume": 0.8192250000000001
+      },
+      "policy_seconds": 0.38741066600050544,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 8,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.42899999022483826
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.5193000000000001,
+        "packed_count": 10,
+        "packed_volume": 0.8923500000000001
+      },
+      "policy_seconds": 0.36549562500294996,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 9,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6179999709129333,
+          -0.3160000145435333,
+          0.6850000023841858
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.5924250000000001,
+        "packed_count": 11,
+        "packed_volume": 0.9654750000000001
+      },
+      "policy_seconds": 0.44977204099996015,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 10,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.1809999793767929,
+          0.7250000238418579
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.6655500000000001,
+        "packed_count": 12,
+        "packed_volume": 1.0386000000000002
+      },
+      "policy_seconds": 0.39670140000089305,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 11,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -6.009154731145827e-06,
+          0.4519999921321869,
+          0.960960328578949
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.7386750000000001,
+        "packed_count": 13,
+        "packed_volume": 1.111725
+      },
+      "policy_seconds": 1.1658083149995946,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 12,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6178341507911682,
+          0.3520432412624359,
+          0.9159500002861023
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.791475,
+        "packed_count": 14,
+        "packed_volume": 1.1645250000000003
+      },
+      "policy_seconds": 1.0978117380000185,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 13,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          -0.7519999742507935,
+          -0.5649999976158142,
+          1.1380000114440918
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.844275,
+        "packed_count": 15,
+        "packed_volume": 1.2173250000000002
+      },
+      "policy_seconds": 1.191763393999281,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 14,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0004301285953260958,
+          0.47699999809265137,
+          1.2059123516082764
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.897075,
+        "packed_count": 16,
+        "packed_volume": 1.2701250000000002
+      },
+      "policy_seconds": 1.1064528479982982,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 15,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5848402380943298,
+          0.4020000100135803,
+          1.1559535264968872
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.949875,
+        "packed_count": 17,
+        "packed_volume": 1.3229250000000001
+      },
+      "policy_seconds": 1.324937550998584,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 16,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          0.0,
+          -0.5849999785423279,
+          0.1979999989271164
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 0.949875,
+        "packed_count": 18,
+        "packed_volume": 1.3499250000000003
+      },
+      "policy_seconds": 1.2601467770000454,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 17,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          -0.7269999980926514,
+          -0.004000000189989805,
+          1.187999963760376
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.023,
+        "packed_count": 19,
+        "packed_volume": 1.4230500000000001
+      },
+      "policy_seconds": 1.5647622810029134,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 18,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5555762052536011,
+          0.35199999809265137,
+          1.400926947593689
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.096125,
+        "packed_count": 20,
+        "packed_volume": 1.4961750000000003
+      },
+      "policy_seconds": 1.728215058999922,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 19,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          0.9159415364265442
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.148925,
+        "packed_count": 21,
+        "packed_volume": 1.5489750000000002
+      },
+      "policy_seconds": 1.6933574180002324,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 20,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          1.1558876037597656
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.201725,
+        "packed_count": 22,
+        "packed_volume": 1.6017750000000002
+      },
+      "policy_seconds": 1.8223025380029867,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 21,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7519999742507935,
+          -0.4099999964237213,
+          1.395804762840271
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.254525,
+        "packed_count": 23,
+        "packed_volume": 1.6545750000000001
+      },
+      "policy_seconds": 1.4346583080005075,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 22,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.00042188609950244427,
+          -0.18164405226707458,
+          0.9559730887413025
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.3073249999999998,
+        "packed_count": 24,
+        "packed_volume": 1.7073750000000003
+      },
+      "policy_seconds": 1.3250325600020005,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 23,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.00045620344462804496,
+          -0.15835769474506378,
+          1.1959607601165771
+        ]
+      },
+      "fill_inputs": {
+        "container_volume": 4.006976000000001,
+        "inside_volume": 1.3601249999999998,
+        "packed_count": 25,
+        "packed_volume": 1.7601750000000003
+      },
+      "policy_seconds": 1.6675771720001649,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "step": 24,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": null,
+      "policy_seconds": 1.196173500000441,
+      "reject_reasons": [
+        "target_penetration",
+        "transport"
+      ],
+      "rejected_before_env_step": true,
+      "status": null,
+      "step": 25
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "exception_message": "historical proposal rejected before env.step: target_penetration,transport",
+      "exception_type": "HistoricalSeedError",
+      "policy_seconds": 1.196173500000441,
+      "reject_reasons": [
+        "target_penetration",
+        "transport"
+      ],
+      "rejected_before_env_step": true,
+      "step": 25
+    }
+  ],
+  "requested_items": 41,
+  "requested_mode": "A",
+  "resolved_mode": "A",
+  "returned_actions": [
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        0.3970000147819519,
+        0.18299999833106995
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        0.35199999809265137,
+        0.17299999296665192
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        -0.1809999793767929,
+        0.18299999833106995
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        0.3970000147819519,
+        0.45899999141693115
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        0.35199999809265137,
+        0.42899999022483826
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        -0.3160000145435333,
+        0.17299999296665192
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        -0.1809999793767929,
+        0.45899999141693115
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        0.4519999921321869,
+        0.7249999642372131
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        0.35199999809265137,
+        0.6850000023841858
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        -0.3160000145435333,
+        0.42899999022483826
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6179999709129333,
+        -0.3160000145435333,
+        0.6850000023841858
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0,
+        -0.1809999793767929,
+        0.7250000238418579
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        -6.009154731145827e-06,
+        0.4519999921321869,
+        0.960960328578949
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.6178341507911682,
+        0.3520432412624359,
+        0.9159500002861023
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 4,
+      "place_pos": [
+        -0.7519999742507935,
+        -0.5649999976158142,
+        1.1380000114440918
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 0,
+      "place_pos": [
+        0.0004301285953260958,
+        0.47699999809265137,
+        1.2059123516082764
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.5848402380943298,
+        0.4020000100135803,
+        1.1559535264968872
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 1,
+      "place_pos": [
+        0.0,
+        -0.5849999785423279,
+        0.1979999989271164
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 4,
+      "place_pos": [
+        -0.7269999980926514,
+        -0.004000000189989805,
+        1.187999963760376
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.5555762052536011,
+        0.35199999809265137,
+        1.400926947593689
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.7519999742507935,
+        -0.4099999964237213,
+        0.9159415364265442
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.7519999742507935,
+        -0.4099999964237213,
+        1.1558876037597656
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        0.7519999742507935,
+        -0.4099999964237213,
+        1.395804762840271
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        -0.00042188609950244427,
+        -0.18164405226707458,
+        0.9559730887413025
+      ]
+    },
+    {
+      "container_idx": 0,
+      "item_idx": 0,
+      "orientation": 3,
+      "place_pos": [
+        -0.00045620344462804496,
+        -0.15835769474506378,
+        1.1959607601165771
+      ]
+    }
+  ],
+  "returned_invalid_count": 0,
+  "returned_unsafe_count": 0,
+  "runner_sha256": "31f4134f8c4de6f7f5f7bd82a53e5d614f0e7890276251c2e2a1fbdf20f6507f",
+  "safe_placements": 25,
+  "seed": 42,
+  "step_25": {
+    "env_step_count_after": 25,
+    "env_step_count_before": 25,
+    "reject_reasons": [
+      "target_penetration",
+      "transport"
+    ],
+    "rejected_before_env_step": true,
+    "returned_action": null
+  },
+  "task": "000"
+}argv[0]=
+

@@ -1,0 +1,343 @@
+{
+  "fixture": "drop_bad",
+  "action": {
+    "item_idx": 7,
+    "container_idx": 0,
+    "orientation": 0,
+    "place_pos": [
+      -0.014328155666589737,
+      -0.43568849563598633,
+      1.1447383165359497
+    ]
+  },
+  "snapshot": "experiments/native_candidate_packing/results/progressive-b-task001-seed42.snapshot.json",
+  "snapshot_sha256": "b933627106d1ce24aed07e03bf48fdb7b42497c39e236ad5285e8ca68d75859c",
+  "actual_safe": false,
+  "source_hashes": {
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "mesh.py": "d979764cddda924defcc9d7da5ab2f7d428de509dd74eac962eacb3931787a37",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "284017f862f26b9210c269ae39de581498aedb6f041759900ef45f5602e2157f",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "trials": [
+    {
+      "via_obj": false,
+      "safe": true,
+      "displacement": 0.217578899479623,
+      "angle_degrees": 8.308401359149666,
+      "final_position": [
+        -0.13875693776718645,
+        -0.40978803461601787,
+        0.9681392740621039
+      ],
+      "final_orientation": [
+        -0.057468663533994394,
+        -0.041876976328939323,
+        0.013833507289356995,
+        0.9973727014718407
+      ],
+      "seconds": 2.1463489239999998,
+      "steps": 300,
+      "deadline_exceeded": false,
+      "previously_inside": 17,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.28061481806781846,
+      "inclusion_margin": -0.005,
+      "previous_motion": [
+        {
+          "index": 13,
+          "linear_speed": 0.21542710156125155,
+          "angular_speed": 0.48837294875889437,
+          "displacement": 0.28061481806781846
+        },
+        {
+          "index": 12,
+          "linear_speed": 0.09179429913713152,
+          "angular_speed": 0.48839423982384456,
+          "displacement": 0.22314076208567896
+        },
+        {
+          "index": 17,
+          "linear_speed": 0.04876009417541104,
+          "angular_speed": 0.11510631316316595,
+          "displacement": 0.06848937827446365
+        },
+        {
+          "index": 23,
+          "linear_speed": 0.03139041476423699,
+          "angular_speed": 0.04935720911841946,
+          "displacement": 0.0727748794375309
+        },
+        {
+          "index": 22,
+          "linear_speed": 0.02380450617313509,
+          "angular_speed": 0.09252017766053816,
+          "displacement": 0.0592734540541335
+        },
+        {
+          "index": 27,
+          "linear_speed": 0.014655418076640996,
+          "angular_speed": 0.039730341185791114,
+          "displacement": 0.024909700958614445
+        },
+        {
+          "index": 0,
+          "linear_speed": 0.010535591774396042,
+          "angular_speed": 0.0006043584834582396,
+          "displacement": 0.027098978700476478
+        },
+        {
+          "index": 9,
+          "linear_speed": 0.008598761577858017,
+          "angular_speed": 0.027590603786191704,
+          "displacement": 0.011679870070115693
+        },
+        {
+          "index": 8,
+          "linear_speed": 0.005163760286444198,
+          "angular_speed": 0.04983103540189524,
+          "displacement": 0.045203034228154325
+        },
+        {
+          "index": 7,
+          "linear_speed": 0.0031643316924607505,
+          "angular_speed": 0.02678562078336237,
+          "displacement": 0.004597490138085429
+        },
+        {
+          "index": 15,
+          "linear_speed": 0.0001703099502758009,
+          "angular_speed": 0.0004465750541704597,
+          "displacement": 0.001020805488561232
+        },
+        {
+          "index": 20,
+          "linear_speed": 0.00012484292426334306,
+          "angular_speed": 0.00032964010988078586,
+          "displacement": 5.261968814450721e-06
+        },
+        {
+          "index": 6,
+          "linear_speed": 5.901571847389449e-05,
+          "angular_speed": 0.00044626065102916973,
+          "displacement": 0.0010023237573704514
+        },
+        {
+          "index": 10,
+          "linear_speed": 5.346445767451158e-05,
+          "angular_speed": 0.00023622923862880334,
+          "displacement": 0.0009952183911856101
+        },
+        {
+          "index": 16,
+          "linear_speed": 4.762640438377541e-05,
+          "angular_speed": 0.0003099685936298654,
+          "displacement": 2.226689176259259e-06
+        },
+        {
+          "index": 1,
+          "linear_speed": 2.1477856728430692e-05,
+          "angular_speed": 3.7251906011751e-05,
+          "displacement": 0.001015702559431665
+        },
+        {
+          "index": 19,
+          "linear_speed": 9.471882722737453e-06,
+          "angular_speed": 2.6152229399573525e-05,
+          "displacement": 5.036347751342203e-06
+        },
+        {
+          "index": 5,
+          "linear_speed": 7.399844731180942e-06,
+          "angular_speed": 1.9916818613905358e-05,
+          "displacement": 0.001000182095275741
+        },
+        {
+          "index": 2,
+          "linear_speed": 5.5929892759605055e-06,
+          "angular_speed": 2.3134425758580293e-05,
+          "displacement": 0.0009940940339164303
+        },
+        {
+          "index": 11,
+          "linear_speed": 3.691401642395004e-06,
+          "angular_speed": 5.338459032275229e-05,
+          "displacement": 8.889565295835928e-06
+        },
+        {
+          "index": 4,
+          "linear_speed": 2.5337139047394776e-06,
+          "angular_speed": 2.773277881903499e-05,
+          "displacement": 1.9124282511661415e-06
+        },
+        {
+          "index": 3,
+          "linear_speed": 2.1810075094560802e-06,
+          "angular_speed": 5.5260031442895714e-05,
+          "displacement": 4.6568581395887355e-06
+        }
+      ]
+    },
+    {
+      "via_obj": true,
+      "safe": true,
+      "displacement": 0.21661141938391046,
+      "angle_degrees": 8.1793681992494,
+      "final_position": [
+        -0.13714331723063936,
+        -0.412572879655369,
+        0.9678128763207411
+      ],
+      "final_orientation": [
+        -0.05598822053996055,
+        -0.04266959342946835,
+        0.011439482479882869,
+        0.9974536396233787
+      ],
+      "seconds": 1.9469193860000011,
+      "steps": 300,
+      "deadline_exceeded": false,
+      "previously_inside": 17,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.27669912036841937,
+      "inclusion_margin": -0.005,
+      "previous_motion": [
+        {
+          "index": 13,
+          "linear_speed": 0.21021128327588132,
+          "angular_speed": 0.5053448952301743,
+          "displacement": 0.27669912036841937
+        },
+        {
+          "index": 12,
+          "linear_speed": 0.09039137325059492,
+          "angular_speed": 0.5034795513637246,
+          "displacement": 0.22159087954686188
+        },
+        {
+          "index": 17,
+          "linear_speed": 0.04764031467890616,
+          "angular_speed": 0.11218788688474507,
+          "displacement": 0.06969532754258743
+        },
+        {
+          "index": 23,
+          "linear_speed": 0.03155794099914428,
+          "angular_speed": 0.047208680850871924,
+          "displacement": 0.0720741974864428
+        },
+        {
+          "index": 22,
+          "linear_speed": 0.023202246142202818,
+          "angular_speed": 0.09056929620513726,
+          "displacement": 0.06005867084042405
+        },
+        {
+          "index": 27,
+          "linear_speed": 0.014419146384562915,
+          "angular_speed": 0.04183821549665255,
+          "displacement": 0.025141409403417154
+        },
+        {
+          "index": 0,
+          "linear_speed": 0.011256456329904652,
+          "angular_speed": 0.0004859482520165652,
+          "displacement": 0.027748672283051175
+        },
+        {
+          "index": 9,
+          "linear_speed": 0.0073665950744717336,
+          "angular_speed": 0.027706098033622253,
+          "displacement": 0.011104545070699922
+        },
+        {
+          "index": 8,
+          "linear_speed": 0.005164782250444355,
+          "angular_speed": 0.04920282451640119,
+          "displacement": 0.04582876271579438
+        },
+        {
+          "index": 7,
+          "linear_speed": 0.002886020884641422,
+          "angular_speed": 0.017754102537289766,
+          "displacement": 0.004416466586943082
+        },
+        {
+          "index": 15,
+          "linear_speed": 0.0002331580245736614,
+          "angular_speed": 0.0015692715072881357,
+          "displacement": 0.00012164737665206268
+        },
+        {
+          "index": 20,
+          "linear_speed": 0.00012484292426334306,
+          "angular_speed": 0.00032964010988078586,
+          "displacement": 5.261968814450721e-06
+        },
+        {
+          "index": 6,
+          "linear_speed": 9.856864383492855e-05,
+          "angular_speed": 0.0007751641566685171,
+          "displacement": 3.1615260307401713e-05
+        },
+        {
+          "index": 16,
+          "linear_speed": 4.762640438377541e-05,
+          "angular_speed": 0.0003099685936298654,
+          "displacement": 2.226689176259259e-06
+        },
+        {
+          "index": 1,
+          "linear_speed": 2.584445580444284e-05,
+          "angular_speed": 0.0001090338837955913,
+          "displacement": 0.00011560032163495966
+        },
+        {
+          "index": 19,
+          "linear_speed": 9.471882722737453e-06,
+          "angular_speed": 2.6152229399573525e-05,
+          "displacement": 5.036347751342203e-06
+        },
+        {
+          "index": 5,
+          "linear_speed": 4.466854697642395e-06,
+          "angular_speed": 4.062774659462436e-05,
+          "displacement": 3.022526619763837e-05
+        },
+        {
+          "index": 11,
+          "linear_speed": 3.691401642395004e-06,
+          "angular_speed": 5.338459032275229e-05,
+          "displacement": 8.889565295835928e-06
+        },
+        {
+          "index": 4,
+          "linear_speed": 2.5337139047394776e-06,
+          "angular_speed": 2.773277881903499e-05,
+          "displacement": 1.9124282511661415e-06
+        },
+        {
+          "index": 3,
+          "linear_speed": 2.1810075094560802e-06,
+          "angular_speed": 5.5260031442895714e-05,
+          "displacement": 4.6568581395887355e-06
+        },
+        {
+          "index": 10,
+          "linear_speed": 1.2846227574316944e-06,
+          "angular_speed": 4.738938380809571e-07,
+          "displacement": 9.78037217188218e-05
+        },
+        {
+          "index": 2,
+          "linear_speed": 6.218216216678341e-07,
+          "angular_speed": 2.2326988605186085e-06,
+          "displacement": 5.048191586496397e-06
+        }
+      ]
+    }
+  ]
+}

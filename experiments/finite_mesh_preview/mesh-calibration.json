@@ -1,0 +1,291 @@
+{
+  "timing_contended": true,
+  "source_hashes": {
+    "planes": {
+      "agent.py": "4d2c3858b85ffe73e0ec413c193bb78383155c40706e5c7263ba537302f9392d",
+      "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+      "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+      "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+      "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+      "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+      "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+    },
+    "finite": {
+      "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+      "mesh.py": "d8436c9be60d91d5381b91cec8c781def82c8368e1cc25414530c993a654be0a",
+      "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+      "preview.py": "db5b2ef24d3c5e1a7bef63b585911a14fdeb95c6d47d5a343d7cf8313667c2c7",
+      "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+    }
+  },
+  "trials": [
+    {
+      "fixture": "drop_bad",
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.014328155666589737,
+          -0.43568849563598633,
+          1.1447383165359497
+        ]
+      },
+      "snapshot": "experiments/native_candidate_packing/results/progressive-b-task001-seed42.snapshot.json",
+      "snapshot_sha256": "b933627106d1ce24aed07e03bf48fdb7b42497c39e236ad5285e8ca68d75859c",
+      "actual_safe": false,
+      "predictions": {
+        "planes": {
+          "safe": true,
+          "displacement": 0.25424807774293856,
+          "angle_degrees": 11.838465514814391,
+          "final_position": [
+            -0.1661489405383099,
+            -0.3136179331861315,
+            0.9813635568571968
+          ],
+          "final_orientation": [
+            -0.08493836400703048,
+            -0.05847464156794238,
+            0.0011183576953383123,
+            0.9946682561987062
+          ],
+          "seconds": 1.8855172709999977,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 17,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.3210099056912162,
+          "inclusion_margin": -0.005
+        },
+        "finite": {
+          "safe": true,
+          "displacement": 0.217578899479623,
+          "angle_degrees": 8.308401359149666,
+          "final_position": [
+            -0.13875693776718645,
+            -0.40978803461601787,
+            0.9681392740621039
+          ],
+          "final_orientation": [
+            -0.057468663533994394,
+            -0.041876976328939323,
+            0.013833507289356995,
+            0.9973727014718407
+          ],
+          "seconds": 2.0036159850000104,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 17,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.28061481806781846,
+          "inclusion_margin": -0.005
+        }
+      }
+    },
+    {
+      "fixture": "native20_safe",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7388619780540466,
+          -0.33933404088020325,
+          1.1566648483276367
+        ]
+      },
+      "snapshot": "experiments/native_candidate_packing/results/native-b-task001-seed42.snapshot.json",
+      "snapshot_sha256": "ac1309e9dde2eb2dc6ffbe5d8713584adbc2f73f68dc6badaf950a952870a3e5",
+      "actual_safe": true,
+      "predictions": {
+        "planes": {
+          "safe": true,
+          "displacement": 0.057630513313093955,
+          "angle_degrees": 1.06243664086438,
+          "final_position": [
+            0.7303964991584144,
+            -0.3315540034522448,
+            1.1001928840496176
+          ],
+          "final_orientation": [
+            -0.009257273816741999,
+            -0.0005098754841916975,
+            0.7071020771664763,
+            0.7070507021249093
+          ],
+          "seconds": 1.6615610700000047,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 15,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.04833261313168801,
+          "inclusion_margin": -0.005
+        },
+        "finite": {
+          "safe": true,
+          "displacement": 0.06763070051695014,
+          "angle_degrees": 0.5036845253864145,
+          "final_position": [
+            0.7453038215598913,
+            -0.33523799018175593,
+            1.0894663611918733
+          ],
+          "final_orientation": [
+            -0.004216018212658641,
+            -0.0012397161102498887,
+            0.7071647008171027,
+            0.7070352001227763
+          ],
+          "seconds": 1.684837851999987,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 15,
+          "newly_outside": [
+            9,
+            27,
+            23
+          ],
+          "lost_volume": 0.17777500000000002,
+          "max_previous_displacement": 0.05987665098907198,
+          "inclusion_margin": -0.005
+        }
+      }
+    },
+    {
+      "fixture": "support17_safe",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 2,
+        "place_pos": [
+          -0.18069152534008026,
+          -0.5099999904632568,
+          0.963105320930481
+        ]
+      },
+      "snapshot": "experiments/native_candidate_packing/results/basin-preview-b-task001-seed42.snapshot.json",
+      "snapshot_sha256": "0ea8c516fefa18304857ba806ad9e0a9579e20dff852ac80f11cc0d5f229eaf7",
+      "actual_safe": true,
+      "predictions": {
+        "planes": {
+          "safe": true,
+          "displacement": 0.05731523144415617,
+          "angle_degrees": 2.1757526589612812,
+          "final_position": [
+            -0.20931102427005044,
+            -0.5119929667109978,
+            0.9134868961049127
+          ],
+          "final_orientation": [
+            -0.0030268020879170264,
+            0.6938976039453332,
+            -0.0030065414402629187,
+            0.7200610490900158
+          ],
+          "seconds": 1.3000180010000122,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.05260991005704386,
+          "inclusion_margin": -0.005
+        },
+        "finite": {
+          "safe": true,
+          "displacement": 0.05958985838293166,
+          "angle_degrees": 2.484241108006566,
+          "final_position": [
+            -0.2132557062726362,
+            -0.5107147364990702,
+            0.9132052760367747
+          ],
+          "final_orientation": [
+            -0.003528390950877986,
+            0.6920199925321324,
+            -0.0034942040145387416,
+            0.7218612546268361
+          ],
+          "seconds": 1.4694504910000035,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.056283241939055775,
+          "inclusion_margin": -0.005
+        }
+      }
+    },
+    {
+      "fixture": "tower_bad",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ]
+      },
+      "snapshot": "experiments/fair_candidate_packing/results/aligned-b-task001-seed42.snapshot.json",
+      "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+      "actual_safe": false,
+      "predictions": {
+        "planes": {
+          "safe": false,
+          "displacement": 0.4711238923477874,
+          "angle_degrees": 22.861214261231176,
+          "final_position": [
+            0.15253029179422292,
+            -0.1496714122898531,
+            0.8686586947317457
+          ],
+          "final_orientation": [
+            -0.01628876013071673,
+            -0.19748540907845077,
+            0.0031441526024682254,
+            0.9801654471562101
+          ],
+          "seconds": 1.590066807999989,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.03980193181504901,
+          "inclusion_margin": -0.005
+        },
+        "finite": {
+          "safe": false,
+          "displacement": 0.381663293546906,
+          "angle_degrees": 11.264281361655442,
+          "final_position": [
+            0.22727359974529554,
+            -0.205154492264975,
+            0.9014570000209676
+          ],
+          "final_orientation": [
+            -0.005432604967884903,
+            -0.0979906749259477,
+            -5.705898783112763e-05,
+            0.9951725032249896
+          ],
+          "seconds": 1.5480506879999893,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.04174595794823754,
+          "inclusion_margin": -0.005
+        }
+      }
+    }
+  ]
+}

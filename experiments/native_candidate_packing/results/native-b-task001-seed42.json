@@ -1,0 +1,3362 @@
+{
+  "task": "001",
+  "mode": "B",
+  "seed": 42,
+  "shuffled": false,
+  "config": {
+    "containers": {
+      "spacing": 2.5,
+      "container_list": [
+        {
+          "index": 0,
+          "length": 2.0,
+          "width": 1.52,
+          "height": 1.62,
+          "thickness": 0.05,
+          "buffer": 0.0,
+          "cut_x": 0.43,
+          "cut_y": 0.4,
+          "packed_items": [],
+          "require_shelf": true,
+          "is_prioritized": false
+        }
+      ]
+    },
+    "item_stream": {
+      "item_list": [
+        {
+          "index": 0,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 7,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 8,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 9,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 12,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 13,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 14,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 15,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 16,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 17,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 18,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 19,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 20,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 21,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 22,
+          "length": 0.6,
+          "width": 0.3,
+          "height": 0.25,
+          "mass": 7,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 23,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": true,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 24,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 25,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 26,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 27,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 28,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 29,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 30,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 31,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 32,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 33,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": true,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 34,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 35,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 36,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 37,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 38,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 39,
+          "length": 0.45,
+          "width": 0.3,
+          "height": 0.2,
+          "mass": 5,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2000,
+          "contactDamping": 600,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 40,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 41,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        }
+      ],
+      "look_ahead": 10,
+      "max_space": 1,
+      "visible_pool": []
+    },
+    "camera": {
+      "num_containers": 1,
+      "target_pos": [
+        0,
+        0,
+        0
+      ],
+      "distance": 3.0,
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "img_width": 64,
+      "img_height": 64,
+      "fov": 60,
+      "near_val": 0.1,
+      "far_val": 10.0
+    },
+    "validator": {
+      "inclusion_margin": -0.005,
+      "start_z": 0.08,
+      "safety_margin": 0.015,
+      "ceiling_margin": 0.018,
+      "displacement_threshold": 0.3,
+      "angle_displacement_threshold": 45,
+      "settle_wait_step": 300
+    },
+    "action": {
+      "keys": {
+        "item_idx": "int",
+        "container_idx": "int",
+        "place_pos": "float",
+        "orientation": "int"
+      },
+      "pos_lim": {
+        "low": -100,
+        "high": 100
+      },
+      "orientations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "agent": {
+      "optimize": false,
+      "init_timeout": 10.0,
+      "optimization_timeout": 180.0,
+      "policy_timeout": 10.0,
+      "allowed_methods": [
+        "get_init_states",
+        "optimize",
+        "policy"
+      ],
+      "max_mem": 12
+    },
+    "visualizer": {
+      "vis": false,
+      "camera": {
+        "yaw": 0,
+        "pitch": -20
+      }
+    }
+  },
+  "config_sha256": "7b1f06e4d0eea3bbdd7b7a3fbd33417e301992c2ba64abd377091dc77ca43c79",
+  "source": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/experiments/native_candidate_packing/source/agent.py",
+  "source_hashes": {
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "d89b9084a823e803cae06a149fd7edcd8f41a14965e199445c5b517c8b0b84cb",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c"
+  },
+  "runner_sha256": "c3ca964939586e9c37cc71db6cc916b0b9322b9827ad89cc31eb46be271f2ddd",
+  "simulator_hashes": {
+    "__init__.py": "de59b76ba2c82eece8c867efc5f23e5737f2ee10d609a6bbdde1df2714288cd4",
+    "agent_factory.py": "4571921c0319013844e91c76537fe185dc5e7185980266baf5f0e44c9b96a9eb",
+    "app.py": "d7e3d9075aa450f603be3091a79c4b0b34f946f281707fe2a3588929905803c4",
+    "camera.py": "a4f9271aca7d1ad18d33fc5190b0b619702d1737eb0d5b201b7beaefd712e444",
+    "containers.py": "7a348e7d36e5c5dfdfed12f1dc04a7b84b99f7c39ac5fe47ba24c2c693865951",
+    "env.py": "24406ccaebea802635003c41af9e0d3572b70583f6e59c59c0df8def1effb6ba",
+    "evaluator.py": "3968a9c6f2db1cfe3edde2527d380c3f8486232aa2d7c0fa20b69a08569a67cb",
+    "items.py": "e07b757a5c58baef1dad62529cd62c8640b2cf826b301614a4ea9ecaa8e7e37c",
+    "runner.py": "6887abb2236f05f85687a1aca52fa071a7050ba9612217b36837ca59d130b314",
+    "utils.py": "5e2632da7753a0f9b9c28e30a5238fe456793cd374c3bbe1d3ccb7cfd02e8844",
+    "validator.py": "c4270318b75323457d337339fe5b2a2eed765645f28a89d737e759488805b031"
+  },
+  "host": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "outcome": "policy_error",
+  "safe_placements": 20,
+  "records": [
+    {
+      "step": 0,
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.47699999809265137,
+          0.18299999833106995
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.6556855140001971,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.6545411199999762,
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "step": 1,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5680978298187256,
+          0.37700000405311584,
+          0.18299999833106995
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5408060190000015,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.5395036209999944,
+        "candidate_basins": [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            2,
+            -1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 2,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          9.633987065171823e-05,
+          0.008810432627797127,
+          0.18299999833106995
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5483754199999566,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.5465112730000783,
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 3,
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          9.457165288040414e-05,
+          0.4768153131008148,
+          0.43099209666252136
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5334133500000462,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.5315990939998301,
+        "candidate_basins": [
+          [
+            0,
+            2,
+            0,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 4,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.5350000262260437,
+          0.17299999296665192
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.2687847019999481,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.2678944839999531,
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "step": 5,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.542763888835907,
+          0.4269999861717224,
+          0.4259938597679138
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.41061557400007587,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.40813695500014546,
+        "candidate_basins": [
+          [
+            0,
+            2,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 6,
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7670000195503235,
+          -0.38499999046325684,
+          0.17299999296665192
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5022153149998303,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.500967153999909,
+        "candidate_basins": [
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 7,
+      "action": {
+        "item_idx": 8,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          9.731810132507235e-05,
+          0.008836911991238594,
+          0.4309905767440796
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.7649453819999508,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.7629491879999932,
+        "candidate_basins": [
+          [
+            0,
+            2,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            2,
+            -2
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 8,
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          7.776585334795527e-06,
+          -0.5350000262260437,
+          0.3873392939567566
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5683234069999799,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.5668437939998512,
+        "candidate_basins": [
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 9,
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7670000195503235,
+          -0.38499999046325684,
+          0.3898831903934479
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.7161825789999057,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.7137954919999174,
+        "candidate_basins": [
+          [
+            0,
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 10,
+      "action": {
+        "item_idx": 6,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.5493749976158142,
+          0.421999990940094,
+          1.0130000114440918
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.610642918999929,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 5,
+        "rejections": {
+          "transport": 4
+        },
+        "previews": [],
+        "elapsed": 0.608884775999968,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            -2
+          ],
+          [
+            0,
+            3,
+            2,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 11,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          -0.7419999837875366,
+          -0.4350000023841858,
+          0.9980000257492065
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.573853864000057,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 6,
+        "rejections": {
+          "transport": 5
+        },
+        "previews": [],
+        "elapsed": 0.5713000579999061,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            3,
+            3,
+            -1
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 12,
+      "action": {
+        "item_idx": 8,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.5993750095367432,
+          0.3669999837875366,
+          1.2609913349151611
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5940751229998114,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 7,
+        "rejections": {
+          "transport": 6
+        },
+        "previews": [],
+        "elapsed": 0.5924900410000191,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            8,
+            -2,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 13,
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.00037359294947236776,
+          -0.5066205263137817,
+          0.5937058329582214
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.8269138870000461,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 4,
+        "rejections": {
+          "transport": 3
+        },
+        "previews": [],
+        "elapsed": 0.8249558029999662,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            3,
+            2,
+            -1
+          ],
+          [
+            0,
+            3,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 14,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          0.5019999742507935,
+          0.9980000257492065
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.594011675000047,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 5,
+        "rejections": {
+          "transport": 4
+        },
+        "previews": [],
+        "elapsed": 0.5918747159998929,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 15,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669971346855164,
+          0.5019999742507935,
+          1.2259907722473145
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.0737100949997966,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 5,
+        "rejections": {
+          "transport": 4
+        },
+        "previews": [],
+        "elapsed": 1.0700499499998841,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            7,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 16,
+      "action": {
+        "item_idx": 5,
+        "container_idx": 0,
+        "orientation": 5,
+        "place_pos": [
+          -0.661983072757721,
+          -0.43498125672340393,
+          1.3059903383255005
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.034004866999794,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 7,
+        "rejections": {
+          "transport": 6
+        },
+        "previews": [],
+        "elapsed": 1.0307764680001128,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            7,
+            -2,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "step": 17,
+      "action": {
+        "item_idx": 3,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.02552245371043682,
+          -0.5099999904632568,
+          0.8081052899360657
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.1808526360000542,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 8,
+        "rejections": {
+          "transport": 7
+        },
+        "previews": [],
+        "elapsed": 1.1774973039998713,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ],
+          [
+            0,
+            3,
+            3,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 18,
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7670000195503235,
+          -0.3845764100551605,
+          0.5850686430931091
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.693997237000076,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 4,
+        "rejections": {
+          "transport": 3
+        },
+        "previews": [],
+        "elapsed": 1.69078966699999,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            2,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            6,
+            1,
+            -2
+          ],
+          [
+            0,
+            6,
+            1,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "step": 19,
+      "action": {
+        "item_idx": 5,
+        "container_idx": 0,
+        "orientation": 5,
+        "place_pos": [
+          0.8169999718666077,
+          -0.38365575671195984,
+          0.8849478960037231
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.2434859689999485,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 10,
+        "rejections": {
+          "transport": 9
+        },
+        "previews": [],
+        "elapsed": 1.240399287000173,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            3,
+            -1
+          ]
+        ]
+      }
+    }
+  ],
+  "policy_seconds": [
+    0.6556855140001971,
+    0.5408060190000015,
+    0.5483754199999566,
+    0.5334133500000462,
+    0.2687847019999481,
+    0.41061557400007587,
+    0.5022153149998303,
+    0.7649453819999508,
+    0.5683234069999799,
+    0.7161825789999057,
+    0.610642918999929,
+    0.573853864000057,
+    0.5940751229998114,
+    0.8269138870000461,
+    0.594011675000047,
+    1.0737100949997966,
+    1.034004866999794,
+    1.1808526360000542,
+    1.693997237000076,
+    1.2434859689999485,
+    1.4703285250000135
+  ],
+  "optimized_order": null,
+  "public_score": null,
+  "execution_mode": "strict_in_process_physics_diagnostic",
+  "agent_options": {},
+  "applied_deadlines_seconds": {
+    "initialization": 10,
+    "optimization": 180,
+    "policy": 8
+  },
+  "dependencies": {
+    "numpy": "2.5.2",
+    "gymnasium": "1.2.3",
+    "pybullet": "3.2.7",
+    "pillow": "10.3.0"
+  },
+  "initialization_seconds": 0.06252073600012409,
+  "error": {
+    "type": "NoValidAction",
+    "message": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 57, 'authorizations': 26, 'rejections': {'transport': 26}, 'previews': [], 'elapsed': 1.4701574129999244, 'candidate_basins': [[0, 4, 0, 2], [0, 4, 2, 1], [0, 4, 0, 1], [0, 4, 0, 0], [0, 6, 0, -2], [0, 4, 2, 2], [0, 4, -1, 1], [0, 4, -1, 2], [0, 6, 0, -1]]}"
+  },
+  "last_search_stats": {
+    "candidate_checks": 6500,
+    "combinations_visited": 57,
+    "authorizations": 26,
+    "rejections": {
+      "transport": 26
+    },
+    "previews": [],
+    "elapsed": 1.4701574129999244,
+    "candidate_basins": [
+      [
+        0,
+        4,
+        0,
+        2
+      ],
+      [
+        0,
+        4,
+        2,
+        1
+      ],
+      [
+        0,
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        -2
+      ],
+      [
+        0,
+        4,
+        2,
+        2
+      ],
+      [
+        0,
+        4,
+        -1,
+        1
+      ],
+      [
+        0,
+        4,
+        -1,
+        2
+      ],
+      [
+        0,
+        6,
+        0,
+        -1
+      ]
+    ]
+  },
+  "final_containers": [
+    {
+      "index": 0,
+      "length": 2.0,
+      "width": 1.52,
+      "cut_x": 0.43,
+      "cut_y": 0.4,
+      "height": 1.62,
+      "thickness": 0.05,
+      "n_vecs": [
+        [
+          0.0,
+          -6.123233995736766e-17,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6811039424772872,
+          -4.4833507263478093e-17,
+          -0.7321867381630839
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17
+        ],
+        [
+          0.0,
+          1.0,
+          -6.123233995736766e-17
+        ]
+      ],
+      "points": [
+        [
+          -0.5503397656998699,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          -2.377180503354661e-17,
+          0.4217769621396559
+        ],
+        [
+          0.0,
+          -0.76,
+          0.81
+        ],
+        [
+          0.0,
+          0.71,
+          0.81
+        ]
+      ],
+      "volume": 4.0482,
+      "center": [
+        0.0,
+        0.0,
+        0.81
+      ],
+      "shelf": true,
+      "is_prioritized": false,
+      "packed_items": [
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            9.061965901292005e-05,
+            0.47682363801733085,
+            0.1749870783124304
+          ],
+          "orn": [
+            -7.096996701403402e-06,
+            5.057657198777531e-06,
+            8.339925028807356e-06,
+            0.9999999999272492
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.5678161434146017,
+            0.3779324308722913,
+            0.17498742756690527
+          ],
+          "orn": [
+            -1.3677855868025858e-05,
+            -5.027400976513334e-07,
+            0.7069998454191649,
+            0.7072137006520308
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.00019791484710634619,
+            0.00883571958370153,
+            0.174985655481183
+          ],
+          "orn": [
+            8.677825078418105e-06,
+            1.2783895664302651e-05,
+            9.884037882475894e-06,
+            0.9999999998317866
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            9.389589050418758e-05,
+            0.47683062001651266,
+            0.42497337423904297
+          ],
+          "orn": [
+            -8.824424343574778e-07,
+            9.085752743086915e-06,
+            1.7429135197263434e-05,
+            0.9999999998064478
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 0,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            -0.0022261568241676785,
+            -0.5281128825741324,
+            0.10919117291049764
+          ],
+          "orn": [
+            -0.031606798340107996,
+            -0.011406229252200927,
+            -0.0001584536722941656,
+            0.9994352821095359
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.5427836846315619,
+            0.42720783783846056,
+            0.41997119787032694
+          ],
+          "orn": [
+            -3.2548889506159762e-06,
+            -6.976682922922877e-06,
+            0.7070781218507527,
+            0.7071354393189072
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 7,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.7664525968282254,
+            -0.38591720563836046,
+            0.11245422326009787
+          ],
+          "orn": [
+            0.0009154384769561191,
+            -0.0035070941235765107,
+            0.7069022500886873,
+            0.7073019659825316
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 15,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.00024605512641927844,
+            0.00883543091401669,
+            0.42496666146851053
+          ],
+          "orn": [
+            1.1418015946401776e-05,
+            -6.535098713095899e-06,
+            -2.1693313366929957e-05,
+            0.9999999996781608
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 8,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            -0.0066718644382358075,
+            -0.5117939141162344,
+            0.286425754997225
+          ],
+          "orn": [
+            -0.043466778048457416,
+            -0.010707862518283543,
+            -0.0003502503218116312,
+            0.9989974265287612
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 9,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.7648189307679246,
+            -0.38751560608167,
+            0.28310864354689735
+          ],
+          "orn": [
+            0.0022790062991333753,
+            -0.0025091688027386464,
+            0.7069793938776909,
+            0.7072260224528936
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 16,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.5493788416195009,
+            0.42196849409933,
+            0.9949856735051602
+          ],
+          "orn": [
+            8.99868103633215e-06,
+            4.922122064991256e-07,
+            1.3459385106889126e-05,
+            0.9999999998688132
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.7420088936182478,
+            -0.4350467413312885,
+            0.9799868518696361
+          ],
+          "orn": [
+            5.047213646206361e-06,
+            -4.0098312404727155e-06,
+            0.7071000963660911,
+            0.7071134659144257
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 20,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.5993866223530181,
+            0.36696286246493565,
+            1.254973483877076
+          ],
+          "orn": [
+            4.404810319134553e-06,
+            1.1818087271212812e-06,
+            1.3478765559113744e-05,
+            0.9999999998987619
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 22,
+          "length": 0.6,
+          "width": 0.3,
+          "height": 0.25,
+          "mass": 7,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            -0.009208478967131246,
+            -0.46379482504997355,
+            0.4967673309946926
+          ],
+          "orn": [
+            -0.04323443505930106,
+            -0.00965824323241623,
+            -0.0002626408403138099,
+            0.9990182345595878
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6669504181931712,
+            0.5019905695839941,
+            0.9799885441675765
+          ],
+          "orn": [
+            4.785889059140391e-08,
+            -3.2423163017620336e-06,
+            2.2728250239720536e-05,
+            0.9999999997364558
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.666974415343053,
+            0.5019746774450673,
+            1.219971971800645
+          ],
+          "orn": [
+            -2.110629813634853e-05,
+            -1.578352321863576e-06,
+            3.9323559275699086e-05,
+            0.9999999990028453
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 19,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.6619997267314929,
+            -0.435044057496947,
+            1.2999721227893084
+          ],
+          "orn": [
+            0.5000019495935398,
+            0.49999334496246806,
+            0.49999213328571174,
+            0.5000125718902527
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 17,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.015411483072681437,
+            -0.4595970182489876,
+            0.7362198641208691
+          ],
+          "orn": [
+            -0.04098566181143951,
+            -0.009632548443992753,
+            -0.0011163018818270976,
+            0.9991126780330941
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 27,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.7635339457509291,
+            -0.38879488538145546,
+            0.4769941950600273
+          ],
+          "orn": [
+            0.002708184350815737,
+            5.203033318688143e-06,
+            0.7070042361323824,
+            0.7072041259787142
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 23,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": true,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.8133504083596097,
+            -0.390079408758959,
+            0.8043415690165396
+          ],
+          "orn": [
+            0.5013704981108821,
+            0.4996856878145903,
+            0.5002591173677229,
+            0.4986809125159821
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        }
+      ]
+    }
+  ],
+  "layout_proxies": [
+    {
+      "container_index": 0,
+      "packed_count": 20,
+      "cargo_mass": 224.0,
+      "mass_weighted_cog_world": [
+        0.140865229305786,
+        -0.01796886542104434,
+        0.5640128749455424
+      ],
+      "mass_weighted_cog_local": [
+        0.140865229305786,
+        -0.01796886542104434,
+        0.5640128749455424
+      ],
+      "raw_packed_volume": 1.2487000000000001
+    }
+  ],
+  "evaluation": {
+    "fill_score": 22.84163331851193,
+    "num_placed_items": 0.47619047619047616
+  },
+  "policy_time_seconds": {
+    "count": 21,
+    "max": 1.693997237000076,
+    "p50": 0.610642918999929,
+    "p95": 1.4703285250000135,
+    "p99": 1.6492634946000637
+  },
+  "elapsed_seconds": 32.435173922000104
+}

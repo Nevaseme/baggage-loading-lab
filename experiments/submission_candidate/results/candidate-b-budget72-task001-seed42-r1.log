@@ -1,0 +1,64 @@
+transport item 2
+place item 2
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 10
+place item 10
+transport item 0
+place item 0
+transport item 1
+place item 1
+transport item 15
+place item 15
+transport item 3
+place item 3
+transport item 4
+place item 4
+transport item 16
+place item 16
+transport item 11
+place item 11
+transport item 12
+place item 12
+transport item 13
+place item 13
+transport item 14
+place item 14
+transport item 17
+place item 17
+transport item 23
+place item 23
+transport item 19
+place item 19
+transport item 21
+place item 21
+transport item 25
+place item 25
+transport item 26
+place item 26
+transport item 28
+place item 28
+transport item 18
+place item 18
+transport item 20
+place item 20
+not included. [99.16499999999999, -0.625, -100.455, -0.625, 72.45381808712713, -0.5850000000000062, -0.5349999999999939]
+item 2 not inside (hit boundary plane), [ 8.18549438e-06 -6.24654946e-01 -1.52000819e+00 -1.27534505e+00
+ -5.96426390e-01 -1.46211804e+00 -7.88195658e-03]
+item 5 not inside (hit boundary plane), [ 2.22636852e-05 -6.07083892e-01 -1.52002226e+00 -1.29291611e+00
+ -6.08383796e-01 -1.46303281e+00 -6.96718944e-03]
+item 6 not inside (hit boundary plane), [ 2.54538318e-05 -6.23840563e-01 -1.52002545e+00 -1.27615944e+00
+ -5.96968425e-01 -1.00731665e+00 -4.62683346e-01]
+item 10 not inside (hit boundary plane), [-0.49997844 -1.27293518 -1.02002156 -0.62706482 -0.52096374 -1.46816993
+ -0.00183007]
+item 0 not inside (hit boundary plane), [ 0.04261027 -0.62510277 -1.56261027 -1.27489723 -0.56492869 -0.39985984
+ -1.07014016]
+item 15 not inside (hit boundary plane), [-3.99990027e-06 -6.07231671e-01 -1.51999600e+00 -1.29276833e+00
+ -6.08302373e-01 -7.94685360e-01 -6.75314640e-01]
+item 16 not inside (hit boundary plane), [-1.07998892 -0.57423395 -0.44001108 -1.32576605 -1.42152788 -1.46526944
+ -0.00473056]
+item 12 not inside (hit boundary plane), [-1.31997667 -1.12431198 -0.20002333 -0.77568802 -1.22258342 -1.46765138
+ -0.00234862]
+close env.

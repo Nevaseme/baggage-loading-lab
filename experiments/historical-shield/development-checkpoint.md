@@ -1,3 +1,5 @@
+> Historical record. Current instructions: root AGENTS.md. Current development context: docs/development.md.
+
 # SDD ledger — plan: docs/superpowers/plans/2026-08-24-portal-reserved-scaffold-portfolio.md
 
 ## Preflight

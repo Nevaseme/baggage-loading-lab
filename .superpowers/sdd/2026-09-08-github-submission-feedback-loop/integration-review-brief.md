@@ -1,0 +1,15 @@
+# Integrated review brief
+
+Review the GitHub artifact/result feedback mechanism, not the quality of historical packing algorithms. User approved a private repository, exact ZIP/results ingestion, historical migration, and portable Web ChatGPT/Codex handoff. Algorithm development remains paused.
+
+Read the completed implementation report, the root migration receipt under knowledge/sync (once generated), current release receipt, and the supplied whole-change review package. Historical algorithm source/raw large experiments are unchanged byte copies and omitted from the review diff; source hashes, manifests, preserved raw feedback and migration comparisons establish their integrity. Review the new mechanism and cross-file contract, not tens of thousands of historical code/log lines.
+
+Required outcomes: exact Public strings, rounded/unknown distinction, original-ZIP versus source-only identity, one artifact/multiple evaluations, safe retry and corrections, raw evidence preservation, non-executing safe ZIP intake, protected output paths, fresh deterministic views, self-contained portable context, clean-clone validation. Source-only canonical identity for this initial import is SHA256(concat(sorted(path + NUL + fileSHA_ascii))); ZIP SHA itself is primary ZIP identity. Metadata's source_commit means intake-repository HEAD, not algorithm ancestry, as documented.
+
+Prior task review found identity recomputation gaps, export overwrite risk, result symlink handling, insufficient conventional secret-file filtering, cross-artifact corrections/cycles, and schema validation gaps. Implementer was assigned the complete list in one batch; task re-review checks those fixes. Final integrated review should focus on newly identified integration or delivery risks rather than repeating unfocused whole-suite runs.
+
+Remote facts: private repository exists; configured Git authentication works. Guarded original ZIP and manifest are published; GitHub's asset SHA-256 displays match local files. Release tag intentionally remains the initial bootstrap commit and is not source provenance. Server immutable-release protection was not configured. The GitHub connector cannot read this new private repo (404); granting access is not authorized, so a context bundle is the fallback. A user's Web chat reading the bundle cannot be directly verified from this task and must be reported as unverified, not silently treated as tested.
+
+Windows staging originally inherited Python tempfile's private ACL. User approved repairing exactly the eight generated directories. Repair is confirmed with ordinary-user Git reads. A newly regenerated evaluation under the normal-mkdir staging fix is also readable without extra ACL changes. Original submissions/simulator files remain untouched. Prepublication migration mistakes are retained locally for audit, not labeled as additional official submissions.
+
+Read-only review. No edits, commits, new subagents, or repeated full-suite runs. Give spec and quality/integration verdicts with Critical/Important/Minor findings and file:line evidence. Explicitly distinguish pending remote/interactive verification from code defects.

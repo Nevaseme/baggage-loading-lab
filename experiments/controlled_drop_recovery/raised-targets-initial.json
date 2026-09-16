@@ -1,0 +1,187 @@
+{
+  "probe_sha256": "77e2f38fecb64fd291d4cc1b22efdbb330ab56656ea12c9256068a9f8cba552e",
+  "source_path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/experiments/native_candidate_packing/variants/progressive_recovery",
+  "source_hashes": {
+    "agent.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "timing_contended": true,
+  "drops": [
+    0.06,
+    0.12,
+    0.18,
+    0.24
+  ],
+  "snapshots": [
+    {
+      "name": "historical23",
+      "snapshot_sha256": "ffa213ba8a3d7ea77c738528ff8d8c6737ebb4f36ce5b5a62ab46c00c91da2f1",
+      "generated_checks": 6500,
+      "unique_supported_roots": 44,
+      "native_checks": 176,
+      "native_rejections": {
+        "target_clear": 56,
+        "transport": 176,
+        "included": 83
+      },
+      "previews": [],
+      "outcome": "no_verified_recovery",
+      "native_valid_raised_roots": 0,
+      "seconds": 2.264228437999975
+    },
+    {
+      "name": "native20",
+      "snapshot_sha256": "ac1309e9dde2eb2dc6ffbe5d8713584adbc2f73f68dc6badaf950a952870a3e5",
+      "generated_checks": 6500,
+      "unique_supported_roots": 50,
+      "native_checks": 200,
+      "native_rejections": {
+        "target_clear": 76,
+        "transport": 76,
+        "included": 36
+      },
+      "previews": [
+        {
+          "drop": 0.06,
+          "landing_center": [
+            -0.012439622543752193,
+            -0.4500427544116974,
+            1.0834882259368896
+          ],
+          "support_ratio": 1.0,
+          "support_items": [
+            [
+              0,
+              "cargo",
+              17
+            ]
+          ],
+          "action": {
+            "item_idx": 9,
+            "container_idx": 0,
+            "orientation": 0,
+            "place_pos": [
+              -0.012439622543752193,
+              -0.4500427544116974,
+              1.1434881687164307
+            ]
+          },
+          "native": {
+            "included": true,
+            "plane_max_dot": -0.10995724558830261,
+            "target_clear": true,
+            "transport": true,
+            "effective_lift": 0.08,
+            "path_z": 1.2234881687164307,
+            "start_x": -0.012439622543752193,
+            "samples": 34,
+            "failure_segment": null,
+            "failure_distance": null,
+            "deadline_exceeded": false,
+            "seconds": 0.005832962999988922
+          },
+          "preview": {
+            "safe": true,
+            "displacement": 0.17078045404411527,
+            "angle_degrees": 8.283078672481686,
+            "final_position": [
+              -0.02413477623953516,
+              -0.34520107155312213,
+              1.0091847495532236
+            ],
+            "final_orientation": [
+              -0.07219472143172015,
+              -0.001808200456718245,
+              0.00068050355705461,
+              0.9973886852794218
+            ],
+            "seconds": 1.5551743650000276,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 15,
+            "newly_outside": [
+              23
+            ],
+            "lost_volume": 0.07312500000000001,
+            "max_previous_displacement": 0.06175476674841833,
+            "inclusion_margin": -0.005
+          }
+        }
+      ],
+      "outcome": "verified_raised_recovery",
+      "native_valid_raised_roots": 88,
+      "recovery": {
+        "drop": 0.06,
+        "landing_center": [
+          -0.012439622543752193,
+          -0.4500427544116974,
+          1.0834882259368896
+        ],
+        "support_ratio": 1.0,
+        "support_items": [
+          [
+            0,
+            "cargo",
+            17
+          ]
+        ],
+        "action": {
+          "item_idx": 9,
+          "container_idx": 0,
+          "orientation": 0,
+          "place_pos": [
+            -0.012439622543752193,
+            -0.4500427544116974,
+            1.1434881687164307
+          ]
+        },
+        "native": {
+          "included": true,
+          "plane_max_dot": -0.10995724558830261,
+          "target_clear": true,
+          "transport": true,
+          "effective_lift": 0.08,
+          "path_z": 1.2234881687164307,
+          "start_x": -0.012439622543752193,
+          "samples": 34,
+          "failure_segment": null,
+          "failure_distance": null,
+          "deadline_exceeded": false,
+          "seconds": 0.005832962999988922
+        },
+        "preview": {
+          "safe": true,
+          "displacement": 0.17078045404411527,
+          "angle_degrees": 8.283078672481686,
+          "final_position": [
+            -0.02413477623953516,
+            -0.34520107155312213,
+            1.0091847495532236
+          ],
+          "final_orientation": [
+            -0.07219472143172015,
+            -0.001808200456718245,
+            0.00068050355705461,
+            0.9973886852794218
+          ],
+          "seconds": 1.5551743650000276,
+          "steps": 300,
+          "deadline_exceeded": false,
+          "previously_inside": 15,
+          "newly_outside": [
+            23
+          ],
+          "lost_volume": 0.07312500000000001,
+          "max_previous_displacement": 0.06175476674841833,
+          "inclusion_margin": -0.005
+        }
+      },
+      "seconds": 3.7476201950000245
+    }
+  ]
+}

@@ -1,0 +1,347 @@
+{
+  "snapshot_sha256": "b933627106d1ce24aed07e03bf48fdb7b42497c39e236ad5285e8ca68d75859c",
+  "trials": [
+    {
+      "variant": "progressive",
+      "source_hashes": {
+        "agent.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+        "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+        "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+        "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+        "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+        "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+        "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+      },
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 57, 'authorizations': 30, 'rejections': {'transport': 30}, 'previews': [], 'elapsed': 1.9151594039999509, 'narrow_basins': [[0, 4, 0, 2], [0, 4, 2, 1], [0, 4, 0, 1], [0, 4, 0, 0], [0, 6, 0, -1], [0, 4, 2, 2], [0, 4, -1, 1], [0, 4, -1, 2], [0, 6, 0, -2]], 'candidate_basins': [[0, 4, 0, 2], [0, 4, 2, 1], [0, 4, 0, 1], [0, 4, 0, 0], [0, 6, 0, -1], [0, 4, 2, 2], [0, 4, -1, 1], [0, 4, -1, 2], [0, 6, 0, -2]], 'deferred_support_candidates': 0}",
+      "seconds": 1.9182513199999676,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 57,
+        "authorizations": 30,
+        "rejections": {
+          "transport": 30
+        },
+        "previews": [],
+        "elapsed": 1.9151594039999509,
+        "narrow_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0
+      }
+    },
+    {
+      "variant": "controlled_drop",
+      "source_hashes": {
+        "agent.py": "4d2c3858b85ffe73e0ec413c193bb78383155c40706e5c7263ba537302f9392d",
+        "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+        "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+        "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+        "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+        "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+        "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+      },
+      "outcome": "returned",
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.014328155666589737,
+          -0.43568849563598633,
+          1.1447383165359497
+        ]
+      },
+      "seconds": 3.3229068159999997,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 57,
+        "authorizations": 45,
+        "rejections": {
+          "transport": 44,
+          "target_clear": 14
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 7,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                -0.014328155666589737,
+                -0.43568849563598633,
+                1.1447383165359497
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                17
+              ]
+            ],
+            "release_drop": 0.06,
+            "landing_center": [
+              -0.014328155666589737,
+              -0.43568849563598633,
+              1.0847383737564087
+            ],
+            "safe": true,
+            "displacement": 0.25424807774293856,
+            "angle_degrees": 11.838465514814391,
+            "final_position": [
+              -0.1661489405383099,
+              -0.3136179331861315,
+              0.9813635568571968
+            ],
+            "final_orientation": [
+              -0.08493836400703048,
+              -0.05847464156794238,
+              0.0011183576953383123,
+              0.9946682561987062
+            ],
+            "seconds": 1.8391055680000363,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 17,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.3210099056912162,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.3184691039999734,
+        "narrow_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "raised_candidates": 120,
+        "selected_stage": "raised",
+        "selected_drop": 0.06,
+        "landing_center": [
+          -0.014328155666589737,
+          -0.43568849563598633,
+          1.0847383737564087
+        ]
+      }
+    }
+  ]
+}

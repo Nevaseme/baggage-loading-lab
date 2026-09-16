@@ -1,48 +1,32 @@
 # Baggage Loading Lab
 
-提出したアルゴリズム、その結果、次の設計に使う証拠を共有する非公開研究リポジトリです。
+Build and compare baggage-packing algorithms toward a verified Public score of at least 60. This private repository preserves source, submissions, results, and the evidence needed for the next experiment.
 
-**AIも人も、まず [START_HERE.md](START_HERE.md) を読んでください。**
+Use [START_HERE.md](START_HERE.md) to find the relevant code or workflow. [progress.md](progress.md) is the generated results table; [development.md](docs/development.md) describes the local research environment.
 
-目的はPublic 60点以上を目指す設計・実装・検証の反復です。このリポジトリへの登録や基盤テスト成功は、提出アルゴリズムの品質保証とは別です。
+## Feedback loop
 
-## 普段の使い方
+1. Develop and compare a candidate against a matched control.
+2. Verify the exact ZIP using the [evaluation contract](docs/evaluation-contract.md).
+3. Submit to SIGNATE, then give Codex the actual ZIP and available result text/Public score.
+4. Codex records the evidence and synchronizes it to `Nevaseme/baggage-loading-lab` using the [registry workflow](docs/registry-operations.md).
 
-1. ChatGPT WebまたはCodexに、このリポジトリと `START_HERE.md` を渡して次の設計・コード・ZIPを作成させます。
-2. 必要な提出前検証を行い、あなたがSIGNATEへZIPを提出します。
-3. **実際に提出したZIP＋Public値＋取得できた結果原文**をCodexへ渡し、「このZIPと結果を記録して」と依頼します。
-4. Codexが同一性を確認し、台帳と比較表を更新して、このリポジトリに保存します。
+## Layout
 
-Public値しか分からなくても記録できます。実行statusや成分が不明な場合は不明のまま保存します。Web版でZIP生成できることはユーザー確認済みです。物理検証を実行していない場合は、その事実も一緒に引き継ぎます。
-
-## 記録の役割
-
-| 場所 | 内容 |
+| Path | Purpose |
 | --- | --- |
-| `artifacts/` | ZIP由来のコード、ハッシュ、手法説明。原本欠落も明記 |
-| `evaluations/` | 評価原文、Publicの精度・出典、各成分、対応する成果物 |
-| `progress.md` | 台帳から再生成する比較表 |
-| `knowledge/CURRENT.md` | 現状と証拠への入口 |
-| `knowledge/lessons/` | 観測と仮説を区別した設計上の知見 |
-| `contracts/` | Agentインターフェイスと提出時の注意 |
-| `tools/lab/` | コードを実行せずにZIP・結果を取り込むローカルツール |
-| GitHub Releases | 確認できた提出ZIP原本。GitHub自動生成のSource code ZIPとは別 |
+| `artifacts/`, `evaluations/` | Registered source, hashes, original feedback, and method notes |
+| `experiments/`, `knowledge/lessons/` | Comparisons, checkpoints, and useful findings |
+| `tools/lab/`, `tests/` | Registry tooling and its tests |
+| `contracts/`, `docs/` | Interface, evaluation, and operating references |
+| `deliverables/` | One folder per submitted ZIP/result pair |
+| `simulator/` | Official source/configurations, development agents, tests, and run evidence |
+| `submit/`, `.superpowers/`, `official_mhtml/`, `analysis/` | Historical submissions, plans, official reference captures, and analysis |
+| `.lab/` | Useful audit/migration evidence; duplicate checkouts/exports and caches excluded |
 
-同じZIPに複数の評価を記録できます。同名でも中身が違うZIPは別の成果物です。訂正は元の証拠を残して追加します。
+## Registry checks
 
-### 保存ZIPのダウンロード
-
-- [4系統のコード＋result入り再構成ZIP](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/reconstructed-source-results-2026-09-09)：各Assetsの `*-source-result-reconstructed.zip` を選んでください。元フォルダのコードと `result-log.txt` を保持し、キャッシュを除外しています。提出原本や提出受入済みZIPではありません。
-- [Guardedの提出ZIP原本](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54)：`highscore_guarded_20260813.zip` が原本です。他の3系統は引き続き原本未発見です。
-- [再構成ZIPと既存評価の対応・ハッシュ照合記録](knowledge/sync/2026-09-09-reconstructed-bundles.json)。再構成で新しい評価は作成せず、過去のPublic値を新ZIPの評価値へ転用していません。
-
-接続できないWebチャットには、Codexから現状・コード・台帳をまとめた引き継ぎZIPを渡せます。通常のGit認証とWebのGitHub連携は別の接続なので、それぞれの読み取り確認が必要です。
-
-## ローカルでの確認
-
-取り込み・訂正・同期・Webへの引き継ぎは [運用手順](docs/registry-operations.md) を参照してください。
-
-Python 3.12の標準ライブラリで基盤を動かします。
+Python 3.12 and the standard library are sufficient for registry operations:
 
 ```powershell
 python -m unittest discover -s tests -p 'test_lab*.py' -v
@@ -50,6 +34,18 @@ python -m tools.lab --root . validate
 python -m tools.lab --help
 ```
 
-既存PCでは `simulator/.signate_venv/Scripts/python.exe` も利用できます。新しいcloneで台帳の確認だけをする場合、PyBulletやSIGNATEの認証は不要です。
+On this PC, use `simulator/.signate_venv/Scripts/python.exe` if Python is not on PATH. Physics runs need the locally supplied simulator and its dependencies.
 
-公式シミュレータ・配布データは初回公開対象に含めていません。[インターフェイス要約](contracts/agent-interface.md)を参照し、物理試験にはユーザーが保有する公式環境を使います。
+## Saved archives
+
+- [Support recovery candidate, 2026-09-16](experiments/submission_candidate/README.md): new local submission ZIP, validation, and hashes; Public score pending.
+- [Guarded original submission](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/artifact-3789b037da39bd2f38215d711c42ad9cf504503f44b94016517a675044cb4a54): `highscore_guarded_20260813.zip`.
+- [Four reconstructed source/result bundles](https://github.com/Nevaseme/baggage-loading-lab/releases/tag/reconstructed-source-results-2026-09-09): choose `*-source-result-reconstructed.zip`. These preserve code and result logs but are not original submission ZIPs.
+- [Bundle identities and verification record](knowledge/sync/2026-09-09-reconstructed-bundles.json).
+
+The other three original submission ZIPs remain unavailable. Scores stay attached to their recorded evaluations, not to reconstructed archives.
+
+For another AI reading this private repository, use [the AI handoff](docs/ai-handoff.md).
+It separates the latest submitted result, local experimental evidence, rejected
+approaches, and next decisions. Installed runtimes and authentication are not
+part of the shared project; source and recorded results are.

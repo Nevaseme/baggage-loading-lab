@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "episode_fact": {
+    "description": "One immutable local episode record. Values describe a single task/mode/seed run and retain null when the evaluator or measurement is unavailable.",
+    "conditional_semantics": [
+      {
+        "when": "policy_sample_count == 0",
+        "fields": [
+          "policy_p50_seconds",
+          "policy_p95_seconds",
+          "policy_p99_seconds",
+          "policy_max_seconds"
+        ],
+        "must_be": null,
+        "otherwise": "When policy_sample_count > 0, each timing field contains its measured statistic.",
+        "no_fabricated_zero": true
+      }
+    ],
+    "required_fields": {
+      "experiment_id": {"type": "string", "nullable": false},
+      "baseline_id": {"type": "string", "nullable": true},
+      "artifact_hash": {"type": "string", "nullable": false},
+      "config_hash": {"type": "string", "nullable": false},
+      "runner_hash": {"type": "string", "nullable": false},
+      "lifecycle": {"type": "object", "nullable": false},
+      "environment": {"type": "object", "nullable": false},
+      "hardware": {"type": "object", "nullable": false},
+      "timestamp": {"type": "string", "nullable": false},
+      "task": {"type": "string", "nullable": false},
+      "mode": {"type": "string", "nullable": false},
+      "lookahead": {"type": "integer", "nullable": true},
+      "seed": {"type": "integer", "nullable": false},
+      "requested_items": {"type": "integer", "nullable": false},
+      "effective_items": {"type": "integer", "nullable": false},
+      "attempted_steps": {"type": "integer", "nullable": false},
+      "policy_calls": {"type": "integer", "nullable": false},
+      "safe_placements": {"type": "integer", "nullable": false},
+      "completed_numerator": {"type": "integer", "nullable": false},
+      "completed_denominator": {"type": "integer", "nullable": false},
+      "fill_score": {"type": "number", "nullable": true},
+      "evaluator_version": {"type": "string", "nullable": true},
+      "terminal_outcome": {"type": "string", "nullable": false},
+      "terminal_reason": {"type": "string", "nullable": false},
+      "first_failed_predicate": {"type": "string", "nullable": true},
+      "malformed_count": {"type": "integer", "nullable": false},
+      "unchecked_count": {"type": "integer", "nullable": false},
+      "invalid_count": {"type": "integer", "nullable": false},
+      "unsafe_count": {"type": "integer", "nullable": false},
+      "optimize_seconds": {"type": "number", "nullable": false},
+      "optimize_limit_seconds": {"type": "number", "nullable": false},
+      "policy_sample_count": {"type": "integer", "nullable": false},
+      "policy_p50_seconds": {"type": "number", "nullable": true},
+      "policy_p95_seconds": {"type": "number", "nullable": true},
+      "policy_p99_seconds": {"type": "number", "nullable": true},
+      "policy_max_seconds": {"type": "number", "nullable": true},
+      "policy_limit_seconds": {"type": "number", "nullable": false},
+      "action_hash": {"type": "string", "nullable": false},
+      "raw_evidence_path": {"type": "string", "nullable": false}
+    }
+  },
+  "paired_experiment_aggregate": {
+    "description": "Aggregate over matched candidate/baseline episode pairs; deltas are computed only from available matched observations.",
+    "conditional_semantics": [
+      {
+        "when": "timing_sample_count == 0",
+        "fields": [
+          "policy_p99_seconds",
+          "policy_max_seconds"
+        ],
+        "must_be": null,
+        "otherwise": "When timing_sample_count > 0, each timing field contains the measured aggregate statistic.",
+        "no_fabricated_zero": true
+      }
+    ],
+    "required_fields": {
+      "matched_manifest_hash": {"type": "string", "nullable": false},
+      "pair_count": {"type": "integer", "nullable": false},
+      "seed_count": {"type": "integer", "nullable": false},
+      "median_safe_placement_delta": {"type": "number", "nullable": false},
+      "mean_fill_score_delta": {"type": "number", "nullable": true},
+      "worst_safety_regression": {"type": "number", "nullable": false},
+      "candidate_zero_delta": {"type": "number", "nullable": true},
+      "timing_sample_count": {"type": "integer", "nullable": false},
+      "policy_p99_seconds": {"type": "number", "nullable": true},
+      "policy_max_seconds": {"type": "number", "nullable": true},
+      "gate_result": {"type": "string", "nullable": false}
+    }
+  }
+}

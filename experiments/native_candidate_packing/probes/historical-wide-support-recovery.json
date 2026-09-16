@@ -1,0 +1,40 @@
+{
+  "source_hashes": {
+    "agent.py": "5c26732c1ec50e220034050ab96f82721660736051ad8a79852f11aa4d56b7aa",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "snapshot_sha256": "ffa213ba8a3d7ea77c738528ff8d8c6737ebb4f36ce5b5a62ab46c00c91da2f1",
+  "outcome": "NoValidAction",
+  "error": "No authorized candidate: {'candidate_checks': 111, 'combinations_visited': 57, 'authorizations': 7, 'rejections': {'transport': 7}, 'previews': [], 'elapsed': 1.6178433080000003, 'candidate_basins': [[0, 6, -2, 2], [0, 6, -3, 2]], 'deferred_support_candidates': 0}",
+  "seconds": 1.6192351909999996,
+  "diagnostics": {
+    "candidate_checks": 111,
+    "combinations_visited": 57,
+    "authorizations": 7,
+    "rejections": {
+      "transport": 7
+    },
+    "previews": [],
+    "elapsed": 1.6178433080000003,
+    "candidate_basins": [
+      [
+        0,
+        6,
+        -2,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        2
+      ]
+    ],
+    "deferred_support_candidates": 0
+  }
+}

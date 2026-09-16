@@ -1,0 +1,31 @@
+transport item 9
+place item 9
+transport itargv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+{"source": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/deliverables/verified-extraction/support_recovery_packing/agent.py", "task": "001", "mode": "C", "seed": 17, "outcome": "terminal_rejection", "safe_placements": 16, "evaluation": {"fill_score": 17.970950051874905, "num_placed_items": 0.38095238095238093}, "policy_time_seconds": {"count": 17, "max": 2.311294076999957, "p50": 0.911729207999997, "p95": 2.118054785800041, "p99": 2.2726462187599736}, "error": null}
+4825 -1.27456816 -0.5468114  -0.40045937
+ -1.06954063]
+item 31 not inside (hit boundary plane), [ 8.99650627e-06 -6.07079205e-01 -1.52000900e+00 -1.29292080e+00
+ -6.08396703e-01 -1.46284095e+00 -7.15905121e-03]
+item 41 not inside (hit boundary plane), [ 0.01910462 -0.00794954 -1.53910462 -1.89205046 -1.00248472 -0.45002009
+ -1.01997991]
+item 37 not inside (hit boundary plane), [-1.0599853  -1.89737796 -0.4600147  -0.00262204 -0.5056829  -0.99575876
+ -0.47424124]
+close env.

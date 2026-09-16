@@ -1,0 +1,52 @@
+{
+  "source_hashes": {
+    "agent.py": "cdff3e51d16e6d3e9998853ff91972995a4865727d48393a11eba200128f16ab",
+    "authorizer.py": "d324c70ac36c15871c782d7b987c5d44363ccc954868dc54583fc7a72ac7a441",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "preview.py": "55a2371be9fc0396f1e83e191a7b4028a24d1ee1c7c01d0bbd190cf9ff56eaf0",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "snapshot_sha256": "fb7236c40ee0ff0e3d06ee1a2d2bad7dbe16d2eea00805890cb64c365e3fa3bf",
+  "trials": [
+    {
+      "use_support_candidates": false,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 60, 'authorizations': 0, 'rejections': {}, 'previews': [], 'elapsed': 0.9237688959999559}",
+      "seconds": 0.9240851059998931,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 0,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.9237688959999559
+      }
+    },
+    {
+      "use_support_candidates": true,
+      "outcome": "authorized",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.5141792297363281,
+          0.5019999742507935,
+          1.2559900283813477
+        ]
+      },
+      "support_ratio": 0.9999999665627776,
+      "transport_clearance": 0.08600000921297044,
+      "seconds": 1.045782595999981,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [],
+        "elapsed": 0.9211146719999306
+      }
+    }
+  ]
+}

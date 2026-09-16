@@ -1,0 +1,713 @@
+{
+  "authoritative_exact_exhaustion": {
+    "classification": "exact_candidate_exhaustion_unresolved",
+    "default_scans": [
+      {
+        "build_seconds": 0.0007170999888330698,
+        "deadline_reached": false,
+        "repeat": 0,
+        "root_count": 0,
+        "roots": [],
+        "scan_seconds": 1.1095875999890268,
+        "stats": {
+          "accepted_roots": 0,
+          "adaptive_dense_activated": false,
+          "adaptive_dense_covered_occurrences": 0,
+          "adaptive_dense_deadline_reached": false,
+          "adaptive_dense_early_stop": false,
+          "adaptive_dense_exact_attempts": 0,
+          "adaptive_dense_exact_per_pool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "adaptive_dense_raw_generated": 0,
+          "adaptive_dense_raw_per_pool": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "deadline_reached": false,
+          "deferred_roots": 0,
+          "duplicate_roots": 0,
+          "exact_attempts": 7128,
+          "first_root_stage": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "fixed_exact_attempt_cap": 0,
+          "fixed_pools_attempted": 0,
+          "fixed_pools_covered": 0,
+          "fixed_quota_exhausted": false,
+          "global_cap_reached": false,
+          "item_exceptions": [],
+          "normal_roots": 0,
+          "passes_completed": [
+            "coverage",
+            "scarcity",
+            "rescue"
+          ],
+          "per_pool_raw": [
+            708,
+            708,
+            708,
+            708,
+            718,
+            718,
+            718,
+            718,
+            714,
+            710
+          ],
+          "per_pool_roots": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "raw_examined": 7128,
+          "rejection_counts": {
+            "collision_or_clearance": 6363,
+            "depth_map": 19,
+            "plane_inclusion": 59,
+            "support_ratio": 302,
+            "transport": 385
+          },
+          "rescue_roots": 0,
+          "stage_attempts": {
+            "normal.compact": 360,
+            "normal.free_deepen": 880,
+            "normal.free_probe": 160,
+            "normal.legacy": 1000,
+            "normal.obstacle_deepen": 950,
+            "normal.obstacle_probe": 160,
+            "normal.plane_deepen": 1078,
+            "normal.plane_probe": 160,
+            "rescue.dense_last": 2380
+          },
+          "stage_roots": {}
+        },
+        "total_seconds": 1.1103046999778599
+      }
+    ],
+    "dense_sweep": [
+      {
+        "accepted": 0,
+        "elapsed_seconds": 0.19508789997780696,
+        "generated": 2560,
+        "per_pool": [
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 0
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 1
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 2
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 3
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 4
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 5
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 6
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 7
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 8
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 256,
+            "pool_index": 9
+          }
+        ],
+        "raw_work_limit": 256,
+        "rejections": {
+          "collision_or_clearance": 2437,
+          "transport": 123
+        }
+      },
+      {
+        "accepted": 0,
+        "elapsed_seconds": 2.8849572999752127,
+        "generated": 40900,
+        "per_pool": [
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 0
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 1
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 2
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 3
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 4
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 5
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 6
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 7
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 8
+          },
+          {
+            "accepted": 0,
+            "first_accepted_sorted_ordinal": null,
+            "generated": 4090,
+            "pool_index": 9
+          }
+        ],
+        "raw_work_limit": 4096,
+        "rejections": {
+          "center_support": 4,
+          "collision_or_clearance": 40083,
+          "support_ratio": 414,
+          "transport": 399
+        }
+      }
+    ],
+    "diagnostic_dense_catalog": {
+      "records": [],
+      "roots": 0,
+      "stats": {
+        "accepted_roots": 0,
+        "adaptive_dense_activated": false,
+        "adaptive_dense_covered_occurrences": 0,
+        "adaptive_dense_deadline_reached": false,
+        "adaptive_dense_early_stop": false,
+        "adaptive_dense_exact_attempts": 0,
+        "adaptive_dense_exact_per_pool": [],
+        "adaptive_dense_raw_generated": 0,
+        "adaptive_dense_raw_per_pool": [],
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 40900,
+        "first_root_stage": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "diagnostic_dense"
+        ],
+        "per_pool_raw": [
+          4090,
+          4090,
+          4090,
+          4090,
+          4090,
+          4090,
+          4090,
+          4090,
+          4090,
+          4090
+        ],
+        "per_pool_roots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_examined": 40900,
+        "rejection_counts": {
+          "center_support": 4,
+          "collision_or_clearance": 40083,
+          "support_ratio": 414,
+          "transport": 399
+        },
+        "rescue_roots": 0,
+        "stage_attempts": {
+          "diagnostic.dense": 40900
+        },
+        "stage_roots": {
+          "diagnostic.dense": 0
+        }
+      }
+    }
+  },
+  "failure_metadata": {
+    "exception_category": "candidate_zero",
+    "exception_message": "strict root catalog is empty",
+    "exception_type": "CandidateZeroError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 14,
+    "task": "001"
+  },
+  "frozen_replay": {
+    "initial": {
+      "deterministic_choice": true,
+      "name": "initial",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 64,
+          "chosen": {
+            "container_index": 0,
+            "item_index": 2,
+            "min_clearance": 1.0,
+            "orientation": 0,
+            "pass_name": "normal",
+            "pool_index": 2,
+            "position": [
+              -0.5685,
+              0.477,
+              1.0070000000000001
+            ],
+            "sources": [
+              "free_rectangle_boundary"
+            ],
+            "stable_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ],
+            "support_ratio": 1.0
+          },
+          "repeat": 0,
+          "scan_deadline": false,
+          "scan_seconds": 0.13168340001720935,
+          "selector_trace": {
+            "branch_exceptions": 0,
+            "candidate_quota_exhausted": false,
+            "candidates": 25,
+            "deadline_reached": true,
+            "deepest": 1,
+            "fit_quota_exhausted": false,
+            "fit_tests": 40,
+            "invalid_lineages": 0,
+            "largest_free_region": 1.0,
+            "lineage_count": 24,
+            "node_quota_exhausted": false,
+            "nodes": 24,
+            "predicted_count": 1,
+            "predicted_volume": 0.07312500000000001,
+            "top_ranked_key": [
+              2,
+              2,
+              0,
+              0,
+              [
+                -0.5685,
+                0.477,
+                1.007
+              ],
+              "normal"
+            ]
+          },
+          "total_seconds": 0.25240100000519305
+        }
+      ]
+    },
+    "step15": {
+      "deterministic_choice": true,
+      "name": "step15",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 0,
+          "chosen": null,
+          "repeat": 0,
+          "scan_deadline": false,
+          "scan_seconds": 1.0563715000171214,
+          "selector_trace": null,
+          "total_seconds": 1.0563757000491023
+        }
+      ]
+    },
+    "step8": {
+      "deterministic_choice": true,
+      "name": "step8",
+      "pool_size": 10,
+      "repeats": [
+        {
+          "catalog_roots": 57,
+          "chosen": null,
+          "repeat": 0,
+          "scan_deadline": true,
+          "scan_seconds": 0.25096630002371967,
+          "selector_trace": null,
+          "total_seconds": 0.2509704999974929
+        }
+      ]
+    }
+  },
+  "generated_at_unix": 1787076411.3647604,
+  "interpretation": {
+    "exact_mask_relaxation_supported": false,
+    "ranked_single_factor_hypotheses": [
+      "increase dense-rescue raw exposure only when the strict catalog is globally empty",
+      "make zero-root dense exposure adaptive and stop after the first exact root per occurrence",
+      "add earlier-state future-support avoidance only after candidate-exposure recovery is measured"
+    ],
+    "terminal_cause": "exact_candidate_exhaustion_unresolved",
+    "terminal_selector_invoked": false
+  },
+  "placed_items_at_snapshot": 14,
+  "pool_size_at_snapshot": 10,
+  "run": {
+    "evaluation": {
+      "fill_score": 12.935378686823777,
+      "num_placed_items": 0.3333333333333333
+    },
+    "exception": {
+      "category": "candidate_zero",
+      "message": "strict root catalog is empty",
+      "step": 14,
+      "type": "CandidateZeroError"
+    },
+    "failure_step": 14,
+    "final_packed_count": 14,
+    "policy_count": 15,
+    "policy_max": 5.303406825,
+    "policy_p50": 1.366816644,
+    "policy_p95": 5.059158795100001,
+    "policy_p99": 5.25455721902,
+    "safe_placements": 14,
+    "selector_candidate_quota_steps": 0,
+    "selector_deadline_steps": 1,
+    "selector_fit_quota_steps": 0,
+    "selector_node_quota_steps": 0,
+    "selector_trace_by_step": [
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 1643,
+        "deadline_reached": true,
+        "deepest": 3,
+        "fit_quota_exhausted": false,
+        "fit_tests": 3008,
+        "node_quota_exhausted": false,
+        "nodes": 331,
+        "step": 0
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 1038,
+        "deadline_reached": false,
+        "deepest": 3,
+        "fit_quota_exhausted": false,
+        "fit_tests": 5568,
+        "node_quota_exhausted": false,
+        "nodes": 403,
+        "step": 1
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 324,
+        "deadline_reached": false,
+        "deepest": 2,
+        "fit_quota_exhausted": false,
+        "fit_tests": 3776,
+        "node_quota_exhausted": false,
+        "nodes": 168,
+        "step": 2
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 3
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 4
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 5
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 6
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 7
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 8
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 1728,
+        "node_quota_exhausted": false,
+        "nodes": 24,
+        "step": 9
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 864,
+        "node_quota_exhausted": false,
+        "nodes": 12,
+        "step": 10
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 576,
+        "node_quota_exhausted": false,
+        "nodes": 8,
+        "step": 11
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 576,
+        "node_quota_exhausted": false,
+        "nodes": 8,
+        "step": 12
+      },
+      {
+        "candidate_quota_exhausted": false,
+        "candidates": 0,
+        "deadline_reached": false,
+        "deepest": 1,
+        "fit_quota_exhausted": false,
+        "fit_tests": 432,
+        "node_quota_exhausted": false,
+        "nodes": 6,
+        "step": 13
+      }
+    ],
+    "status": "candidate_zero"
+  },
+  "schema": "support-extreme-fusion-task18d-v1",
+  "selector_stage_profile": {
+    "elapsed_seconds": 7.959996582940221e-05,
+    "input_root_count": 0,
+    "profile": {
+      "by_depth_lineage": {},
+      "scheduling": [],
+      "totals": {}
+    },
+    "returned_root_count": 0,
+    "selected": null,
+    "trace": {
+      "branch_exceptions": 0,
+      "candidate_quota_exhausted": false,
+      "candidates": 0,
+      "committed_children": 0,
+      "completed_partial_level": false,
+      "deadline_reached": false,
+      "deepest": 0,
+      "duplicate_checks_avoided": 0,
+      "expanded_lineages": [],
+      "expanded_occurrences": [],
+      "fit_quota_exhausted": false,
+      "fit_tests": 0,
+      "invalid_lineages": 0,
+      "largest_free_region": 0.0,
+      "node_quota_exhausted": false,
+      "nodes": 0,
+      "predicted_count": 0,
+      "predicted_volume": 0.0,
+      "ranked_keys": [],
+      "root_lineages": [],
+      "topology_cache_hits": 0
+    }
+  },
+  "sources": {
+    "failure_snapshot": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator\\results\\support_extreme_fusion\\task001-b-memoized-streaming-failure.npz",
+    "failure_snapshot_sha256": "438b3d65dd998c39f327c9e8b0257e985a03eac3a69ecc24dbf5854f6bb6ec90",
+    "run_json": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator\\results\\support_extreme_fusion\\task001-b-memoized-streaming-seed42.json",
+    "run_json_sha256": "0f5ea6bf39c8b3bcfe6b39fd0798d8b11b8377b316c27b89ec136f3605e44cd6",
+    "step8_snapshot": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator\\results\\support_extreme_fusion\\task001-b-seed42-failure.npz",
+    "step8_snapshot_sha256": "eaf7753f42403e5265554c3e9fdeb26711b718e372e5f8413f7a9edd1a1df82b"
+  },
+  "step8_metadata": {
+    "exception_category": "planning_error",
+    "exception_message": "B beam returned no root",
+    "exception_type": "PlanningError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 8,
+    "task": "001"
+  }
+}

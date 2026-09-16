@@ -1,0 +1,8372 @@
+{
+  "task": "001",
+  "mode": "C",
+  "seed": 42,
+  "shuffled": false,
+  "config": {
+    "containers": {
+      "spacing": 2.5,
+      "container_list": [
+        {
+          "index": 0,
+          "length": 2.0,
+          "width": 1.52,
+          "height": 1.62,
+          "thickness": 0.05,
+          "buffer": 0.0,
+          "cut_x": 0.43,
+          "cut_y": 0.4,
+          "packed_items": [],
+          "require_shelf": true,
+          "is_prioritized": false
+        }
+      ]
+    },
+    "item_stream": {
+      "item_list": [
+        {
+          "index": 0,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 7,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 8,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 9,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 12,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 13,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 14,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 15,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 16,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 17,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 18,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 19,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 20,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 21,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 22,
+          "length": 0.6,
+          "width": 0.3,
+          "height": 0.25,
+          "mass": 7,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 23,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": true,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 24,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 25,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 26,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 27,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 28,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 29,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 30,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 31,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 32,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 33,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": true,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 34,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 35,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 36,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 37,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 38,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 39,
+          "length": 0.45,
+          "width": 0.3,
+          "height": 0.2,
+          "mass": 5,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2000,
+          "contactDamping": 600,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 40,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 41,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        }
+      ],
+      "look_ahead": 1,
+      "max_space": 1,
+      "visible_pool": []
+    },
+    "camera": {
+      "num_containers": 1,
+      "target_pos": [
+        0,
+        0,
+        0
+      ],
+      "distance": 3.0,
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "img_width": 64,
+      "img_height": 64,
+      "fov": 60,
+      "near_val": 0.1,
+      "far_val": 10.0
+    },
+    "validator": {
+      "inclusion_margin": -0.005,
+      "start_z": 0.08,
+      "safety_margin": 0.015,
+      "ceiling_margin": 0.018,
+      "displacement_threshold": 0.3,
+      "angle_displacement_threshold": 45,
+      "settle_wait_step": 300
+    },
+    "action": {
+      "keys": {
+        "item_idx": "int",
+        "container_idx": "int",
+        "place_pos": "float",
+        "orientation": "int"
+      },
+      "pos_lim": {
+        "low": -100,
+        "high": 100
+      },
+      "orientations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "agent": {
+      "optimize": false,
+      "init_timeout": 10.0,
+      "optimization_timeout": 180.0,
+      "policy_timeout": 10.0,
+      "allowed_methods": [
+        "get_init_states",
+        "optimize",
+        "policy"
+      ],
+      "max_mem": 12
+    },
+    "visualizer": {
+      "vis": false,
+      "camera": {
+        "yaw": 0,
+        "pitch": -20
+      }
+    }
+  },
+  "config_sha256": "f2e2eb9ebe5013e95acfa8559e5ded93de3972ceb43c9b6e7c494e4603fbcc6d",
+  "source": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/experiments/native_candidate_packing/variants/progressive_recovery/agent.py",
+  "source_hashes": {
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c"
+  },
+  "runner_sha256": "bb8fdb934ed3e799b76dc8e4dcaca67da5af74fd7f344199a315bd565673c00e",
+  "simulator_hashes": {
+    "__init__.py": "de59b76ba2c82eece8c867efc5f23e5737f2ee10d609a6bbdde1df2714288cd4",
+    "agent_factory.py": "4571921c0319013844e91c76537fe185dc5e7185980266baf5f0e44c9b96a9eb",
+    "app.py": "d7e3d9075aa450f603be3091a79c4b0b34f946f281707fe2a3588929905803c4",
+    "camera.py": "a4f9271aca7d1ad18d33fc5190b0b619702d1737eb0d5b201b7beaefd712e444",
+    "containers.py": "7a348e7d36e5c5dfdfed12f1dc04a7b84b99f7c39ac5fe47ba24c2c693865951",
+    "env.py": "24406ccaebea802635003c41af9e0d3572b70583f6e59c59c0df8def1effb6ba",
+    "evaluator.py": "3968a9c6f2db1cfe3edde2527d380c3f8486232aa2d7c0fa20b69a08569a67cb",
+    "items.py": "e07b757a5c58baef1dad62529cd62c8640b2cf826b301614a4ea9ecaa8e7e37c",
+    "runner.py": "6887abb2236f05f85687a1aca52fa071a7050ba9612217b36837ca59d130b314",
+    "utils.py": "5e2632da7753a0f9b9c28e30a5238fe456793cd374c3bbe1d3ccb7cfd02e8844",
+    "validator.py": "c4270318b75323457d337339fe5b2a2eed765645f28a89d737e759488805b031"
+  },
+  "host": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "outcome": "policy_error",
+  "safe_placements": 15,
+  "records": [
+    {
+      "step": 0,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.5350000262260437,
+          0.17299999296665192
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.5069683479999867,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 1524,
+        "combinations_visited": 6,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.0,
+                -0.5350000262260437,
+                0.17299999296665192
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.031070931963648917,
+            "angle_degrees": 0.10219474063680663,
+            "final_position": [
+              -9.264903457729604e-05,
+              -0.5349354596672742,
+              0.1419292662225672
+            ],
+            "final_orientation": [
+              -0.0006818820297269495,
+              -0.0005746592062770142,
+              1.1902569176317598e-05,
+              0.9999996023309324
+            ],
+            "seconds": 0.0934476249999534,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.5060226570000168,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -2
+          ],
+          [
+            0,
+            6,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            -2
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            3,
+            0
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 1,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6058507561683655,
+          -0.4350000023841858,
+          0.17800000309944153
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.4904014390000384,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 2102,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 3,
+              "place_pos": [
+                0.6058507561683655,
+                -0.4350000023841858,
+                0.17800000309944153
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.008018006881733115,
+            "angle_degrees": 0.0009335069064391852,
+            "final_position": [
+              0.6060988295535694,
+              -0.43519167489094573,
+              0.1699881271891927
+            ],
+            "final_orientation": [
+              5.745726751255802e-06,
+              3.842354954901965e-06,
+              0.70710982965361,
+              0.7071037326725589
+            ],
+            "seconds": 0.09541272599994954,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0035814006960948773,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.48911458000009134,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            -1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            -2
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -2
+          ],
+          [
+            0,
+            6,
+            3,
+            0
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 2,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 5,
+        "place_pos": [
+          -0.6313750147819519,
+          -0.38499999046325684,
+          1.1030000448226929
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.6025796849999097,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 2685,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 5,
+              "place_pos": [
+                -0.6313750147819519,
+                -0.38499999046325684,
+                1.1030000448226929
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "small_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018011869003053405,
+            "angle_degrees": 0.0009092396720025658,
+            "final_position": [
+              -0.6313729914173091,
+              -0.385003487147865,
+              1.0849881762726965
+            ],
+            "final_orientation": [
+              0.5000038771577896,
+              0.49999355462067874,
+              0.5000000420818755,
+              0.5000025260766982
+            ],
+            "seconds": 0.145204906999993,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.007688414022217905,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.6011487869999428,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            2,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            2,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -1
+          ],
+          [
+            0,
+            2,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            -2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 3,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6999384760856628,
+          -0.4350000023841858,
+          0.41599079966545105
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.7973944809999693,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 3323,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 3,
+              "place_pos": [
+                0.6999384760856628,
+                -0.4350000023841858,
+                0.41599079966545105
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.0060554684351169195,
+            "angle_degrees": 0.0005433140724750401,
+            "final_position": [
+              0.7005801455305041,
+              -0.43529231564867343,
+              0.4099765240442595
+            ],
+            "final_orientation": [
+              3.5800593500040932e-06,
+              -2.6100572167070845e-06,
+              0.7071079750877026,
+              0.7071055872694967
+            ],
+            "seconds": 0.26636270999995304,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 1,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.007684221847756249,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.7950149309999688,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            2,
+            -1
+          ],
+          [
+            0,
+            2,
+            2,
+            -2
+          ],
+          [
+            0,
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            2,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            2,
+            2,
+            -1
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            2,
+            2,
+            -2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            2,
+            3,
+            -1
+          ],
+          [
+            0,
+            2,
+            3,
+            -2
+          ],
+          [
+            0,
+            6,
+            3,
+            0
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 4,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7118275761604309,
+          -0.4350000023841858,
+          0.6559827923774719
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.9057957349999697,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 3964,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 3,
+              "place_pos": [
+                0.7118275761604309,
+                -0.4350000023841858,
+                0.6559827923774719
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                3
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006105379454871929,
+            "angle_degrees": 0.007101772329946243,
+            "final_position": [
+              0.7120268837062559,
+              -0.4357722274852822,
+              0.649929726775367
+            ],
+            "final_orientation": [
+              3.073193583721751e-05,
+              -2.5719500666110084e-05,
+              0.7071402082096325,
+              0.7070733514475659
+            ],
+            "seconds": 0.2977004509999688,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 2,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0024701836998806633,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.9032539840000027,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            4,
+            3,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            -2
+          ],
+          [
+            0,
+            4,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            4,
+            3,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            -2
+          ],
+          [
+            0,
+            4,
+            3,
+            -2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            3,
+            0
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 5,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          0.5377500057220459,
+          0.18174999952316284,
+          1.2029999494552612
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.8516565090000086,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 4527,
+        "combinations_visited": 6,
+        "authorizations": 15,
+        "rejections": {
+          "transport": 14
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 4,
+              "place_pos": [
+                0.5377500057220459,
+                0.18174999952316284,
+                1.2029999494552612
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "main_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018012197700079134,
+            "angle_degrees": 0.0018458578334158754,
+            "final_position": [
+              0.5377534365088867,
+              0.1817509811475309,
+              1.1849877521086616
+            ],
+            "final_orientation": [
+              0.5000108415557545,
+              -0.5000001513630612,
+              -0.5000008864082266,
+              -0.4999881204134853
+            ],
+            "seconds": 0.2804667990000098,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 3,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.002355347508864286,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.8497179439999627,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            5,
+            2,
+            -1
+          ],
+          [
+            0,
+            5,
+            3,
+            -1
+          ],
+          [
+            0,
+            5,
+            2,
+            -2
+          ],
+          [
+            0,
+            5,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ],
+          [
+            0,
+            5,
+            2,
+            -1
+          ],
+          [
+            0,
+            5,
+            3,
+            -1
+          ],
+          [
+            0,
+            5,
+            2,
+            -2
+          ],
+          [
+            0,
+            5,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 6,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 5,
+        "place_pos": [
+          0.74078369140625,
+          -0.38499999046325684,
+          1.0009456872940063
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.9370228499999484,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 5300,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 5,
+              "place_pos": [
+                0.74078369140625,
+                -0.38499999046325684,
+                1.0009456872940063
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                4
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.00622171617933151,
+            "angle_degrees": 0.05171900933629414,
+            "final_position": [
+              0.7416902864119054,
+              -0.3846820776105422,
+              0.9947985929291902
+            ],
+            "final_orientation": [
+              0.49996139970695097,
+              0.5003269694342161,
+              0.5000195210688468,
+              0.4996919060880619
+            ],
+            "seconds": 0.3873281850000012,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 4,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0024605000879726383,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.9356438999999455,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            5,
+            2,
+            -1
+          ],
+          [
+            0,
+            5,
+            3,
+            -1
+          ],
+          [
+            0,
+            5,
+            2,
+            -2
+          ],
+          [
+            0,
+            5,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            5,
+            2,
+            -1
+          ],
+          [
+            0,
+            5,
+            3,
+            -1
+          ],
+          [
+            0,
+            5,
+            2,
+            -2
+          ],
+          [
+            0,
+            5,
+            3,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 7,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -6.0738409956684336e-05,
+          -0.5350000262260437,
+          0.38784995675086975
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.9184181260000059,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6054,
+        "combinations_visited": 6,
+        "authorizations": 4,
+        "rejections": {
+          "transport": 3
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                -6.0738409956684336e-05,
+                -0.5350000262260437,
+                0.38784995675086975
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                0
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.05433772350389833,
+            "angle_degrees": 0.15780277298750003,
+            "final_position": [
+              -9.26782462465771e-06,
+              -0.5351946884786924,
+              0.33351260630964613
+            ],
+            "final_orientation": [
+              0.0011654302811403424,
+              0.0007333436438154916,
+              1.876742934445587e-05,
+              0.9999990518131222
+            ],
+            "seconds": 0.4046433390000175,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 5,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.03229903766904043,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.9163473270000395,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            2,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            2,
+            1,
+            -2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            2,
+            1,
+            -1
+          ],
+          [
+            0,
+            2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 8,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.0007278251578100026,
+          -0.5350000262260437,
+          0.5921905040740967
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.0740325870000333,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 13
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                -0.0007278251578100026,
+                -0.5350000262260437,
+                0.5921905040740967
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                7
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.08680652410270209,
+            "angle_degrees": 0.18616970216147283,
+            "final_position": [
+              -0.00032861526229005473,
+              -0.5351361081474061,
+              0.5053850045941501
+            ],
+            "final_orientation": [
+              0.0012276107860485345,
+              0.0010639805717112675,
+              1.8989457909963566e-05,
+              0.9999986802773799
+            ],
+            "seconds": 0.5202426179999975,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 6,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.06364516376233675,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.0700862219999863,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            3,
+            1,
+            -2
+          ],
+          [
+            0,
+            3,
+            -1,
+            -2
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            3,
+            1,
+            -2
+          ],
+          [
+            0,
+            3,
+            -1,
+            -2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            -1,
+            -1
+          ],
+          [
+            0,
+            3,
+            1,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 9,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.00026493988116271794,
+          -0.5299773812294006,
+          0.7776308655738831
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.2614168090000248,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 13
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.00026493988116271794,
+                -0.5299773812294006,
+                0.7776308655738831
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                8
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.07667055857302925,
+            "angle_degrees": 0.33178009736441816,
+            "final_position": [
+              -0.001480069156882988,
+              -0.5351113011362375,
+              0.7011522910464533
+            ],
+            "final_orientation": [
+              0.002812975928414337,
+              0.0006647343709784726,
+              0.00016790716221831004,
+              0.9999958085421293
+            ],
+            "seconds": 0.6362281279999706,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 7,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.05204461069828955,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.2566731529999515,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            4,
+            -1,
+            -2
+          ],
+          [
+            0,
+            4,
+            1,
+            -2
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            -1
+          ],
+          [
+            0,
+            4,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            1,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            0,
+            -1,
+            -1
+          ],
+          [
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            -1
+          ],
+          [
+            0,
+            4,
+            -1,
+            -2
+          ],
+          [
+            0,
+            4,
+            1,
+            -2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -1,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            0
+          ],
+          [
+            0,
+            4,
+            -1,
+            -1
+          ],
+          [
+            0,
+            4,
+            1,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 10,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.15424999594688416,
+          0.21012499928474426,
+          1.003000020980835
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.4369053500000746,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 13
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                -0.15424999594688416,
+                0.21012499928474426,
+                1.003000020980835
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "main_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018012727399931244,
+            "angle_degrees": 0.0011213529504668905,
+            "final_position": [
+              -0.15425449426734553,
+              0.21012243882845694,
+              0.9849872943245674
+            ],
+            "final_orientation": [
+              4.105420255009169e-08,
+              -4.66927529141669e-06,
+              8.599709223930252e-06,
+              0.9999999999521205
+            ],
+            "seconds": 0.682619642000077,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 8,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.05497993311230047,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.4319268730000658,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ],
+          [
+            0,
+            5,
+            -1,
+            -2
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ],
+          [
+            0,
+            5,
+            -1,
+            -2
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 11,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.008247914724051952,
+          0.2101219743490219,
+          1.2359917163848877
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.6311116409999613,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.008247914724051952,
+                0.2101219743490219,
+                1.2359917163848877
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                10
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006017524930041742,
+            "angle_degrees": 0.001836165231085188,
+            "final_position": [
+              0.00823805683607997,
+              0.21010717534474452,
+              1.2299742177272068
+            ],
+            "final_orientation": [
+              2.6568475708836253e-06,
+              4.754066751550512e-06,
+              -1.5069656691589981e-05,
+              0.9999999998716227
+            ],
+            "seconds": 0.8726153239999803,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 9,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.08302291993636564,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.6264572920000546,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            7,
+            0,
+            1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            -1,
+            0
+          ],
+          [
+            0,
+            8,
+            2,
+            -1
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 12,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0712873637676239,
+          -0.37379568815231323,
+          0.9179086089134216
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.7746356330000026,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 19,
+        "rejections": {
+          "transport": 18
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.0712873637676239,
+                -0.37379568815231323,
+                0.9179086089134216
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                9
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.07458054449355145,
+            "angle_degrees": 6.441107613441591,
+            "final_position": [
+              0.07389917290990362,
+              -0.36850568652047433,
+              0.843561773387664
+            ],
+            "final_orientation": [
+              -0.05598622326166885,
+              0.004198435669481534,
+              0.0020178389375435386,
+              0.9984206750006963
+            ],
+            "seconds": 0.9362959300000284,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 10,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.03554743342214446,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.7715025420000075,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            0
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            8,
+            2,
+            -1
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -1
+          ],
+          [
+            0,
+            5,
+            -1,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 13,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.09298234432935715,
+          -0.22164860367774963,
+          1.0942652225494385
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.857700619999946,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 13,
+        "rejections": {
+          "transport": 12
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.09298234432935715,
+                -0.22164860367774963,
+                1.0942652225494385
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                12
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.13778696319753433,
+            "angle_degrees": 23.7872141605749,
+            "final_position": [
+              0.12521135694410418,
+              -0.1919199593090418,
+              0.963640777375206
+            ],
+            "final_orientation": [
+              -0.20204437549436183,
+              0.028930685763769438,
+              0.028569855515943803,
+              0.9785319867577806
+            ],
+            "seconds": 1.1127793529999508,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 11,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.08966041072018002,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.8513783990000547,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            -1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            0,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            1,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            6,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            1,
+            -1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            8,
+            2,
+            -1
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -1,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    },
+    {
+      "step": 14,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7406211495399475,
+          -0.3369610905647278,
+          1.3459197282791138
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.0648198459999776,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 88,
+        "rejections": {
+          "transport": 86
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.1210891529917717,
+                -0.19939063489437103,
+                1.1948078870773315
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                13
+              ]
+            ],
+            "safe": false,
+            "displacement": 1.083029673170493,
+            "angle_degrees": 23.654573066102632,
+            "final_position": [
+              0.12668040030896102,
+              -0.8286272371144051,
+              0.3133413197318595
+            ],
+            "final_orientation": [
+              0.204933553710454,
+              0.0032555989531214973,
+              -0.0010699648008140627,
+              0.9787698885919948
+            ],
+            "seconds": 1.20394441499991,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 11,
+            "newly_outside": [
+              8,
+              9,
+              12
+            ],
+            "lost_volume": 0.15745,
+            "max_previous_displacement": 0.5647120380075648,
+            "inclusion_margin": -0.005
+          },
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 3,
+              "place_pos": [
+                0.7406211495399475,
+                -0.3369610905647278,
+                1.3459197282791138
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                6
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006465622376509805,
+            "angle_degrees": 0.05060038182657835,
+            "final_position": [
+              0.7413755509500114,
+              -0.3383707440636056,
+              1.3396549036015015
+            ],
+            "final_orientation": [
+              0.00033436644447694603,
+              0.0002755713276463175,
+              0.7071668995319107,
+              0.7070465249656126
+            ],
+            "seconds": 0.9719978340000353,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 11,
+            "newly_outside": [
+              8,
+              9,
+              12
+            ],
+            "lost_volume": 0.15745,
+            "max_previous_displacement": 0.5701907105142707,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.060207375999994,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            7,
+            0,
+            -1
+          ],
+          [
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            1,
+            -1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            2,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            -1,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            7,
+            0,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            7,
+            0,
+            0
+          ],
+          [
+            0,
+            7,
+            1,
+            -1
+          ],
+          [
+            0,
+            7,
+            -1,
+            1
+          ],
+          [
+            0,
+            8,
+            2,
+            -1
+          ],
+          [
+            0,
+            9,
+            -2,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 17,
+        "selected_stage": "wide"
+      }
+    }
+  ],
+  "policy_seconds": [
+    0.5069683479999867,
+    0.4904014390000384,
+    0.6025796849999097,
+    0.7973944809999693,
+    0.9057957349999697,
+    0.8516565090000086,
+    0.9370228499999484,
+    0.9184181260000059,
+    1.0740325870000333,
+    1.2614168090000248,
+    1.4369053500000746,
+    1.6311116409999613,
+    1.7746356330000026,
+    1.857700619999946,
+    3.0648198459999776,
+    5.213246259000016
+  ],
+  "optimized_order": null,
+  "public_score": null,
+  "execution_mode": "strict_in_process_physics_diagnostic",
+  "agent_options": {},
+  "applied_deadlines_seconds": {
+    "initialization": 10,
+    "optimization": 180,
+    "policy": 8
+  },
+  "dependencies": {
+    "numpy": "2.5.2",
+    "gymnasium": "1.2.3",
+    "pybullet": "3.2.7",
+    "pillow": "10.3.0"
+  },
+  "initialization_seconds": 0.08974404699995375,
+  "error": {
+    "type": "NoValidAction",
+    "message": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 6, 'authorizations': 89, 'rejections': {'transport': 84}, 'previews': [{'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [-0.1632716953754425, -0.3908812999725342, 0.7027091383934021]}, 'support_items': [[0, 'cargo', 7]], 'safe': False, 'displacement': 0.8164913132857251, 'angle_degrees': 89.78153561646874, 'final_position': [-0.1648171404307499, -1.0134836303680506, 0.17448379400267586], 'final_orientation': [0.9999947971458246, -0.0025399181640518697, -0.0005540631999847067, 0.0019098457978107075], 'seconds': 1.1383133929999758, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 9, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.02815826100145111, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [0.16809818148612976, -0.3908812999725342, 0.7027091383934021]}, 'support_items': [[0, 'cargo', 7]], 'safe': False, 'displacement': 0.7861044998631418, 'angle_degrees': 114.96094705834896, 'final_position': [0.1905321596929748, -1.0387234669289478, 0.25800977023541444], 'final_orientation': [0.9761949729581952, 0.019947801990535675, -0.004332628707595747, -0.21593213817164186], 'seconds': 1.011266065999962, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 9, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.028226751308370393, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [0.13817556202411652, -0.35764071345329285, 0.702709972858429]}, 'support_items': [[0, 'cargo', 7]], 'safe': False, 'displacement': 0.7953839492600377, 'angle_degrees': 123.45029169777786, 'final_position': [0.18004944352043636, -1.0285685003688483, 0.277576923644984], 'final_orientation': [0.9576158921148706, 0.013580620552735153, -0.00397648047040428, -0.2877004649240447], 'seconds': 1.0094465779999382, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 9, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.026873617599773286, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [0.1574736386537552, -0.3908812999725342, 0.7027091383934021]}, 'support_items': [[0, 'cargo', 7]], 'safe': False, 'displacement': 0.7893041069042519, 'angle_degrees': 113.06567782527175, 'final_position': [0.19295398896739638, -1.0381242798246104, 0.2523552298395352], 'final_orientation': [0.9794838457462152, 0.027244088284407525, -0.005268138755938685, -0.19960311192414854], 'seconds': 1.0369620879999957, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 9, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.028143725694174143, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [-0.031102420762181282, -0.3908812999725342, 0.7027091383934021]}, 'support_items': [[0, 'cargo', 7]], 'safe': False, 'displacement': 0.11706463355781234, 'angle_degrees': 25.4933473928454, 'final_position': [-0.03489101931184113, -0.46503971737205824, 0.6122088396101806], 'final_orientation': [0.8456502348232021, -0.004169021707383174, 0.003420593786890648, 0.5337102201940781], 'seconds': 0.24296846499998992, 'steps': 75, 'deadline_exceeded': True, 'previously_inside': 9, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.02521047030323908, 'inclusion_margin': -0.005}], 'elapsed': 5.212950368999941, 'narrow_basins': [[0, 0, 2, 1], [0, 0, 3, 1], [0, 0, 2, 2], [0, 0, 3, 2], [0, 0, 2, 0], [0, 6, -2, 1], [0, 6, 2, 2], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 4, 1, 0], [0, 3, -1, -1], [0, 3, 1, -1], [0, 3, 0, -1]], 'candidate_basins': [[0, 0, 2, 1], [0, 0, 3, 1], [0, 0, 2, 2], [0, 0, 3, 2], [0, 0, 2, 0], [0, 6, -2, 1], [0, 6, 2, 2], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 4, 1, 0], [0, 3, -1, -1], [0, 3, 1, -1], [0, 3, 0, -1]], 'deferred_support_candidates': 22}"
+  },
+  "last_search_stats": {
+    "candidate_checks": 6500,
+    "combinations_visited": 6,
+    "authorizations": 89,
+    "rejections": {
+      "transport": 84
+    },
+    "previews": [
+      {
+        "action": {
+          "item_idx": 0,
+          "container_idx": 0,
+          "orientation": 1,
+          "place_pos": [
+            -0.1632716953754425,
+            -0.3908812999725342,
+            0.7027091383934021
+          ]
+        },
+        "support_items": [
+          [
+            0,
+            "cargo",
+            7
+          ]
+        ],
+        "safe": false,
+        "displacement": 0.8164913132857251,
+        "angle_degrees": 89.78153561646874,
+        "final_position": [
+          -0.1648171404307499,
+          -1.0134836303680506,
+          0.17448379400267586
+        ],
+        "final_orientation": [
+          0.9999947971458246,
+          -0.0025399181640518697,
+          -0.0005540631999847067,
+          0.0019098457978107075
+        ],
+        "seconds": 1.1383133929999758,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.02815826100145111,
+        "inclusion_margin": -0.005
+      },
+      {
+        "action": {
+          "item_idx": 0,
+          "container_idx": 0,
+          "orientation": 1,
+          "place_pos": [
+            0.16809818148612976,
+            -0.3908812999725342,
+            0.7027091383934021
+          ]
+        },
+        "support_items": [
+          [
+            0,
+            "cargo",
+            7
+          ]
+        ],
+        "safe": false,
+        "displacement": 0.7861044998631418,
+        "angle_degrees": 114.96094705834896,
+        "final_position": [
+          0.1905321596929748,
+          -1.0387234669289478,
+          0.25800977023541444
+        ],
+        "final_orientation": [
+          0.9761949729581952,
+          0.019947801990535675,
+          -0.004332628707595747,
+          -0.21593213817164186
+        ],
+        "seconds": 1.011266065999962,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.028226751308370393,
+        "inclusion_margin": -0.005
+      },
+      {
+        "action": {
+          "item_idx": 0,
+          "container_idx": 0,
+          "orientation": 1,
+          "place_pos": [
+            0.13817556202411652,
+            -0.35764071345329285,
+            0.702709972858429
+          ]
+        },
+        "support_items": [
+          [
+            0,
+            "cargo",
+            7
+          ]
+        ],
+        "safe": false,
+        "displacement": 0.7953839492600377,
+        "angle_degrees": 123.45029169777786,
+        "final_position": [
+          0.18004944352043636,
+          -1.0285685003688483,
+          0.277576923644984
+        ],
+        "final_orientation": [
+          0.9576158921148706,
+          0.013580620552735153,
+          -0.00397648047040428,
+          -0.2877004649240447
+        ],
+        "seconds": 1.0094465779999382,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.026873617599773286,
+        "inclusion_margin": -0.005
+      },
+      {
+        "action": {
+          "item_idx": 0,
+          "container_idx": 0,
+          "orientation": 1,
+          "place_pos": [
+            0.1574736386537552,
+            -0.3908812999725342,
+            0.7027091383934021
+          ]
+        },
+        "support_items": [
+          [
+            0,
+            "cargo",
+            7
+          ]
+        ],
+        "safe": false,
+        "displacement": 0.7893041069042519,
+        "angle_degrees": 113.06567782527175,
+        "final_position": [
+          0.19295398896739638,
+          -1.0381242798246104,
+          0.2523552298395352
+        ],
+        "final_orientation": [
+          0.9794838457462152,
+          0.027244088284407525,
+          -0.005268138755938685,
+          -0.19960311192414854
+        ],
+        "seconds": 1.0369620879999957,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.028143725694174143,
+        "inclusion_margin": -0.005
+      },
+      {
+        "action": {
+          "item_idx": 0,
+          "container_idx": 0,
+          "orientation": 1,
+          "place_pos": [
+            -0.031102420762181282,
+            -0.3908812999725342,
+            0.7027091383934021
+          ]
+        },
+        "support_items": [
+          [
+            0,
+            "cargo",
+            7
+          ]
+        ],
+        "safe": false,
+        "displacement": 0.11706463355781234,
+        "angle_degrees": 25.4933473928454,
+        "final_position": [
+          -0.03489101931184113,
+          -0.46503971737205824,
+          0.6122088396101806
+        ],
+        "final_orientation": [
+          0.8456502348232021,
+          -0.004169021707383174,
+          0.003420593786890648,
+          0.5337102201940781
+        ],
+        "seconds": 0.24296846499998992,
+        "steps": 75,
+        "deadline_exceeded": true,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.02521047030323908,
+        "inclusion_margin": -0.005
+      }
+    ],
+    "elapsed": 5.212950368999941,
+    "narrow_basins": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        6,
+        -2,
+        1
+      ],
+      [
+        0,
+        6,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        1
+      ],
+      [
+        0,
+        6,
+        -2,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        2
+      ],
+      [
+        0,
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        -1,
+        -1
+      ],
+      [
+        0,
+        3,
+        1,
+        -1
+      ],
+      [
+        0,
+        3,
+        0,
+        -1
+      ]
+    ],
+    "candidate_basins": [
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        3,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        2
+      ],
+      [
+        0,
+        0,
+        3,
+        2
+      ],
+      [
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        6,
+        -2,
+        1
+      ],
+      [
+        0,
+        6,
+        2,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        1
+      ],
+      [
+        0,
+        6,
+        -2,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        2
+      ],
+      [
+        0,
+        4,
+        1,
+        0
+      ],
+      [
+        0,
+        3,
+        -1,
+        -1
+      ],
+      [
+        0,
+        3,
+        1,
+        -1
+      ],
+      [
+        0,
+        3,
+        0,
+        -1
+      ]
+    ],
+    "deferred_support_candidates": 22
+  },
+  "final_containers": [
+    {
+      "index": 0,
+      "length": 2.0,
+      "width": 1.52,
+      "cut_x": 0.43,
+      "cut_y": 0.4,
+      "height": 1.62,
+      "thickness": 0.05,
+      "n_vecs": [
+        [
+          0.0,
+          -6.123233995736766e-17,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6811039424772872,
+          -4.4833507263478093e-17,
+          -0.7321867381630839
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17
+        ],
+        [
+          0.0,
+          1.0,
+          -6.123233995736766e-17
+        ]
+      ],
+      "points": [
+        [
+          -0.5503397656998699,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          -2.377180503354661e-17,
+          0.4217769621396559
+        ],
+        [
+          0.0,
+          -0.76,
+          0.81
+        ],
+        [
+          0.0,
+          0.71,
+          0.81
+        ]
+      ],
+      "volume": 4.0482,
+      "center": [
+        0.0,
+        0.0,
+        0.81
+      ],
+      "shelf": true,
+      "is_prioritized": false,
+      "packed_items": [
+        {
+          "index": 0,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.0002739030382788275,
+            -0.5181865282230799,
+            0.12634717939400533
+          ],
+          "orn": [
+            -0.07566684503881745,
+            -0.001245607432574331,
+            -0.0022273590830460066,
+            0.9971298891796949
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6067522328071578,
+            -0.4350184918119486,
+            0.1699175616042102
+          ],
+          "orn": [
+            0.00011464642028198399,
+            -8.178422688977994e-05,
+            0.7051058087975518,
+            0.70910209319074
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.6313296236299998,
+            -0.3850256849977262,
+            1.0849881760250661
+          ],
+          "orn": [
+            0.5000443504464981,
+            0.49995307715013226,
+            0.49995956551190546,
+            0.5000429992388661
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.7013434299400189,
+            -0.4372522071883048,
+            0.40984229473959655
+          ],
+          "orn": [
+            3.0500366893995944e-05,
+            6.315316087364002e-06,
+            0.7059944217904641,
+            0.7082173927761113
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.7120967192485758,
+            -0.43779064069320794,
+            0.6497651073619162
+          ],
+          "orn": [
+            0.00015168359512422684,
+            2.5638052545304155e-05,
+            0.7058589380490871,
+            0.708352409405793
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.5385950305434893,
+            0.18688977958765,
+            1.1849894134068364
+          ],
+          "orn": [
+            -0.4965500547783449,
+            0.5034239387808426,
+            0.49655316723845533,
+            0.5034255983434529
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.7407471085564148,
+            -0.3876862766174822,
+            0.9947431643568994
+          ],
+          "orn": [
+            0.5010657646040424,
+            0.49898954377887683,
+            0.4990232773732988,
+            0.500917461644857
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 7,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.0030349519693452396,
+            -0.3240708871750623,
+            0.2611268411970408
+          ],
+          "orn": [
+            -0.49835307759542874,
+            0.005339338103306977,
+            -0.004700159314996203,
+            0.8669449867334126
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 8,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.007866339434229014,
+            -0.058832827615960585,
+            0.2080270928025448
+          ],
+          "orn": [
+            -0.7231229477678573,
+            0.006065238320026778,
+            -0.011081325569630172,
+            0.690603807924099
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 9,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "belongs_to": 0,
+          "pos": [
+            0.020879235442108162,
+            0.15754318819045515,
+            0.2103603603683457
+          ],
+          "orn": [
+            -0.7445539180036843,
+            0.012290787595491712,
+            -0.008910078537913174,
+            0.6673896989211728
+          ],
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "angularDamping": 0.8,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.15493892878005902,
+            0.26072430682882614,
+            0.9849881994433823
+          ],
+          "orn": [
+            2.8604166971205185e-06,
+            2.1456685451041357e-06,
+            0.026834273293793613,
+            0.9996398960445747
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.008256033405681814,
+            0.2602707289934083,
+            1.2299755160720158
+          ],
+          "orn": [
+            -4.059749187827021e-06,
+            1.6676927378064801e-06,
+            0.02243239231222688,
+            0.9997483622171569
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 12,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.09344819246446574,
+            0.5273967120690672,
+            0.24998672558024057
+          ],
+          "orn": [
+            -0.7070901750413114,
+            0.0036736148354611334,
+            -0.003669961788769966,
+            0.7071043206589515
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 13,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.13817555885409796,
+            -0.008903784924697962,
+            0.5057688803419577
+          ],
+          "orn": [
+            0.007577033055429181,
+            0.0017148826041880234,
+            -0.007212224100849179,
+            0.9999438142072034
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 14,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.7408049856638732,
+            -0.3371811356840174,
+            1.3397381900004297
+          ],
+          "orn": [
+            9.578443601101038e-05,
+            -2.3835637793301118e-05,
+            0.7070277641459302,
+            0.7071857825098092
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        }
+      ]
+    }
+  ],
+  "layout_proxies": [
+    {
+      "container_index": 0,
+      "packed_count": 15,
+      "cargo_mass": 156.0,
+      "mass_weighted_cog_world": [
+        0.19744632695286213,
+        -0.1288247922396468,
+        0.6497212069407985
+      ],
+      "mass_weighted_cog_local": [
+        0.19744632695286213,
+        -0.1288247922396468,
+        0.6497212069407985
+      ],
+      "raw_packed_volume": 0.8714000000000001
+    }
+  ],
+  "evaluation": {
+    "fill_score": 13.746850452052765,
+    "num_placed_items": 0.35714285714285715
+  },
+  "policy_time_seconds": {
+    "count": 16,
+    "max": 5.213246259000016,
+    "p50": 1.005527718499991,
+    "p95": 3.601926449249987,
+    "p99": 4.89098229705001
+  },
+  "elapsed_seconds": 32.054400655999984
+}

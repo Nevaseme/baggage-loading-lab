@@ -18,5 +18,9 @@ jobs:
           persist-credentials: false
       - name: Test registry behavior with isolated fixtures
         run: python3 -m unittest discover -s tests -p 'test_lab*.py' -v
+      - name: Test benchmark configuration without physics dependencies
+        run: python3 -m unittest discover -s tests -p 'test_benchmark.py' -v
+      - name: Test reproducible submission packaging
+        run: python3 -m unittest discover -s tests -p 'test_package_agent.py' -v
       - name: Check real registry and generated views
         run: python3 -m tools.lab --root . validate

@@ -1,23 +1,25 @@
-# Track only the curated project record and tooling; historical local workspace stays intact.
-/*
-!/.gitignore
-!/.gitattributes
-!/README.md
-!/START_HERE.md
-!/AGENTS.md
-!/progress.md
-!/artifacts/
-!/evaluations/
-!/experiments/
-!/knowledge/
-!/contracts/
-!/tools/
-!/tests/
-!/docs/
-!/.github/
+# Share the complete project record in the private repository.
+# Installed dependencies, disposable copies, and authentication stay local.
+**/.git/
 **/__pycache__/
 **/*.pyc
+**/*.pyo
+**/.pytest_cache/
+**/node_modules/
+**/.venv*/
+**/venv/
+**/.signate_venv/
+**/.test_deps*/
+**/.build_deps/
 **/.env
 **/.env.*
-**/.venv/
-**/node_modules/
+**/credentials.json
+**/id_rsa
+**/id_ed25519
+/.lab/clone-check-*/
+/.lab/remote-clone-check-*/
+/.lab/staging/
+/.lab/exports/
+/.lab/views.json
+/.lab/migration-errors/evaluation-786e70-private-staging/
+/.lab/audit-2026-09-16/upload-inventory-summary.json

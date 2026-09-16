@@ -1,0 +1,502 @@
+{
+  "agent_module": "agents.support_extreme_fusion_beam_exact_mask.agent",
+  "all_safe": false,
+  "b_planner": "fixed-two-ply",
+  "completed_steps": 13,
+  "diagnostic": {
+    "b_search_traces": [
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 72,
+        "child_exact_attempts": 397,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 2,
+        "second_edges": 12,
+        "stage1_edges": 64,
+        "step": 0
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 1
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 1,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 2,
+        "second_edges": 1,
+        "stage1_edges": 64,
+        "step": 2
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 3
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 4
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 5
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 6
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 7
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 8
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 9
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 44,
+        "step": 10
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 25,
+        "step": 11
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 6,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 384,
+        "child_scans": 6,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 6,
+        "step": 12
+      }
+    ]
+  },
+  "effective_items": 42,
+  "evaluation": {
+    "fill_score": 13.437453683118425,
+    "num_placed_items": 0.30952380952380953
+  },
+  "exception": {
+    "category": "candidate_zero",
+    "message": "strict root catalog is empty",
+    "step": 13,
+    "type": "CandidateZeroError"
+  },
+  "failure_snapshot": {
+    "path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-materiality-two-ply-seed42-failure.npz",
+    "sha256": "a1b1c1e000d691a07d89a565c6a347042514afed90922b03a0e42b1738e50989"
+  },
+  "final_packed_count": 13,
+  "first_failure_predicate": null,
+  "first_failure_status": null,
+  "first_failure_step": null,
+  "outcome": "candidate_zero",
+  "policy_time_seconds": {
+    "count": 14,
+    "max": 3.1609170499999983,
+    "p50": 1.6302949489999996,
+    "p95": 3.130701560149999,
+    "p99": 3.154873952029998
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 2,
+        "orientation": 0,
+        "place_pos": [
+          0.1974029392004013,
+          0.47699999809265137,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.0998006740000008,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 0,
+        "place_pos": [
+          -0.2221941351890564,
+          0.0,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.194859280000001,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 0,
+        "place_pos": [
+          -0.2221941351890564,
+          -0.47699999809265137,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.2821020539999992,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 7,
+        "orientation": 0,
+        "place_pos": [
+          0.6169999837875366,
+          0.008907413110136986,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.4797047200000009,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 8,
+        "orientation": 0,
+        "place_pos": [
+          -0.6669999957084656,
+          0.033907413482666016,
+          1.0019999742507935
+        ]
+      },
+      "policy_seconds": 1.5120115220000017,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 2,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.5019999742507935,
+          0.17800000309944153
+        ]
+      },
+      "policy_seconds": 1.7485783759999975,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 5,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 0,
+        "place_pos": [
+          0.6169999837875366,
+          0.008907411247491837,
+          0.42499300837516785
+        ]
+      },
+      "policy_seconds": 2.1491001769999976,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 6,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 5,
+        "place_pos": [
+          0.6754783987998962,
+          0.3269999921321869,
+          1.1619999408721924
+        ]
+      },
+      "policy_seconds": 2.500638433999999,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 7,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.5019999742507935,
+          0.4099922180175781
+        ]
+      },
+      "policy_seconds": 3.1609170499999983,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 8,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 2,
+        "place_pos": [
+          0.8169999718666077,
+          -0.47699999809265137,
+          0.8549706935882568
+        ]
+      },
+      "policy_seconds": 3.1144316809999992,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 9,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 1,
+        "place_pos": [
+          -0.6669999957084656,
+          -0.5820000171661377,
+          1.0820000171661377
+        ]
+      },
+      "policy_seconds": 2.8606663360000013,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 10,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 5,
+        "place_pos": [
+          -0.27052414417266846,
+          -0.09109259396791458,
+          0.5249953866004944
+        ]
+      },
+      "policy_seconds": 2.663154971999994,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 11,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 1,
+        "place_pos": [
+          0.19747713208198547,
+          0.11390740424394608,
+          1.0820000171661377
+        ]
+      },
+      "policy_seconds": 1.481257823,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 12,
+      "terminated": false,
+      "truncated": false
+    }
+  ],
+  "requested_items": 42,
+  "requested_mode": "B",
+  "resolved_mode": "B",
+  "safe_placements": 13,
+  "seed": 42,
+  "task": "001",
+  "terminated": false,
+  "truncated": false
+}

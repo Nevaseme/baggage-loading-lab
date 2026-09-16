@@ -1,0 +1,37 @@
+transport item 2
+place item 2
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 10
+place item 10
+transport item 0
+place item 0
+transport item 1
+place item 1
+transport item 7
+place item 7
+transport item 15
+place item 15
+transport item 8
+place item 8
+transport item 9
+place item 9
+transport item 16
+place item 16
+transport item 3
+place item 3
+transport item 20
+place item 20
+item 2 not inside (hit boundary plane), [ 3.19897296e-05 -6.24910888e-01 -1.52003199e+00 -1.27508911e+00
+ -5.96234638e-01 -1.46181950e+00 -8.18049802e-03]
+item 5 not inside (hit boundary plane), [ 2.25540490e-05 -6.07054833e-01 -1.52002255e+00 -1.29294517e+00
+ -6.08403375e-01 -1.46292523e+00 -7.07477145e-03]
+item 6 not inside (hit boundary plane), [ 1.95521296e-05 -6.24877643e-01 -1.52001955e+00 -1.27512236e+00
+ -5.96266387e-01 -9.93837842e-01 -4.76162158e-01]
+item 0 not inside (hit boundary plane), [ 0.0271002  -0.62483579 -1.5471002  -1.27516421 -0.5764668  -0.3998326
+ -1.0701674 ]
+item 7 not inside (hit boundary plane), [ 0.02300664 -0.35799075 -1.54300664 -1.54200925 -0.76121326 -0.69998729
+ -0.77001271]
+close env.

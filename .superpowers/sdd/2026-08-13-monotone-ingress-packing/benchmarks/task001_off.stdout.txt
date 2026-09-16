@@ -1,0 +1,538 @@
+transport item 2
+place item 2
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 10
+place item 10
+transport item 1
+place item 1
+transport item 0
+place item 0
+transport item 15
+place item 15
+transport item 16
+place item 16
+transport item 3
+place item 3
+transport item 18
+place item 18
+transport item 7
+place item 7
+transport item 8
+place item 8
+transport item 20
+place item 20
+transport item 4
+place item 4
+transport item 23
+place item 23
+transport item 22
+place item 22
+transport item 9
+place item 9
+transport item 24
+place item 24
+transport item 11
+place item 11
+transport item 27
+place item 27
+transport item 12
+collision: 12 and 9 at (np.float32(0.0), np.float32(-0.6109524), np.float32(0.178)), distance 0.013081848440900741
+item 12 not packable. removed.
+item 2 not inside (hit boundary plane), [ 9.57340057e-06 -7.98989693e-01 -1.52000957e+00 -1.10101031e+00
+ -4.77685290e-01 -1.44900477e+00 -2.09952295e-02]
+item 5 not inside (hit boundary plane), [ 1.08714178e-05 -2.04804926e-02 -1.52001087e+00 -1.87951951e+00
+ -1.00793003e+00 -1.20054129e+00 -2.69458714e-01]
+item 6 not inside (hit boundary plane), [ 1.44612368e-05 -2.06555415e-02 -1.52001446e+00 -1.87934446e+00
+ -1.00780817e+00 -9.29277218e-01 -5.40722782e-01]
+item 20 not inside (hit boundary plane), [ 1.13612063e-05 -1.91702083e-02 -1.52001136e+00 -1.88082979e+00
+ -1.00882211e+00 -6.58781452e-01 -8.11218548e-01]
+item 4 not inside (hit boundary plane), [ 1.14786848e-05 -8.99630028e-01 -1.52001148e+00 -1.00036997e+00
+ -4.09137366e-01 -7.38885522e-01 -7.31114478e-01]
+item 9 not inside (hit boundary plane), [ 0.03261194 -0.71194863 -1.55261194 -1.18805137 -0.51309828 -0.71173647
+ -0.75826353]
+item 24 not inside (hit boundary plane), [ 1.17858362e-05 -5.81002522e-01 -1.52001179e+00 -1.31899748e+00
+ -6.26155591e-01 -3.40785872e-01 -1.12921413e+00]
+{
+  "task": "001",
+  "requested_items": 30,
+  "monotone_ingress": "off",
+  "completed_steps": 21,
+  "terminated": true,
+  "truncated": false,
+  "all_safe": false,
+  "max_policy_seconds": 5.750705599000014,
+  "optimize_seconds": 0.0,
+  "optimized_order": null,
+  "evaluation": {
+    "fill_score": 20.22133293809594,
+    "num_placed_items": 0.6666666666666666
+  },
+  "records": [
+    {
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "place_pos": [
+          -0.17399999499320984,
+          0.46399998664855957,
+          0.18299999833106995
+        ],
+        "orientation": 0
+      },
+      "elapsed": 1.0013151500000106,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "place_pos": [
+          0.6039999723434448,
+          0.5640000104904175,
+          0.28299999237060547
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0011002690000055,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "place_pos": [
+          0.6044690012931824,
+          0.2943060100078583,
+          0.28299999237060547
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.004775722000005,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "place_pos": [
+          -0.6039999723434448,
+          0.5657100081443787,
+          1.1069999933242798
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0023066180000058,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "place_pos": [
+          0.44700199365615845,
+          0.48899999260902405,
+          1.0019999742507935
+        ],
+        "orientation": 0
+      },
+      "elapsed": 1.0020166449999977,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.5139999985694885,
+          1.2070000171661377
+        ],
+        "orientation": 2
+      },
+      "elapsed": 1.0023944040000003,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "place_pos": [
+          -0.6039999723434448,
+          0.14300000667572021,
+          1.1069999933242798
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0052197640000031,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "place_pos": [
+          0.5540000200271606,
+          0.13300000131130219,
+          1.1619999408721924
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0012182699999812,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.2240000069141388,
+          0.5690000057220459,
+          0.49999499320983887
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0021606140000188,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "place_pos": [
+          -0.8040000200271606,
+          -0.2280000001192093,
+          1.2070000171661377
+        ],
+        "orientation": 2
+      },
+      "elapsed": 1.0014990460000206,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "place_pos": [
+          -0.024001000449061394,
+          0.15299999713897705,
+          1.2070000171661377
+        ],
+        "orientation": 4
+      },
+      "elapsed": 1.0000939020000033,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "place_pos": [
+          0.6069999933242798,
+          0.5170000195503235,
+          0.614995002746582
+        ],
+        "orientation": 0
+      },
+      "elapsed": 1.0001026399999944,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 8,
+        "container_idx": 0,
+        "place_pos": [
+          0.6044679880142212,
+          0.02362300083041191,
+          0.28299999237060547
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0048295880000069,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.2240000069141388,
+          0.09800499677658081,
+          0.257999986410141
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.0070788400000197,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 9,
+        "container_idx": 0,
+        "place_pos": [
+          0.6069999933242798,
+          0.09891799837350845,
+          0.6249909996986389
+        ],
+        "orientation": 0
+      },
+      "elapsed": 1.0002090110000097,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 8,
+        "container_idx": 0,
+        "place_pos": [
+          -0.1739950031042099,
+          0.0989999994635582,
+          0.5999910235404968
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.852228832999998,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.08699999749660492,
+          -0.22300000488758087,
+          0.17299999296665192
+        ],
+        "orientation": 0
+      },
+      "elapsed": 3.310132664000008,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "place_pos": [
+          0.6489999890327454,
+          -0.5540000200271606,
+          0.43299999833106995
+        ],
+        "orientation": 4
+      },
+      "elapsed": 1.0032676269999854,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.6539999842643738,
+          -0.5690000057220459,
+          0.9999909996986389
+        ],
+        "orientation": 1
+      },
+      "elapsed": 1.000219138999995,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 8,
+        "container_idx": 0,
+        "place_pos": [
+          0.003000000026077032,
+          -0.18299999833106995,
+          0.5886309742927551
+        ],
+        "orientation": 4
+      },
+      "elapsed": 3.287319206999996,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.492000013589859,
+          0.17800000309944153
+        ],
+        "orientation": 0
+      },
+      "elapsed": 5.750705599000014,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "candidate_diagnostics": [
+        {
+          "pool_index": 0,
+          "item_index": 12,
+          "candidates": 0,
+          "seconds": 2.1631281139999885
+        },
+        {
+          "pool_index": 1,
+          "item_index": 13,
+          "candidates": 0,
+          "seconds": 2.0618939939999734
+        },
+        {
+          "pool_index": 2,
+          "item_index": 14,
+          "candidates": 0,
+          "seconds": 1.909760752000011
+        },
+        {
+          "pool_index": 3,
+          "item_index": 17,
+          "candidates": 0,
+          "seconds": 2.0351753470000062
+        },
+        {
+          "pool_index": 4,
+          "item_index": 19,
+          "candidates": 0,
+          "seconds": 1.907014671000013
+        },
+        {
+          "pool_index": 5,
+          "item_index": 21,
+          "candidates": 0,
+          "seconds": 2.0352092539999944
+        },
+        {
+          "pool_index": 6,
+          "item_index": 25,
+          "candidates": 0,
+          "seconds": 2.0266815419999773
+        },
+        {
+          "pool_index": 7,
+          "item_index": 26,
+          "candidates": 0,
+          "seconds": 2.068014780999988
+        },
+        {
+          "pool_index": 8,
+          "item_index": 28,
+          "candidates": 0,
+          "seconds": 2.0251984159999665
+        },
+        {
+          "pool_index": 9,
+          "item_index": 29,
+          "candidates": 0,
+          "seconds": 1.8029912189999777
+        }
+      ]
+    }
+  ]
+}
+close env.
+argv[0]=

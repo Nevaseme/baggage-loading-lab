@@ -11,3 +11,10 @@ evaluations/** -text
 experiments/** -text
 knowledge/history/** -text
 *.zip binary
+deliverables/** -text
+simulator/** -text
+submit/** -text
+analysis/** -text
+official_mhtml/** -text
+.superpowers/** -text
+.lab/** -text

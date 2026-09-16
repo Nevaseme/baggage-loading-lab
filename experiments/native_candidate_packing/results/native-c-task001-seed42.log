@@ -1,0 +1,43 @@
+transport item 0
+place item 0
+transport item 1
+place item 1
+transport item 2
+place item 2
+transport item 3
+place item 3
+transport item 4
+place item 4
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 7
+place item 7
+transport item 8
+place item 8
+transport item 9
+place item 9
+transport item 10
+place item 10
+transport item 11
+place item 11
+transport item 12
+place item 12
+transport item 13
+place item 13
+transport item 14
+Not safe place (disp: 0.49m, angle: 7.9deg). Item 14 removed.
+item 0 not inside (hit boundary plane), [ 0.06257    -0.62376287 -1.58257    -1.27623713 -0.55122706 -0.39616082
+ -1.07383918]
+item 1 not inside (hit boundary plane), [-6.52013627e-06 -5.41616788e-01 -1.51999348e+00 -1.35838321e+00
+ -6.52994774e-01 -6.01155491e-01 -8.68844509e-01]
+item 7 not inside (hit boundary plane), [ 7.12629889e-04 -6.23113467e-01 -1.52071263e+00 -1.27688653e+00
+ -5.96960513e-01 -4.15252494e-01 -1.05474751e+00]
+item 8 not inside (hit boundary plane), [ 0.02661732 -0.61322612 -1.54661732 -1.28677388 -0.58472775 -0.80030113
+ -0.66969887]
+item 9 not inside (hit boundary plane), [ 0.02601645 -0.60280671 -1.54601645 -1.29719329 -0.5922644  -1.00371886
+ -0.46628114]
+item 12 not inside (hit boundary plane), [ 1.23513694e-05 -5.80317762e-01 -1.52001235e+00 -1.31968224e+00
+ -6.26621570e-01 -1.40452733e+00 -6.54726655e-02]
+close env.

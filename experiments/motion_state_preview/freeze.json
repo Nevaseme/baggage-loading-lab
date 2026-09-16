@@ -1,0 +1,19 @@
+{
+  "status": "frozen_for_integration_test_not_promotion",
+  "source_hashes": {
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "mesh.py": "d979764cddda924defcc9d7da5ab2f7d428de509dd74eac962eacb3931787a37",
+    "motion.py": "eec238be877e1655cae82c83f593eaf71794d4c31359f522cecb691b2902e7bc",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "a00d17b909162d07e9a32720246534da9ff3757dc43fbbc738d1dd48edd86d94",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "probe_sha256": "ebe51cb6b78d1b9d04030030cd56770e26c5241fed896957e1afe639ba5b79f4",
+  "tests_passed": 4,
+  "safe_prefix_actions": 22,
+  "false_reject_steps": [],
+  "false_safe_steps": [],
+  "drop_displacement": 0.3214073768063727,
+  "max_preview_seconds_contended": 2.620221729000008,
+  "interface": "source.motion.MotionStatePreview; evaluate then accept only selected complete result; reset and close"
+}

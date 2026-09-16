@@ -1,0 +1,18 @@
+test_float32_plane_margin_is_strict_for_every_axis_plane (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_float32_plane_margin_is_strict_for_every_axis_plane) ... ok
+test_effective_lift_has_zero_default_and_ceiling_clipped_partial_values (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_effective_lift_has_zero_default_and_ceiling_clipped_partial_values) ... ok
+test_diagonal_cut_plane_float32_boundary_uses_hand_literal_one_e_minus_seven_m (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_diagonal_cut_plane_float32_boundary_uses_hand_literal_one_e_minus_seven_m) ... ok
+test_action_position_range_is_hard_validated_after_float32_canonicalization (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_action_position_range_is_hard_validated_after_float32_canonicalization) ... ok
+test_matched_cross_artifact_records_prefix_and_rejection_boundary (tests.test_portal_reserved_scaffold_historical_cross.PortalReservedScaffoldHistoricalCrossTests.test_matched_cross_artifact_records_prefix_and_rejection_boundary) ... FAIL
+
+======================================================================
+FAIL: test_matched_cross_artifact_records_prefix_and_rejection_boundary (tests.test_portal_reserved_scaffold_historical_cross.PortalReservedScaffoldHistoricalCrossTests.test_matched_cross_artifact_records_prefix_and_rejection_boundary)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/tests/test_portal_reserved_scaffold_historical_cross.py", line 111, in test_matched_cross_artifact_records_prefix_and_rejection_boundary
+    self.assertEqual(payload["step_25"]["env_step_count_before"], len(safe_records))
+AssertionError: 26 != 25
+
+----------------------------------------------------------------------
+Ran 5 tests in 1.461s
+
+FAILED (failures=1)

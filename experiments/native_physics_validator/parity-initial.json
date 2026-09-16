@@ -1,0 +1,381 @@
+{
+  "source_hashes": {
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "probe.py": "feb18909f4d8d4e5bf38401e7793b0707472282c79f8b5c99fce4aa5da033427"
+  },
+  "authorizer_sha256": "d324c70ac36c15871c782d7b987c5d44363ccc954868dc54583fc7a72ac7a441",
+  "timing_contended": true,
+  "cases": [
+    {
+      "name": "baseline-a-task000-seed42",
+      "snapshot_sha256": "93d214b937f0cf116a9e803a4abb5af8148b707f49504ffda4ffccec9847501c",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.47699999809265137,
+          0.1720000058412552
+        ],
+        "orientation": 0
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.008000001907348536,
+        "target_clear": false,
+        "transport": false,
+        "effective_lift": 0.0,
+        "path_z": 0.1720000058412552,
+        "start_x": 0.0,
+        "samples": 1,
+        "failure_segment": "y",
+        "failure_distance": -0.15998461827258742,
+        "deadline_exceeded": false,
+        "seconds": 0.006679395999981352
+      },
+      "native_repeat_seconds": 0.002044822000016211,
+      "build_seconds": 0.07398938599999383,
+      "reference": {
+        "transport": false,
+        "included": true,
+        "target_clear": false
+      },
+      "reference_seconds": 0.16376480200005972,
+      "parity": true
+    },
+    {
+      "name": "baseline-b-task001-seed42",
+      "snapshot_sha256": "ffa213ba8a3d7ea77c738528ff8d8c6737ebb4f36ce5b5a62ab46c00c91da2f1",
+      "action": {
+        "item_idx": 3,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.5519999861717224,
+          0.18700000643730164
+        ],
+        "orientation": 0
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.00800001382827753,
+        "target_clear": false,
+        "transport": false,
+        "effective_lift": 0.0,
+        "path_z": 0.18700000643730164,
+        "start_x": 0.0,
+        "samples": 1,
+        "failure_segment": "y",
+        "failure_distance": -0.09841028301660786,
+        "deadline_exceeded": false,
+        "seconds": 0.0010687579999739683
+      },
+      "native_repeat_seconds": 0.0009151970000402798,
+      "build_seconds": 0.031015644000035536,
+      "reference": {
+        "transport": false,
+        "included": true,
+        "target_clear": false
+      },
+      "reference_seconds": 0.15184620099989843,
+      "parity": true
+    },
+    {
+      "name": "baseline-c-task001-seed42",
+      "snapshot_sha256": "b08e5655d042d803f959ee17f9964ff689a0e3ff6db67ecdf214b054c80ac716",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.008811227977275848,
+          -0.09686042368412018,
+          1.0676591396331787
+        ],
+        "orientation": 4
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.17734086036682134,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.08,
+        "path_z": 1.1476591396331788,
+        "start_x": 0.008811227977275848,
+        "samples": 70,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.012647681999851557
+      },
+      "native_repeat_seconds": 0.011984239999947022,
+      "build_seconds": 0.017832354000120176,
+      "reference": {
+        "transport": true,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.13105362500004958,
+      "parity": true
+    },
+    {
+      "name": "baseline-b-task001-shuffle17",
+      "snapshot_sha256": "40e99caf855ea991470137ba47526661dc7e98d2eebfb428514b30628b27de1c",
+      "action": {
+        "item_idx": 3,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.5519999861717224,
+          0.16200000047683716
+        ],
+        "orientation": 0
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.00800001382827753,
+        "target_clear": false,
+        "transport": false,
+        "effective_lift": 0.0,
+        "path_z": 0.16200000047683716,
+        "start_x": 0.0,
+        "samples": 1,
+        "failure_segment": "y",
+        "failure_distance": -0.09286914285659288,
+        "deadline_exceeded": false,
+        "seconds": 0.001172169000028589
+      },
+      "native_repeat_seconds": 0.0008157620000019961,
+      "build_seconds": 0.015730812000128935,
+      "reference": {
+        "transport": false,
+        "included": true,
+        "target_clear": false
+      },
+      "reference_seconds": 0.13867722200006938,
+      "parity": true
+    },
+    {
+      "name": "aligned-b-task001-seed42",
+      "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ],
+        "orientation": 0
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.09231655597686761,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.08,
+        "path_z": 1.1138535308837891,
+        "start_x": 0.5826834440231323,
+        "samples": 55,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.016335346000005302
+      },
+      "native_repeat_seconds": 0.011887395000030665,
+      "build_seconds": 0.019128111000100034,
+      "reference": {
+        "transport": true,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.1460785429999305,
+      "parity": true
+    },
+    {
+      "name": "fair_generation_recovery",
+      "snapshot_sha256": "fb7236c40ee0ff0e3d06ee1a2d2bad7dbe16d2eea00805890cb64c365e3fa3bf",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.5141792297363281,
+          0.5019999742507935,
+          1.2559900283813477
+        ]
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.008000025749206524,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.08,
+        "path_z": 1.3359900283813477,
+        "start_x": -0.235,
+        "samples": 157,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.02923715999986598
+      },
+      "native_repeat_seconds": 0.02364541899987671,
+      "build_seconds": 0.018950555999936114,
+      "reference": {
+        "transport": true,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.13470925499996156,
+      "parity": true
+    },
+    {
+      "name": "offset_3m",
+      "snapshot_sha256": "8b089305f6ce5fd468a75b0664aadfd61d982d9ea58251a460b2389678da4e3e",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.0,
+          0.15000000596046448
+        ]
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.010000005960464464,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.0,
+        "path_z": 0.15000000596046448,
+        "start_x": 0.0,
+        "samples": 76,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.004142232000049262
+      },
+      "native_repeat_seconds": 0.0017146609998235363,
+      "build_seconds": 0.006684637000034854,
+      "reference": {
+        "transport": true,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.003550280999888855,
+      "parity": true
+    },
+    {
+      "name": "contact_clear",
+      "snapshot_sha256": "808eaa9f43869ab926450565316e1bdbae129751e97df11ca59e0f1f99a94a50",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.0,
+          0.15000000596046448
+        ]
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.010000005960464464,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.0,
+        "path_z": 0.15000000596046448,
+        "start_x": 0.0,
+        "samples": 76,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.003210756000044057
+      },
+      "native_repeat_seconds": 0.003784704000054262,
+      "build_seconds": 0.006838221999942107,
+      "reference": {
+        "transport": true,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.004733588000135569,
+      "parity": true
+    },
+    {
+      "name": "contact_boundary",
+      "snapshot_sha256": "3e10efadc44d38ffe4f88ebed962942b6a150c65745e669ddf34d24b5dbf0825",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.0,
+          0.15000000596046448
+        ]
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.010000005960464464,
+        "target_clear": true,
+        "transport": true,
+        "effective_lift": 0.0,
+        "path_z": 0.15000000596046448,
+        "start_x": 0.0,
+        "samples": 76,
+        "failure_segment": null,
+        "failure_distance": null,
+        "deadline_exceeded": false,
+        "seconds": 0.004157362000114517
+      },
+      "native_repeat_seconds": 0.002431529999967097,
+      "build_seconds": 0.009587630000169156,
+      "reference": {
+        "transport": false,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.006084154000063791,
+      "parity": false
+    },
+    {
+      "name": "contact_reject",
+      "snapshot_sha256": "ecb396c4952476c316ff6c928d833c27ec79e200f4f64fbb48a6311ddb4a62e6",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.0,
+          0.15000000596046448
+        ]
+      },
+      "native": {
+        "included": true,
+        "plane_max_dot": -0.010000005960464464,
+        "target_clear": true,
+        "transport": false,
+        "effective_lift": 0.0,
+        "path_z": 0.15000000596046448,
+        "start_x": 0.0,
+        "samples": 55,
+        "failure_segment": "y",
+        "failure_distance": 0.01499900000000001,
+        "deadline_exceeded": false,
+        "seconds": 0.0023612170000433252
+      },
+      "native_repeat_seconds": 0.0016973540000435605,
+      "build_seconds": 0.005815508000068803,
+      "reference": {
+        "transport": false,
+        "included": true,
+        "target_clear": true
+      },
+      "reference_seconds": 0.009486952000088422,
+      "parity": true
+    }
+  ],
+  "all_parity": false
+}

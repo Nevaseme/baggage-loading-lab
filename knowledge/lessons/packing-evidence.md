@@ -1,27 +1,32 @@
-# Packing evidence: observations, hypotheses, decisions
+# Packing evidence
 
-この文書は設計の参考であり、特定手法を使い続ける命令ではありません。現在の提出順位は生成された比較表を参照してください。
+Use these findings to choose experiments; no planner is mandatory. See [progress.md](../../progress.md) for registered Public results.
 
-## 実測・記録から分かっていること
-
-| 観測 | 設計への意味 | 限界 |
+| Observation | Design implication | Evidence limit |
 | --- | --- | --- |
-| 4系統の外部結果原文に途中停止がある | スコア差を配置品質だけに帰属させない | 全sceneの失敗stepは分からない |
-| task001/seed42でExact-Root EMS MPCが14配置後に失敗。3実行モードの15操作が一致 | この再現では未検証fallbackが直接の欠陥。診断だけの影響ではない | 過去の全Public失敗が同じ原因とは限らない |
-| 旧方式の安全な25操作のうち厳しいmaskが受理したのは4操作 | 安全判定の過剰排除も改善対象 | どんな条件でも制約を緩めればよいとは言えない |
-| 校正後のshieldは25操作を維持し、次を返す前に拒否 | 安全性対策としての局所的な成果 | 配置数増加、自然終了、Public改善は未実証 |
+| All four recorded lineages have stopped external runs | Separate early-stop effects from packing quality | Per-scene failure steps are incomplete |
+| Exact-Root EMS MPC failed after 14 safe placements on task001/seed42; three diagnostic modes produced the same 15 actions | Fix the unchecked fallback route | Does not explain every Public failure |
+| A strict mask accepted only 4 of 25 historically safe actions | Measure false rejection as well as unsafe acceptance | Relaxing every predicate is not justified |
+| The calibrated shield preserved 25 safe actions, then rejected the next | Useful validation control | No extra placement, natural completion, or Public gain shown |
 
-## 次の設計に残す仮説
+Sources: [development history](../history/development-progress-before-registry.md), [step-14 traces](../../experiments/step14-forensics/), and [shield checkpoint](../../experiments/historical-shield/development-checkpoint.md).
 
-- 旧方式の低い柱状構造と全荷物の仮想計画は、厳しい後継方式より有効な配置を生成した。
-- 後半の搬入路や支持面を先に確保すると、候補が尽きる状態を減らせる可能性がある。
-- ただしportal-on/offの比較は未完了。特定の入口側配置が失敗を引き起こしたという因果は未確定。
-- Quota-Fairは仮説を評価する前に安全性問題が出たため、未評価。棄却済みとして扱わない。
+## Current submission evidence
 
-mode Aのtask000とmode Bのtask001の配置数は、別条件として比較してください。重心・保護・動的安定性は、測定したproxyと公式成分を区別します。
+The [support recovery candidate](../../experiments/submission_candidate/README.md)
+preserves historical A/B sample count and fill and improves C task001/seed42 from
+18/42, fill 17.8524 to 23/42, fill 25.1853. The exact ZIP reproduces those results.
+It remains a partial packer with Public score pending. Motion-carry preview still
+misses contact-history effects; diverse raised drops failed full replay. Tested
+future-ingress scoring did not improve B. Do not repeat these variants without a
+specific change addressing the observed failure.
 
-## 開発状態の引き継ぎ
+## Further comparison ideas
 
-最後に受け入れられたのは `portal_reserved_scaffold_dag` のauthorizerと旧計画shield比較です。scaffold/portal/plannerの部分コードは未検証で、Agent接続と物理A/Bが未完了です。今回の記録基盤の整備はアルゴリズム開発の再開ではありません。
+- Test whether historical low-column planning produces useful placements excluded by successor search.
+- Test whether reserving later ingress routes and support surfaces extends safe packing. The portal-on/off comparison is unfinished, so its causal benefit remains open.
+- Revisit Quota-Fair only with a working safety path; the earlier run stopped before testing its allocation hypothesis.
 
-根拠ファイルは [保存済み開発履歴](../history/development-progress-before-registry.md)、`experiments/historical-shield/` と `experiments/step14-forensics/` に移行して保持します。ローカルだけにある詳細ログは履歴内の元パスで区別します。
+Compare matched tasks and modes. Mode A task000 counts cannot establish improvement over mode B task001.
+
+The reviewed `portal_reserved_scaffold_dag` component is the historical-plan authorizer/shield. Scaffold, portal, and planner work remains partially implemented and unverified. Use the [development guide](../../docs/development.md) to choose the next experiment from that evidence.

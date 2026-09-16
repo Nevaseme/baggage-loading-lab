@@ -1,0 +1,49 @@
+transport item 31
+place item 31
+transport argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+argv[0]=
+{"source": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/deliverables/verified-extraction/support_recovery_packing/agent.py", "task": "001", "mode": "B", "seed": 17, "outcome": "terminal_rejection", "safe_placements": 24, "evaluation": {"fill_score": 25.2247912652537, "num_placed_items": 0.5714285714285714}, "policy_time_seconds": {"count": 25, "max": 6.506913015999999, "p50": 1.9944028930000286, "p95": 4.764049606399995, "p99": 6.159989080479997}, "error": null}
+39
+not included. [99.16499999999999, -0.625, -100.455, -0.625, 72.45381808712713, -0.5850000000000062, -0.5349999999999939]
+item 31 not inside (hit boundary plane), [ 2.39904679e-05 -6.24913085e-01 -1.52002399e+00 -1.27508692e+00
+ -5.96238998e-01 -1.46183926e+00 -8.16073501e-03]
+item 24 not inside (hit boundary plane), [ 2.82696064e-05 -6.07019051e-01 -1.52002827e+00 -1.29298095e+00
+ -6.08423562e-01 -1.46294785e+00 -7.05214564e-03]
+item 2 not inside (hit boundary plane), [ 1.65405915e-05 -6.24899945e-01 -1.52001654e+00 -1.27510006e+00
+ -5.96253403e-01 -9.93845240e-01 -4.76154760e-01]
+item 9 not inside (hit boundary plane), [ 0.07234087 -0.62514855 -1.59234087 -1.27485145 -0.54312917 -0.40003372
+ -1.06996628]
+item 25 not inside (hit boundary plane), [ 1.52298917e-04 -5.28956689e-02 -1.52015230e+00 -1.84710433e+00
+ -9.85748370e-01 -6.94958639e-01 -7.75041361e-01]
+item 4 not inside (hit boundary plane), [-1.28996250e+00 -6.74766849e-01 -2.30037495e-01 -1.22523315e+00
+ -1.50679441e+00 -1.47000994e+00  9.94397182e-06]
+item 30 not inside (hit boundary plane), [-1.21923775 -0.00403997 -0.30076225 -1.89596003 -1.9118454  -0.73630759
+ -0.73369241]
+item 39 not inside (hit boundary plane), [ 0.00619679 -0.00800002 -1.52619679 -1.89199998 -1.01190128 -0.05000005
+ -1.41999995]
+close env.

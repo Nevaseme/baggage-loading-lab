@@ -1,0 +1,218 @@
+{
+  "agent_module": "agents.support_extreme_fusion_beam_exact_mask.agent",
+  "all_safe": false,
+  "completed_steps": 8,
+  "effective_items": 42,
+  "evaluation": {
+    "fill_score": 8.794649473840227,
+    "num_placed_items": 0.19047619047619047
+  },
+  "exception": {
+    "category": "planning_error",
+    "message": "B beam returned no root",
+    "step": 8,
+    "type": "PlanningError"
+  },
+  "failure_snapshot": {
+    "path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-seed42-failure.npz",
+    "sha256": "eaf7753f42403e5265554c3e9fdeb26711b718e372e5f8413f7a9edd1a1df82b"
+  },
+  "final_packed_count": 8,
+  "first_failure_predicate": null,
+  "first_failure_status": null,
+  "first_failure_step": null,
+  "outcome": "planning_error",
+  "policy_time_seconds": {
+    "count": 9,
+    "max": 5.458219761000002,
+    "p50": 5.317176183999997,
+    "p95": 5.4044563006000015,
+    "p99": 5.447467068920002
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.1770000010728836,
+          0.5270000100135803,
+          0.996999979019165
+        ]
+      },
+      "policy_seconds": 5.310904477999999,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.27219411730766296,
+          0.5019999742507935,
+          0.17800000309944153
+        ]
+      },
+      "policy_seconds": 5.311470509000001,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.23438984155654907,
+          0.47699999809265137,
+          0.41499316692352295
+        ]
+      },
+      "policy_seconds": 5.314077069,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.3836076855659485,
+          0.5019999742507935,
+          0.17800000309944153
+        ]
+      },
+      "policy_seconds": 5.317309879,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.383832722902298,
+          0.5019999742507935,
+          0.4099964201450348
+        ]
+      },
+      "policy_seconds": 5.315571124000002,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.4909999668598175,
+          0.47699999809265137,
+          1.0069999694824219
+        ]
+      },
+      "policy_seconds": 5.317176183999997,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 5,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 0,
+        "place_pos": [
+          -0.17700029909610748,
+          0.5270000100135803,
+          1.193231225013733
+        ]
+      },
+      "policy_seconds": 5.321265166000003,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 6,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 0,
+        "place_pos": [
+          -0.23442617058753967,
+          0.5270000100135803,
+          0.654987096786499
+        ]
+      },
+      "policy_seconds": 5.323811110000001,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 7,
+      "terminated": false,
+      "truncated": false
+    }
+  ],
+  "requested_items": 42,
+  "requested_mode": "B",
+  "resolved_mode": "B",
+  "safe_placements": 8,
+  "seed": 42,
+  "task": "001",
+  "terminated": false,
+  "truncated": false
+}

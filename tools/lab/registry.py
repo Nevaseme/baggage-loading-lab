@@ -1532,6 +1532,8 @@ class Registry:
             "docs/registry-operations.md",
             "docs/README.md",
             "docs/2026-09-08-instruction-audit.md",
+            "docs/development.md",
+            "docs/2026-09-16-astra-workspace-audit.md",
         ]
 
         def add_context_file(path: Path) -> None:

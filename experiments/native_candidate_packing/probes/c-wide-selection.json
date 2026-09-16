@@ -1,0 +1,602 @@
+{
+  "source_hashes": {
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c"
+  },
+  "snapshot_sha256": "367467c969a155312a59bb8bf5873a3498f1585ccc757a4b947ea1a60923cdf6",
+  "timing_contended": true,
+  "trials": [
+    {
+      "shortlist_limit": 96,
+      "max_authorizations": 384,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          -0.0005595062393695116,
+          -0.4871954321861267,
+          1.2506388425827026
+        ]
+      },
+      "outcome": "returned",
+      "seconds": 3.2073284429999944,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 97,
+        "rejections": {
+          "transport": 96,
+          "target_clear": 1
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 1,
+              "place_pos": [
+                -0.0005595062393695116,
+                -0.4871954321861267,
+                1.2506388425827026
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                20
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.06053324041780006,
+            "angle_degrees": 3.006172625080332,
+            "final_position": [
+              -0.007816094534754939,
+              -0.42749220928516257,
+              1.2575047217709967
+            ],
+            "final_orientation": [
+              0.6884185337668586,
+              -0.0019763624040137263,
+              0.0019279323557192425,
+              0.725308416768183
+            ],
+            "seconds": 1.9232570560000113,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 14,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.04086129999477823,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.193063692999999,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            -2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            -2
+          ],
+          [
+            0,
+            7,
+            0,
+            -1
+          ],
+          [
+            0,
+            8,
+            2,
+            -2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "wide"
+      }
+    },
+    {
+      "shortlist_limit": 512,
+      "max_authorizations": 384,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          -0.0005595062393695116,
+          -0.4871954321861267,
+          1.2506388425827026
+        ]
+      },
+      "outcome": "returned",
+      "seconds": 2.856423102000008,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 10,
+        "rejections": {
+          "transport": 9
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 1,
+              "place_pos": [
+                -0.0005595062393695116,
+                -0.4871954321861267,
+                1.2506388425827026
+              ]
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                20
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.06053324041780006,
+            "angle_degrees": 3.006172625080332,
+            "final_position": [
+              -0.007816094534754939,
+              -0.42749220928516257,
+              1.2575047217709967
+            ],
+            "final_orientation": [
+              0.6884185337668586,
+              -0.0019763624040137263,
+              0.0019279323557192425,
+              0.725308416768183
+            ],
+            "seconds": 1.882620906999989,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 14,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.04086129999477823,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.8399085160000084,
+        "narrow_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            -2
+          ],
+          [
+            0,
+            7,
+            0,
+            -1
+          ],
+          [
+            0,
+            8,
+            2,
+            -2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            7,
+            0,
+            -2
+          ],
+          [
+            0,
+            7,
+            0,
+            -1
+          ],
+          [
+            0,
+            8,
+            2,
+            -2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            1,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            1
+          ],
+          [
+            0,
+            3,
+            1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "selected_stage": "narrow"
+      }
+    }
+  ]
+}

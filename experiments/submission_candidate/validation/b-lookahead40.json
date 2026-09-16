@@ -1,0 +1,3521 @@
+{
+  "task": "001",
+  "mode": "B",
+  "seed": 42,
+  "shuffled": false,
+  "config": {
+    "containers": {
+      "spacing": 2.5,
+      "container_list": [
+        {
+          "index": 0,
+          "length": 2.0,
+          "width": 1.52,
+          "height": 1.62,
+          "thickness": 0.05,
+          "buffer": 0.0,
+          "cut_x": 0.43,
+          "cut_y": 0.4,
+          "packed_items": [],
+          "require_shelf": true,
+          "is_prioritized": false
+        }
+      ]
+    },
+    "item_stream": {
+      "item_list": [
+        {
+          "index": 0,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 7,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 8,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 9,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 12,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 13,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 14,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 15,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 16,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 17,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 18,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 19,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 20,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 21,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 22,
+          "length": 0.6,
+          "width": 0.3,
+          "height": 0.25,
+          "mass": 7,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 23,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": true,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 24,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 25,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 26,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 27,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 28,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 29,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 30,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 31,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 32,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 33,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": true,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 34,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 35,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 36,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 37,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 38,
+          "length": 0.65,
+          "width": 0.35,
+          "height": 0.23,
+          "mass": 12,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2500,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 39,
+          "length": 0.45,
+          "width": 0.3,
+          "height": 0.2,
+          "mass": 5,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.8,
+          "rollingFriction": 0.02,
+          "spinningFriction": 0.02,
+          "restitution": 0,
+          "contactStiffness": 2000,
+          "contactDamping": 600,
+          "linearDamping": 0.8
+        },
+        {
+          "index": 40,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2
+        },
+        {
+          "index": 41,
+          "length": 0.5,
+          "width": 0.4,
+          "height": 0.4,
+          "mass": 10,
+          "is_prioritized": false,
+          "is_soft": true,
+          "lateralFriction": 0.6,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.1,
+          "contactStiffness": 3000,
+          "contactDamping": 800,
+          "linearDamping": 0.8
+        }
+      ],
+      "look_ahead": 40,
+      "max_space": 1,
+      "visible_pool": []
+    },
+    "camera": {
+      "num_containers": 1,
+      "target_pos": [
+        0,
+        0,
+        0
+      ],
+      "distance": 3.0,
+      "yaw": 0,
+      "pitch": 0,
+      "roll": 0,
+      "img_width": 64,
+      "img_height": 64,
+      "fov": 60,
+      "near_val": 0.1,
+      "far_val": 10.0
+    },
+    "validator": {
+      "inclusion_margin": -0.005,
+      "start_z": 0.08,
+      "safety_margin": 0.015,
+      "ceiling_margin": 0.018,
+      "displacement_threshold": 0.3,
+      "angle_displacement_threshold": 45,
+      "settle_wait_step": 300
+    },
+    "action": {
+      "keys": {
+        "item_idx": "int",
+        "container_idx": "int",
+        "place_pos": "float",
+        "orientation": "int"
+      },
+      "pos_lim": {
+        "low": -100,
+        "high": 100
+      },
+      "orientations": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "agent": {
+      "optimize": false,
+      "init_timeout": 10.0,
+      "optimization_timeout": 180.0,
+      "policy_timeout": 10.0,
+      "allowed_methods": [
+        "get_init_states",
+        "optimize",
+        "policy"
+      ],
+      "max_mem": 12
+    },
+    "visualizer": {
+      "vis": false,
+      "camera": {
+        "yaw": 0,
+        "pitch": -20
+      }
+    }
+  },
+  "config_sha256": "a239189da01577609cbbdbfbf60263ba344a5293863623ec099571f212a43368",
+  "source": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/deliverables/verified-extraction/support_recovery_packing/agent.py",
+  "source_hashes": {
+    "PACKAGE.json": "204dc5bc5549f3e8cf7daf56b11ca7b4032c90ca6d837cfe05d366beedee3e9a",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "0307af43630662c1bd0f32743b3c65567a5ed7c741a5d0d12806aee3bc2e3daf",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "planner.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+    "terminal.py": "615af9a6960554e049d1fb009dc28751b295736da7a602ef8f0fe7ae47bb4683"
+  },
+  "runner_sha256": "84008d241f83654340d1b39205e6040ab181b9af3f17e5154c265ba33a4fcf81",
+  "simulator_hashes": {
+    "__init__.py": "de59b76ba2c82eece8c867efc5f23e5737f2ee10d609a6bbdde1df2714288cd4",
+    "agent_factory.py": "4571921c0319013844e91c76537fe185dc5e7185980266baf5f0e44c9b96a9eb",
+    "app.py": "d7e3d9075aa450f603be3091a79c4b0b34f946f281707fe2a3588929905803c4",
+    "camera.py": "a4f9271aca7d1ad18d33fc5190b0b619702d1737eb0d5b201b7beaefd712e444",
+    "containers.py": "7a348e7d36e5c5dfdfed12f1dc04a7b84b99f7c39ac5fe47ba24c2c693865951",
+    "env.py": "24406ccaebea802635003c41af9e0d3572b70583f6e59c59c0df8def1effb6ba",
+    "evaluator.py": "3968a9c6f2db1cfe3edde2527d380c3f8486232aa2d7c0fa20b69a08569a67cb",
+    "items.py": "e07b757a5c58baef1dad62529cd62c8640b2cf826b301614a4ea9ecaa8e7e37c",
+    "runner.py": "6887abb2236f05f85687a1aca52fa071a7050ba9612217b36837ca59d130b314",
+    "utils.py": "5e2632da7753a0f9b9c28e30a5238fe456793cd374c3bbe1d3ccb7cfd02e8844",
+    "validator.py": "c4270318b75323457d337339fe5b2a2eed765645f28a89d737e759488805b031"
+  },
+  "host": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "outcome": "terminal_rejection",
+  "safe_placements": 24,
+  "records": [
+    {
+      "step": 0,
+      "action": {
+        "item_idx": 16,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.421999990940094,
+          0.19300000369548798
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.7295861900000773,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 16,
+              "container_idx": 0,
+              "place_pos": [
+                0.0,
+                0.421999990940094,
+                0.19300000369548798
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.008015845347841262,
+            "angle_degrees": 0.0005258330823869113,
+            "final_position": [
+              0.00015351580617485334,
+              0.42179562191199543,
+              0.18498823467497091
+            ],
+            "final_orientation": [
+              4.439014565589283e-06,
+              1.159337459485687e-06,
+              8.815344241278267e-08,
+              0.9999999999894716
+            ],
+            "seconds": 0.124370962999933,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.7295086889999993
+      }
+    },
+    {
+      "step": 1,
+      "action": {
+        "item_idx": 2,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.61815345287323,
+          0.37700000405311584,
+          0.18299999833106995
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 0.8839220739999973,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 2,
+              "container_idx": 0,
+              "place_pos": [
+                0.61815345287323,
+                0.37700000405311584,
+                0.18299999833106995
+              ],
+              "orientation": 3
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.00801680275764032,
+            "angle_degrees": 0.0006160981128422913,
+            "final_position": [
+              0.6183842897621442,
+              0.3768338926373429,
+              0.17498824148358788
+            ],
+            "final_orientation": [
+              3.942019089969435e-06,
+              3.5358348244392876e-06,
+              0.7071074387813133,
+              0.7071061235713417
+            ],
+            "seconds": 0.19379637600002297,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 3.6001850283957734e-05,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 0.8838474589999805
+      }
+    },
+    {
+      "step": 2,
+      "action": {
+        "item_idx": 22,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.00015184798394329846,
+          -0.15624161064624786,
+          0.19300000369548798
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.2708768269999382,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 22,
+              "container_idx": 0,
+              "place_pos": [
+                0.00015184798394329846,
+                -0.15624161064624786,
+                0.19300000369548798
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.008014544321888042,
+            "angle_degrees": 0.00010321837375640972,
+            "final_position": [
+              0.00030473832026545883,
+              -0.1564438420167612,
+              0.18498947014862935
+            ],
+            "final_orientation": [
+              -7.484028187116371e-07,
+              2.6341261446096164e-07,
+              -4.265294829037434e-07,
+              0.9999999999995943
+            ],
+            "seconds": 0.2889791620000324,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 3.72025829176146e-05,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.2708044969999719
+      }
+    },
+    {
+      "step": 3,
+      "action": {
+        "item_idx": 21,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7170000076293945,
+          -0.38499999046325684,
+          0.18299999833106995
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.5856947940000055,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 21,
+              "container_idx": 0,
+              "place_pos": [
+                0.7170000076293945,
+                -0.38499999046325684,
+                0.18299999833106995
+              ],
+              "orientation": 3
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.008016730077186176,
+            "angle_degrees": 0.0006446686449698836,
+            "final_position": [
+              0.7172311870242911,
+              -0.3851666222574229,
+              0.1749883348918702
+            ],
+            "final_orientation": [
+              4.662966811460475e-06,
+              2.863774258961256e-06,
+              0.7071077045028187,
+              0.7071058578478967
+            ],
+            "seconds": 0.3569736480000074,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 3.738932748853877e-05,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.5856206409999913
+      }
+    },
+    {
+      "step": 4,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.47699999809265137,
+          0.4509899914264679
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.9440615880000678,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.0,
+                0.47699999809265137,
+                0.4509899914264679
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                16
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006013385420470541,
+            "angle_degrees": 0.00021548949158652533,
+            "final_position": [
+              9.14926500956717e-05,
+              0.4770478842232532,
+              0.4449774927588088
+            ],
+            "final_orientation": [
+              3.3792319863675443e-07,
+              6.150857525511467e-07,
+              -1.7446596948805792e-06,
+              0.9999999999982319
+            ],
+            "seconds": 0.4162402449999263,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 0,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 3.705206366693818e-05,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.9439588140000978
+      }
+    },
+    {
+      "step": 5,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.6181651949882507,
+          0.37700000405311584,
+          0.4309900104999542
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.6207436649999636,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6181651949882507,
+                0.37700000405311584,
+                0.4309900104999542
+              ],
+              "orientation": 3
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                2
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006020829546734222,
+            "angle_degrees": 0.0004648450571854052,
+            "final_position": [
+              0.6182111255473008,
+              0.37702687700570203,
+              0.42496941612240374
+            ],
+            "final_orientation": [
+              -3.86790449462518e-06,
+              -1.2065369409417966e-06,
+              0.707106641072291,
+              0.7071069212891682
+            ],
+            "seconds": 0.492476154999963,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 1,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00012252293598522424,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.6206667609999386
+      }
+    },
+    {
+      "step": 6,
+      "action": {
+        "item_idx": 7,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.00017525465227663517,
+          -0.10124882310628891,
+          0.4509899914264679
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.5432536380000101,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 7,
+              "container_idx": 0,
+              "place_pos": [
+                0.00017525465227663517,
+                -0.10124882310628891,
+                0.4509899914264679
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                24
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006012672271217701,
+            "angle_degrees": 0.00034284726281671367,
+            "final_position": [
+              8.421824430721409e-05,
+              -0.10120260020635344,
+              0.44497818606892214
+            ],
+            "final_orientation": [
+              6.401303908024655e-07,
+              -2.829675708856992e-06,
+              7.311276468975861e-07,
+              0.9999999999955242
+            ],
+            "seconds": 0.5826399850000143,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 2,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0001288107087838896,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.5431831790000388
+      }
+    },
+    {
+      "step": 7,
+      "action": {
+        "item_idx": 11,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.47699999809265137,
+          1.003000020980835
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.578696781000076,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 11,
+              "container_idx": 0,
+              "place_pos": [
+                0.0,
+                0.47699999809265137,
+                1.003000020980835
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "main_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018013074452019644,
+            "angle_degrees": 0.0007105202566921299,
+            "final_position": [
+              -1.051581342070993e-06,
+              0.4770012914749891,
+              0.9849869466059443
+            ],
+            "final_orientation": [
+              2.813998156545364e-07,
+              -5.980696700428478e-06,
+              -1.61176531102946e-06,
+              0.9999999999807772
+            ],
+            "seconds": 0.6124986530001024,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 3,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00013296545564578035,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.5786273249999567
+      }
+    },
+    {
+      "step": 8,
+      "action": {
+        "item_idx": 12,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5680011510848999,
+          0.37700000405311584,
+          1.003000020980835
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.5442276520000178,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 12,
+              "container_idx": 0,
+              "place_pos": [
+                0.5680011510848999,
+                0.37700000405311584,
+                1.003000020980835
+              ],
+              "orientation": 3
+            },
+            "support_items": [
+              [
+                0,
+                "main_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018011682111606087,
+            "angle_degrees": 0.00038310755723224607,
+            "final_position": [
+              0.5680006356700862,
+              0.3769994983724269,
+              0.9849883388837019
+            ],
+            "final_orientation": [
+              2.2398903167200707e-06,
+              -2.3457892421640455e-06,
+              0.7071062078667577,
+              0.7071073544984339
+            ],
+            "seconds": 0.6410568029999695,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 4,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0001321329683250305,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.54414908199999
+      }
+    },
+    {
+      "step": 9,
+      "action": {
+        "item_idx": 13,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          -0.00013611991016659886,
+          -0.5792772769927979,
+          0.28299999237060547
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.6407401589999608,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 13,
+              "container_idx": 0,
+              "place_pos": [
+                -0.00013611991016659886,
+                -0.5792772769927979,
+                0.28299999237060547
+              ],
+              "orientation": 1
+            },
+            "support_items": [
+              [
+                0,
+                "floor",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.008029421088044043,
+            "angle_degrees": 0.0019035208464342607,
+            "final_position": [
+              0.00020324534153946813,
+              -0.5789106799282486,
+              0.2749861268347155
+            ],
+            "final_orientation": [
+              0.7070950424190687,
+              5.759425167973372e-07,
+              1.1200059077816405e-07,
+              0.7071185197589094
+            ],
+            "seconds": 0.682726912000021,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 5,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00013319724764463987,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.640522107000038
+      }
+    },
+    {
+      "step": 10,
+      "action": {
+        "item_idx": 20,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.6169999837875366,
+          0.009000381454825401,
+          1.003000020980835
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 1.7168538089999856,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 20,
+              "container_idx": 0,
+              "place_pos": [
+                -0.6169999837875366,
+                0.009000381454825401,
+                1.003000020980835
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "main_shelf",
+                -1
+              ],
+              [
+                0,
+                "small_shelf",
+                -1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.018010028297810017,
+            "angle_degrees": 3.818191820832845e-06,
+            "final_position": [
+              -0.6169999831602951,
+              0.009000373595754316,
+              0.9849899926830267
+            ],
+            "final_orientation": [
+              3.239228482909113e-08,
+              2.6469777575182115e-09,
+              -2.6973516339462225e-10,
+              0.9999999999999994
+            ],
+            "seconds": 0.7221669290000818,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 5,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00013054188508106415,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 1.7167854290000832
+      }
+    },
+    {
+      "step": 11,
+      "action": {
+        "item_idx": 20,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          3.7902378835497075e-07,
+          0.47699999809265137,
+          1.240990400314331
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.353474922999908,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 20,
+              "container_idx": 0,
+              "place_pos": [
+                3.7902378835497075e-07,
+                0.47699999809265137,
+                1.240990400314331
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                15
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006017970920730474,
+            "angle_degrees": 0.002182790504250056,
+            "final_position": [
+              -5.809559882380605e-06,
+              0.4769976851014501,
+              1.2349724330201144
+            ],
+            "final_orientation": [
+              -1.789341803459933e-05,
+              -1.688833923460015e-06,
+              6.3100297485338955e-06,
+              0.9999999998185785
+            ],
+            "seconds": 1.1265632399999959,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 6,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0001309152558670876,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.353283708000049
+      }
+    },
+    {
+      "step": 12,
+      "action": {
+        "item_idx": 20,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.5679973363876343,
+          0.37700000405311584,
+          1.2409900426864624
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.2705911140000126,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 20,
+              "container_idx": 0,
+              "place_pos": [
+                0.5679973363876343,
+                0.37700000405311584,
+                1.2409900426864624
+              ],
+              "orientation": 3
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                18
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006017577138836924,
+            "angle_degrees": 0.0020373228979334735,
+            "final_position": [
+              0.567996185343961,
+              0.37699794293385497,
+              1.234972466010695
+            ],
+            "final_orientation": [
+              -1.1031778834871536e-05,
+              -1.3758442023493087e-05,
+              0.7071083776223629,
+              0.7071051845272208
+            ],
+            "seconds": 1.198438311000018,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 7,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00013017534470028197,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.2704836689999865
+      }
+    },
+    {
+      "step": 13,
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          0.0001739667495712638,
+          -0.1012444868683815,
+          0.7759791016578674
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.314224434000039,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 1,
+              "container_idx": 0,
+              "place_pos": [
+                0.0001739667495712638,
+                -0.1012444868683815,
+                0.7759791016578674
+              ],
+              "orientation": 1
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                10
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006042262872033498,
+            "angle_degrees": 0.0018029710394802168,
+            "final_position": [
+              0.00012061890326302545,
+              -0.1016981255715966,
+              0.7699541280853948
+            ],
+            "final_orientation": [
+              0.7071136155106276,
+              -1.2262445853404044e-05,
+              1.941557637226793e-06,
+              0.7070999466874194
+            ],
+            "seconds": 1.2094241080000074,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 8,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00013176526854099141,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.3141440089999605
+      }
+    },
+    {
+      "step": 14,
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          -0.6669999957084656,
+          0.009000510908663273,
+          1.235990285873413
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.221673500999941,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 1,
+              "container_idx": 0,
+              "place_pos": [
+                -0.6669999957084656,
+                0.009000510908663273,
+                1.235990285873413
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                30
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.0060160242846372634,
+            "angle_degrees": 0.0017668906976159853,
+            "final_position": [
+              -0.6670041060118878,
+              0.009004648783851139,
+              1.229974264415943
+            ],
+            "final_orientation": [
+              -1.5048272145297648e-05,
+              -1.6110828113329074e-06,
+              2.9496325486848295e-06,
+              0.9999999998811268
+            ],
+            "seconds": 1.278472420000071,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 9,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0001753531055374647,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.2216004069999826
+      }
+    },
+    {
+      "step": 15,
+      "action": {
+        "item_idx": 1,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          -0.00041263768798671663,
+          -0.5791653990745544,
+          0.7059999704360962
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.639275428000019,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 1,
+              "container_idx": 0,
+              "place_pos": [
+                -0.00041263768798671663,
+                -0.5791653990745544,
+                0.7059999704360962
+              ],
+              "orientation": 1
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                20
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006027222126929366,
+            "angle_degrees": 0.002017641811555439,
+            "final_position": [
+              -0.0004800176239773998,
+              -0.5792030516487793,
+              0.6999732425680714
+            ],
+            "final_orientation": [
+              0.7070952405330873,
+              -6.5796254816755055e-06,
+              5.960113282647369e-07,
+              0.7071183216207941
+            ],
+            "seconds": 1.3233573300000216,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 10,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00019134673513941162,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.639184961999945
+      }
+    },
+    {
+      "step": 16,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 1,
+        "place_pos": [
+          0.0001881882781162858,
+          -0.10126105695962906,
+          1.175952672958374
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.41905275299996,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.0001881882781162858,
+                -0.10126105695962906,
+                1.175952672958374
+              ],
+              "orientation": 1
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                1
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.00604137771230272,
+            "angle_degrees": 0.0018588611109901971,
+            "final_position": [
+              0.00012093314965888332,
+              -0.10155818246177874,
+              1.1699189810664743
+            ],
+            "final_orientation": [
+              0.7070984925286357,
+              -6.3987448508545666e-06,
+              -9.208506942332903e-06,
+              0.7071150696583905
+            ],
+            "seconds": 1.2819556850000708,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 11,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00026810776030472506,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.418980483999917
+      }
+    },
+    {
+      "step": 17,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.16525276005268097,
+          0.4259999990463257
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.5174845029999915,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6669999957084656,
+                -0.16525276005268097,
+                0.4259999990463257
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                23
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.0060471194563730445,
+            "angle_degrees": 0.000505638747410265,
+            "final_position": [
+              0.6674142990412494,
+              -0.1648916944391508,
+              0.419977903224204
+            ],
+            "final_orientation": [
+              -3.9297063364674275e-06,
+              -3.549376223625433e-07,
+              1.9752943941959176e-06,
+              0.9999999999902648
+            ],
+            "seconds": 1.4257042959999353,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 12,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0002848685678624074,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.5174148720000176
+      }
+    },
+    {
+      "step": 18,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.16615961492061615,
+          0.6759799718856812
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 2.6480158360000132,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6669999957084656,
+                -0.16615961492061615,
+                0.6759799718856812
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                12
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.01605118615684662,
+            "angle_degrees": 0.006714497400311539,
+            "final_position": [
+              0.6668008441337433,
+              -0.1661710543354249,
+              0.6599300253178007
+            ],
+            "final_orientation": [
+              2.671992844927777e-06,
+              -3.466043272895584e-05,
+              4.716878073720518e-05,
+              0.9999999982833104
+            ],
+            "seconds": 1.4924339509999527,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 13,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00025658531356723905,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 2.647939699999938
+      }
+    },
+    {
+      "step": 19,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.16604530811309814,
+          0.9059507846832275
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.1073440139999775,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6669999957084656,
+                -0.16604530811309814,
+                0.9059507846832275
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                13
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.0061191888420051655,
+            "angle_degrees": 0.01670344591608304,
+            "final_position": [
+              0.6661827360932716,
+              -0.16598105897986762,
+              0.8998867570732663
+            ],
+            "final_orientation": [
+              4.7366248902994464e-06,
+              -0.00010438355577557798,
+              0.00010163213734336684,
+              0.9999999893762731
+            ],
+            "seconds": 1.651246776999983,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 14,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.00046331448642311315,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.1072586870000123
+      }
+    },
+    {
+      "step": 20,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.1657739281654358,
+          1.1459283828735352
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.086665261999997,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6669999957084656,
+                -0.1657739281654358,
+                1.1459283828735352
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                14
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006235747958805256,
+            "angle_degrees": 0.0255277024959548,
+            "final_position": [
+              0.6659776823723714,
+              -0.16545929083176303,
+              1.139785058741044
+            ],
+            "final_orientation": [
+              1.5583234519609326e-06,
+              -0.00021647434446625245,
+              5.2568523972175024e-05,
+              0.9999999751864898
+            ],
+            "seconds": 1.6794749130000355,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 15,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0010576702960799485,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.0865888909999057
+      }
+    },
+    {
+      "step": 21,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6669999957084656,
+          -0.16538088023662567,
+          1.3858574628829956
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.487083054999971,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.6669999957084656,
+                -0.16538088023662567,
+                1.3858574628829956
+              ],
+              "orientation": 0
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                17
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.0064679798893233905,
+            "angle_degrees": 0.04115528182737324,
+            "final_position": [
+              0.6665890313420395,
+              -0.16371625707507617,
+              1.3796208851461071
+            ],
+            "final_orientation": [
+              -0.0003478559918163794,
+              -8.578322031464598e-05,
+              -2.4988620216548765e-05,
+              0.9999999355065063
+            ],
+            "seconds": 1.7785919269999795,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 16,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.001459063573351461,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.4869884979999597
+      }
+    },
+    {
+      "step": 22,
+      "action": {
+        "item_idx": 12,
+        "container_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          0.6044504642486572,
+          -0.5849999785423279,
+          0.6310602426528931
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.3994435659999453,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 12,
+              "container_idx": 0,
+              "place_pos": [
+                0.6044504642486572,
+                -0.5849999785423279,
+                0.6310602426528931
+              ],
+              "orientation": 4
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                23
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006271078056475979,
+            "angle_degrees": 0.028044983604265893,
+            "final_position": [
+              0.6032386979476148,
+              -0.5854581810852038,
+              0.6249244384796999
+            ],
+            "final_orientation": [
+              0.5001312179749415,
+              -0.4999929106107363,
+              -0.5000700367559903,
+              -0.4998057747613248
+            ],
+            "seconds": 1.8754871250000633,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 17,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.0005916973810696693,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.3993363580000278
+      }
+    },
+    {
+      "step": 23,
+      "action": {
+        "item_idx": 4,
+        "container_idx": 0,
+        "orientation": 4,
+        "place_pos": [
+          0.560502290725708,
+          -0.5899999737739563,
+          1.2311123609542847
+        ]
+      },
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "policy_seconds": 3.6399974720000046,
+      "terminated": false,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 0,
+        "combinations_visited": 0,
+        "authorizations": 1,
+        "rejections": {},
+        "previews": [
+          {
+            "action": {
+              "item_idx": 4,
+              "container_idx": 0,
+              "place_pos": [
+                0.560502290725708,
+                -0.5899999737739563,
+                1.2311123609542847
+              ],
+              "orientation": 4
+            },
+            "support_items": [
+              [
+                0,
+                "cargo",
+                34
+              ]
+            ],
+            "safe": true,
+            "displacement": 0.006414399854578571,
+            "angle_degrees": 0.035670164262947814,
+            "final_position": [
+              0.5597123103214904,
+              -0.5888305264545046,
+              1.2248551371751317
+            ],
+            "final_orientation": [
+              0.5002178873996245,
+              -0.5000123672825856,
+              -0.4999914473975117,
+              -0.4997782010244769
+            ],
+            "seconds": 1.9408223819999648,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 18,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.001978640254775909,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 3.639918259999945
+      }
+    },
+    {
+      "step": 24,
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          0.0,
+          -99.0
+        ]
+      },
+      "status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "policy_seconds": 4.386719546999984,
+      "terminated": true,
+      "truncated": false,
+      "search": {
+        "candidate_checks": 6500,
+        "combinations_visited": 102,
+        "authorizations": 36,
+        "rejections": {
+          "target_clear": 1,
+          "transport": 36
+        },
+        "previews": [],
+        "elapsed": 4.382503772999939,
+        "narrow_basins": [
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            9,
+            -2,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            9,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            9,
+            -2,
+            0
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            9,
+            -3,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ]
+        ],
+        "deferred_support_candidates": 0,
+        "terminal_rejection": {
+          "included": false,
+          "plane_max_dot": 99.16499999999999,
+          "reason": "bounded_search_exhausted"
+        }
+      }
+    }
+  ],
+  "policy_seconds": [
+    0.7295861900000773,
+    0.8839220739999973,
+    1.2708768269999382,
+    1.5856947940000055,
+    1.9440615880000678,
+    1.6207436649999636,
+    1.5432536380000101,
+    1.578696781000076,
+    1.5442276520000178,
+    1.6407401589999608,
+    1.7168538089999856,
+    2.353474922999908,
+    2.2705911140000126,
+    2.314224434000039,
+    2.221673500999941,
+    2.639275428000019,
+    2.41905275299996,
+    2.5174845029999915,
+    2.6480158360000132,
+    3.1073440139999775,
+    3.086665261999997,
+    3.487083054999971,
+    3.3994435659999453,
+    3.6399974720000046,
+    4.386719546999984
+  ],
+  "optimized_order": null,
+  "public_score": null,
+  "execution_mode": "strict_in_process_physics_diagnostic",
+  "agent_options": {},
+  "applied_deadlines_seconds": {
+    "initialization": 10,
+    "optimization": 180,
+    "policy": 8
+  },
+  "dependencies": {
+    "numpy": "2.5.2",
+    "gymnasium": "1.2.3",
+    "pybullet": "3.2.7",
+    "pillow": "10.3.0"
+  },
+  "initialization_seconds": 0.10744482500001595,
+  "first_failure_step": 24,
+  "first_failure_status": {
+    "is_included": false,
+    "is_valid": false,
+    "is_placed_safe": false
+  },
+  "last_search_stats": {
+    "candidate_checks": 6500,
+    "combinations_visited": 102,
+    "authorizations": 36,
+    "rejections": {
+      "target_clear": 1,
+      "transport": 36
+    },
+    "previews": [],
+    "elapsed": 4.382503772999939,
+    "narrow_basins": [
+      [
+        0,
+        4,
+        2,
+        1
+      ],
+      [
+        0,
+        6,
+        -2,
+        2
+      ],
+      [
+        0,
+        4,
+        2,
+        2
+      ],
+      [
+        0,
+        4,
+        0,
+        2
+      ],
+      [
+        0,
+        4,
+        -1,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        2
+      ],
+      [
+        0,
+        9,
+        -2,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        -3,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        -2
+      ]
+    ],
+    "candidate_basins": [
+      [
+        0,
+        4,
+        2,
+        1
+      ],
+      [
+        0,
+        6,
+        -2,
+        2
+      ],
+      [
+        0,
+        4,
+        2,
+        2
+      ],
+      [
+        0,
+        4,
+        0,
+        2
+      ],
+      [
+        0,
+        4,
+        -1,
+        2
+      ],
+      [
+        0,
+        6,
+        -3,
+        2
+      ],
+      [
+        0,
+        9,
+        -2,
+        0
+      ],
+      [
+        0,
+        4,
+        0,
+        1
+      ],
+      [
+        0,
+        9,
+        -3,
+        0
+      ],
+      [
+        0,
+        6,
+        0,
+        -2
+      ]
+    ],
+    "deferred_support_candidates": 0,
+    "terminal_rejection": {
+      "included": false,
+      "plane_max_dot": 99.16499999999999,
+      "reason": "bounded_search_exhausted"
+    }
+  },
+  "final_containers": [
+    {
+      "index": 0,
+      "length": 2.0,
+      "width": 1.52,
+      "cut_x": 0.43,
+      "cut_y": 0.4,
+      "height": 1.62,
+      "thickness": 0.05,
+      "n_vecs": [
+        [
+          0.0,
+          -6.123233995736766e-17,
+          -1.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          6.123233995736766e-17,
+          1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6811039424772872,
+          -4.4833507263478093e-17,
+          -0.7321867381630839
+        ],
+        [
+          0.0,
+          -1.0,
+          6.123233995736766e-17
+        ],
+        [
+          0.0,
+          1.0,
+          -6.123233995736766e-17
+        ]
+      ],
+      "points": [
+        [
+          -0.5503397656998699,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          -4.6536578367599424e-17,
+          0.050000000000000044
+        ],
+        [
+          0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          4.6536578367599424e-17,
+          1.57
+        ],
+        [
+          -0.95,
+          -2.377180503354661e-17,
+          0.4217769621396559
+        ],
+        [
+          0.0,
+          -0.76,
+          0.81
+        ],
+        [
+          0.0,
+          0.71,
+          0.81
+        ]
+      ],
+      "volume": 4.0482,
+      "center": [
+        0.0,
+        0.0,
+        0.81
+      ],
+      "shelf": true,
+      "is_prioritized": false,
+      "packed_items": [
+        {
+          "index": 16,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.0005240355414972828,
+            0.42179597891901804,
+            0.18498653655332054
+          ],
+          "orn": [
+            -7.977007884234113e-06,
+            9.479315058883039e-06,
+            -0.0002160646057277756,
+            0.9999999765812978
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 2,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.618142777208095,
+            0.37781279497485065,
+            0.17498825580490873
+          ],
+          "orn": [
+            4.8151513385992076e-06,
+            1.1464434667093916e-05,
+            0.7070186740086835,
+            0.7071948772780979
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 24,
+          "length": 0.75,
+          "width": 0.56,
+          "height": 0.27,
+          "mass": 18,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.0003774844515127159,
+            -0.15631520669140797,
+            0.18498427607809903
+          ],
+          "orn": [
+            1.1924357612060693e-05,
+            -8.841445408655128e-06,
+            0.00016587104749443173,
+            0.999999986133217
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 23,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": true,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.7169829968861567,
+            -0.3845780632201229,
+            0.1749817291989969
+          ],
+          "orn": [
+            -0.00032962423714604655,
+            -7.901376845291528e-05,
+            0.706858875689731,
+            0.7073545185855084
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 5,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.000355902736629763,
+            0.4768302104305974,
+            0.4449714638820234
+          ],
+          "orn": [
+            -6.5679751041299255e-06,
+            8.489254574276489e-07,
+            -1.4607952279722073e-06,
+            0.9999999999770035
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 6,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6183082226149089,
+            0.3767961290929875,
+            0.4249679163550179
+          ],
+          "orn": [
+            -1.1993391424677402e-05,
+            -6.482766828951676e-06,
+            0.7071551212184102,
+            0.7070584377183459
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 10,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.00045969799078919056,
+            -0.10175139249571406,
+            0.44496030285975935
+          ],
+          "orn": [
+            5.264413011289187e-06,
+            1.669790319270229e-05,
+            -5.547872754865412e-05,
+            0.9999999983077884
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 15,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.0001288402341542128,
+            0.4769515566073089,
+            0.9849888760117916
+          ],
+          "orn": [
+            1.0077730968718808e-06,
+            -2.197080796493582e-06,
+            5.402035339718779e-05,
+            0.9999999985379793
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 18,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.5680083055320007,
+            0.37685913041459684,
+            0.9849888450300638
+          ],
+          "orn": [
+            1.6254277206044363e-06,
+            -1.2029839334643752e-06,
+            0.7071320176986241,
+            0.7070815437708607
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 20,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.0004109145434691269,
+            -0.5791652175997476,
+            0.27498987180870765
+          ],
+          "orn": [
+            0.7071044109251167,
+            9.908969943385664e-06,
+            1.1090167068021066e-05,
+            0.707109151283636
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 30,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.6169984648715063,
+            0.009000946209006731,
+            0.9849895989417273
+          ],
+          "orn": [
+            -1.0488255558115095e-06,
+            1.0922101284285104e-07,
+            4.057178083395505e-07,
+            0.9999999999993617
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 31,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -6.552872489384378e-05,
+            0.4769035766247349,
+            1.2349731659032286
+          ],
+          "orn": [
+            -1.5048784988438916e-05,
+            -2.155080089846361e-06,
+            8.6795144858155e-05,
+            0.9999999961177463
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 32,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.567959839506538,
+            0.37683063152161983,
+            1.234971949491647
+          ],
+          "orn": [
+            -8.766848664833779e-06,
+            7.371589706481313e-06,
+            0.7071143829723032,
+            0.7070991792262956
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 1,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.0003623227476639603,
+            -0.1017692922984761,
+            0.769940974489569
+          ],
+          "orn": [
+            0.7071086303022336,
+            2.0784668433879193e-06,
+            9.212965573782377e-06,
+            0.7071049320029528
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 3,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.6669983811227854,
+            0.009001187945043765,
+            1.2299776278951626
+          ],
+          "orn": [
+            -7.1390464795302624e-06,
+            -8.761108375355531e-07,
+            -2.6955452558987695e-06,
+            0.9999999999705003
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 4,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.0004103534190956765,
+            -0.5791583145766704,
+            0.6999793611479546
+          ],
+          "orn": [
+            0.7071055894253846,
+            -2.689787410584859e-06,
+            -9.373819234182481e-07,
+            0.7071079729399646
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 11,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            -0.00033081661484204815,
+            -0.10175865173447961,
+            1.1699289829043211
+          ],
+          "orn": [
+            0.7071137483670598,
+            0.000146499865803318,
+            0.00014332736213854106,
+            0.7070997842351129
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 12,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6672516586974695,
+            -0.16465708950009608,
+            0.41982740947080993
+          ],
+          "orn": [
+            -0.00022998556626069896,
+            -0.00021169877915407925,
+            -0.00047583727176155413,
+            0.9999998379345654
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 13,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6666429917706354,
+            -0.16519967683601858,
+            0.6597392023760916
+          ],
+          "orn": [
+            -0.00021680170350090786,
+            -5.662367434001051e-05,
+            0.0001744858587527464,
+            0.9999999596727323
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 14,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6665070703095902,
+            -0.1649986867310462,
+            0.8996855301641227
+          ],
+          "orn": [
+            -0.0003183759481878819,
+            -9.94542543343152e-05,
+            0.000577129614386547,
+            0.9999997778334829
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 17,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6665544022214838,
+            -0.16481608681272586,
+            1.1396477001067802
+          ],
+          "orn": [
+            -0.0002659295428735577,
+            -8.320963938916116e-05,
+            0.0005578319051058403,
+            0.999999805590581
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 19,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.666532731089479,
+            -0.1652214527182723,
+            1.3796233309300676
+          ],
+          "orn": [
+            -0.0002270952224726463,
+            -8.642590535816337e-05,
+            0.0003116305354323941,
+            0.9999999219223631
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 34,
+          "length": 0.65,
+          "width": 0.45,
+          "height": 0.25,
+          "mass": 13,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.6040313324259213,
+            -0.58478527905557,
+            0.624983480866875
+          ],
+          "orn": [
+            -0.5001604934212986,
+            0.5000310939443291,
+            0.49968414701282726,
+            0.5001241237267642
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        },
+        {
+          "index": 21,
+          "length": 0.55,
+          "width": 0.4,
+          "height": 0.24,
+          "mass": 8,
+          "is_prioritized": false,
+          "is_soft": false,
+          "belongs_to": 0,
+          "pos": [
+            0.5605030359411479,
+            -0.5898173114469601,
+            1.224951096667009
+          ],
+          "orn": [
+            -0.5001960066389748,
+            0.4999925896032926,
+            0.4997234132945892,
+            0.5000878677686768
+          ],
+          "lateralFriction": 0.4,
+          "rollingFriction": 0.01,
+          "spinningFriction": 0.01,
+          "restitution": 0.2,
+          "angularDamping": 0.8
+        }
+      ]
+    }
+  ],
+  "layout_proxies": [
+    {
+      "container_index": 0,
+      "packed_count": 24,
+      "cargo_mass": 272.0,
+      "mass_weighted_cog_world": [
+        0.24189042332983,
+        0.015226677235215058,
+        0.6885025929654132
+      ],
+      "mass_weighted_cog_local": [
+        0.24189042332983,
+        0.015226677235215058,
+        0.6885025929654132
+      ],
+      "raw_packed_volume": 1.6323000000000003
+    }
+  ],
+  "evaluation": {
+    "fill_score": 29.300059285608416,
+    "num_placed_items": 0.5714285714285714
+  },
+  "policy_time_seconds": {
+    "count": 25,
+    "max": 4.386719546999984,
+    "p50": 2.2705911140000126,
+    "p95": 3.6094145885999973,
+    "p99": 4.207506248999987
+  },
+  "elapsed_seconds": 78.77624757600006
+}

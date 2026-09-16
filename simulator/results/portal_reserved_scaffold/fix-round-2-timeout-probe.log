@@ -1,0 +1,42 @@
+RUN=1
+test_worker_exception_is_bounded_and_never_steps (tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 1.081s
+
+OK
+elapsed=2.56
+RUN=2
+test_worker_exception_is_bounded_and_never_steps (tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps) ... FAIL
+
+======================================================================
+FAIL: test_worker_exception_is_bounded_and_never_steps (tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/tests/test_run_historical_conservative_extreme_point_physics.py", line 271, in test_worker_exception_is_bounded_and_never_steps
+    self.assertLess(time.perf_counter() - started, 2.0)
+AssertionError: 2.5643100539982697 not less than 2.0
+
+----------------------------------------------------------------------
+Ran 1 test in 2.578s
+
+FAILED (failures=1)
+Command exited with non-zero status 1
+elapsed=4.29
+RUN=3
+test_worker_exception_is_bounded_and_never_steps (tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps) ... FAIL
+
+======================================================================
+FAIL: test_worker_exception_is_bounded_and_never_steps (tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/tests/test_run_historical_conservative_extreme_point_physics.py", line 271, in test_worker_exception_is_bounded_and_never_steps
+    self.assertLess(time.perf_counter() - started, 2.0)
+AssertionError: 2.0873972459994548 not less than 2.0
+
+----------------------------------------------------------------------
+Ran 1 test in 2.097s
+
+FAILED (failures=1)
+Command exited with non-zero status 1
+elapsed=5.31

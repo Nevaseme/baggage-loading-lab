@@ -1,0 +1,2310 @@
+diff --git simulator/tests/quota_fair_starvation_diagnostics.py simulator/tests/quota_fair_starvation_diagnostics.py
+new file mode 100644
+index 0000000..e958c93
+--- /dev/null
++++ simulator/tests/quota_fair_starvation_diagnostics.py
+@@ -0,0 +1,395 @@
++"""Non-production instrumentation for exact-root catalog starvation.
++
++The catalog itself remains the source of truth.  This module wraps the
++collaborators used by that catalog and records what the unchanged loop did;
++it deliberately does not contain a second copy of the catalog algorithm.
++"""
++
++from __future__ import annotations
++
++from dataclasses import dataclass, field
++import time
++from typing import Any, Sequence
++
++from agents.highscore import catalog as _catalog
++from agents.highscore import ems as _ems
++from agents.highscore.catalog import RootAction
++from agents.highscore.scoring import CandidateScorer
++
++
++@dataclass(frozen=True)
++class CatalogTraceRow:
++    pool_index: int
++    item_index: int
++    urgency: float
++    proposal_count: int
++    validated_count: int
++    accepted_root_count: int
++    start_time: float | None
++    end_time: float | None
++    stop_reason: str
++
++
++@dataclass(frozen=True)
++class CatalogTrace:
++    roots: tuple[RootAction, ...]
++    rows: tuple[CatalogTraceRow, ...]
++    production_start: float
++    catalog_deadline: float
++    observed_catalog_budget_seconds: float
++
++
++@dataclass(frozen=True)
++class ProbeMeasurement:
++    pool_index: int
++    exact_root_found: bool
++    time_to_first_exact_root: float | None
++    measured_elapsed_seconds: float
++    proposals_exhausted: bool
++
++
++@dataclass(frozen=True)
++class ProbeClassification:
++    measurement: ProbeMeasurement
++    fair_share_seconds: float
++    recoverable: bool
++
++
++@dataclass
++class _PositionRecord:
++    pool_index: int
++    item_index: int
++    urgency: float
++    proposal_count: int = 0
++    validated_count: int = 0
++    accepted_root_count: int = 0
++    start_time: float | None = None
++    end_time: float | None = None
++    proposal_end_time: float | None = None
++    proposal_completed_normally: bool = False
++    item_deadline: float | None = None
++    checkpoint_events: list[tuple[float, int, int]] = field(default_factory=list)
++
++
++class _ClockProxy:
++    """The catalog module's clock collaborator, not the process clock."""
++
++    def __init__(self, real_clock: Any, records: list[_PositionRecord], active: list[int | None], accepted_events: list[tuple[int, float]], values: list[float]):
++        self._real_clock = real_clock
++        self._records = records
++        self._active = active
++        self._accepted_events = accepted_events
++        self._values = values
++
++    def perf_counter(self) -> float:
++        value = float(self._real_clock())
++        self._values.append(value)
++        pool_index = self._active[0]
++        if pool_index is not None:
++            record = self._records[pool_index]
++            record.checkpoint_events.append(
++                (value, len(self._accepted_events), record.accepted_root_count)
++            )
++        return value
++
++
++class _GeneratorProxy:
++    def __init__(self, generator: Any, validate: Any):
++        self._generator = generator
++        self._validate = validate
++
++    def validate_proposal(self, state: Any, action: Any, *args: Any, **kwargs: Any) -> Any:
++        pool_index = getattr(action, "pool_index", None)
++        if isinstance(pool_index, int) and 0 <= pool_index < len(self._records):
++            record = self._records[pool_index]
++            record.validated_count += 1
++        else:
++            record = None
++        try:
++            candidate = self._validate(state, action, *args, **kwargs)
++            if candidate is not None:
++                self._exact_action_ids.add(id(action))
++            return candidate
++        finally:
++            if record is not None:
++                now = float(self._clock())
++                record.end_time = now
++
++    def __getattr__(self, name: str) -> Any:
++        return getattr(self._generator, name)
++
++    # These attributes are installed by trace_production_catalog.  Keeping
++    # them on the proxy avoids changing CandidateGenerator or its interface.
++    _records: list[_PositionRecord]
++    _exact_action_ids: set[int]
++    _clock: Any
++
++
++def _stop_at_checkpoint(
++    record: _PositionRecord,
++    *,
++    checkpoint: tuple[float, int, int] | None,
++    catalog_deadline: float,
++    settings: Any,
++) -> str | None:
++    """Apply the production inner-loop condition order to one checkpoint."""
++    if checkpoint is None:
++        return None
++    now, total_roots, accepted_for_item = checkpoint
++    if record.item_deadline is not None and now >= record.item_deadline:
++        return "unknown"  # item deadline is intentionally not global evidence
++    if now >= catalog_deadline:
++        return "catalog_deadline"
++    if accepted_for_item >= settings.ems_exact_roots_per_item:
++        return "per_item_quota"
++    if total_roots >= settings.ems_root_catalog_limit:
++        return "global_cap"
++    return None
++
++
++def _final_outer_reason(
++    now: float,
++    *,
++    total_roots: int,
++    catalog_deadline: float,
++    settings: Any,
++) -> str | None:
++    # build_root_catalog checks its outer stop conditions in this order.
++    if now >= catalog_deadline:
++        return "catalog_deadline"
++    if total_roots >= settings.ems_root_catalog_limit:
++        return "global_cap"
++    return None
++
++
++def trace_production_catalog(
++    state: Any,
++    pool: Sequence[Any],
++    generator: Any,
++    settings: Any,
++    *,
++    deadline: float,
++) -> CatalogTrace:
++    """Trace one unchanged ``build_root_catalog`` call.
++
++    Only references held by ``agents.highscore.catalog`` are replaced, and
++    every replacement is restored even when production raises.
++    """
++    records = [
++        _PositionRecord(
++            pool_index=index,
++            item_index=int(item.index),
++            urgency=float(CandidateScorer.item_urgency(item, state.containers)),
++        )
++        for index, item in enumerate(pool)
++    ]
++    active: list[int | None] = [None]
++    clock_values: list[float] = []
++    accepted_events: list[tuple[int, float]] = []
++    exact_action_ids: set[int] = set()
++    real_clock = _catalog.time.perf_counter
++    real_catalog = _catalog.build_root_catalog
++    real_propose = _catalog.propose_actions
++    real_apply = _catalog.apply_action
++
++    # A wrapper may need to find records even when a fixture uses a custom
++    # action object.  Pool index is the authoritative identity when present.
++    def record_for_action(action: Any) -> _PositionRecord | None:
++        index = getattr(action, "pool_index", None)
++        if isinstance(index, int) and 0 <= index < len(records):
++            return records[index]
++        return None
++
++    def traced_propose(proxy_state: Any, item: Any, pool_index: int, *, limit: int, deadline: float) -> Any:
++        record = records[pool_index]
++        active[0] = pool_index
++        if record.start_time is None:
++            record.start_time = float(real_clock())
++        record.item_deadline = float(deadline)
++        try:
++            proposals = real_propose(proxy_state, item, pool_index, limit=limit, deadline=deadline)
++            record.proposal_count += len(proposals)
++            record.proposal_completed_normally = True
++            return proposals
++        finally:
++            now = float(real_clock())
++            record.proposal_end_time = now
++            record.end_time = now
++
++    def traced_apply(proxy_state: Any, action: Any, clearance: float) -> Any:
++        record = record_for_action(action)
++        try:
++            successor = real_apply(proxy_state, action, clearance)
++        finally:
++            now = float(real_clock())
++            if record is not None:
++                record.end_time = now
++        if successor is not None and id(action) in exact_action_ids and record is not None:
++            record.accepted_root_count += 1
++            accepted_events.append((record.pool_index, float(record.end_time)))
++        return successor
++
++    validating = _GeneratorProxy(generator, generator.validate_proposal)
++    validating._records = records
++    validating._exact_action_ids = exact_action_ids
++    validating._clock = real_clock
++    clock_proxy = _ClockProxy(real_clock, records, active, accepted_events, clock_values)
++
++    original_time = _catalog.time
++    try:
++        _catalog.propose_actions = traced_propose
++        _catalog.apply_action = traced_apply
++        _catalog.time = clock_proxy
++        roots = real_catalog(state, pool, validating, settings, deadline=deadline)
++    finally:
++        _catalog.propose_actions = real_propose
++        _catalog.apply_action = real_apply
++        _catalog.time = original_time
++
++    if not clock_values:
++        # A production implementation should always read its clock, including
++        # an empty pool.  Keep the error explicit rather than inventing timing.
++        raise AssertionError("production catalog did not expose a clock reading")
++    if len(accepted_events) != len(roots):
++        raise AssertionError(
++            "catalog tracing invariant failed: accepted apply events do not match roots"
++        )
++
++    production_start = clock_values[0]
++    catalog_deadline = min(
++        float(deadline),
++        production_start + max(0.0, float(settings.ems_root_budget_seconds)),
++    )
++    visited = [record.pool_index for record in records if record.start_time is not None]
++    cutoff = max(visited, default=-1)
++    final_outer = _final_outer_reason(
++        clock_values[-1],
++        total_roots=len(accepted_events),
++        catalog_deadline=catalog_deadline,
++        settings=settings,
++    )
++
++    rows: list[CatalogTraceRow] = []
++    for record in records:
++        reason: str | None = None
++        if record.accepted_root_count >= settings.ems_exact_roots_per_item:
++            reason = "per_item_quota"
++        elif (
++            record.start_time is not None
++            and record.proposal_completed_normally
++            and record.validated_count == record.proposal_count
++            and record.end_time is not None
++            and record.item_deadline is not None
++            and record.end_time < record.item_deadline
++            and record.end_time < catalog_deadline
++        ):
++            reason = "proposal_exhausted"
++        else:
++            checkpoint = next(
++                (
++                    event
++                    for event in record.checkpoint_events
++                    if record.end_time is not None and event[0] > record.end_time
++                ),
++                None,
++            )
++            reason = _stop_at_checkpoint(
++                record,
++                checkpoint=checkpoint,
++                catalog_deadline=catalog_deadline,
++                settings=settings,
++            )
++            if reason == "unknown":
++                reason = "unknown"
++            if reason is None and record.start_time is None and record.pool_index > cutoff:
++                reason = final_outer
++        if reason is None and record.start_time is None:
++            reason = "not_visited"
++        if reason is None:
++            reason = "unknown"
++        rows.append(
++            CatalogTraceRow(
++                pool_index=record.pool_index,
++                item_index=record.item_index,
++                urgency=record.urgency,
++                proposal_count=record.proposal_count,
++                validated_count=record.validated_count,
++                accepted_root_count=record.accepted_root_count,
++                start_time=record.start_time,
++                end_time=record.end_time,
++                stop_reason=reason,
++            )
++        )
++
++    return CatalogTrace(
++        roots=tuple(roots),
++        rows=tuple(rows),
++        production_start=production_start,
++        catalog_deadline=catalog_deadline,
++        observed_catalog_budget_seconds=max(0.0, catalog_deadline - production_start),
++    )
++
++
++def measure_pool_position(
++    state: Any,
++    pool: Sequence[Any],
++    pool_index: int,
++    generator: Any,
++    settings: Any,
++    *,
++    probe_budget_seconds: float,
++) -> ProbeMeasurement:
++    """Independently probe one pool position using exact production checks."""
++    if pool_index < 0 or pool_index >= len(pool):
++        raise IndexError(pool_index)
++    started = time.perf_counter()
++    probe_deadline = started + max(0.0, float(probe_budget_seconds))
++    proxy_state = _ems.build_proxy_state(
++        state,
++        settings.path_clearance,
++        support_inset=max(0.0, -settings.inclusion_margin),
++        shelf_drop_gap=settings.shelf_drop_gap,
++    )
++    proposals_exhausted = True
++    try:
++        proposals = _catalog.propose_actions(
++            proxy_state,
++            pool[pool_index],
++            pool_index,
++            limit=settings.ems_proxy_actions_per_item,
++            deadline=probe_deadline,
++        )
++    except Exception:
++        elapsed = max(0.0, time.perf_counter() - started)
++        return ProbeMeasurement(pool_index, False, None, elapsed, False)
++
++    for action in proposals:
++        if time.perf_counter() >= probe_deadline:
++            proposals_exhausted = False
++            break
++        try:
++            candidate = generator.validate_proposal(state, action)
++            if candidate is None:
++                continue
++            successor = _catalog.apply_action(proxy_state, action, settings.path_clearance)
++        except Exception:
++            continue
++        if successor is None:
++            continue
++        elapsed = max(0.0, time.perf_counter() - started)
++        return ProbeMeasurement(pool_index, True, elapsed, elapsed, False)
++
++    elapsed = max(0.0, time.perf_counter() - started)
++    if started + elapsed >= probe_deadline:
++        proposals_exhausted = False
++    return ProbeMeasurement(pool_index, False, None, elapsed, proposals_exhausted)
++
++
++def classify_probe(measurement: ProbeMeasurement, *, fair_share_seconds: float) -> ProbeClassification:
++    fair_share = max(0.0, float(fair_share_seconds))
++    recoverable = bool(
++        measurement.exact_root_found
++        and measurement.time_to_first_exact_root is not None
++        and measurement.time_to_first_exact_root <= fair_share
++    )
++    return ProbeClassification(measurement, fair_share, recoverable)
+diff --git simulator/tests/quota_fair_case_manifest.py simulator/tests/quota_fair_case_manifest.py
+new file mode 100644
+index 0000000..1494f41
+--- /dev/null
++++ simulator/tests/quota_fair_case_manifest.py
+@@ -0,0 +1,129 @@
++"""Literal generated-case manifest used by the Phase-0 diagnostic runner."""
++
++from __future__ import annotations
++
++import copy
++import hashlib
++import json
++import random
++from typing import Any, Mapping
++
++
++# Keep this as a literal tuple.  Do not replace it with a Cartesian product:
++# the case numbers are part of the benchmark's reproducibility contract.
++FIXED_CASES: tuple[dict[str, Any], ...] = (
++    {"lookahead": 1, "containers": 1, "shelf": False, "initial_state": "empty", "attributes": "normal", "item_order": "large-to-small", "density": "early"},
++    {"lookahead": 1, "containers": 2, "shelf": True, "initial_state": "preloaded", "attributes": "combined", "item_order": "random", "density": "high"},
++    {"lookahead": 3, "containers": 1, "shelf": True, "initial_state": "empty", "attributes": "soft", "item_order": "small-to-large", "density": "middle"},
++    {"lookahead": 3, "containers": 2, "shelf": False, "initial_state": "preloaded", "attributes": "priority", "item_order": "repeated", "density": "high"},
++    {"lookahead": 10, "containers": 1, "shelf": False, "initial_state": "preloaded", "attributes": "combined", "item_order": "random", "density": "middle"},
++    {"lookahead": 10, "containers": 2, "shelf": True, "initial_state": "empty", "attributes": "normal", "item_order": "large-to-small", "density": "high"},
++    {"lookahead": 20, "containers": 1, "shelf": True, "initial_state": "preloaded", "attributes": "priority", "item_order": "small-to-large", "density": "high"},
++    {"lookahead": 20, "containers": 2, "shelf": False, "initial_state": "empty", "attributes": "soft", "item_order": "repeated", "density": "middle"},
++    {"lookahead": 20, "containers": 1, "shelf": False, "initial_state": "empty", "attributes": "combined", "item_order": "large-to-small", "density": "early"},
++    {"lookahead": 20, "containers": 2, "shelf": True, "initial_state": "preloaded", "attributes": "normal", "item_order": "random", "density": "high"},
++    {"lookahead": 20, "containers": 1, "shelf": True, "initial_state": "preloaded", "attributes": "soft", "item_order": "repeated", "density": "middle"},
++    {"lookahead": 20, "containers": 2, "shelf": False, "initial_state": "empty", "attributes": "priority", "item_order": "small-to-large", "density": "high"},
++    {"lookahead": 40, "containers": 1, "shelf": False, "initial_state": "preloaded", "attributes": "normal", "item_order": "repeated", "density": "high"},
++    {"lookahead": 40, "containers": 2, "shelf": True, "initial_state": "empty", "attributes": "combined", "item_order": "random", "density": "middle"},
++    {"lookahead": 40, "containers": 1, "shelf": True, "initial_state": "empty", "attributes": "priority", "item_order": "large-to-small", "density": "high"},
++    {"lookahead": 40, "containers": 2, "shelf": False, "initial_state": "preloaded", "attributes": "soft", "item_order": "small-to-large", "density": "early"},
++)
++
++EXPECTED_TEMPLATE_COUNT = 16
++# Hand-recorded from FIXED_CASES using manifest_hash; changing a tuple requires
++# deliberately changing this value and the benchmark evidence.
++EXPECTED_MANIFEST_SHA256 = "251d613dcd464f557a209923272c41d83656c0373dd88d18d747364dde213bef"
++
++
++def build_fixed_manifest() -> tuple[dict[str, Any], ...]:
++    return FIXED_CASES
++
++
++def manifest_hash(cases: Any) -> str:
++    payload = json.dumps(tuple(cases), sort_keys=True, separators=(",", ":"))
++    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
++
++
++def _template_number(template: Mapping[str, Any]) -> int:
++    for number, fixed in enumerate(FIXED_CASES, 1):
++        if template is fixed or dict(template) == fixed:
++            return number
++    return 1
++
++
++def _source_items(config: Mapping[str, Any]) -> list[dict[str, Any]]:
++    return config["item_stream"]["item_list"]
++
++
++def materialize_case(template: Mapping[str, Any], seed: int, sample_config: Mapping[str, Any]) -> dict[str, Any]:
++    """Materialize one deterministic JSON-only case from sample config 001."""
++    result = copy.deepcopy(sample_config["001"])
++    item_stream = result["item_stream"]
++    item_stream["look_ahead"] = int(template["lookahead"])
++    containers = result["containers"]["container_list"]
++    if int(template["containers"]) == 2:
++        second = copy.deepcopy(containers[0])
++        second["index"] = 1
++        containers.append(second)
++        two_container_templates = [fixed for fixed in FIXED_CASES if fixed["containers"] == 2]
++        ordinal = next(
++            (index for index, fixed in enumerate(two_container_templates) if dict(template) == fixed),
++            0,
++        )
++        designated = ordinal % 2 == 0
++        priority_index = (ordinal // 2) % 2
++        for container in containers:
++            container["is_prioritized"] = designated and container["index"] == priority_index
++        result["camera"]["num_containers"] = 2
++    else:
++        result["camera"]["num_containers"] = 1
++    for container in containers:
++        container["require_shelf"] = bool(template["shelf"])
++
++    items = copy.deepcopy(_source_items(result))
++    attributes = template["attributes"]
++    for position, item in enumerate(items):
++        item["is_soft"] = bool(attributes in {"soft", "combined"} and position % 3 == 0)
++        item["is_prioritized"] = bool(attributes in {"priority", "combined"} and position % 4 == 0)
++    order = template["item_order"]
++    if order == "large-to-small":
++        items.sort(key=lambda item: (float(item["length"]) * float(item["width"]) * float(item["height"]), int(item["index"])), reverse=True)
++    elif order == "small-to-large":
++        items.sort(key=lambda item: (float(item["length"]) * float(item["width"]) * float(item["height"]), int(item["index"])))
++    elif order == "random":
++        random.Random(seed).shuffle(items)
++    elif order == "repeated":
++        if items:
++            dimensions = {key: items[0][key] for key in ("length", "width", "height")}
++            for item in items:
++                item.update(dimensions)
++    else:
++        raise ValueError(f"unsupported item order: {order}")
++
++    # Warm-up/pose capture is performed by the runner.  Keep a stable empty
++    # packed-items field here so materialized inputs are always JSON-only.
++    for container in containers:
++        container["packed_items"] = copy.deepcopy(container.get("packed_items", []))
++    item_stream["item_list"] = items
++    return result
++
++
++def materialized_case_hash(case: Mapping[str, Any]) -> str:
++    """Hash one materialized JSON case using canonical JSON serialization."""
++    payload = json.dumps(case, sort_keys=True, separators=(",", ":"))
++    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
++
++
++def materialize_case_with_metadata(
++    template: Mapping[str, Any], seed: int, sample_config: Mapping[str, Any]
++) -> tuple[dict[str, Any], dict[str, Any]]:
++    case = materialize_case(template, seed, sample_config)
++    warmup_target_steps = {"early": 0, "middle": 8, "high": 16}[str(template["density"])]
++    metadata = {
++        "initial_state": str(template["initial_state"]),
++        "density": str(template["density"]),
++        "warmup_target_steps": warmup_target_steps,
++        "materialized_sha256": materialized_case_hash(case),
++    }
++    return case, metadata
+diff --git simulator/tests/test_quota_fair_starvation_diagnostics.py simulator/tests/test_quota_fair_starvation_diagnostics.py
+new file mode 100644
+index 0000000..ae467e4
+--- /dev/null
++++ simulator/tests/test_quota_fair_starvation_diagnostics.py
+@@ -0,0 +1,890 @@
++from __future__ import annotations
++
++import pathlib
++import json
++import copy
++import sys
++import time
++import unittest
++from dataclasses import dataclass
++from types import SimpleNamespace
++from unittest.mock import patch
++
++SIMULATOR_ROOT = pathlib.Path(__file__).resolve().parents[1]
++if str(SIMULATOR_ROOT) not in sys.path:
++    sys.path.insert(0, str(SIMULATOR_ROOT))
++
++from agents.highscore.candidates import CandidateGenerator  # noqa: E402
++from agents.highscore.catalog import build_root_catalog  # noqa: E402
++from agents.highscore.ems import build_proxy_state, propose_actions  # noqa: E402
++from agents.highscore.model import ItemSpec  # noqa: E402
++from agents.highscore.settings import SearchSettings  # noqa: E402
++from agents.highscore.state import build_packing_state  # noqa: E402
++from agents.highscore import catalog as highscore_catalog  # noqa: E402
++from .quota_fair_starvation_diagnostics import (  # noqa: E402
++    CatalogTrace,
++    CatalogTraceRow,
++    ProbeClassification,
++    ProbeMeasurement,
++    classify_probe,
++    measure_pool_position,
++    trace_production_catalog,
++)
++from .quota_fair_case_manifest import (  # noqa: E402
++    EXPECTED_MANIFEST_SHA256,
++    EXPECTED_TEMPLATE_COUNT,
++    build_fixed_manifest,
++    manifest_hash,
++    materialized_case_hash,
++    materialize_case,
++    materialize_case_with_metadata,
++)
++from .run_quota_fair_phase0 import (  # noqa: E402
++    AGGREGATE_KEYS,
++    atomic_write_json,
++    build_parser,
++    _aggregate,
++    diagnose_observation,
++    load_and_diagnose_snapshots,
++    materialize_manifest_observation,
++    run_real_warmup,
++    run_real_task_episode,
++    run_episode_with_diagnostics,
++    main as phase0_main,
++)
++from . import run_quota_fair_phase0 as phase0_module  # noqa: E402
++
++
++@dataclass(frozen=True)
++class _FakeItem:
++    index: int
++    volume: float = 1.0
++    mass: float = 1.0
++    is_prioritized: bool = False
++    is_soft: bool = False
++
++
++@dataclass(frozen=True)
++class _FakeAction:
++    pool_index: int
++
++
++@dataclass(frozen=True)
++class _FakeSettings:
++    ems_proxy_actions_per_item: int = 4
++    ems_exact_roots_per_item: int = 1
++    ems_root_catalog_limit: int = 8
++    ems_root_budget_seconds: float = 10.0
++
++
++@dataclass(frozen=True)
++class _FakeContainer:
++    volume: float = 10.0
++
++
++@dataclass(frozen=True)
++class _FakeState:
++    containers: tuple[_FakeContainer, ...] = (_FakeContainer(),)
++
++
++class _FakeGenerator:
++    def __init__(self, validation_log=None):
++        self.validation_log = validation_log
++
++    def validate_proposal(self, state, action):
++        if self.validation_log is not None:
++            self.validation_log.append(action)
++        return object()
++
++
++class _FakeClock:
++    def __init__(self, step: float = 0.1):
++        self.value = 0.0
++        self.step = step
++
++    def perf_counter(self) -> float:
++        result = self.value
++        self.value += self.step
++        return result
++
++
++def _run_fake_catalog_trace(mode: str, *, clock_step: float = 0.1, identity_log=None, **setting_overrides):
++    """Exercise the tracer against a tiny collaborator-only catalog fixture."""
++    settings = _FakeSettings(**setting_overrides)
++    state = _FakeState()
++    pool = tuple(_FakeItem(index) for index in range(4))
++    fake_clock = _FakeClock(clock_step)
++
++    def fake_propose(proxy_state, item, pool_index, *, limit, deadline):
++        if mode == "throw" and pool_index == 0:
++            raise RuntimeError("fixture proposal failure")
++        if mode in {"empty", "empty_then_root"} and pool_index == 0:
++            return []
++        if mode == "deadline" and pool_index == 0:
++            return []
++        if mode == "empty_then_root" and pool_index == 1:
++            actions = [_FakeAction(pool_index), _FakeAction(pool_index)]
++        else:
++            actions = [_FakeAction(pool_index)]
++        if identity_log is not None:
++            identity_log.setdefault("proposed", []).extend(actions)
++        return actions
++
++    def fake_apply(proxy_state, action, clearance):
++        if identity_log is not None:
++            identity_log.setdefault("applied", []).append(action)
++        return object()
++
++    def fake_catalog(state, pool, generator, settings, *, deadline):
++        if mode == "external_catalog_throw":
++            highscore_catalog.time.perf_counter()
++            raise RuntimeError("fixture catalog failure")
++        start = highscore_catalog.time.perf_counter()
++        catalog_deadline = min(deadline, start + settings.ems_root_budget_seconds)
++        roots = []
++        for pool_index, item in enumerate(pool):
++            if mode == "not_visited" and pool_index == 1:
++                break
++            now = highscore_catalog.time.perf_counter()
++            if now >= catalog_deadline or len(roots) >= settings.ems_root_catalog_limit:
++                break
++            remaining = len(pool) - pool_index
++            item_deadline = now + (catalog_deadline - now) / max(1, remaining)
++            try:
++                proposals = highscore_catalog.propose_actions(
++                    object(), item, pool_index,
++                    limit=settings.ems_proxy_actions_per_item,
++                    deadline=item_deadline,
++                )
++            except Exception:
++                continue
++            accepted = 0
++            for proposal in proposals:
++                now = highscore_catalog.time.perf_counter()
++                if (
++                    now >= item_deadline
++                    or now >= catalog_deadline
++                    or accepted >= settings.ems_exact_roots_per_item
++                    or len(roots) >= settings.ems_root_catalog_limit
++                ):
++                    break
++                candidate = generator.validate_proposal(state, proposal)
++                if candidate is None:
++                    continue
++                successor = highscore_catalog.apply_action(object(), proposal, 0.0)
++                if successor is None:
++                    continue
++                accepted += 1
++                roots.append(object())
++        return roots
++
++    fake_time = SimpleNamespace(perf_counter=fake_clock.perf_counter)
++    with patch.object(highscore_catalog, "build_root_catalog", fake_catalog), patch.object(
++        highscore_catalog, "propose_actions", fake_propose
++    ), patch.object(highscore_catalog, "apply_action", fake_apply), patch.object(
++        highscore_catalog, "time", fake_time
++    ):
++        return trace_production_catalog(
++            state,
++            pool,
++            _FakeGenerator(identity_log.setdefault("validated", []) if identity_log is not None else None),
++            settings,
++            deadline=100.0,
++        )
++
++
++def _container_dict(*, index: int = 0) -> dict:
++    length, width, height, thickness = 2.0, 1.5, 1.6, 0.04
++    return {
++        "index": index,
++        "length": length,
++        "width": width,
++        "height": height,
++        "thickness": thickness,
++        "cut_x": 0.4,
++        "cut_y": 0.4,
++        "center": (0.0, 0.0, height / 2.0),
++        "points": [
++            [length / 2.0 - thickness, 0.0, 0.0],
++            [-length / 2.0 + thickness, 0.0, 0.0],
++            [0.0, width / 2.0 - thickness, 0.0],
++            [0.0, -width / 2.0 + thickness, 0.0],
++            [0.0, 0.0, height - thickness],
++            [0.0, 0.0, thickness],
++        ],
++        "n_vecs": [
++            [1.0, 0.0, 0.0],
++            [-1.0, 0.0, 0.0],
++            [0.0, 1.0, 0.0],
++            [0.0, -1.0, 0.0],
++            [0.0, 0.0, 1.0],
++            [0.0, 0.0, -1.0],
++        ],
++        "volume": 4.0,
++        "shelf": False,
++        "is_prioritized": False,
++        "packed_items": [],
++    }
++
++
++def _item(index: int, *, length: float = 0.5, width: float = 0.4, height: float = 0.24) -> ItemSpec:
++    return ItemSpec(index=index, length=length, width=width, height=height)
++
++
++class DiagnosticCoreTests(unittest.TestCase):
++    def setUp(self) -> None:
++        self.settings = SearchSettings(
++            extra_margins=(0.0,),
++            front_floor_release_fill=0.0,
++            ems_proxy_actions_per_item=12,
++            ems_exact_roots_per_item=2,
++            ems_root_catalog_limit=8,
++            ems_root_budget_seconds=1.0,
++        )
++        self.state = build_packing_state([_container_dict()])
++        self.generator = CandidateGenerator(self.settings)
++
++    def test_trace_calls_real_catalog_once_and_keeps_duplicate_item_ids_separate(self) -> None:
++        pool = (_item(7), _item(7))
++        with patch.object(highscore_catalog, "build_root_catalog", wraps=build_root_catalog) as wrapped:
++            trace = trace_production_catalog(
++                self.state,
++                pool,
++                self.generator,
++                self.settings,
++                deadline=time.perf_counter() + 1.0,
++            )
++        self.assertEqual(wrapped.call_count, 1)
++        self.assertEqual([row.pool_index for row in trace.rows], [0, 1])
++        self.assertEqual([row.item_index for row in trace.rows], [7, 7])
++
++    def test_probe_is_recoverable_only_within_fair_share(self) -> None:
++        measurement = ProbeMeasurement(9, True, 0.010, 0.015, True)
++        fast = classify_probe(measurement, fair_share_seconds=0.050)
++        slow = classify_probe(measurement, fair_share_seconds=0.001)
++        self.assertEqual(fast, ProbeClassification(measurement, 0.050, True))
++        self.assertEqual(slow, ProbeClassification(measurement, 0.001, False))
++
++    def test_probe_uses_exact_validator_and_apply_path(self) -> None:
++        pool = (_item(8),)
++        proxy = build_proxy_state(
++            self.state,
++            self.settings.path_clearance,
++            support_inset=max(0.0, -self.settings.inclusion_margin),
++            shelf_drop_gap=self.settings.shelf_drop_gap,
++        )
++        proposals = propose_actions(
++            proxy,
++            pool[0],
++            0,
++            limit=self.settings.ems_proxy_actions_per_item,
++            deadline=time.perf_counter() + 1.0,
++        )
++        self.assertTrue(proposals)
++        with patch.object(highscore_catalog, "propose_actions", return_value=proposals) as proposed:
++            measurement = measure_pool_position(
++                self.state, pool, 0, self.generator, self.settings, probe_budget_seconds=1.0
++            )
++        self.assertTrue(measurement.exact_root_found)
++        self.assertEqual(proposed.call_count, 1)
++
++    def test_probe_rejects_pool_index_out_of_range(self) -> None:
++        with self.assertRaises(IndexError):
++            measure_pool_position(
++                self.state, (_item(8),), 1, self.generator, self.settings, probe_budget_seconds=1.0
++            )
++
++    def test_classification_clamps_negative_share_without_mutating_measurement(self) -> None:
++        measurement = ProbeMeasurement(0, True, 0.0, 0.0, True)
++        result = classify_probe(measurement, fair_share_seconds=-1.0)
++        self.assertEqual(result.fair_share_seconds, 0.0)
++        self.assertIs(result.measurement, measurement)
++
++
++class PublicShapeTests(unittest.TestCase):
++    def test_trace_row_has_exact_taxonomy_field(self) -> None:
++        self.assertEqual(
++            set(CatalogTraceRow.__dataclass_fields__),
++            {
++                "pool_index", "item_index", "urgency", "proposal_count",
++                "validated_count", "accepted_root_count", "start_time",
++                "end_time", "stop_reason",
++            },
++        )
++
++    def test_phase0_parser_accepts_exact_declared_options(self) -> None:
++        parser = build_parser()
++        options = set(parser._option_string_actions)
++        self.assertEqual(
++            options,
++            {
++                "-h", "--help", "--task", "--items", "--include-saved-snapshots",
++                "--include-fixed-manifest", "--lookaheads", "--seeds", "--aggregate",
++                "--manifest-output", "--output",
++            },
++        )
++
++    def test_atomic_write_uses_replace_and_aggregate_schema_is_exact(self) -> None:
++        import tempfile
++        from unittest.mock import patch
++
++        with tempfile.TemporaryDirectory() as directory:
++            root = pathlib.Path(directory)
++            raw = root / "raw.json"
++            raw.write_text(json.dumps({
++                "schema_version": 1,
++                "manifest_sha256": EXPECTED_MANIFEST_SHA256,
++                "observations": [{
++                    "observation_id": "x",
++                    "lookahead_k": 20,
++                    "recoverable": True,
++                    "stop_reason_counts": {"global_cap": 1},
++                    "time_to_first_exact_root_seconds": [0.01],
++                }],
++            }), encoding="utf-8")
++            output = root / "results.json"
++            original_replace = pathlib.Path.replace
++            with patch.object(pathlib.Path, "replace", autospec=True, side_effect=original_replace) as replaced:
++                phase0_main(["--aggregate", str(raw), "--output", str(output)])
++            self.assertTrue(output.exists())
++            self.assertGreaterEqual(replaced.call_count, 1)
++            self.assertEqual(set(json.loads(output.read_text(encoding="utf-8"))), AGGREGATE_KEYS)
++
++    def test_aggregate_uses_lookahead_k_and_counts_both_requested_denominator_values(self) -> None:
++        import tempfile
++
++        rows = [
++            {"observation_id": "lookahead-20", "lookahead_k": 20, "trace_rows": [], "probes": []},
++            {"observation_id": "lookahead-40", "lookahead_k": 40, "trace_rows": [], "probes": []},
++        ]
++        with tempfile.TemporaryDirectory() as directory:
++            raw = pathlib.Path(directory) / "raw.json"
++            raw.write_text(
++                json.dumps({"manifest_sha256": EXPECTED_MANIFEST_SHA256, "observations": rows}),
++                encoding="utf-8",
++            )
++            aggregate = _aggregate([str(raw)])
++        self.assertEqual(aggregate["lookahead_20_40_state_count"], 2)
++
++    def test_fixed_manifest_is_literal_sixteen_cases_with_stable_hash(self) -> None:
++        cases = build_fixed_manifest()
++        self.assertIsInstance(cases, tuple)
++        self.assertEqual(len(cases), EXPECTED_TEMPLATE_COUNT)
++        self.assertEqual(manifest_hash(cases), EXPECTED_MANIFEST_SHA256)
++        self.assertEqual(manifest_hash(cases), manifest_hash(json.loads(json.dumps(cases))))
++
++    def test_materialize_case_is_deterministic_and_json_serializable(self) -> None:
++        sample_path = pathlib.Path(__file__).resolve().parents[1] / "configs" / "sample_config.json"
++        sample = json.loads(sample_path.read_text(encoding="utf-8"))
++        template = build_fixed_manifest()[3]
++        first = materialize_case(template, 42, sample)
++        second = materialize_case(template, 42, sample)
++        self.assertEqual(first, second)
++        self.assertEqual(first["item_stream"]["look_ahead"], template["lookahead"])
++        self.assertEqual(len(first["containers"]["container_list"]), template["containers"])
++        json.dumps(first, sort_keys=True)
++
++    def test_materialized_camera_priority_alternation_metadata_and_hash(self) -> None:
++        sample_path = pathlib.Path(__file__).resolve().parents[1] / "configs" / "sample_config.json"
++        sample = json.loads(sample_path.read_text(encoding="utf-8"))
++        two_container_templates = [template for template in build_fixed_manifest() if template["containers"] == 2]
++        designated = []
++        for template in two_container_templates:
++            case, metadata = materialize_case_with_metadata(template, 17, sample)
++            containers = case["containers"]["container_list"]
++            designated.append([container["index"] for container in containers if container["is_prioritized"]])
++            self.assertEqual(case["camera"]["num_containers"], 2)
++            self.assertIn(metadata["warmup_target_steps"], {0, 8, 16})
++            self.assertEqual(metadata["initial_state"], template["initial_state"])
++            self.assertEqual(materialized_case_hash(case), materialized_case_hash(copy.deepcopy(case)))
++        self.assertEqual(designated, [[0], [], [1], [], [0], [], [1], []])
++
++    def test_large_to_small_orders_volume_and_index_descending(self) -> None:
++        sample_path = pathlib.Path(__file__).resolve().parents[1] / "configs" / "sample_config.json"
++        sample = json.loads(sample_path.read_text(encoding="utf-8"))
++        template = dict(build_fixed_manifest()[0])
++        template["item_order"] = "large-to-small"
++        case = materialize_case(template, 17, sample)
++        items = case["item_stream"]["item_list"]
++        keys = [
++            (float(item["length"]) * float(item["width"]) * float(item["height"]), int(item["index"]))
++            for item in items
++        ]
++        self.assertEqual(keys, sorted(keys, reverse=True))
++
++    def test_diagnose_orders_all_positions_and_uses_remaining_budget_recurrence(self) -> None:
++        items = tuple(_FakeItem(index) for index in range(4))
++        urgencies = {0: 0.1, 1: 0.9, 2: 0.9, 3: 0.2}
++        state = _FakeState()
++        accepted_counts = {0: 0, 1: 1, 2: 0, 3: 0}
++        baseline = tuple(
++            CatalogTraceRow(index, index, urgencies[index], 0, 0, accepted_counts[index], 0.0, 0.1, reason)
++            for index, reason in enumerate(("global_cap", "global_cap", "proposal_exhausted", "catalog_deadline"))
++        )
++        trace = CatalogTrace((), baseline, 0.0, 0.6, 0.6)
++        probe_calls = []
++
++        def tracer(*args, **kwargs):
++            return trace
++
++        def prober(state, pool, pool_index, generator, settings, *, probe_budget_seconds):
++            probe_calls.append((pool_index, probe_budget_seconds))
++            return ProbeMeasurement(pool_index, True, 0.1, 0.1, True)
++
++        def classifier(measurement, *, fair_share_seconds):
++            return ProbeClassification(measurement, fair_share_seconds, True)
++
++        result = diagnose_observation(
++            {"lookahead_k": 20},
++            state_builder=lambda observation: state,
++            pool_builder=lambda observation: items,
++            generator_factory=lambda settings: object(),
++            settings_factory=lambda: _FakeSettings(),
++            urgency_fn=lambda item, containers: urgencies[item.index],
++            tracer=tracer,
++            prober=prober,
++            classifier=classifier,
++        )
++        self.assertEqual([index for index, _ in probe_calls], [1, 2, 3, 0])
++        self.assertEqual(len(result["probes"]), 4)
++        self.assertEqual([budget for _, budget in probe_calls], [0.6, 0.6, 0.6, 0.6])
++        self.assertTrue(result["recoverable"])
++        self.assertEqual(result["lookahead"], 20)
++        by_index = {probe["pool_index"]: probe for probe in result["probes"]}
++        self.assertTrue(by_index[0]["eligible"])
++        self.assertFalse(by_index[1]["eligible"])
++        self.assertFalse(by_index[2]["eligible"])
++        self.assertTrue(by_index[3]["eligible"])
++
++    def test_diagnose_caps_remaining_budget_consumption_at_fair_share(self) -> None:
++        items = tuple(_FakeItem(index) for index in range(4))
++        state = _FakeState()
++        baseline = tuple(
++            CatalogTraceRow(index, index, 0.5, 0, 0, 0, 0.0, 0.1, "proposal_exhausted")
++            for index in range(4)
++        )
++        trace = CatalogTrace((), baseline, 0.0, 0.6, 0.6)
++        probe_budgets = []
++        classification_shares = []
++
++        def prober(state, pool, pool_index, generator, settings, *, probe_budget_seconds):
++            probe_budgets.append(probe_budget_seconds)
++            return ProbeMeasurement(pool_index, False, None, 0.3, True)
++
++        def classifier(measurement, *, fair_share_seconds):
++            classification_shares.append(fair_share_seconds)
++            return ProbeClassification(measurement, fair_share_seconds, False)
++
++        diagnose_observation(
++            {},
++            state_builder=lambda observation: state,
++            pool_builder=lambda observation: items,
++            generator_factory=lambda settings: object(),
++            settings_factory=lambda: _FakeSettings(),
++            urgency_fn=lambda item, containers: 0.5,
++            tracer=lambda *args, **kwargs: trace,
++            prober=prober,
++            classifier=classifier,
++        )
++        self.assertEqual(probe_budgets, [0.6, 0.6, 0.6, 0.6])
++        for share in classification_shares:
++            self.assertAlmostEqual(share, 0.15)
++
++    def test_aggregate_rejects_manifest_hash_conflicts_and_duplicate_row_conflicts(self) -> None:
++        import tempfile
++
++        row = {
++            "observation_id": "same",
++            "lookahead": 20,
++            "recoverable": True,
++            "trace_rows": [{"pool_index": 0, "accepted_root_count": 0, "stop_reason": "proposal_exhausted"}],
++            "probes": [{
++                "pool_index": 0,
++                "baseline_stop_reason": "proposal_exhausted",
++                "measurement": {"exact_root_found": True, "time_to_first_exact_root": 0.01},
++                "fair_share_seconds": 0.1,
++            }],
++        }
++        with tempfile.TemporaryDirectory() as directory:
++            first = pathlib.Path(directory) / "first.json"
++            second = pathlib.Path(directory) / "second.json"
++            first.write_text(json.dumps({"manifest_sha256": EXPECTED_MANIFEST_SHA256, "observations": [row]}), encoding="utf-8")
++            conflicting = dict(row)
++            conflicting["recoverable"] = False
++            second.write_text(json.dumps({"manifest_sha256": EXPECTED_MANIFEST_SHA256, "observations": [conflicting]}), encoding="utf-8")
++            with self.assertRaises(ValueError):
++                _aggregate([str(first), str(second)])
++            second.write_text(json.dumps({"manifest_sha256": "0" * 64, "observations": []}), encoding="utf-8")
++            with self.assertRaises(ValueError):
++                _aggregate([str(first), str(second)])
++
++    def test_aggregate_recomputes_recoverability_instead_of_trusting_boolean(self) -> None:
++        import tempfile
++
++        row = {
++            "observation_id": "derived",
++            "lookahead": 20,
++            "recoverable": True,
++            "trace_rows": [{"pool_index": 0, "accepted_root_count": 0, "stop_reason": "proposal_exhausted"}],
++            "probes": [{
++                "pool_index": 0,
++                "baseline_stop_reason": "proposal_exhausted",
++                "measurement": {"exact_root_found": True, "time_to_first_exact_root": 0.01},
++                "fair_share_seconds": 0.1,
++            }],
++        }
++        with tempfile.TemporaryDirectory() as directory:
++            raw = pathlib.Path(directory) / "raw.json"
++            raw.write_text(json.dumps({"manifest_sha256": EXPECTED_MANIFEST_SHA256, "observations": [row]}), encoding="utf-8")
++            aggregate = _aggregate([str(raw)])
++        self.assertEqual(aggregate["recoverable_state_count"], 0)
++        self.assertEqual(aggregate["qualifying_state_ids"], [])
++
++    def test_aggregate_manifest_output_contains_materialized_cases_not_templates(self) -> None:
++        import tempfile
++
++        case = {"containers": {"container_list": []}, "item_stream": {"item_list": []}}
++        row = {
++            "observation_id": "materialized-1",
++            "template_number": 2,
++            "seed": 17,
++            "materialized_config": case,
++            "materialized_metadata": {
++                "warmup_target_steps": 8,
++                "materialized_sha256": materialized_case_hash(case),
++            },
++            "materialized_sha256": materialized_case_hash(case),
++            "trace_rows": [],
++            "probes": [],
++            "lookahead": 20,
++        }
++        with tempfile.TemporaryDirectory() as directory:
++            root = pathlib.Path(directory)
++            raw = root / "raw.json"
++            output = root / "results.json"
++            manifest = root / "manifest.json"
++            raw.write_text(json.dumps({"manifest_sha256": EXPECTED_MANIFEST_SHA256, "observations": [row]}), encoding="utf-8")
++            phase0_main(["--aggregate", str(raw), "--manifest-output", str(manifest), "--output", str(output)])
++            manifest_payload = json.loads(manifest.read_text(encoding="utf-8"))
++        self.assertEqual(len(manifest_payload["materialized_cases"]), 1)
++        self.assertEqual(manifest_payload["materialized_cases"][0]["sha256"], materialized_case_hash(case))
++
++    def test_fake_episode_diagnoses_each_pre_action_and_closes_on_false_status(self) -> None:
++        class FakeEnv:
++            def __init__(self, safe=True):
++                self.safe = safe
++                self.closed = False
++                self.step_count = 0
++                self.shm_depth_map = None
++
++            def reset_settings(self): pass
++            def reset_item_stream(self): pass
++            def get_init_states(self): return {"lookahead_k": 1, "container_list": []}
++            def reset(self, seed=None): return ({"pool_list": [], "container_list": []}, {})
++            def step(self, action):
++                self.step_count += 1
++                status = {"is_placed_safe": self.safe}
++                return ({"pool_list": [], "container_list": []}, 0, self.step_count >= 2, False, {"status": status})
++            def close(self): self.closed = True
++
++        class FakeAgent:
++            def get_init_states(self, value): return True
++            def policy(self, observation): return {"item_idx": 0}
++
++        diagnosed = []
++        def fake_diagnose(observation, *, observation_id):
++            diagnosed.append(observation_id)
++            return {
++                "observation_id": observation_id, "lookahead": 1,
++                "trace_rows": [], "probes": [], "stop_reason_counts": {},
++                "time_to_first_exact_root_seconds": [], "recoverable": False,
++            }
++
++        env = FakeEnv()
++        result = run_episode_with_diagnostics(env, FakeAgent(), diagnose_fn=fake_diagnose)
++        self.assertEqual(result["completed_steps"], 2)
++        self.assertEqual(diagnosed, ["episode-0000", "episode-0001"])
++        self.assertTrue(env.closed)
++
++        unsafe = FakeEnv(safe=False)
++        with self.assertRaises(RuntimeError):
++            run_episode_with_diagnostics(unsafe, FakeAgent(), diagnose_fn=fake_diagnose)
++        self.assertTrue(unsafe.closed)
++
++    def test_snapshot_loader_diagnoses_all_paths_and_preserves_sources(self) -> None:
++        paths = [pathlib.Path("b.npz"), pathlib.Path("a.npz")]
++        calls = []
++        def loader(path):
++            return ({"pool_list": [], "container_list": []}, {"source": path.stem})
++        def diagnose(observation, *, observation_id):
++            calls.append(observation_id)
++            return {"observation_id": observation_id}
++        rows = load_and_diagnose_snapshots(paths, loader=loader, diagnose_fn=diagnose)
++        self.assertEqual(calls, ["snapshot-a", "snapshot-b"])
++        self.assertEqual([row["source_file"] for row in rows], ["a.npz", "b.npz"])
++
++    def test_manifest_preloaded_serializes_poses_removes_stream_items_and_fresh_reinitializes(self) -> None:
++        sample_path = pathlib.Path(__file__).resolve().parents[1] / "configs" / "sample_config.json"
++        sample = json.loads(sample_path.read_text(encoding="utf-8"))
++        template = next(template for template in build_fixed_manifest() if template["initial_state"] == "preloaded")
++        calls = []
++        def warmup(case, target, seed, initial_state):
++            calls.append((target, initial_state, len(case["item_stream"]["item_list"])))
++            return {
++                "all_safe": True,
++                "observation": {"container_list": [{"packed_items": [{"index": 0, "pos": [0, 0, 0]}]}]},
++                "packed_items": [{"index": 0, "pos": [0, 0, 0]}],
++            }
++        result = materialize_manifest_observation(template, 17, sample, warmup_runner=warmup)
++        self.assertEqual([call[0] for call in calls], [16, 0])
++        self.assertEqual(result["materialized_config"]["containers"]["container_list"][0]["packed_items"][0]["index"], 0)
++        self.assertNotIn(0, [item["index"] for item in result["materialized_config"]["item_stream"]["item_list"]])
++        self.assertEqual(result["materialized_config"]["item_stream"]["visible_pool"], [])
++        self.assertEqual(
++            result["materialized_metadata"]["materialized_sha256"],
++            result["materialized_sha256"],
++        )
++
++    def test_real_warmup_return_observation_always_has_depth_map(self) -> None:
++        class FakeEnv:
++            def __init__(self, **kwargs):
++                self.shm_depth_map = [[1.0, 2.0]]
++                self.closed = False
++
++            def reset_settings(self): pass
++            def reset_item_stream(self): pass
++            def get_init_states(self): return {"lookahead_k": 20, "container_list": []}
++            def reset(self, seed=None): return ({"container_list": [], "pool_list": []}, {})
++            def step(self, action):
++                return ({"container_list": [], "pool_list": []}, 0.0, True, False, {"status": {"safe": True}})
++            def close(self): self.closed = True
++
++        class FakeAgent:
++            def __init__(self, path): pass
++            def get_init_states(self, value): return True
++            def policy(self, observation): return {"item_idx": 0}
++
++        fake_agent_module = SimpleNamespace(Agent=FakeAgent)
++        fake_env_module = SimpleNamespace(GroundHandlingEnv=FakeEnv)
++        with patch.dict(
++            sys.modules,
++            {
++                "agents.highscore.agent": fake_agent_module,
++                "src.ground_handling.env": fake_env_module,
++            },
++        ), patch.object(phase0_module, "configure_mpc_agent", lambda agent: agent):
++            for target_steps in (0, 1):
++                result = run_real_warmup(
++                    {"containers": {"container_list": []}}, target_steps, 17, "empty"
++                )
++                self.assertEqual(result["observation"]["depth_map"], [[1.0, 2.0]])
++
++    def test_real_warmup_closes_env_when_agent_construction_raises(self) -> None:
++        created = []
++
++        class FakeEnv:
++            def __init__(self, **kwargs):
++                self.closed = False
++                created.append(self)
++            def close(self): self.closed = True
++
++        class RaisingAgent:
++            def __init__(self, path): raise RuntimeError("agent construction failed")
++
++        with patch.dict(
++            sys.modules,
++            {
++                "agents.highscore.agent": SimpleNamespace(Agent=RaisingAgent),
++                "src.ground_handling.env": SimpleNamespace(GroundHandlingEnv=FakeEnv),
++            },
++        ):
++            with self.assertRaises(RuntimeError):
++                run_real_warmup({"containers": {"container_list": []}}, 0, 17, "empty")
++        self.assertEqual(len(created), 1)
++        self.assertTrue(created[0].closed)
++
++    def test_real_task_closes_env_when_agent_construction_raises(self) -> None:
++        class FakeEnv:
++            def __init__(self): self.closed = False
++            def close(self): self.closed = True
++
++        env = FakeEnv()
++        with self.assertRaises(RuntimeError):
++            run_real_task_episode(
++                {}, task_id="001", requested_items=1,
++                env_factory=lambda config: env,
++                agent_factory=lambda path: (_ for _ in ()).throw(RuntimeError("agent construction failed")),
++            )
++        self.assertTrue(env.closed)
++
++    def test_cli_task_items_uses_injected_episode_runner_and_writes_raw_observations(self) -> None:
++        import tempfile
++        calls = []
++        def episode_runner(config, *, task_id, requested_items, diagnose_fn):
++            calls.append((task_id, requested_items, len(config["item_stream"]["item_list"])))
++            return {"observations": [{"observation_id": "episode-0000", "lookahead": 1, "trace_rows": [], "probes": []}]}
++        with tempfile.TemporaryDirectory() as directory:
++            output = pathlib.Path(directory) / "raw.json"
++            phase0_main(["--task", "001", "--items", "3", "--output", str(output)], episode_runner=episode_runner)
++            payload = json.loads(output.read_text(encoding="utf-8"))
++        self.assertEqual(calls, [("001", 3, 3)])
++        self.assertEqual(payload["observations"][0]["observation_id"], "episode-0000")
++
++    def test_tracer_preserves_proposal_identity_and_restores_collaborators(self) -> None:
++        identity = {}
++        original_propose = highscore_catalog.propose_actions
++        original_apply = highscore_catalog.apply_action
++        original_time = highscore_catalog.time
++        original_global_perf_counter = time.perf_counter
++        _run_fake_catalog_trace("root", identity_log=identity)
++        self.assertEqual(len(identity["proposed"]), len(identity["validated"]))
++        self.assertEqual(len(identity["validated"]), len(identity["applied"]))
++        for proposed, validated, applied in zip(
++            identity["proposed"], identity["validated"], identity["applied"]
++        ):
++            self.assertIs(proposed, validated)
++            self.assertIs(validated, applied)
++        self.assertIs(highscore_catalog.propose_actions, original_propose)
++        self.assertIs(highscore_catalog.apply_action, original_apply)
++        self.assertIs(highscore_catalog.time, original_time)
++        self.assertIs(time.perf_counter, original_global_perf_counter)
++
++    def test_tracer_restores_all_refs_after_external_catalog_exception(self) -> None:
++        original_propose = highscore_catalog.propose_actions
++        original_apply = highscore_catalog.apply_action
++        original_time = highscore_catalog.time
++        original_global_perf_counter = time.perf_counter
++        with self.assertRaises(RuntimeError):
++            _run_fake_catalog_trace("external_catalog_throw")
++        self.assertIs(highscore_catalog.propose_actions, original_propose)
++        self.assertIs(highscore_catalog.apply_action, original_apply)
++        self.assertIs(highscore_catalog.time, original_time)
++        self.assertIs(time.perf_counter, original_global_perf_counter)
++
++    def test_tracer_restores_directly_mutated_refs_before_test_cleanup(self) -> None:
++        original_catalog = highscore_catalog.build_root_catalog
++        original_propose = highscore_catalog.propose_actions
++        original_apply = highscore_catalog.apply_action
++        original_time = highscore_catalog.time
++        original_global_perf_counter = time.perf_counter
++        settings = _FakeSettings()
++        state = _FakeState()
++        pool = (_FakeItem(0),)
++        generator = _FakeGenerator()
++
++        temporary_propose = object()
++        temporary_apply = object()
++        temporary_time = SimpleNamespace(perf_counter=lambda: 0.0)
++
++        def normal_catalog(state, pool, generator, settings, *, deadline):
++            highscore_catalog.time.perf_counter()
++            return []
++
++        highscore_catalog.build_root_catalog = normal_catalog
++        highscore_catalog.propose_actions = temporary_propose
++        highscore_catalog.apply_action = temporary_apply
++        highscore_catalog.time = temporary_time
++        try:
++            trace_production_catalog(state, pool, generator, settings, deadline=100.0)
++            self.assertIs(highscore_catalog.propose_actions, temporary_propose)
++            self.assertIs(highscore_catalog.apply_action, temporary_apply)
++            self.assertIs(highscore_catalog.time, temporary_time)
++        finally:
++            highscore_catalog.build_root_catalog = original_catalog
++            highscore_catalog.propose_actions = original_propose
++            highscore_catalog.apply_action = original_apply
++            highscore_catalog.time = original_time
++
++        def raising_catalog(state, pool, generator, settings, *, deadline):
++            raise RuntimeError("external catalog failure")
++
++        highscore_catalog.build_root_catalog = raising_catalog
++        highscore_catalog.propose_actions = temporary_propose
++        highscore_catalog.apply_action = temporary_apply
++        highscore_catalog.time = temporary_time
++        try:
++            with self.assertRaises(RuntimeError):
++                trace_production_catalog(state, pool, generator, settings, deadline=100.0)
++            self.assertIs(highscore_catalog.propose_actions, temporary_propose)
++            self.assertIs(highscore_catalog.apply_action, temporary_apply)
++            self.assertIs(highscore_catalog.time, temporary_time)
++            self.assertIs(time.perf_counter, original_global_perf_counter)
++        finally:
++            highscore_catalog.build_root_catalog = original_catalog
++            highscore_catalog.propose_actions = original_propose
++            highscore_catalog.apply_action = original_apply
++            highscore_catalog.time = original_time
++
++
++class CausalClassificationTests(unittest.TestCase):
++    def test_exact_stop_taxonomy_is_emitted_by_literal_collaborator_fixtures(self) -> None:
++        traces = {
++            "proposal_exhausted": _run_fake_catalog_trace("empty"),
++            "unknown": _run_fake_catalog_trace("throw"),
++            "per_item_quota": _run_fake_catalog_trace("root"),
++            "global_cap": _run_fake_catalog_trace(
++                "empty_then_root", ems_exact_roots_per_item=8, ems_root_catalog_limit=1
++            ),
++            "catalog_deadline": _run_fake_catalog_trace(
++                "deadline", clock_step=0.1, ems_root_budget_seconds=0.5
++            ),
++            "not_visited": _run_fake_catalog_trace("not_visited"),
++        }
++        observed = {row.stop_reason for trace in traces.values() for row in trace.rows}
++        self.assertEqual(
++            observed,
++            {
++                "global_cap",
++                "catalog_deadline",
++                "not_visited",
++                "proposal_exhausted",
++                "per_item_quota",
++                "unknown",
++            },
++        )
++
++    def test_throwing_propose_actions_is_unknown(self) -> None:
++        trace = _run_fake_catalog_trace("throw")
++        self.assertEqual(trace.rows[0].stop_reason, "unknown")
++
++    def test_early_zero_root_exhaustion_is_not_relabelled_by_later_cap(self) -> None:
++        trace = _run_fake_catalog_trace(
++            "empty_then_root", ems_exact_roots_per_item=8, ems_root_catalog_limit=1
++        )
++        self.assertEqual(trace.rows[0].accepted_root_count, 0)
++        self.assertEqual(trace.rows[0].stop_reason, "proposal_exhausted")
++        self.assertEqual(trace.rows[1].stop_reason, "global_cap")
++
++    def test_early_zero_root_exhaustion_is_not_relabelled_by_later_deadline(self) -> None:
++        trace = _run_fake_catalog_trace(
++            "deadline", clock_step=0.1, ems_root_budget_seconds=1.0
++        )
++        self.assertEqual(trace.rows[0].accepted_root_count, 0)
++        self.assertEqual(trace.rows[0].stop_reason, "proposal_exhausted")
++        self.assertEqual(trace.rows[1].stop_reason, "unknown")
++
++    def test_only_zero_root_cap_or_deadline_rows_are_recoverability_eligible(self) -> None:
++        cap_trace = _run_fake_catalog_trace(
++            "empty_then_root", ems_exact_roots_per_item=8, ems_root_catalog_limit=1
++        )
++        deadline_trace = _run_fake_catalog_trace(
++            "deadline", clock_step=0.1, ems_root_budget_seconds=1.0
++        )
++        cap_eligible = {
++            row.pool_index
++            for row in cap_trace.rows
++            if row.stop_reason in {"global_cap", "catalog_deadline"}
++            and row.accepted_root_count == 0
++        }
++        deadline_eligible = {
++            row.pool_index
++            for row in deadline_trace.rows
++            if row.stop_reason in {"global_cap", "catalog_deadline"}
++            and row.accepted_root_count == 0
++        }
++        self.assertEqual(cap_eligible, {2, 3})
++        self.assertEqual(deadline_eligible, {3})
++
++
++if __name__ == "__main__":
++    unittest.main()
+diff --git simulator/tests/run_quota_fair_phase0.py simulator/tests/run_quota_fair_phase0.py
+new file mode 100644
+index 0000000..ab2fffc
+--- /dev/null
++++ simulator/tests/run_quota_fair_phase0.py
+@@ -0,0 +1,707 @@
++"""CLI for collecting and aggregating the non-production Phase-0 evidence."""
++
++from __future__ import annotations
++
++import argparse
++from collections import Counter
++import copy
++import json
++import re
++from pathlib import Path
++import tempfile
++import time
++from dataclasses import replace
++import sys
++from typing import Any, Iterable, Sequence
++
++if __package__ in {None, ""}:
++    _SIMULATOR_ROOT = Path(__file__).resolve().parents[1]
++    if str(_SIMULATOR_ROOT) not in sys.path:
++        sys.path.insert(0, str(_SIMULATOR_ROOT))
++
++try:  # package execution: python -m tests.run_quota_fair_phase0
++    from .quota_fair_case_manifest import (
++        EXPECTED_MANIFEST_SHA256,
++        build_fixed_manifest,
++        manifest_hash,
++        materialized_case_hash,
++        materialize_case,
++        materialize_case_with_metadata,
++    )
++    from .quota_fair_starvation_diagnostics import (
++        classify_probe,
++        measure_pool_position,
++        trace_production_catalog,
++    )
++except ImportError:  # direct execution from simulator/tests
++    from quota_fair_case_manifest import (  # type: ignore
++        EXPECTED_MANIFEST_SHA256,
++        build_fixed_manifest,
++        manifest_hash,
++        materialized_case_hash,
++        materialize_case,
++        materialize_case_with_metadata,
++    )
++    from quota_fair_starvation_diagnostics import (  # type: ignore
++        classify_probe,
++        measure_pool_position,
++        trace_production_catalog,
++    )
++
++
++AGGREGATE_KEYS = {
++    "schema_version",
++    "manifest_sha256",
++    "measured_state_count",
++    "lookahead_20_40_state_count",
++    "recoverable_state_count",
++    "recoverable_frequency",
++    "qualifying_state_ids",
++    "stop_reason_counts",
++    "time_to_first_exact_root_seconds",
++    "proceed",
++    "source_files",
++}
++
++
++def build_parser() -> argparse.ArgumentParser:
++    parser = argparse.ArgumentParser(description="Run the Phase-0 starvation diagnostic")
++    parser.add_argument("--task", default=None)
++    parser.add_argument("--items", type=int, default=None)
++    parser.add_argument("--include-saved-snapshots", action="store_true")
++    parser.add_argument("--include-fixed-manifest", action="store_true")
++    parser.add_argument("--lookaheads", default=None)
++    parser.add_argument("--seeds", default=None)
++    parser.add_argument("--aggregate", nargs="+")
++    parser.add_argument("--manifest-output", type=Path)
++    parser.add_argument("--output", type=Path, required=True)
++    return parser
++
++
++def atomic_write_json(path: Path, value: Any) -> None:
++    """Write JSON through a same-directory temporary file and Path.replace."""
++    path = Path(path)
++    path.parent.mkdir(parents=True, exist_ok=True)
++    temporary: Path | None = None
++    try:
++        with tempfile.NamedTemporaryFile(
++            mode="w",
++            encoding="utf-8",
++            dir=path.parent,
++            prefix=f".{path.name}.",
++            suffix=".tmp",
++            delete=False,
++        ) as handle:
++            temporary = Path(handle.name)
++            json.dump(value, handle, sort_keys=True, separators=(",", ":"))
++            handle.write("\n")
++        temporary.replace(path)
++        temporary = None
++    finally:
++        if temporary is not None:
++            temporary.unlink(missing_ok=True)
++
++
++def _parse_csv(value: str | None, cast: Any) -> list[Any] | None:
++    if value is None or not value.strip():
++        return None
++    return [cast(part.strip()) for part in value.split(",") if part.strip()]
++
++
++def _manifest_payload() -> dict[str, Any]:
++    cases = build_fixed_manifest()
++    return {
++        "schema_version": 1,
++        "manifest_sha256": manifest_hash(cases),
++        "cases": list(cases),
++    }
++
++
++_MANIFEST_DIGEST_RE = re.compile(r"^[0-9a-f]{64}$")
++
++
++def _lookahead_value(value: dict[str, Any]) -> int:
++    """Read the observation schema's lookahead_k, with legacy fallbacks."""
++    for key in ("lookahead_k", "look_ahead", "lookahead"):
++        candidate = value.get(key)
++        if candidate is not None:
++            return int(candidate)
++    return -1
++
++
++def _derived_observation_evidence(row: dict[str, Any]) -> tuple[bool, Counter[str], list[float]]:
++    trace_by_index = {
++        int(value["pool_index"]): value
++        for value in row.get("trace_rows", [])
++        if isinstance(value, dict) and "pool_index" in value
++    }
++    stop_counts = Counter(str(value.get("stop_reason")) for value in trace_by_index.values() if value.get("stop_reason") is not None)
++    times: list[float] = []
++    eligible = False
++    for probe in row.get("probes", []):
++        if not isinstance(probe, dict):
++            continue
++        index = int(probe.get("pool_index", -1))
++        baseline = trace_by_index.get(index, {})
++        baseline_reason = str(probe.get("baseline_stop_reason", baseline.get("stop_reason", "unknown")))
++        accepted = int(probe.get("baseline_accepted_root_count", baseline.get("accepted_root_count", 0)))
++        measurement = probe.get("measurement", {})
++        if not isinstance(measurement, dict):
++            continue
++        exact = bool(measurement.get("exact_root_found", False))
++        first = measurement.get("time_to_first_exact_root")
++        share = float(probe.get("fair_share_seconds", 0.0))
++        if isinstance(first, (int, float)):
++            times.append(float(first))
++        eligible = eligible or bool(
++            accepted == 0
++            and baseline_reason in {"global_cap", "catalog_deadline"}
++            and exact
++            and isinstance(first, (int, float))
++            and float(first) <= max(0.0, share)
++        )
++    return eligible, stop_counts, times
++
++
++def _aggregate(paths: Sequence[str]) -> dict[str, Any]:
++    observations: list[dict[str, Any]] = []
++    manifest_digests: list[str] = []
++    for raw_path in paths:
++        payload = json.loads(Path(raw_path).read_text(encoding="utf-8"))
++        if not isinstance(payload, dict):
++            raise ValueError(f"raw input must be an object: {raw_path}")
++        manifest_digest = payload.get("manifest_sha256")
++        if not isinstance(manifest_digest, str) or not _MANIFEST_DIGEST_RE.fullmatch(manifest_digest):
++            raise ValueError(f"raw input has missing or invalid manifest hash: {raw_path}")
++        if manifest_digest != EXPECTED_MANIFEST_SHA256:
++            raise ValueError(f"raw input manifest hash differs from expected digest: {raw_path}")
++        manifest_digests.append(manifest_digest)
++        rows = payload.get("observations", [])
++        if not isinstance(rows, list):
++            raise ValueError(f"observations must be a list: {raw_path}")
++        observations.extend(row for row in rows if isinstance(row, dict))
++
++    by_id: dict[str, dict[str, Any]] = {}
++    for row in observations:
++        identifier = str(row.get("observation_id", row.get("state_id", len(by_id))))
++        if identifier in by_id:
++            old = json.dumps(by_id[identifier], sort_keys=True, separators=(",", ":"))
++            new = json.dumps(row, sort_keys=True, separators=(",", ":"))
++            if old != new:
++                raise ValueError(f"conflicting duplicate observation_id: {identifier}")
++        else:
++            by_id[identifier] = row
++    measured = list(by_id.values())
++    lookahead_rows = [row for row in measured if _lookahead_value(row) in {20, 40}]
++    qualifying: list[str] = []
++    stop_counts: Counter[str] = Counter()
++    times: list[float] = []
++    for row in lookahead_rows:
++        recoverable, row_stop_counts, row_times = _derived_observation_evidence(row)
++        stop_counts.update(row_stop_counts)
++        times.extend(row_times)
++        if recoverable:
++            qualifying.append(str(row.get("observation_id", row.get("state_id", len(qualifying)))))
++    denominator = len(lookahead_rows)
++    frequency = len(qualifying) / denominator if denominator else 0.0
++    return {
++        "schema_version": 1,
++        "manifest_sha256": manifest_digests[0] if manifest_digests else EXPECTED_MANIFEST_SHA256,
++        "measured_state_count": len(measured),
++        "lookahead_20_40_state_count": denominator,
++        "recoverable_state_count": len(qualifying),
++        "recoverable_frequency": frequency,
++        "qualifying_state_ids": qualifying,
++        "stop_reason_counts": dict(sorted(stop_counts.items())),
++        "time_to_first_exact_root_seconds": times,
++        "proceed": len(qualifying) >= 3 and frequency >= 0.05,
++        "source_files": list(paths),
++    }
++
++
++def _aggregate_materialized_manifest(paths: Sequence[str]) -> dict[str, Any]:
++    cases: dict[str, dict[str, Any]] = {}
++    for raw_path in paths:
++        payload = json.loads(Path(raw_path).read_text(encoding="utf-8"))
++        for row in payload.get("observations", []):
++            if not isinstance(row, dict) or "materialized_config" not in row:
++                continue
++            case = row["materialized_config"]
++            digest = row.get("materialized_sha256")
++            if not isinstance(digest, str) or digest != materialized_case_hash(case):
++                raise ValueError(f"materialized case hash mismatch: {row.get('observation_id')}")
++            metadata = row.get("materialized_metadata", {})
++            if not isinstance(metadata, dict) or metadata.get("materialized_sha256") != digest:
++                raise ValueError(f"materialized metadata hash mismatch: {row.get('observation_id')}")
++            identifier = str(row.get("observation_id", len(cases)))
++            entry = {
++                "observation_id": identifier,
++                "template_number": row.get("template_number"),
++                "seed": row.get("seed"),
++                "config": case,
++                "metadata": row.get("materialized_metadata", {}),
++                "sha256": digest,
++            }
++            canonical = json.dumps(entry, sort_keys=True, separators=(",", ":"))
++            if identifier in cases and json.dumps(cases[identifier], sort_keys=True, separators=(",", ":")) != canonical:
++                raise ValueError(f"conflicting materialized observation_id: {identifier}")
++            cases[identifier] = entry
++    if not cases:
++        raise ValueError("manifest output requires materialized cases in raw inputs")
++    return {
++        "schema_version": 1,
++        "manifest_sha256": EXPECTED_MANIFEST_SHA256,
++        "materialized_cases": list(cases.values()),
++    }
++
++
++def run_real_warmup(config: dict[str, Any], target_steps: int, seed: int, initial_state: str) -> dict[str, Any]:
++    """Run the normal control policy until a manifest warm-up target."""
++    from agents.highscore.agent import Agent
++    from src.ground_handling.env import GroundHandlingEnv
++
++    env = GroundHandlingEnv(config=copy.deepcopy(config), verbose=False, render_mode=None)
++    try:
++        agent = configure_mpc_agent(Agent("agents/highscore/"))
++        env.reset_settings()
++        env.reset_item_stream()
++        if not agent.get_init_states(env.get_init_states()):
++            raise RuntimeError("get_init_states returned false during warm-up")
++        observation, _ = env.reset(seed=seed)
++        all_safe = True
++        for _ in range(max(0, int(target_steps))):
++            observation = _attach_depth_map(observation, env)
++            action = agent.policy(observation)
++            observation, _, terminated, truncated, info = env.step(action)
++            status = info.get("status", {}) if isinstance(info, dict) else {}
++            if not isinstance(status, dict) or not all(bool(value) for value in status.values()):
++                all_safe = False
++                break
++            if terminated or truncated:
++                break
++        # The returned observation is also a pre-action observation.  Attach
++        # the shared depth map on every exit path, including target zero and
++        # a false-status break, before copying any packed-item metadata.
++        observation = _attach_depth_map(observation, env)
++        packed_items = [
++            item
++            for container in observation.get("container_list", [])
++            for item in container.get("packed_items", [])
++        ]
++        return {"observation": observation, "packed_items": packed_items, "all_safe": all_safe}
++    finally:
++        env.close()
++
++
++def _materialized_rows(
++    args: argparse.Namespace,
++    *,
++    warmup_runner: Any = None,
++    diagnose_fn: Any = None,
++) -> list[dict[str, Any]]:
++    if not args.include_fixed_manifest:
++        return []
++    config_path = Path(__file__).resolve().parents[1] / "configs" / "sample_config.json"
++    sample = json.loads(config_path.read_text(encoding="utf-8"))
++    lookaheads = set(_parse_csv(args.lookaheads, int) or [])
++    seeds = _parse_csv(args.seeds, int) or [17]
++    rows: list[dict[str, Any]] = []
++    warmup_runner = warmup_runner or run_real_warmup
++    diagnose_fn = diagnose_fn or diagnose_observation
++    for template_number, template in enumerate(build_fixed_manifest(), 1):
++        if lookaheads and int(template["lookahead"]) not in lookaheads:
++            continue
++        for seed in seeds:
++            observation = materialize_manifest_observation(
++                template,
++                seed,
++                sample,
++                warmup_runner=warmup_runner,
++            )
++            identifier = f"manifest-{template_number:02d}-{seed}"
++            diagnostic = diagnose_fn(observation, observation_id=identifier)
++            diagnostic.update(
++                {
++                    "source": "fixed_manifest",
++                    "template_number": template_number,
++                    "seed": int(seed),
++                    "materialized_config": observation["materialized_config"],
++                    "materialized_metadata": observation["materialized_metadata"],
++                    "materialized_sha256": observation["materialized_sha256"],
++                }
++            )
++            rows.append(diagnostic)
++    return rows
++
++
++def diagnose_observation(
++    observation: dict[str, Any],
++    *,
++    observation_id: str = "observation",
++    state_builder: Any = None,
++    pool_builder: Any = None,
++    generator_factory: Any = None,
++    settings_factory: Any = None,
++    urgency_fn: Any = None,
++    tracer: Any = None,
++    prober: Any = None,
++    classifier: Any = None,
++) -> dict[str, Any]:
++    """Run the real highscore state/catalog path for one supplied observation.
++
++    The function is intentionally injectable at the CLI boundary: saved
++    snapshots and the later PyBullet warm-up runner can supply observations
++    without making manifest materialization depend on a physics process.
++    """
++    if state_builder is None:
++        from agents.highscore.state import build_packing_state
++
++        state_builder = lambda value: build_packing_state(
++            value.get("container_list", []), value.get("depth_map")
++        )
++    if pool_builder is None:
++        from agents.highscore.model import ItemSpec
++
++        pool_builder = lambda value: tuple(ItemSpec.from_dict(item) for item in value.get("pool_list", []))
++    if settings_factory is None:
++        from agents.highscore.settings import SearchSettings
++
++        settings_factory = lambda: replace(SearchSettings(), use_mpc_mcts_ems=True)
++    settings = settings_factory()
++    state = state_builder(observation)
++    pool = tuple(pool_builder(observation))
++    if generator_factory is None:
++        from agents.highscore.candidates import CandidateGenerator
++
++        generator_factory = CandidateGenerator
++    generator = generator_factory(settings)
++    tracer = tracer or trace_production_catalog
++    prober = prober or measure_pool_position
++    classifier = classifier or classify_probe
++    if urgency_fn is None:
++        from agents.highscore.scoring import CandidateScorer
++
++        urgency_fn = CandidateScorer.item_urgency
++    trace = tracer(
++        state,
++        pool,
++        generator,
++        settings,
++        deadline=time.perf_counter() + settings.ems_root_budget_seconds,
++    )
++    rows_by_index = {row.pool_index: row for row in trace.rows}
++    ordered_indices = sorted(
++        range(len(pool)),
++        key=lambda index: (
++            -float(urgency_fn(pool[index], state.containers)),
++            int(pool[index].index),
++            index,
++        ),
++    )
++    probes: list[dict[str, Any]] = []
++    remaining_budget = max(0.0, float(trace.observed_catalog_budget_seconds))
++    for ordinal, pool_index in enumerate(ordered_indices):
++        fair_share = remaining_budget / max(1, len(ordered_indices) - ordinal)
++        measurement = prober(
++            state,
++            pool,
++            pool_index,
++            generator,
++            settings,
++            probe_budget_seconds=max(0.0, float(trace.observed_catalog_budget_seconds)),
++        )
++        classification = classifier(measurement, fair_share_seconds=fair_share)
++        baseline = rows_by_index[pool_index]
++        baseline_reason = baseline.stop_reason
++        eligible = bool(
++            baseline.accepted_root_count == 0
++            and baseline_reason in {"global_cap", "catalog_deadline"}
++            and classification.recoverable
++        )
++        probes.append({
++            "pool_index": pool_index,
++            "measurement": {
++                "exact_root_found": measurement.exact_root_found,
++                "time_to_first_exact_root": measurement.time_to_first_exact_root,
++                "measured_elapsed_seconds": measurement.measured_elapsed_seconds,
++                "proposals_exhausted": measurement.proposals_exhausted,
++            },
++            "fair_share_seconds": classification.fair_share_seconds,
++            "baseline_stop_reason": baseline_reason,
++            "baseline_accepted_root_count": baseline.accepted_root_count,
++            "classification_recoverable": classification.recoverable,
++            "eligible": eligible,
++        })
++        remaining_budget = max(
++            0.0,
++            remaining_budget
++            - min(max(0.0, float(measurement.measured_elapsed_seconds)), fair_share),
++        )
++    stop_counts = Counter(row.stop_reason for row in trace.rows)
++    times = [
++        probe["measurement"]["time_to_first_exact_root"]
++        for probe in probes
++        if probe["measurement"]["time_to_first_exact_root"] is not None
++    ]
++    return {
++        "observation_id": observation_id,
++        "lookahead": _lookahead_value(observation),
++        "stop_reason_counts": dict(sorted(stop_counts.items())),
++        "time_to_first_exact_root_seconds": times,
++        "recoverable": any(probe["eligible"] for probe in probes),
++        "trace_rows": [row.__dict__ for row in trace.rows],
++        "probes": probes,
++    }
++
++
++def configure_mpc_agent(agent: Any) -> Any:
++    """Enable the normal MPC route without environment flags or CLI mutation."""
++    from agents.highscore.planner import Planner
++
++    agent.settings = replace(agent.settings, use_mpc_mcts_ems=True)
++    agent.planner = Planner(agent.settings)
++    return agent
++
++
++def _attach_depth_map(observation: dict[str, Any], env: Any) -> dict[str, Any]:
++    shared = getattr(env, "shm_depth_map", None)
++    if shared is not None:
++        observation["depth_map"] = shared.copy()
++    return observation
++
++
++def _json_safe(value: Any) -> Any:
++    if hasattr(value, "tolist"):
++        return _json_safe(value.tolist())
++    if isinstance(value, dict):
++        return {str(key): _json_safe(child) for key, child in value.items()}
++    if isinstance(value, (list, tuple)):
++        return [_json_safe(child) for child in value]
++    if value is None or isinstance(value, (str, int, float, bool)):
++        return value
++    return str(value)
++
++
++def run_episode_with_diagnostics(
++    env: Any,
++    agent: Any,
++    *,
++    diagnose_fn: Any = diagnose_observation,
++    depth_map_fn: Any = _attach_depth_map,
++    seed: int = 42,
++    max_steps: int | None = None,
++) -> dict[str, Any]:
++    """Run an already-created environment and diagnose every pre-action state."""
++    records: list[dict[str, Any]] = []
++    terminated = truncated = False
++    try:
++        env.reset_settings()
++        env.reset_item_stream()
++        if not agent.get_init_states(env.get_init_states()):
++            raise RuntimeError("get_init_states returned false")
++        observation, _ = env.reset(seed=seed)
++        while not (terminated or truncated):
++            if max_steps is not None and len(records) >= max_steps:
++                break
++            observation = depth_map_fn(observation, env)
++            diagnostic = diagnose_fn(observation, observation_id=f"episode-{len(records):04d}")
++            action = agent.policy(observation)
++            pre_observation = copy.deepcopy(observation)
++            next_observation, _, terminated, truncated, info = env.step(action)
++            status = info.get("status", {}) if isinstance(info, dict) else {}
++            record = {
++                "observation_id": diagnostic["observation_id"],
++                "observation": _json_safe(pre_observation),
++                "trace_rows": diagnostic.get("trace_rows", []),
++                "probes": diagnostic.get("probes", []),
++                "lookahead": diagnostic.get("lookahead", -1),
++                "stop_reason_counts": diagnostic.get("stop_reason_counts", {}),
++                "time_to_first_exact_root_seconds": diagnostic.get("time_to_first_exact_root_seconds", []),
++                "recoverable": diagnostic.get("recoverable", False),
++                "action": _json_safe(action),
++                "status": _json_safe(status),
++            }
++            records.append(record)
++            if not isinstance(status, dict) or not all(bool(value) for value in status.values()):
++                raise RuntimeError(f"false environment status at step {len(records) - 1}: {status}")
++            observation = next_observation
++    finally:
++        env.close()
++    return {
++        "observations": records,
++        "completed_steps": len(records),
++        "terminated": terminated,
++        "truncated": truncated,
++    }
++
++
++def run_real_task_episode(
++    config: dict[str, Any],
++    *,
++    task_id: str,
++    requested_items: int,
++    seed: int = 42,
++    diagnose_fn: Any = diagnose_observation,
++    env_factory: Any = None,
++    agent_factory: Any = None,
++) -> dict[str, Any]:
++    """Create the real lazy PyBullet environment and run one control episode."""
++    if env_factory is None:
++        from src.ground_handling.env import GroundHandlingEnv
++
++        env_factory = lambda value: GroundHandlingEnv(config=value, verbose=False, render_mode=None)
++    if agent_factory is None:
++        from agents.highscore.agent import Agent
++
++        agent_factory = lambda path: Agent(path)
++    env = env_factory(config)
++    episode_owns_close = False
++    try:
++        agent = configure_mpc_agent(agent_factory("agents/highscore/"))
++        episode_owns_close = True
++        result = run_episode_with_diagnostics(
++            env,
++            agent,
++            diagnose_fn=diagnose_fn,
++            seed=seed,
++            max_steps=requested_items,
++        )
++        result["task"] = task_id
++        result["requested_items"] = requested_items
++        result["source"] = "task"
++        return result
++    finally:
++        # The episode helper owns closure after handoff; construction failures
++        # still close here because the handoff flag remains false.
++        if not episode_owns_close:
++            env.close()
++
++
++def load_and_diagnose_snapshots(
++    paths: Sequence[Path],
++    *,
++    loader: Any = None,
++    diagnose_fn: Any = diagnose_observation,
++) -> list[dict[str, Any]]:
++    if loader is None:
++        try:
++            from .replay_support import load_observation_snapshot
++        except ImportError:
++            from replay_support import load_observation_snapshot  # type: ignore
++
++        loader = load_observation_snapshot
++    rows: list[dict[str, Any]] = []
++    for path in sorted(Path(value) for value in paths):
++        observation, metadata = loader(path)
++        row = diagnose_fn(observation, observation_id=f"snapshot-{path.stem}")
++        row["source"] = "saved_snapshot"
++        row["source_file"] = str(path)
++        row["snapshot_metadata"] = metadata
++        rows.append(row)
++    return rows
++
++
++def materialize_manifest_observation(
++    template: dict[str, Any],
++    seed: int,
++    sample_config: dict[str, Any],
++    *,
++    warmup_runner: Any,
++    fresh_runner: Any | None = None,
++) -> dict[str, Any]:
++    """Materialize a case through an injected control warm-up lifecycle."""
++    case, metadata = materialize_case_with_metadata(template, seed, sample_config)
++    target = int(metadata["warmup_target_steps"])
++    warmup = warmup_runner(case, target, seed, metadata["initial_state"])
++    if not bool(warmup.get("all_safe", True)):
++        raise RuntimeError(f"manifest warm-up produced false status: {metadata}")
++    if metadata["initial_state"] == "preloaded":
++        packed = copy.deepcopy(warmup.get("packed_items", []))
++        packed_indices = {int(item["index"]) for item in packed if "index" in item}
++        containers = case["containers"]["container_list"]
++        for container in containers:
++            container["packed_items"] = []
++        for item in packed:
++            belongs_to = int(item.get("belongs_to", containers[0]["index"]))
++            destination = next((container for container in containers if container["index"] == belongs_to), containers[0])
++            destination["packed_items"].append(item)
++        case["item_stream"]["item_list"] = [
++            item for item in case["item_stream"]["item_list"] if int(item["index"]) not in packed_indices
++        ]
++        case["item_stream"]["visible_pool"] = []
++        if fresh_runner is None:
++            fresh_runner = warmup_runner
++        settled = fresh_runner(case, 0, seed, metadata["initial_state"])
++    else:
++        settled = warmup
++    if not bool(settled.get("all_safe", True)):
++        raise RuntimeError(f"manifest fresh initialization produced false status: {metadata}")
++    observation = copy.deepcopy(settled.get("observation", {}))
++    digest = materialized_case_hash(case)
++    metadata = dict(metadata)
++    metadata["materialized_sha256"] = digest
++    observation["materialized_config"] = case
++    observation["materialized_metadata"] = metadata
++    observation["materialized_sha256"] = digest
++    return observation
++
++
++def main(
++    argv: Sequence[str] | None = None,
++    *,
++    episode_runner: Any = None,
++    snapshot_loader: Any = None,
++    warmup_runner: Any = None,
++    diagnose_fn: Any = diagnose_observation,
++) -> int:
++    args = build_parser().parse_args(argv)
++    if args.aggregate is not None:
++        if args.manifest_output is not None:
++            atomic_write_json(args.manifest_output, _aggregate_materialized_manifest(args.aggregate))
++        atomic_write_json(args.output, _aggregate(args.aggregate))
++        return 0
++
++    rows: list[dict[str, Any]] = []
++    source_files: list[str] = []
++    root = Path(__file__).resolve().parents[1]
++    if args.task is not None:
++        sample = json.loads((root / "configs" / "sample_config.json").read_text(encoding="utf-8"))
++        if args.task not in sample:
++            raise ValueError(f"unknown task: {args.task}")
++        config = copy.deepcopy(sample[args.task])
++        requested_items = int(args.items or len(config["item_stream"]["item_list"]))
++        config["item_stream"]["item_list"] = config["item_stream"]["item_list"][:requested_items]
++        config["item_stream"]["look_ahead"] = min(
++            int(config["item_stream"].get("look_ahead", requested_items)), requested_items
++        )
++        config["agent"]["optimize"] = False
++        config["visualizer"]["vis"] = False
++        if episode_runner is None:
++            episode_runner = run_real_task_episode
++        result = episode_runner(
++            config,
++            task_id=args.task,
++            requested_items=requested_items,
++            diagnose_fn=diagnose_fn,
++        )
++        rows.extend(result.get("observations", []))
++        source_files.append(f"sample_config.json:{args.task}")
++    if args.include_saved_snapshots:
++        snapshot_paths = sorted((root / "tests" / "artifacts").glob("*.npz"))
++        rows.extend(load_and_diagnose_snapshots(snapshot_paths, loader=snapshot_loader, diagnose_fn=diagnose_fn))
++        source_files.extend(str(path) for path in snapshot_paths)
++    rows.extend(_materialized_rows(args, warmup_runner=warmup_runner, diagnose_fn=diagnose_fn))
++    payload = {
++        "schema_version": 1,
++        "manifest_sha256": manifest_hash(build_fixed_manifest()),
++        "observations": rows,
++        "source_files": source_files,
++    }
++    if args.include_fixed_manifest and args.manifest_output is not None:
++        atomic_write_json(args.manifest_output, _manifest_payload())
++    atomic_write_json(args.output, _json_safe(payload))
++    return 0
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git .superpowers/sdd/2026-08-18-quota-fair-ems-mpc/task-1-report.md .superpowers/sdd/2026-08-18-quota-fair-ems-mpc/task-1-report.md
+new file mode 100644
+index 0000000..860df57
+--- /dev/null
++++ .superpowers/sdd/2026-08-18-quota-fair-ems-mpc/task-1-report.md
+@@ -0,0 +1,159 @@
++# Task 1 — Phase-0 Diagnostic Core and Fixed Manifest
++
++## Status
++
++GREEN for the focused diagnostic/manifest/CLI suite, related catalog/EMS/MCTS
++regressions, and compile checks. No production files, Git state, dependencies,
++or submission artifacts were modified.
++
++## TDD evidence
++
++The manifest test first failed with the absent hand-recorded digest:
++
++```text
++AssertionError: '251d613dcd464f557a209923272c41d83656c0373dd88d18d747364dde213bef' != '__DIGEST__'
++```
++
++The CLI test first failed with the expected absent-module import error:
++
++```text
++ModuleNotFoundError: No module named 'tests.run_quota_fair_phase0'
++```
++
++After the minimal manifest digest and CLI implementation, the focused suite
++passed.
++
++## Verification
++
++Runtime:
++
++```text
++C:\Users\TAKUMI\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\python.exe
++```
++
++Commands and counts:
++
++```text
++python.exe -m unittest tests.test_quota_fair_starvation_diagnostics -q
++Ran 33 tests in 0.083s — OK
++
++python.exe -m unittest tests.test_highscore_catalog tests.test_highscore_ems tests.test_highscore_mcts -q
++Ran 54 tests in 0.283s — OK
++
++python.exe -m compileall -q tests/quota_fair_starvation_diagnostics.py tests/quota_fair_case_manifest.py tests/run_quota_fair_phase0.py
++success
++
++python.exe tests/run_quota_fair_phase0.py --help
++success; deferred PyBullet/Gymnasium imports were not loaded
++```
++
++Direct CLI aggregate smoke with an empty raw input also exited `0` and wrote
++the declared schema atomically.
++
++## Manifest
++
++- Literal template count: `16`
++- SHA-256: `251d613dcd464f557a209923272c41d83656c0373dd88d18d747364dde213bef`
++- Serialization: `json.dumps(tuple(cases), sort_keys=True, separators=(",", ":"))`
++- Materialization is deterministic for seed/template, JSON serializable, and
++  applies lookahead, two-container, shelf, attribute, ordering, and repeated
++  dimension transformations.
++
++## Scope review
++
++Changed files:
++
++- `simulator/tests/quota_fair_starvation_diagnostics.py`
++- `simulator/tests/test_quota_fair_starvation_diagnostics.py`
++- `simulator/tests/quota_fair_case_manifest.py`
++- `simulator/tests/run_quota_fair_phase0.py`
++- `.superpowers/sdd/2026-08-18-quota-fair-ems-mpc/task-1-report.md`
++
++Historical highscore production files were not touched; the final SHA-256
++scope check is:
++
++```text
++agents/highscore/catalog.py DDC1CD1D32BC573D2A0BAC0012A03DF1CDCE5DB347F7070C60BF7A4B77101CE4
++agents/highscore/ems.py     049C1AE81583E08689776D2A05FDD4148A202BE587E106E9CE6612FC51DD22DA
++agents/highscore/mcts.py    114E3D8ACC57895A5EFB578B62D80C89AE3F2AC20FB1FFEEFE279AE712E95A2E
++agents/highscore/agent.py   F7ACF36AC9C2B2D39CA609C0E1CFDAD8400CC7A408D21DABC4C507D2209130B5
++```
++
++## Concerns
++
++Historical note: before the Task 1D follow-up, the Phase-0 CLI physics warm-up
++and saved-snapshot execution were deferred to Task 2. The current Task 1
++runner is implemented and supports deterministic materialized manifest inputs,
++atomic writes, explicit raw-file aggregation, and injectable diagnosis; no
++WSL/PyBullet physical execution was performed. Physical execution remains a
++Task 2 concern.
++
++## Task 1C review follow-up
++
++The initial Sol-high review rejected the first Task 1 package. Its findings
++were addressed in the four Task 1 files only:
++
++- `diagnose_observation` now sorts all visible positions by
++  `(-urgency, item.index, pool_index)`, probes every position with fresh
++  independent measurements using the full observed catalog budget on every
++  probe, allocates classification fair shares by remaining-budget recurrence,
++  consumes remaining budget by `min(measured_elapsed, fair_share)`, and stores baseline reason, measurement, fair share, and
++  eligibility. Eligibility requires zero baseline roots, causal
++  `global_cap`/`catalog_deadline`, and a true immutable classification.
++- Aggregation requires every explicit raw input to carry the expected
++  lowercase 64-hex manifest digest, rejects hash conflicts and non-identical
++  duplicate observation IDs, and recomputes recoverability from trace/probe
++  evidence rather than a raw boolean.
++- Materialization now updates `camera.num_containers`, uses descending
++  `(volume, index)` ordering for large-to-small ties, records separate
++  `initial_state`/`density`/`warmup_target_steps` metadata, alternates the
++  two-container priority designation, and exposes a canonical materialized
++  case hash helper without adding metadata keys to the GroundHandlingEnv
++  config.
++
++The original Task 1 implementation did not record an absent-behavior RED for
++the diagnostic core before implementation; that TDD deviation is recorded
++explicitly here. The review follow-up added literal collaborator RED tests for
++full-pool urgency order, remaining-budget recurrence, eligibility mutation,
++manifest/hash conflicts, duplicate-row conflicts, metadata/camera/priority
++alternation, and canonical hashing; the focused suite is GREEN afterward.
++
++Historical note: at this review checkpoint Task 1D physical warm-up had not
++yet been implemented or run. The subsequent Task 1D follow-up implemented the
++lazy runner; physical execution is still pending Task 2.
++
++The follow-up RED specifically caught passing the fair-share slice as the
++probe budget and over-consuming remaining budget when a probe exceeded its
++slice; both tests are now GREEN.
++
++The final runner RED caught environment leaks when Agent construction raised
++before the prior try block; both warm-up and task-episode construction now
++enter the close-owning try block immediately after environment creation. A
++direct-mutation restoration test (without an outer mock context) verifies that
++normal and exceptional tracer calls restore the temporary catalog
++`propose_actions`, `apply_action`, and `time` references before the test's
++manual `finally` restoration.
++
++## Task 1D runner follow-up
++
++The lazy runner was then added without importing PyBullet/Gymnasium on module
++import: `--help` works under the Windows bundled runtime. Real task episodes
++use the highscore `Agent` with `use_mpc_mcts_ems=True`, attach the shared depth
++map, diagnose every pre-action observation, abort immediately on false status,
++and close the environment in `finally`. Saved snapshots are loaded through the
++existing non-pickle loader. Manifest warm-up supports empty/preloaded cases,
++target steps `0/8/16`, packed-pose serialization and stream-index removal,
++fresh reinitialization, canonical hashes, and materialized-case aggregate
++validation. The runner implementation is complete; physical execution is
++pending Task 2.
++
++Additional fake-runner tests cover each pre-action diagnosis, false-status
++abort/close, snapshot source preservation, preloaded pose/removal/fresh reset,
++task/items injection, materialized aggregate output, lookahead_k 20/40
++denominator handling, exact action identity/restoration after an external
++catalog exception, and depth-map attachment on every warm-up return path.
++Agent-construction close ownership is also covered for both warm-up and task
++episode runners.
++
++Final Task 1 status: runner implemented; physical WSL/PyBullet execution
++pending Task 2.

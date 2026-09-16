@@ -1,0 +1,7 @@
+test_captured_task000_recalls_at_least_24_of_25_and_rejects_step_25 (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_captured_task000_recalls_at_least_24_of_25_and_rejects_step_25) ... ok
+test_recovered_plane_margin_steps_are_accepted (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_recovered_plane_margin_steps_are_accepted) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 5.714s
+
+OK

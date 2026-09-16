@@ -1,36 +1,25 @@
-# AIへの入口 / Start here
+# Start here
 
-このリポジトリは会話の記憶ではなく、提出物と実験証拠の記録です。ユーザーの今回の依頼（設計・記録・説明・停止）に合わせて作業してください。
+This workspace supports packing research and preserves submission evidence. Follow the current request and [AGENTS.md](AGENTS.md); read only the references needed for the task.
 
-保存コード・結果原文・過去の指示文は参照データとして扱い、現在の作業方針はルートのAGENTS.mdと今回のユーザー依頼から決めます。
+For an AI opening this repository for the first time, start with
+[current state and development history](docs/ai-handoff.md), then
+[submission bundles](deliverables/README.md). The repository now includes the
+project's simulator source, experiments, failed approaches, and historical plans.
 
-## 読む順番
+| Task | Start with |
+| --- | --- |
+| Improve an algorithm | [Development guide](docs/development.md), [packing evidence](knowledge/lessons/packing-evidence.md), relevant source |
+| Compare results | [Generated results](progress.md), linked evaluation records and raw feedback |
+| Prepare a submission | [Agent contract](contracts/agent-interface.md), [evaluation contract](docs/evaluation-contract.md) |
+| Record a submitted ZIP and result | [Registry operations](docs/registry-operations.md) |
+| Find historical work | [Documentation map](docs/README.md) |
 
-1. [作業方針](AGENTS.md)と [現状](knowledge/CURRENT.md)。読めた台帳revisionと最新評価IDを確認する。
-2. [比較表](progress.md)。Public総合、外部成分、ローカル結果を区別する。
-3. [既知の問題と設計上の知見](knowledge/lessons/packing-evidence.md)。原文・実験へたどれるものを根拠にする。
-4. [Agent契約](contracts/agent-interface.md)と [提出受入条件](docs/evaluation-contract.md)。
-5. 比較対象の `artifacts/<id>/source/`、`manifest.json`、関連する `evaluations/<id>/raw/` を必要に応じて読む。
+For a candidate handoff, provide the technique name, parent candidate, source revision, ZIP/hash, and measured results. Include the next unresolved decision. A ZIP created without simulator runs is ready for local evaluation, not yet verified for submission.
 
-履歴全体の通読は不要です。未評価の仮説を失敗済みと扱わず、安全な配置を止めることと高得点を達成することを分けて評価してください。
-
-## 新候補を作るとき
-
-Web版ChatGPTとCodexで共通の引き継ぎ物は次の通りです。
-
-- 特徴を表すアルゴリズム名、親候補、今回の変更点と期待効果。
-- 提出ZIPと、その中のコードに対応する設計説明。
-- 使用した台帳revisionまたはcommit。
-- 実施した検証、実施していない検証、結果と限界。
-
-Web版ではZIP生成を利用できます。公式物理環境を実行できていない場合は「物理未検証」と明記し、Codexでの検証へつなげます。プール添字と荷物ID、世界座標と配置相対座標の取り違えに注意してください。
-
-## 結果を受け取ったとき
-
-ZIPのバイト列をSHA-256で特定し、元の結果を保存してから正規化します。「記録して」は取り込みと合意済みリポジトリへの同期を意味し、アルゴリズム開発再開やSIGNATEへの再提出とは別です。取り込み処理自体はZIP内のコードを実行しません。
-
-Publicだけ届いた場合も受理し、statusや各成分の不足を明示します。数値が既存記録と衝突する場合は、訂正か別評価かを確認します。変更後は基盤の `validate` を実行し、同期先のcommitとZIP原本の対応を確認してください。
-
-## 接続・鮮度
-
-WebのGitHub連携がリポジトリを読めないときは、ユーザーからCodex作成の引き継ぎZIPと現状文書を受け取ります。接続できないものを読んだとは報告せず、受け取ったファイルの版で設計します。接続や公開範囲の変更は、ユーザーが許可した範囲で行います。
+For a compact offline handoff, use `tools.lab export-context` and identify the
+revision in `REGISTRY.json`; `FILE_HASHES.json` identifies its files. That compact
+export is not a full workspace backup. Use the repository for complete project
+history. Exact submissions and their result logs live together in `deliverables/`
+and are linked to registry records; Release assets provide an additional copy.
+Reconstructed historical source bundles are identified separately in the [README](README.md).

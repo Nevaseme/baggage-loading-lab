@@ -1,0 +1,347 @@
+{
+  "source_hashes": {
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+    "agent.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c"
+  },
+  "snapshot_sha256": "46ba9f3eb606774553e42c0c6823ca239fafae0d3b46d2aea257ba96ce4c1d72",
+  "timing_contended": true,
+  "trials": [
+    {
+      "shortlist_limit": 96,
+      "max_authorizations": 384,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 6, 'authorizations': 96, 'rejections': {'transport': 96}, 'previews': [], 'elapsed': 1.4205935179999996, 'narrow_basins': [[0, 4, 2, 0], [0, 0, 0, 2], [0, 0, -1, 2], [0, 4, 2, -1], [0, 6, -2, 1], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 3, 0, 1], [0, 3, -1, 0], [0, 3, 0, 0], [0, 3, 0, -1]], 'candidate_basins': [[0, 4, 2, 0], [0, 0, 0, 2], [0, 0, -1, 2], [0, 4, 2, -1], [0, 6, -2, 1], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 3, 0, 1], [0, 3, -1, 0], [0, 3, 0, 0], [0, 3, 0, -1]], 'deferred_support_candidates': 0}",
+      "seconds": 1.4330359990000003,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 96,
+        "rejections": {
+          "transport": 96
+        },
+        "previews": [],
+        "elapsed": 1.4205935179999996,
+        "narrow_basins": [
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0
+      }
+    },
+    {
+      "shortlist_limit": 512,
+      "max_authorizations": 384,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 6, 'authorizations': 152, 'rejections': {'transport': 152}, 'previews': [], 'elapsed': 1.2254372459999985, 'narrow_basins': [[0, 4, 2, 0], [0, 0, 0, 2], [0, 0, -1, 2], [0, 4, 2, -1], [0, 6, -2, 1], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 3, 0, 1], [0, 3, -1, 0], [0, 3, 0, 0], [0, 3, 0, -1]], 'candidate_basins': [[0, 4, 2, 0], [0, 0, 0, 2], [0, 0, -1, 2], [0, 4, 2, -1], [0, 6, -2, 1], [0, 6, -3, 1], [0, 6, -2, 2], [0, 6, -3, 2], [0, 3, 0, 1], [0, 3, -1, 0], [0, 3, 0, 0], [0, 3, 0, -1]], 'deferred_support_candidates': 0}",
+      "seconds": 1.241721716999999,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 6,
+        "authorizations": 152,
+        "rejections": {
+          "transport": 152
+        },
+        "previews": [],
+        "elapsed": 1.2254372459999985,
+        "narrow_basins": [
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "candidate_basins": [
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            2
+          ],
+          [
+            0,
+            0,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            -1
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            3,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            -1,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            -1
+          ]
+        ],
+        "deferred_support_candidates": 0
+      }
+    }
+  ]
+}

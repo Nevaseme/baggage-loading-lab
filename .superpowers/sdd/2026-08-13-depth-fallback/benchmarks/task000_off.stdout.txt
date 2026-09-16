@@ -1,0 +1,405 @@
+transport item 0
+place item 0
+transport item 1
+place item 1
+transport item 2
+place item 2
+transport item 3
+place item 3
+transport item 4
+place item 4
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 7
+place item 7
+transport item 8
+place item 8
+transport item 9
+place item 9
+transport item 10
+place item 10
+transport item 11
+place item 11
+transport item 12
+place item 12
+transport item 13
+place item 13
+transport item 14
+place item 14
+transport item 15
+place item 15
+transport item 16
+collision: 16 and 13 at (np.float32(0.0), np.float32(-0.725), np.float32(0.163)), distance -0.11431700971669977
+item 16 not packable. removed.
+item 0 not inside (hit boundary plane), [ 1.05070309e-05 -9.09467698e-01 -1.53001051e+00 -1.01053230e+00
+ -4.00278298e-01 -1.38934429e+00 -2.06557061e-02]
+item 1 not inside (hit boundary plane), [ 0.01969862 -0.38797696 -1.54969862 -1.53202304 -0.7365029  -1.38900528
+ -0.02099472]
+item 2 not inside (hit boundary plane), [ 0.0054267  -0.32118894 -1.5354267  -1.59881106 -0.79198975 -1.38872641
+ -0.02127359]
+item 3 not inside (hit boundary plane), [ 1.91790535e-05 -2.13001745e-02 -1.53001918e+00 -1.89869983e+00
+ -9.97718011e-01 -1.16806313e+00 -2.41936872e-01]
+item 7 not inside (hit boundary plane), [ 0.00547886 -0.3420708  -1.53547886 -1.5779292  -0.77790451 -0.54693643
+ -0.86306357]
+item 8 not inside (hit boundary plane), [ 1.39216166e-05 -1.46033280e+00 -1.53001392e+00 -4.59667196e-01
+ -2.97238011e-02 -9.68657550e-01 -4.41342450e-01]
+item 9 not inside (hit boundary plane), [ 1.38366599e-05 -8.13367418e-01 -1.53001384e+00 -1.10663258e+00
+ -4.64919878e-01 -3.36827487e-01 -1.07317251e+00]
+item 10 not inside (hit boundary plane), [ 1.59290285e-04 -2.07073383e-02 -1.53015929e+00 -1.89929266e+00
+ -9.98013121e-01 -4.62044420e-01 -9.47955580e-01]
+item 13 not inside (hit boundary plane), [ 5.39836910e-06 -8.14657405e-01 -1.53000540e+00 -1.10534260e+00
+ -4.64058383e-01 -6.06825593e-02 -1.34931744e+00]
+{
+  "task": "000",
+  "requested_items": 25,
+  "monotone_ingress": "off",
+  "geometry_rescue": "off",
+  "completed_steps": 17,
+  "terminated": true,
+  "truncated": false,
+  "all_safe": false,
+  "max_policy_seconds": 1.000249913999994,
+  "optimize_seconds": 0.0,
+  "optimized_order": null,
+  "evaluation": {
+    "fill_score": 10.03187940232235,
+    "num_placed_items": 0.64
+  },
+  "records": [
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.2240000069141388,
+          0.46399998664855957,
+          0.1679999977350235
+        ],
+        "orientation": 0
+      },
+      "elapsed": 0.01726591199997074,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.3220230042934418,
+          0.46399998664855957,
+          0.24799999594688416
+        ],
+        "orientation": 0
+      },
+      "elapsed": 0.03672705200000337,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.7889999747276306,
+          0.5640000104904175,
+          0.27300000190734863
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.08797479300000077,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.8040000200271606,
+          0.16298699378967285,
+          0.4230000078678131
+        ],
+        "orientation": 2
+      },
+      "elapsed": 0.052153798999995615,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.22411300241947174,
+          0.5440000295639038,
+          0.47999298572540283
+        ],
+        "orientation": 1
+      },
+      "elapsed": 0.15356474800000797,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.27399998903274536,
+          0.5389999747276306,
+          1.0049769878387451
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.1211254080000117,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.8190000057220459,
+          0.24293099343776703,
+          1.0649950504302979
+        ],
+        "orientation": 2
+      },
+      "elapsed": 0.17838285600004156,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.3929310142993927,
+          -0.07806400209665298,
+          0.1979999989271164
+        ],
+        "orientation": 1
+      },
+      "elapsed": 0.2635485180000501,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.27415698766708374,
+          0.1178940013051033,
+          0.37299999594688416
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.32183405399996445,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.17856499552726746,
+          -0.2629089951515198,
+          0.27300000190734863
+        ],
+        "orientation": 1
+      },
+      "elapsed": 0.30627903700002435,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.6639999747276306,
+          -0.46399998664855957,
+          0.1679999977350235
+        ],
+        "orientation": 0
+      },
+      "elapsed": 0.3679629289999866,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.7139999866485596,
+          -0.5389999747276306,
+          0.6050209999084473
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.32052035899999964,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.7390000224113464,
+          -0.5440000295639038,
+          1.204977035522461
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.37200800799996614,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.17856599390506744,
+          -0.5389999747276306,
+          0.27300000190734863
+        ],
+        "orientation": 1
+      },
+      "elapsed": 0.3936584990000256,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.2470169961452484,
+          0.5490000247955322,
+          0.7560840249061584
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.4029171319999705,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          -0.2242179960012436,
+          -0.26293298602104187,
+          0.789995014667511
+        ],
+        "orientation": 4
+      },
+      "elapsed": 0.3697147900000459,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      }
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.0,
+          0.492000013589859,
+          0.16300000250339508
+        ],
+        "orientation": 0
+      },
+      "elapsed": 1.000249913999994,
+      "rescued_without_depth": false,
+      "status": {
+        "is_included": true,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "candidate_diagnostics": [
+        {
+          "pool_index": 0,
+          "item_index": 16,
+          "candidates": 18,
+          "seconds": 0.3083658560000231
+        }
+      ]
+    }
+  ]
+}
+close env.
+argv[0]=

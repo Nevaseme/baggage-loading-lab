@@ -1,0 +1,213 @@
+{
+  "source_hashes": {
+    "agent.py": "53c1f10bac420f79cef62b1f0c4e77a17436e1799908bab1f851d6a80b1649b4",
+    "authorizer.py": "d324c70ac36c15871c782d7b987c5d44363ccc954868dc54583fc7a72ac7a441",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "preview.py": "5960dd5b3c61377389dddeb7f1dbee5a2ecfe024e78dfa218995a096cb085ff3",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+  "actual_failure": {
+    "step": 17,
+    "action": {
+      "item_idx": 0,
+      "container_idx": 0,
+      "place_pos": [
+        0.5826834440231323,
+        -0.2478378713130951,
+        1.033853530883789
+      ],
+      "orientation": 0
+    },
+    "status": {
+      "is_included": true,
+      "is_valid": true,
+      "is_placed_safe": false
+    },
+    "policy_seconds": 3.3461283979999052,
+    "terminated": true,
+    "truncated": false
+  },
+  "trials": [
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ],
+        "orientation": 0
+      },
+      "safe": true,
+      "displacement": 0.1896641094764806,
+      "angle_degrees": 10.290445426464263,
+      "final_position": [
+        0.422959685981614,
+        -0.20737435529447354,
+        0.939920046907032
+      ],
+      "final_orientation": [
+        -0.01647938860622661,
+        -0.08810892699524145,
+        0.0027975328147885814,
+        0.9959705922089579
+      ],
+      "seconds": 0.9165463790000103,
+      "steps": 150,
+      "previously_inside": 12,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.039516320978104286,
+      "inclusion_margin": -0.005
+    },
+    {
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "place_pos": [
+          0.5826834440231323,
+          -0.2478378713130951,
+          1.033853530883789
+        ],
+        "orientation": 0
+      },
+      "safe": false,
+      "displacement": 0.4711238923477874,
+      "angle_degrees": 22.861214261231176,
+      "final_position": [
+        0.15253029179422292,
+        -0.1496714122898531,
+        0.8686586947317457
+      ],
+      "final_orientation": [
+        -0.01628876013071673,
+        -0.19748540907845077,
+        0.0031441526024682254,
+        0.9801654471562101
+      ],
+      "seconds": 1.5980375560000084,
+      "steps": 300,
+      "previously_inside": 12,
+      "newly_outside": [],
+      "lost_volume": 0.0,
+      "max_previous_displacement": 0.03980193181504901,
+      "inclusion_margin": -0.005
+    }
+  ],
+  "recovery": {
+    "outcome": "NoValidAction",
+    "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 60, 'authorizations': 3, 'rejections': {}, 'previews': [{'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 0, 'place_pos': [0.5826834440231323, -0.2478378713130951, 1.033853530883789]}, 'safe': False, 'displacement': 0.4711238923477874, 'angle_degrees': 22.861214261231176, 'final_position': [0.15253029179422292, -0.1496714122898531, 0.8686586947317457], 'final_orientation': [-0.01628876013071673, -0.19748540907845077, 0.0031441526024682254, 0.9801654471562101], 'seconds': 1.7712140230000841, 'steps': 300, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.03980193181504901, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 1, 'place_pos': [0.5826834440231323, -0.16783787310123444, 1.1138535737991333]}, 'safe': False, 'displacement': 0.45415702316277995, 'angle_degrees': 19.57241198513027, 'final_position': [0.16725613389976993, -0.06562570677113683, 0.9614349898080268], 'final_orientation': [0.6810260802403463, -0.11658673203876906, 0.12165262029035342, 0.7126090456354598], 'seconds': 1.7056414840000116, 'steps': 300, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.04035189571314616, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 4, 'place_pos': [0.5076834559440613, -0.16783787310123444, 1.1888536214828491]}, 'safe': False, 'displacement': 0.7441805540528421, 'angle_degrees': 74.31537245321398, 'final_position': [-0.13261309453730855, -0.09409437907379693, 0.8168496946747049], 'final_orientation': [-0.7012238206212363, 0.09236018687470626, 0.100634575659732, 0.6997338290061523], 'seconds': 1.6933507060000466, 'steps': 300, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.03952986013240681, 'inclusion_margin': -0.005}], 'elapsed': 6.574623392000035}",
+    "seconds": 6.577061771000103,
+    "diagnostics": {
+      "candidate_checks": 6500,
+      "combinations_visited": 60,
+      "authorizations": 3,
+      "rejections": {},
+      "previews": [
+        {
+          "action": {
+            "item_idx": 0,
+            "container_idx": 0,
+            "orientation": 0,
+            "place_pos": [
+              0.5826834440231323,
+              -0.2478378713130951,
+              1.033853530883789
+            ]
+          },
+          "safe": false,
+          "displacement": 0.4711238923477874,
+          "angle_degrees": 22.861214261231176,
+          "final_position": [
+            0.15253029179422292,
+            -0.1496714122898531,
+            0.8686586947317457
+          ],
+          "final_orientation": [
+            -0.01628876013071673,
+            -0.19748540907845077,
+            0.0031441526024682254,
+            0.9801654471562101
+          ],
+          "seconds": 1.7712140230000841,
+          "steps": 300,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.03980193181504901,
+          "inclusion_margin": -0.005
+        },
+        {
+          "action": {
+            "item_idx": 0,
+            "container_idx": 0,
+            "orientation": 1,
+            "place_pos": [
+              0.5826834440231323,
+              -0.16783787310123444,
+              1.1138535737991333
+            ]
+          },
+          "safe": false,
+          "displacement": 0.45415702316277995,
+          "angle_degrees": 19.57241198513027,
+          "final_position": [
+            0.16725613389976993,
+            -0.06562570677113683,
+            0.9614349898080268
+          ],
+          "final_orientation": [
+            0.6810260802403463,
+            -0.11658673203876906,
+            0.12165262029035342,
+            0.7126090456354598
+          ],
+          "seconds": 1.7056414840000116,
+          "steps": 300,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.04035189571314616,
+          "inclusion_margin": -0.005
+        },
+        {
+          "action": {
+            "item_idx": 0,
+            "container_idx": 0,
+            "orientation": 4,
+            "place_pos": [
+              0.5076834559440613,
+              -0.16783787310123444,
+              1.1888536214828491
+            ]
+          },
+          "safe": false,
+          "displacement": 0.7441805540528421,
+          "angle_degrees": 74.31537245321398,
+          "final_position": [
+            -0.13261309453730855,
+            -0.09409437907379693,
+            0.8168496946747049
+          ],
+          "final_orientation": [
+            -0.7012238206212363,
+            0.09236018687470626,
+            0.100634575659732,
+            0.6997338290061523
+          ],
+          "seconds": 1.6933507060000466,
+          "steps": 300,
+          "previously_inside": 12,
+          "newly_outside": [],
+          "lost_volume": 0.0,
+          "max_previous_displacement": 0.03952986013240681,
+          "inclusion_margin": -0.005
+        }
+      ],
+      "elapsed": 6.574623392000035
+    }
+  }
+}

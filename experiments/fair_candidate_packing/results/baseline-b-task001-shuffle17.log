@@ -1,0 +1,65 @@
+transport item 31
+place item 31
+transport item 24
+place item 24
+transport item 2
+place item 2
+transport item 37
+place item 37
+transport item 5
+place item 5
+transport item 9
+place item 9
+transport item 25
+place item 25
+transport item 6
+place item 6
+transport item 3
+place item 3
+transport item 36
+place item 36
+transport item 14
+place item 14
+transport item 28
+place item 28
+transport item 4
+place item 4
+transport item 21
+place item 21
+transport item 32
+place item 32
+transport item 35
+place item 35
+transport item 30
+place item 30
+transport item 41
+place item 41
+transport item 13
+place item 13
+transport item 29
+place item 29
+transport item 40
+place item 40
+transport item 12
+place item 12
+transport item 20
+place item 20
+transport item 39
+collision: 39 and 9 at (np.float32(0.0), np.float32(-0.76), np.float32(0.162)), distance -0.09286915234976413
+collision: 39 and 41 at (np.float32(0.0), np.float32(-0.76), np.float32(0.162)), distance -0.07832203593751061
+item 39 not packable. removed.
+item 31 not inside (hit boundary plane), [ 2.98224110e-05 -6.24911935e-01 -1.52002982e+00 -1.27508806e+00
+ -5.96235511e-01 -1.46183681e+00 -8.16319206e-03]
+item 24 not inside (hit boundary plane), [ 2.83764209e-05 -6.07018806e-01 -1.52002838e+00 -1.29298119e+00
+ -6.08423651e-01 -1.46293452e+00 -7.06547942e-03]
+item 2 not inside (hit boundary plane), [ 1.65657682e-05 -6.24900608e-01 -1.52001657e+00 -1.27509939e+00
+ -5.96252933e-01 -9.93844119e-01 -4.76155881e-01]
+item 9 not inside (hit boundary plane), [ 0.0739046  -0.62506343 -1.5939046  -1.27493657 -0.54204219 -0.3998543
+ -1.0701457 ]
+item 25 not inside (hit boundary plane), [ 7.79212723e-05 -5.28174194e-02 -1.52007792e+00 -1.84718258e+00
+ -9.85856124e-01 -6.94854567e-01 -7.75145433e-01]
+item 4 not inside (hit boundary plane), [-1.28995845e+00 -6.74727429e-01 -2.30041553e-01 -1.22527257e+00
+ -1.50681829e+00 -1.47001863e+00  1.86273257e-05]
+item 30 not inside (hit boundary plane), [-1.21929048 -0.00447153 -0.30070952 -1.89552847 -1.91159008 -0.7355912
+ -0.7344088 ]
+close env.

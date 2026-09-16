@@ -1,0 +1,397 @@
+{
+  "agent_module": "agents.support_extreme_fusion_beam_exact_mask.agent",
+  "all_safe": false,
+  "b_planner": "fixed-two-ply",
+  "completed_steps": 10,
+  "diagnostic": {
+    "b_search_traces": [
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 72,
+        "child_exact_attempts": 375,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 2,
+        "second_edges": 12,
+        "stage1_edges": 64,
+        "step": 0
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 1
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 2
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 3
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 4
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 5
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 64,
+        "step": 6
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 51,
+        "step": 7
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 46,
+        "step": 8
+      },
+      {
+        "admitted_items": 6,
+        "admitted_roots": 12,
+        "branch_exceptions": 0,
+        "child_covered_occurrences": 0,
+        "child_exact_attempts": 512,
+        "child_scans": 8,
+        "deadline_reached": false,
+        "deepest_proven_count": 1,
+        "second_edges": 0,
+        "stage1_edges": 26,
+        "step": 9
+      }
+    ]
+  },
+  "effective_items": 42,
+  "evaluation": {
+    "fill_score": 7.023491922335855,
+    "num_placed_items": 0.23809523809523808
+  },
+  "exception": {
+    "category": "candidate_zero",
+    "message": "strict root catalog is empty",
+    "step": 10,
+    "type": "CandidateZeroError"
+  },
+  "failure_snapshot": {
+    "path": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/results/support_extreme_fusion/task001-b-fixed-two-ply-seed42-failure.npz",
+    "sha256": "9b9e8bb7373258de012ba6db8fb5f0312b9c6a628f0d469b2ff7b649d7035a30"
+  },
+  "final_packed_count": 10,
+  "first_failure_predicate": null,
+  "first_failure_status": null,
+  "first_failure_step": null,
+  "outcome": "candidate_zero",
+  "policy_time_seconds": {
+    "count": 11,
+    "max": 2.6174417839999933,
+    "p50": 1.673046420999981,
+    "p95": 2.590856039500011,
+    "p99": 2.6121246350999967
+  },
+  "records": [
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 2,
+        "orientation": 0,
+        "place_pos": [
+          -0.2221941351890564,
+          0.0,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.356364037999981,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 0,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 0,
+        "place_pos": [
+          0.6169999837875366,
+          0.47699999809265137,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.23489784100002,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 1,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 0,
+        "place_pos": [
+          0.19777505099773407,
+          -0.47699999809265137,
+          0.18299999833106995
+        ]
+      },
+      "policy_seconds": 1.280970443000001,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 2,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 2,
+        "place_pos": [
+          0.8169999718666077,
+          -0.1124948039650917,
+          0.382999986410141
+        ]
+      },
+      "policy_seconds": 1.4009305140000379,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 3,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 0,
+        "place_pos": [
+          0.39580652117729187,
+          0.5019999742507935,
+          1.0019999742507935
+        ]
+      },
+      "policy_seconds": 1.673046420999981,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 4,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 0,
+        "place_pos": [
+          -0.6669999957084656,
+          -0.44300660490989685,
+          1.0019999742507935
+        ]
+      },
+      "policy_seconds": 1.876042568999992,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 5,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 2,
+        "place_pos": [
+          0.8169999718666077,
+          0.47699999809265137,
+          1.2070000171661377
+        ]
+      },
+      "policy_seconds": 2.2647851009999727,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 6,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 1,
+        "orientation": 3,
+        "place_pos": [
+          0.3208065330982208,
+          -0.4269999861717224,
+          0.4199921488761902
+        ]
+      },
+      "policy_seconds": 2.5642702950000285,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 7,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 4,
+        "orientation": 1,
+        "place_pos": [
+          -0.6669999957084656,
+          -0.41250184178352356,
+          1.2999905347824097
+        ]
+      },
+      "policy_seconds": 2.6174417839999933,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 8,
+      "terminated": false,
+      "truncated": false
+    },
+    {
+      "action": {
+        "container_idx": 0,
+        "item_idx": 9,
+        "orientation": 2,
+        "place_pos": [
+          -0.42219412326812744,
+          -0.47699999809265137,
+          0.382999986410141
+        ]
+      },
+      "policy_seconds": 2.3079150880000157,
+      "status": {
+        "is_included": true,
+        "is_placed_safe": true,
+        "is_valid": true
+      },
+      "status_well_formed": true,
+      "step": 9,
+      "terminated": false,
+      "truncated": false
+    }
+  ],
+  "requested_items": 42,
+  "requested_mode": "B",
+  "resolved_mode": "B",
+  "safe_placements": 10,
+  "seed": 42,
+  "task": "001",
+  "terminated": false,
+  "truncated": false
+}

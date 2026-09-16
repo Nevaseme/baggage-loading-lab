@@ -1,0 +1,539 @@
+{
+  "default_normal_only": {
+    "elapsed_seconds": 1.0826713000424206,
+    "records": [],
+    "root_count": 0,
+    "roots_per_container": {},
+    "roots_per_orientation": {},
+    "roots_per_pass": {},
+    "roots_per_pool": {},
+    "roots_per_source": {},
+    "stats": {
+      "accepted_roots": 0,
+      "deadline_reached": false,
+      "deferred_roots": 0,
+      "duplicate_roots": 0,
+      "exact_attempts": 4846,
+      "first_root_stage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fixed_exact_attempt_cap": 0,
+      "fixed_pools_attempted": 0,
+      "fixed_pools_covered": 0,
+      "fixed_quota_exhausted": false,
+      "global_cap_reached": false,
+      "item_exceptions": [],
+      "normal_roots": 0,
+      "passes_completed": [
+        "coverage",
+        "scarcity"
+      ],
+      "per_pool_raw": [
+        486,
+        486,
+        486,
+        486,
+        482,
+        482,
+        482,
+        484,
+        486,
+        486
+      ],
+      "per_pool_roots": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_examined": 4846,
+      "rejection_counts": [
+        [
+          "collision_or_clearance",
+          4310
+        ],
+        [
+          "depth_map",
+          57
+        ],
+        [
+          "plane_inclusion",
+          210
+        ],
+        [
+          "protection",
+          10
+        ],
+        [
+          "support_ratio",
+          191
+        ],
+        [
+          "transport",
+          68
+        ]
+      ],
+      "rescue_roots": 0,
+      "stage_attempts": [
+        [
+          "normal.free_probe",
+          160
+        ],
+        [
+          "normal.obstacle_probe",
+          144
+        ],
+        [
+          "normal.plane_probe",
+          160
+        ],
+        [
+          "normal.free_deepen",
+          1060
+        ],
+        [
+          "normal.obstacle_deepen",
+          960
+        ],
+        [
+          "normal.plane_deepen",
+          1096
+        ],
+        [
+          "normal.compact",
+          360
+        ],
+        [
+          "normal.legacy",
+          906
+        ]
+      ],
+      "stage_roots": []
+    }
+  },
+  "generous_edge_trace": {
+    "apply_ok_roots": 0,
+    "catalog_roots": 0,
+    "current_binding_roots": 0,
+    "edges": []
+  },
+  "generous_scan": {
+    "elapsed_seconds": 1.1236338000162505,
+    "records": [],
+    "root_count": 0,
+    "roots_per_container": {},
+    "roots_per_orientation": {},
+    "roots_per_pass": {},
+    "roots_per_pool": {},
+    "roots_per_source": {},
+    "stats": {
+      "accepted_roots": 0,
+      "deadline_reached": false,
+      "deferred_roots": 0,
+      "duplicate_roots": 0,
+      "exact_attempts": 7226,
+      "first_root_stage": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "fixed_exact_attempt_cap": 0,
+      "fixed_pools_attempted": 0,
+      "fixed_pools_covered": 0,
+      "fixed_quota_exhausted": false,
+      "global_cap_reached": false,
+      "item_exceptions": [],
+      "normal_roots": 0,
+      "passes_completed": [
+        "coverage",
+        "scarcity",
+        "rescue"
+      ],
+      "per_pool_raw": [
+        724,
+        724,
+        724,
+        724,
+        720,
+        720,
+        720,
+        722,
+        724,
+        724
+      ],
+      "per_pool_roots": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_examined": 7226,
+      "rejection_counts": [
+        [
+          "collision_or_clearance",
+          6667
+        ],
+        [
+          "depth_map",
+          57
+        ],
+        [
+          "plane_inclusion",
+          210
+        ],
+        [
+          "protection",
+          10
+        ],
+        [
+          "support_ratio",
+          191
+        ],
+        [
+          "transport",
+          91
+        ]
+      ],
+      "rescue_roots": 0,
+      "stage_attempts": [
+        [
+          "normal.free_probe",
+          160
+        ],
+        [
+          "normal.obstacle_probe",
+          144
+        ],
+        [
+          "normal.plane_probe",
+          160
+        ],
+        [
+          "normal.free_deepen",
+          1060
+        ],
+        [
+          "normal.obstacle_deepen",
+          960
+        ],
+        [
+          "normal.plane_deepen",
+          1096
+        ],
+        [
+          "normal.compact",
+          360
+        ],
+        [
+          "normal.legacy",
+          906
+        ],
+        [
+          "rescue.dense_last",
+          2380
+        ]
+      ],
+      "stage_roots": []
+    }
+  },
+  "last_online_edge_trace": {
+    "apply_ok_roots": 0,
+    "catalog_roots": 0,
+    "current_binding_roots": 0,
+    "edges": []
+  },
+  "metadata": {
+    "exception_category": "candidate_zero",
+    "exception_message": "strict root catalog is empty",
+    "exception_type": "CandidateZeroError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 15,
+    "task": "001"
+  },
+  "online_repeats": [
+    {
+      "beam_budget_remaining_at_entry": 3.924221699940972,
+      "beam_returned_root": false,
+      "beam_seconds": 1.009996049106121e-05,
+      "elapsed_seconds": 1.3738124999799766,
+      "policy_elapsed_before_beam": 1.3757783000473864,
+      "records": [],
+      "repeat": 0,
+      "root_count": 0,
+      "roots_per_container": {},
+      "roots_per_orientation": {},
+      "roots_per_pass": {},
+      "roots_per_pool": {},
+      "roots_per_source": {},
+      "stats": {
+        "accepted_roots": 0,
+        "deadline_reached": false,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 7226,
+        "first_root_stage": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "fixed_exact_attempt_cap": 0,
+        "fixed_pools_attempted": 0,
+        "fixed_pools_covered": 0,
+        "fixed_quota_exhausted": false,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "rescue"
+        ],
+        "per_pool_raw": [
+          724,
+          724,
+          724,
+          724,
+          720,
+          720,
+          720,
+          722,
+          724,
+          724
+        ],
+        "per_pool_roots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_examined": 7226,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            6667
+          ],
+          [
+            "depth_map",
+            57
+          ],
+          [
+            "plane_inclusion",
+            210
+          ],
+          [
+            "protection",
+            10
+          ],
+          [
+            "support_ratio",
+            191
+          ],
+          [
+            "transport",
+            91
+          ]
+        ],
+        "rescue_roots": 0,
+        "stage_attempts": [
+          [
+            "normal.free_probe",
+            160
+          ],
+          [
+            "normal.obstacle_probe",
+            144
+          ],
+          [
+            "normal.plane_probe",
+            160
+          ],
+          [
+            "normal.free_deepen",
+            1060
+          ],
+          [
+            "normal.obstacle_deepen",
+            960
+          ],
+          [
+            "normal.plane_deepen",
+            1096
+          ],
+          [
+            "normal.compact",
+            360
+          ],
+          [
+            "normal.legacy",
+            906
+          ],
+          [
+            "rescue.dense_last",
+            2380
+          ]
+        ],
+        "stage_roots": []
+      },
+      "total_seconds": 1.3757884000078775
+    }
+  ],
+  "placed_items": 15,
+  "pool": [
+    {
+      "dimensions": [
+        0.65,
+        0.35,
+        0.23
+      ],
+      "item_index": 7,
+      "pool_index": 0,
+      "prioritized": false,
+      "soft": true
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.35,
+        0.23
+      ],
+      "item_index": 8,
+      "pool_index": 1,
+      "prioritized": false,
+      "soft": true
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.35,
+        0.23
+      ],
+      "item_index": 9,
+      "pool_index": 2,
+      "prioritized": false,
+      "soft": true
+    },
+    {
+      "dimensions": [
+        0.75,
+        0.56,
+        0.27
+      ],
+      "item_index": 16,
+      "pool_index": 3,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 17,
+      "pool_index": 4,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 19,
+      "pool_index": 5,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 21,
+      "pool_index": 6,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.6,
+        0.3,
+        0.25
+      ],
+      "item_index": 22,
+      "pool_index": 7,
+      "prioritized": false,
+      "soft": true
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "item_index": 23,
+      "pool_index": 8,
+      "prioritized": true,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.75,
+        0.56,
+        0.27
+      ],
+      "item_index": 24,
+      "pool_index": 9,
+      "prioritized": false,
+      "soft": false
+    }
+  ],
+  "snapshot": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator\\results\\support_extreme_fusion\\task001-b-maxrects-regret-seed42-failure.npz",
+  "state_build_seconds": 0.001739799976348877
+}

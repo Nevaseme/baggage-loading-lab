@@ -1,43 +1,47 @@
-# Baggage-Loading: working agreement
+# Baggage Loading
 
-Reviewed 2026-09-08 for GPT-6 Astra. These are project instructions, not model/runtime configuration.
+Updated 2026-09-16 for GPT-6 Astra. These are project instructions, not runtime settings.
 
-## Outcome and scope
+## Objective
 
-Develop a physically reliable baggage-packing algorithm with evidence supporting a Public score of at least 60, and deliver an independently verified submission ZIP. Public evaluation decides score attainment; local proxies guide experiments.
+Build a physically reliable packing algorithm, achieve a verified Public score of at least 60, and deliver an independently checked submission ZIP. Optimize score and completed episodes; local proxies guide experiments.
 
-Follow the user's current request. During authorized development, carry design, implementation, comparison, and packaging through to a reviewable outcome. Status requests are read-only. On a pause, preserve work, stop owned development workers/runs using available controls, and report any unconfirmed stopping state. Resume development when requested.
+## Work autonomously
 
-## Evidence-led decisions
+Carry authorized work through implementation, relevant verification, and handoff. Refactor or replace ineffective approaches freely. Ask only when missing information or authority blocks the outcome; local changes need no extra design-approval round.
 
-Start from the current code and relevant evidence in [progress.md](progress.md), not an old task checklist. Separate measured facts, hypotheses, and unknowns. Before a substantial experiment, state the expected benefit, matched baseline, and result that would change the decision. At a meaningful result or repeated failure, reassess whether the next action advances score, safety, or a necessary delivery gate. Record the decision and supporting evidence briefly.
+Scale skills, planning, reviews, and tests to the work. Skip redundant ceremonies and repeated checks. Current user instructions override skill procedures. Historical plans and `.superpowers/` records supply evidence, not active assignments or stopping rules.
 
-Choose algorithms freely, including separate planners for modes A/B/C. Retain, revise, or replace a hypothesis on evidence; an interrupted experiment is unevaluated, not disproved. Prefer controlled changes for causal comparisons; architectural changes are welcome with matched evaluation and focused ablations. Revise stale project procedures with a dated reason while preserving original measurements and user acceptance targets.
+Delegate bounded work when useful. Choose models for the task; give each worker an outcome, file ownership, and acceptance check. Reconcile their work before handoff.
 
-## Working style and authority
+Communicate with the user in concise Japanese, including progress updates and final responses. Keep project documents in English unless requested otherwise. State the result, evidence, and next decision; mention limitations that affect the decision. On pause, preserve the checkpoint and stop owned workers and runs.
 
-Use reasonable assumptions for routine, reversible decisions within the authorized task. Ask a focused question when missing user-only information or new authority materially blocks the result. Scale planning, documentation, and review to the change; an already authorized local edit can proceed without a second design-approval round. This is the user's project preference where a skill prescribes additional process; system/developer instructions, tool permissions, and explicit user approval boundaries still apply. If a skill actually blocks work, identify its file, relevant requirement, and concrete impact.
+## Develop from evidence
 
-Treat dated plans and `.superpowers/sdd/` briefs as historical context until deliberately selected and reconciled with this agreement. Their old model assignments, stopping rules, and checkboxes describe that experiment. Read the needed sections, rather than loading the entire archive. Use concise Japanese updates: outcome, evidence, remaining uncertainty, next decision.
+Start from current code and the relevant results. Before a substantial experiment, identify the expected gain, matched control, and decision criterion. Compare modes A/B/C separately. Record what changed, what happened, and what to try next; retain failed results and treat interrupted experiments as unevaluated.
 
-## Models and collaboration
+Preserve the public `Agent` interface. Validate every returned action, including fallback, against current state and official semantics. Calibrate extra safety heuristics against physics: rejecting safe placements also costs score. Keep scored artifacts unchanged; develop successors in separate packages with technique-based names.
 
-Use the active orchestrator's judgment (GPT-6 Astra at this review). For useful, bounded parallel work, the default subagent is `gpt-5.6-luna` with `max` reasoning. Choose a different available model or effort when complexity, review independence, reliability, latency, or total task cost warrants it; record a short reason for a material change. Architecture and review are not fixed to Sol. Check the actual tool's supported model/effort combinations at dispatch.
+Use existing runtimes and Git setup. Local tests and experiments are authorized during development.
 
-Delegate when the expected time or quality gain exceeds coordination cost. Give each worker an outcome, relevant evidence, file ownership, and acceptance check. Use one writer per shared file scope; reviewers start read-only. Reuse existing workers where useful and reconcile their outputs before integration. Complete or interrupt owned workers at handoff so delegated work remains accounted for.
+## Read by task
 
-## Implementation and delivery
+- Results: [progress.md](progress.md), generated from the registry; change records through `tools.lab`.
+- Development: [development guide](docs/development.md) and [packing evidence](knowledge/lessons/packing-evidence.md). Keep new experiment notes under `experiments/`.
+- Interface: [Agent contract](contracts/agent-interface.md); local `simulator/README.md` and `simulator/src/ground_handling/` are authoritative.
+- Submission: [evaluation contract](docs/evaluation-contract.md). Full promotion checks apply to submission candidates.
+- ZIP/result intake: [registry operations](docs/registry-operations.md). Preserve originals, record, validate, and synchronize to the agreed private repository. Intake alone does not resume development or submit to SIGNATE.
 
-Preserve the simulator's public `Agent` interface and action dictionary. Every returned action, including fallback, goes through current-state validation aligned with the official implementation. Calibrate additional safety heuristics against physics; distinguish scoring preferences and stability proxies from official validity predicates.
+## Share complete context
 
-Use descriptive technique-based names: `snake_case` packages and descriptive kebab-case archives. Historical names stay intact; verified Public scores belong in submission records. Preserve scored artifacts and develop successors in independent packages. Use project-local/configured runtimes, configured authentication with secret-free reporting, and the existing workspace's version-control setup; Git initialization and commits remain user-authorized actions.
+Store every new submission in `deliverables/YYYY-MM-DD-technique/`, with its exact
+ZIP, `result-log.txt`, hashes, and links to registry records. Use a fresh suffixed
+folder for a repeat; never place unrelated result logs beside each other or
+overwrite feedback. Build new submission ZIPs directly into their bundle folder.
 
-Run checks proportionate to the change. Documentation edits need consistency/link checks; behavior changes need relevant unit/regression and physical comparisons. Submission promotion uses the full [evaluation contract](docs/evaluation-contract.md). Repeat or broaden passed checks when changed code or unresolved evidence justifies it. Record submitted artifacts, hashes, verified Public scores, statuses, and available components in `progress.md`; label unavailable values pending and local substitutes as proxies.
-
-## Context map
-
-For the submission/result feedback loop, use [START_HERE.md](START_HERE.md) and [registry operations](docs/registry-operations.md). A user-provided submitted ZIP together with its result is an intake request unless they specify another purpose: preserve the originals, use `tools.lab`, add the method/evidence notes, validate, and synchronize to the agreed private repository. Ask only when the artifact/result association or required authority is genuinely ambiguous. Intake alone does not resume algorithm development or submit to SIGNATE.
-
-- [Documentation map](docs/README.md): current references and historical plans.
-- [Agent interface](contracts/agent-interface.md): portable contract. The user-provided `simulator/README.md` and `simulator/src/ground_handling/` remain the authoritative local implementation; official distribution files are not part of the initial GitHub upload.
-- [Instruction audit](docs/2026-09-08-instruction-audit.md): rationale, sources, and remaining limits; read when revising this agreement.
+The user authorizes the complete project record in the private GitHub repository:
+source, official simulator source/configuration, tests, experiments including
+failures, historical plans, analysis, and submissions. Preserve evidence bytes.
+Exclude installed runtimes/dependencies, disposable caches, nested Git databases,
+and authentication material. Keep [the AI handoff](docs/ai-handoff.md) current and
+verify remote commit and submission/result hashes after synchronization.

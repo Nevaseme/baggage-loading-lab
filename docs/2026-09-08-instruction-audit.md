@@ -1,3 +1,5 @@
+> Historical record. Current instructions: root AGENTS.md. Current development context: docs/development.md.
+
 # GPT-6 Astra向けプロジェクト指示の監査
 
 確認日：2026-09-08。対象は指示書の改訂。アルゴリズム開発は一時停止を継続。

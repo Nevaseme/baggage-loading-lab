@@ -1,0 +1,6 @@
+test_effective_lift_has_zero_default_and_ceiling_clipped_partial_values (tests.test_portal_reserved_scaffold_authorizer.PortalReservedScaffoldAuthorizerTests.test_effective_lift_has_zero_default_and_ceiling_clipped_partial_values) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.028s
+
+OK

@@ -1,0 +1,68 @@
+preview step=0 safe=True displacement=0.007014
+transport item 2
+place item 2
+preview step=1 safe=True displacement=0.007037
+transport item 5
+place item 5
+preview step=2 safe=True displacement=0.007014
+transport item 6
+place item 6
+preview step=3 safe=True displacement=0.005018
+transport item 10
+place item 10
+preview step=4 safe=True displacement=0.020967
+transport item 0
+place item 0
+preview step=5 safe=True displacement=0.005030
+transport item 1
+place item 1
+preview step=6 safe=True displacement=0.019550
+transport item 7
+place item 7
+preview step=7 safe=True displacement=0.005021
+transport item 15
+place item 15
+preview step=8 safe=True displacement=0.029709
+transport item 8
+place item 8
+preview step=9 safe=True displacement=0.032560
+transport item 9
+place item 9
+preview step=10 safe=True displacement=0.018012
+transport item 16
+place item 16
+preview step=11 safe=True displacement=0.018011
+transport item 3
+place item 3
+preview step=12 safe=True displacement=0.006017
+transport item 20
+place item 20
+preview step=13 safe=True displacement=0.028452
+transport item 22
+place item 22
+preview step=14 safe=True displacement=0.018012
+transport item 4
+place item 4
+preview step=15 safe=True displacement=0.006018
+transport item 11
+place item 11
+preview step=16 safe=True displacement=0.006017
+transport item 19
+place item 19
+preview step=17 safe=True displacement=0.042266
+transport item 17
+place item 17
+preview step=18 safe=True displacement=0.047743
+transport item 27
+place item 27
+preview step=19 safe=True displacement=0.075415
+transport item 23
+place item 23
+preview step=20 safe=True displacement=0.064701
+transport item 12
+place item 12
+preview step=21 safe=True displacement=0.214842
+transport item 13
+place item 13
+preview step=22 safe=False displacement=0.321407
+close env.

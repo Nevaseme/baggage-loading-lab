@@ -1,0 +1,22 @@
+{
+  "status": "frozen_for_full_benchmark_not_promotion",
+  "source_hashes": {
+    "agent.py": "ab4cc2078e90e6cd30e3001f020103a16d267c0dd7d8d4521171b13f346c6c01",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "mesh.py": "d979764cddda924defcc9d7da5ab2f7d428de509dd74eac962eacb3931787a37",
+    "motion.py": "eec238be877e1655cae82c83f593eaf71794d4c31359f522cecb691b2902e7bc",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "a00d17b909162d07e9a32720246534da9ff3757dc43fbbc738d1dd48edd86d94",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "tests_passed": 3,
+  "test_seconds": 1.237,
+  "policy_seconds": 7.2,
+  "max_authorizations": 384,
+  "mode_c_historical_prefix": true,
+  "mode_a_ordering": "unchanged historical.optimize",
+  "mode_b_ranking": "unchanged controlled_drop proposals",
+  "every_return": "native validation plus complete safe300 motion preview then commit selected frame"
+}

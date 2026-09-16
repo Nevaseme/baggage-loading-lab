@@ -1,0 +1,33 @@
+{
+  "fix_round": "1",
+  "working_directory": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator",
+  "physical_command": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m tests.run_historical_conservative_extreme_point_physics --task 000 --items 41 --seed 42 --output results/portal_reserved_scaffold/historical-task000-captured.json --snapshot-on-failure results/portal_reserved_scaffold/historical-task000-failure.npz --capture-all-snapshots results/portal_reserved_scaffold/historical-task000-snapshots'",
+  "replay_command": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m tests.replay_historical_predicates --manifest results/portal_reserved_scaffold/historical-task000-snapshots/manifest.json --episode-result results/portal_reserved_scaffold/historical-task000-captured.json --output results/portal_reserved_scaffold/historical-task000-predicate-recall.json'",
+  "runtime": {
+    "python_executable": "simulator/.venv_wsl/bin/python",
+    "python_executable_resolved": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/.venv_wsl/bin/python",
+    "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "numpy_version": "2.5.2",
+    "pybullet_api_version": "202010061",
+    "pybullet_module": "simulator/.test_deps_linux/pybullet.cpython-312-x86_64-linux-gnu.so",
+    "pythonpath": ".:tests:.test_deps_linux",
+    "windows_signate_runtime": "simulator/.signate_venv/Scripts/python.exe (ModuleNotFoundError: numpy; not used for evidence)"
+  },
+  "source_hashes": {
+    "replay_historical_predicates.py": "79a6c000d9caa2b8741128bf3e6f71331319b3f3bacd0eff9286ec01c638a309",
+    "run_historical_conservative_extreme_point_physics.py": "9a21ca63619617552b8c45650da2e79d0862d5e1ac84899cd3f193d526f612d3",
+    "test_replay_historical_predicates.py": "1d43a441327ceae862d4dec85375cf216e8ebe4d44d484553dd9aa3812cb5cc0"
+  },
+  "raw_logs": {
+    "focused": "simulator/results/portal_reserved_scaffold/fix-round-1-focused.log",
+    "regression": "simulator/results/portal_reserved_scaffold/fix-round-1-regression.log",
+    "physical": "simulator/results/portal_reserved_scaffold/fix-round-1-physical.log",
+    "replay": "simulator/results/portal_reserved_scaffold/fix-round-1-replay.log"
+  },
+  "submit_manifest": {
+    "recipe": "Enumerate regular files recursively under submit/, derive POSIX relative paths, sort paths lexicographically by code point, emit one UTF-8 line per file as <relative_path> TAB <lowercase SHA-256(file bytes)> LF, then SHA-256 the complete UTF-8 manifest text.",
+    "file_count": 20,
+    "sha256": "95e6acacfb773b80b26df4d18a9ecaa514cd8cfeea4623f46aebd830b01b870c",
+    "matches_parent_baseline": true
+  }
+}

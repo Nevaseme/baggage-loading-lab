@@ -1,0 +1,1 @@
+{"fill_score": 33.67772631786438, "cog_score": 32.48358437295867, "stability_score": 38.049114361662156, "placement_score": 20.2, "soft_item_score": 14.85, "num_placed_items": 0.45828610097631833, "time_results": {"optimization": 48.07555305000005, "policy": 3.312981051999941}, "status": "Stopped in the middle. Did not satisfy {'is_placed_safe', 'is_valid'}"}

@@ -1,0 +1,6 @@
+{
+  "use_ingress_lookahead": false,
+  "use_settling_preview": true,
+  "use_historical_prefix_a": false,
+  "use_historical_prefix_c": true
+}

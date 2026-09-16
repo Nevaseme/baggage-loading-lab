@@ -1,0 +1,46 @@
+transport item 9
+place item 9
+transport item 31
+place item 31
+transport item 41
+place item 41
+transport item 2
+place item 2
+transport item 0
+place item 0
+transport item 25
+place item 25
+transport item 27
+place item 27
+transport item 37
+place item 37
+transport item 5
+place item 5
+transport item 3
+place item 3
+transport item 24
+place item 24
+transport item 22
+place item 22
+transport item 29
+place item 29
+transport item 36
+place item 36
+transport item 14
+place item 14
+transport item 39
+place item 39
+transport item 6
+collision: 6 and 9 at (np.float32(0.0), np.float32(-0.76), np.float32(0.187)), distance -0.16891228825714638
+collision: 6 and 0 at (np.float32(0.0), np.float32(-0.76), np.float32(0.187)), distance -0.1606422237443584
+collision: 6 and 27 at (np.float32(0.0), np.float32(-0.76), np.float32(0.187)), distance -0.0463224022822054
+item 6 not packable. removed.
+item 9 not inside (hit boundary plane), [ 0.06704437 -0.62543218 -1.58704437 -1.27456782 -0.54681401 -0.40045969
+ -1.06954031]
+item 31 not inside (hit boundary plane), [ 8.99650627e-06 -6.07079205e-01 -1.52000900e+00 -1.29292080e+00
+ -6.08396703e-01 -1.46284095e+00 -7.15905121e-03]
+item 41 not inside (hit boundary plane), [ 0.01908483 -0.00794995 -1.53908483 -1.89205005 -1.00249892 -0.45001929
+ -1.01998071]
+item 37 not inside (hit boundary plane), [-1.05998528 -1.89737814 -0.46001472 -0.00262186 -0.50568277 -0.99575877
+ -0.47424123]
+close env.

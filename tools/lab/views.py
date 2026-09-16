@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Any
 
 from .archive import sha256_bytes
-from .registry import SCHEMA_VERSION, _canonical_json, _read_json, _write_bytes_atomic
+from .registry import SCHEMA_VERSION, _canonical_json, _read_json, _write_bytes_atomic, validate_id
 
 
 def _artifact_records(root: Path) -> list[dict[str, Any]]:
@@ -72,6 +72,34 @@ def _display(value: Any, fallback: str = "pending") -> str:
     return str(value)
 
 
+def _cell(value: Any, fallback: str = "pending") -> str:
+    """Render arbitrary record text as one safe Markdown table cell."""
+
+    return (
+        _display(value, fallback)
+        .replace("\\", "\\\\")
+        .replace("|", "\\|")
+        .replace("\r\n", "<br>")
+        .replace("\r", "<br>")
+        .replace("\n", "<br>")
+    )
+
+
+def _evaluation_link(value: Any) -> str:
+    """Link a valid evaluation ID, while keeping malformed data printable."""
+
+    if value is None or value == "":
+        return ""
+    label = _cell(value, "")
+    if not isinstance(value, str):
+        return label
+    try:
+        validate_id(value, prefix="evaluation-")
+    except ValueError:
+        return label
+    return f"[{label}](evaluations/{value}/record.json)"
+
+
 def _progress(root: Path, revision: str) -> bytes:
     artifacts = _artifact_records(root)
     evaluations = _evaluation_records(root)
@@ -90,8 +118,8 @@ def _progress(root: Path, revision: str) -> bytes:
     if artifacts:
         for manifest in sorted(artifacts, key=lambda item: str(item.get("artifact_id", ""))):
             artifact_id = str(manifest.get("artifact_id", "unknown"))
-            algorithm = str(manifest.get("algorithm_name", "unknown")).replace("|", "\\|")
-            archive = _display(manifest.get("archive_availability"))
+            algorithm = _cell(manifest.get("algorithm_name"), "unknown")
+            archive = _cell(manifest.get("archive_availability"))
             files = manifest.get("source_file_hashes")
             count = len(files) if isinstance(files, dict) else 0
             lines.append(
@@ -104,24 +132,25 @@ def _progress(root: Path, revision: str) -> bytes:
             "",
             "## Evaluations",
             "",
-            "| Evaluation | Artifact | Kind | Public score | Rounded | Status |",
-            "|---|---|---|---:|---|---|",
+            "| Evaluation | Artifact | Kind | Public score | Rounded | Status | Supersedes |",
+            "|---|---|---|---:|---|---|---|",
         ]
     )
     if evaluations:
         for record in sorted(evaluations, key=lambda item: str(item.get("evaluation_id", ""))):
             evaluation_id = str(record.get("evaluation_id", "unknown"))
             artifact_id = str(record.get("artifact_id", "unknown"))
-            public = _display(record.get("public_score"))
-            rounded = _display(record.get("rounded_public"), "")
-            status = _display(record.get("status_normalized"), "unknown")
-            kind = _display(record.get("evaluation_kind"), "unknown")
+            public = _cell(record.get("public_score"))
+            rounded = _cell(record.get("rounded_public"), "")
+            status = _cell(record.get("status_normalized"), "unknown")
+            kind = _cell(record.get("evaluation_kind"), "unknown")
+            supersedes = _evaluation_link(record.get("supersedes_evaluation_id"))
             lines.append(
                 f"| [{evaluation_id}](evaluations/{evaluation_id}/record.json) | "
-                f"[{artifact_id}](artifacts/{artifact_id}/manifest.json) | {kind} | {public} | {rounded} | {status} |"
+                f"[{artifact_id}](artifacts/{artifact_id}/manifest.json) | {kind} | {public} | {rounded} | {status} | {supersedes} |"
             )
     else:
-        lines.append("| *(none)* | | | pending | | unknown |")
+        lines.append("| *(none)* | | | pending | | unknown | |")
     lines.extend(
         [
             "",

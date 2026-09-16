@@ -358,6 +358,52 @@ class LabCliTest(unittest.TestCase):
             newer = json.loads((root / "evaluations" / new_id / "record.json").read_text())
             self.assertEqual(newer["supersedes_evaluation_id"], old_id)
 
+    def test_render_escapes_arbitrary_evaluation_cells(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp), "Algorithm | v1")["artifact_id"]
+            result = Path(temp) / "result.json"
+            result.write_text(
+                json.dumps(
+                    {
+                        "evaluation_kind": "public | corrected\nrun",
+                        "rounded_public": "about 11 | provisional\nvalue",
+                    }
+                ),
+                encoding="utf-8",
+            )
+            recorded = self.run_cli(root, "record", "--artifact", artifact, "--result", result)
+            self.assertEqual(recorded.returncode, 0, recorded.stderr)
+            rendered = self.run_cli(root, "render")
+            self.assertEqual(rendered.returncode, 0, rendered.stderr)
+            progress = (root / "progress.md").read_text(encoding="utf-8")
+            self.assertIn("public \\| corrected<br>run", progress)
+            self.assertIn("about 11 \\| provisional<br>value", progress)
+            self.assertNotIn("public | corrected\nrun", progress)
+            self.assertEqual(progress.count("| Evaluation | Artifact |"), 1)
+
+    def test_render_shows_evaluation_correction_target(self):
+        with tempfile.TemporaryDirectory() as temp:
+            root = Path(temp) / "registry"
+            artifact = self.ingest(root, self.make_zip(temp))["artifact_id"]
+            old_result = Path(temp) / "old.json"
+            old_result.write_text('{"public_score":"10"}', encoding="utf-8")
+            old = self.run_cli(root, "record", "--artifact", artifact, "--result", old_result)
+            self.assertEqual(old.returncode, 0, old.stderr)
+            old_id = json.loads(old.stdout)["evaluation_id"]
+            new_result = Path(temp) / "new.json"
+            new_result.write_text(
+                json.dumps({"public_score": "11", "supersedes": old_id}),
+                encoding="utf-8",
+            )
+            new = self.run_cli(root, "record", "--artifact", artifact, "--result", new_result)
+            self.assertEqual(new.returncode, 0, new.stderr)
+            rendered = self.run_cli(root, "render")
+            self.assertEqual(rendered.returncode, 0, rendered.stderr)
+            progress = (root / "progress.md").read_text(encoding="utf-8")
+            self.assertIn("| Supersedes |", progress)
+            self.assertIn(f"[{old_id}](evaluations/{old_id}/record.json)", progress)
+
     def test_validate_recomputes_evaluation_identity_after_record_tampering(self):
         for field, value in (("public_score", "2"), ("submission_id", "tampered")):
             with self.subTest(field=field), tempfile.TemporaryDirectory() as temp:
@@ -817,6 +863,8 @@ class LabCliTest(unittest.TestCase):
                 "docs/registry-operations.md",
                 "docs/README.md",
                 "docs/2026-09-08-instruction-audit.md",
+                "docs/development.md",
+                "docs/2026-09-16-astra-workspace-audit.md",
             ]
             for relative in required:
                 path = root / relative

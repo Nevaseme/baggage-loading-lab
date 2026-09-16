@@ -1,0 +1,67 @@
+transport item 2
+place item 2
+transport item 5
+place item 5
+transport item 6
+place item 6
+transport item 10
+place item 10
+transport item 0
+place item 0
+transport item 1
+place item 1
+transport item 15
+place item 15
+transport item 3
+place item 3
+transport item 4
+place item 4
+transport item 16
+place item 16
+transport item 11
+place item 11
+transport item 12
+place item 12
+transport item 13
+place item 13
+transport item 14
+place item 14
+transport item 17
+place item 17
+transport item 23
+place item 23
+transport item 19
+place item 19
+transport item 21
+place item 21
+transport item 25
+place item 25
+transport item 26
+place item 26
+transport item 28
+place item 28
+transport item 18
+place item 18
+transport item 20
+place item 20
+transport item 22
+collision: 22 and 0 at (np.float32(0.0), np.float32(-0.76), np.float32(0.187)), distance -0.09841029254811491
+collision: 22 and 25 at (np.float32(0.0), np.float32(-0.76), np.float32(0.187)), distance -0.0210651531046242
+item 22 not packable. removed.
+item 2 not inside (hit boundary plane), [ 8.33805404e-06 -6.24655049e-01 -1.52000834e+00 -1.27534495e+00
+ -5.96426208e-01 -1.46211801e+00 -7.88198716e-03]
+item 5 not inside (hit boundary plane), [ 2.24614433e-05 -6.07083892e-01 -1.52002246e+00 -1.29291611e+00
+ -6.08383651e-01 -1.46303281e+00 -6.96718944e-03]
+item 6 not inside (hit boundary plane), [ 2.58967087e-05 -6.23840937e-01 -1.52002590e+00 -1.27615906e+00
+ -5.96967846e-01 -1.00731744e+00 -4.62682561e-01]
+item 10 not inside (hit boundary plane), [-0.49997813 -1.27293527 -1.02002187 -0.62706473 -0.52096346 -1.46816979
+ -0.00183021]
+item 0 not inside (hit boundary plane), [ 0.04261463 -0.62510289 -1.56261463 -1.27489711 -0.56492543 -0.3998599
+ -1.0701401 ]
+item 15 not inside (hit boundary plane), [-3.85431646e-06 -6.07231593e-01 -1.51999615e+00 -1.29276841e+00
+ -6.08302320e-01 -7.94685201e-01 -6.75314799e-01]
+item 16 not inside (hit boundary plane), [-1.0799888  -0.57423396 -0.4400112  -1.32576604 -1.42152779 -1.46526958
+ -0.00473042]
+item 12 not inside (hit boundary plane), [-1.31997719 -1.12431167 -0.20002281 -0.77568833 -1.22258401 -1.46765134
+ -0.00234866]
+close env.

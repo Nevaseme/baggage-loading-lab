@@ -1,0 +1,621 @@
+{
+  "default_normal_only": {
+    "elapsed_seconds": 1.8042685000109486,
+    "records": [],
+    "root_count": 0,
+    "roots_per_container": {},
+    "roots_per_orientation": {},
+    "roots_per_pass": {},
+    "roots_per_pool": {},
+    "roots_per_source": {},
+    "stats": {
+      "accepted_roots": 0,
+      "deadline_reached": true,
+      "deferred_roots": 0,
+      "duplicate_roots": 0,
+      "exact_attempts": 265,
+      "global_cap_reached": false,
+      "item_exceptions": [],
+      "normal_roots": 0,
+      "passes_completed": [
+        "coverage",
+        "scarcity"
+      ],
+      "per_pool_raw": [
+        27,
+        27,
+        27,
+        27,
+        27,
+        26,
+        27,
+        27,
+        27,
+        23
+      ],
+      "per_pool_roots": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_examined": 265,
+      "rejection_counts": [
+        [
+          "collision_or_clearance",
+          265
+        ]
+      ],
+      "rescue_roots": 0
+    }
+  },
+  "generous_edge_trace": {
+    "apply_ok_roots": 4,
+    "catalog_roots": 4,
+    "current_binding_roots": 4,
+    "edges": [
+      {
+        "apply_ok": true,
+        "child_normal_roots": 0,
+        "child_rejections": {
+          "collision_or_clearance": 526,
+          "plane_inclusion": 8,
+          "protection": 3,
+          "support_ratio": 5
+        },
+        "child_roots_per_pool": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_scan_seconds": 10.000811800011434,
+        "root": {
+          "container_index": 0,
+          "item_index": 10,
+          "min_clearance": 0.1445964311793806,
+          "orientation": 0,
+          "pass_name": "rescue",
+          "pool_index": 0,
+          "position": [
+            0.617,
+            0.477,
+            1.2349901276168591
+          ],
+          "proposal_source": "free_rectangle_boundary",
+          "sources": [
+            "free_rectangle_boundary"
+          ],
+          "support_levels": [
+            1.1099901
+          ],
+          "support_ratio": 0.8061541770546252,
+          "support_sources": [
+            "placed_top:6"
+          ]
+        }
+      },
+      {
+        "apply_ok": true,
+        "child_normal_roots": 0,
+        "child_rejections": {
+          "collision_or_clearance": 522,
+          "plane_inclusion": 8,
+          "protection": 3,
+          "support_ratio": 5
+        },
+        "child_roots_per_pool": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_scan_seconds": 10.00371780002024,
+        "root": {
+          "container_index": 0,
+          "item_index": 15,
+          "min_clearance": 0.1445964311793806,
+          "orientation": 0,
+          "pass_name": "rescue",
+          "pool_index": 4,
+          "position": [
+            0.617,
+            0.477,
+            1.2349901276168591
+          ],
+          "proposal_source": "free_rectangle_boundary",
+          "sources": [
+            "free_rectangle_boundary"
+          ],
+          "support_levels": [
+            1.1099901
+          ],
+          "support_ratio": 0.8061541770546252,
+          "support_sources": [
+            "placed_top:6"
+          ]
+        }
+      },
+      {
+        "apply_ok": true,
+        "child_normal_roots": 0,
+        "child_rejections": {
+          "collision_or_clearance": 526,
+          "plane_inclusion": 8,
+          "protection": 3,
+          "support_ratio": 5
+        },
+        "child_roots_per_pool": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_scan_seconds": 10.021010499971453,
+        "root": {
+          "container_index": 0,
+          "item_index": 18,
+          "min_clearance": 0.1445964311793806,
+          "orientation": 0,
+          "pass_name": "rescue",
+          "pool_index": 7,
+          "position": [
+            0.617,
+            0.477,
+            1.2349901276168591
+          ],
+          "proposal_source": "free_rectangle_boundary",
+          "sources": [
+            "free_rectangle_boundary"
+          ],
+          "support_levels": [
+            1.1099901
+          ],
+          "support_ratio": 0.8061541770546252,
+          "support_sources": [
+            "placed_top:6"
+          ]
+        }
+      },
+      {
+        "apply_ok": true,
+        "child_normal_roots": 0,
+        "child_rejections": {
+          "collision_or_clearance": 522,
+          "plane_inclusion": 8,
+          "protection": 3,
+          "support_ratio": 5
+        },
+        "child_roots_per_pool": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "child_scan_seconds": 10.012578900030348,
+        "root": {
+          "container_index": 0,
+          "item_index": 20,
+          "min_clearance": 0.1445964311793806,
+          "orientation": 0,
+          "pass_name": "rescue",
+          "pool_index": 9,
+          "position": [
+            0.617,
+            0.477,
+            1.2349901276168591
+          ],
+          "proposal_source": "free_rectangle_boundary",
+          "sources": [
+            "free_rectangle_boundary"
+          ],
+          "support_levels": [
+            1.1099901
+          ],
+          "support_ratio": 0.8061541770546252,
+          "support_sources": [
+            "placed_top:6"
+          ]
+        }
+      }
+    ]
+  },
+  "generous_scan": {
+    "elapsed_seconds": 20.053582199965604,
+    "records": [
+      {
+        "container_index": 0,
+        "item_index": 10,
+        "min_clearance": 0.1445964311793806,
+        "orientation": 0,
+        "pass_name": "rescue",
+        "pool_index": 0,
+        "position": [
+          0.617,
+          0.477,
+          1.2349901276168591
+        ],
+        "proposal_source": "free_rectangle_boundary",
+        "sources": [
+          "free_rectangle_boundary"
+        ],
+        "support_levels": [
+          1.1099901
+        ],
+        "support_ratio": 0.8061541770546252,
+        "support_sources": [
+          "placed_top:6"
+        ]
+      },
+      {
+        "container_index": 0,
+        "item_index": 15,
+        "min_clearance": 0.1445964311793806,
+        "orientation": 0,
+        "pass_name": "rescue",
+        "pool_index": 4,
+        "position": [
+          0.617,
+          0.477,
+          1.2349901276168591
+        ],
+        "proposal_source": "free_rectangle_boundary",
+        "sources": [
+          "free_rectangle_boundary"
+        ],
+        "support_levels": [
+          1.1099901
+        ],
+        "support_ratio": 0.8061541770546252,
+        "support_sources": [
+          "placed_top:6"
+        ]
+      },
+      {
+        "container_index": 0,
+        "item_index": 18,
+        "min_clearance": 0.1445964311793806,
+        "orientation": 0,
+        "pass_name": "rescue",
+        "pool_index": 7,
+        "position": [
+          0.617,
+          0.477,
+          1.2349901276168591
+        ],
+        "proposal_source": "free_rectangle_boundary",
+        "sources": [
+          "free_rectangle_boundary"
+        ],
+        "support_levels": [
+          1.1099901
+        ],
+        "support_ratio": 0.8061541770546252,
+        "support_sources": [
+          "placed_top:6"
+        ]
+      },
+      {
+        "container_index": 0,
+        "item_index": 20,
+        "min_clearance": 0.1445964311793806,
+        "orientation": 0,
+        "pass_name": "rescue",
+        "pool_index": 9,
+        "position": [
+          0.617,
+          0.477,
+          1.2349901276168591
+        ],
+        "proposal_source": "free_rectangle_boundary",
+        "sources": [
+          "free_rectangle_boundary"
+        ],
+        "support_levels": [
+          1.1099901
+        ],
+        "support_ratio": 0.8061541770546252,
+        "support_sources": [
+          "placed_top:6"
+        ]
+      }
+    ],
+    "root_count": 4,
+    "roots_per_container": {
+      "0": 4
+    },
+    "roots_per_orientation": {
+      "0": 4
+    },
+    "roots_per_pass": {
+      "rescue": 4
+    },
+    "roots_per_pool": {
+      "0": 1,
+      "4": 1,
+      "7": 1,
+      "9": 1
+    },
+    "roots_per_source": {
+      "free_rectangle_boundary": 4
+    },
+    "stats": {
+      "accepted_roots": 4,
+      "deadline_reached": true,
+      "deferred_roots": 0,
+      "duplicate_roots": 0,
+      "exact_attempts": 1193,
+      "global_cap_reached": false,
+      "item_exceptions": [],
+      "normal_roots": 0,
+      "passes_completed": [
+        "coverage",
+        "scarcity",
+        "rescue"
+      ],
+      "per_pool_raw": [
+        123,
+        123,
+        123,
+        119,
+        119,
+        118,
+        119,
+        119,
+        115,
+        115
+      ],
+      "per_pool_roots": [
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "raw_examined": 1193,
+      "rejection_counts": [
+        [
+          "collision_or_clearance",
+          1174
+        ],
+        [
+          "protection",
+          4
+        ],
+        [
+          "support_ratio",
+          11
+        ]
+      ],
+      "rescue_roots": 4
+    }
+  },
+  "last_online_edge_trace": {
+    "apply_ok_roots": 0,
+    "catalog_roots": 0,
+    "current_binding_roots": 0,
+    "edges": []
+  },
+  "metadata": {
+    "exception_category": "candidate_zero",
+    "exception_message": "strict root catalog is empty",
+    "exception_type": "CandidateZeroError",
+    "failure_kind": "policy_exception",
+    "requested_mode": "B",
+    "resolved_mode": "B",
+    "seed": 42,
+    "step": 11,
+    "task": "001"
+  },
+  "online_repeats": [
+    {
+      "beam_budget_remaining_at_entry": -0.15901649999432266,
+      "beam_returned_root": false,
+      "beam_seconds": 9.400013368576765e-06,
+      "elapsed_seconds": 5.4574535000137985,
+      "policy_elapsed_before_beam": 5.459016499982681,
+      "records": [],
+      "repeat": 0,
+      "root_count": 0,
+      "roots_per_container": {},
+      "roots_per_orientation": {},
+      "roots_per_pass": {},
+      "roots_per_pool": {},
+      "roots_per_source": {},
+      "stats": {
+        "accepted_roots": 0,
+        "deadline_reached": true,
+        "deferred_roots": 0,
+        "duplicate_roots": 0,
+        "exact_attempts": 621,
+        "global_cap_reached": false,
+        "item_exceptions": [],
+        "normal_roots": 0,
+        "passes_completed": [
+          "coverage",
+          "scarcity",
+          "rescue"
+        ],
+        "per_pool_raw": [
+          63,
+          63,
+          63,
+          63,
+          63,
+          62,
+          63,
+          63,
+          59,
+          59
+        ],
+        "per_pool_roots": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "raw_examined": 621,
+        "rejection_counts": [
+          [
+            "collision_or_clearance",
+            621
+          ]
+        ],
+        "rescue_roots": 0
+      },
+      "total_seconds": 5.45902589999605
+    }
+  ],
+  "placed_items": 11,
+  "pool": [
+    {
+      "dimensions": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "item_index": 10,
+      "pool_index": 0,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 12,
+      "pool_index": 1,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 13,
+      "pool_index": 2,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 14,
+      "pool_index": 3,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "item_index": 15,
+      "pool_index": 4,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.75,
+        0.56,
+        0.27
+      ],
+      "item_index": 16,
+      "pool_index": 5,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 17,
+      "pool_index": 6,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "item_index": 18,
+      "pool_index": 7,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.55,
+        0.4,
+        0.24
+      ],
+      "item_index": 19,
+      "pool_index": 8,
+      "prioritized": false,
+      "soft": false
+    },
+    {
+      "dimensions": [
+        0.65,
+        0.45,
+        0.25
+      ],
+      "item_index": 20,
+      "pool_index": 9,
+      "prioritized": false,
+      "soft": false
+    }
+  ],
+  "snapshot": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator\\results\\support_extreme_fusion\\task001-b-seed42-e2-failure.npz",
+  "state_build_seconds": 0.0011795000173151493
+}

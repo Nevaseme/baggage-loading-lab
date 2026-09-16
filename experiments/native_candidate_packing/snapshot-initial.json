@@ -1,0 +1,451 @@
+{
+  "source_hashes": {
+    "agent.py": "d89b9084a823e803cae06a149fd7edcd8f41a14965e199445c5b517c8b0b84cb",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "trials": [
+    {
+      "snapshot": "baseline-b-task001-seed42",
+      "snapshot_sha256": "ffa213ba8a3d7ea77c738528ff8d8c6737ebb4f36ce5b5a62ab46c00c91da2f1",
+      "use_settling_preview": false,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 57, 'authorizations': 44, 'rejections': {'transport': 44}, 'previews': [], 'elapsed': 1.9130209410000134, 'candidate_basins': [[0, 4, 0, 2], [0, 4, -1, 1], [0, 4, 1, 1], [0, 4, 2, 1], [0, 6, -2, 2], [0, 6, -3, 2]]}",
+      "seconds": 1.9226493870000922,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 57,
+        "authorizations": 44,
+        "rejections": {
+          "transport": 44
+        },
+        "previews": [],
+        "elapsed": 1.9130209410000134,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "snapshot": "baseline-b-task001-seed42",
+      "snapshot_sha256": "ffa213ba8a3d7ea77c738528ff8d8c6737ebb4f36ce5b5a62ab46c00c91da2f1",
+      "use_settling_preview": true,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 1649, 'combinations_visited': 57, 'authorizations': 16, 'rejections': {'transport': 16}, 'previews': [], 'elapsed': 1.5344493909999528, 'candidate_basins': [[0, 4, 0, 2], [0, 4, -1, 1], [0, 4, 2, 1], [0, 6, -2, 2], [0, 6, -3, 2]]}",
+      "seconds": 1.5428933810001126,
+      "diagnostics": {
+        "candidate_checks": 1649,
+        "combinations_visited": 57,
+        "authorizations": 16,
+        "rejections": {
+          "transport": 16
+        },
+        "previews": [],
+        "elapsed": 1.5344493909999528,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ]
+        ]
+      }
+    },
+    {
+      "snapshot": "aligned-b-task001-seed42",
+      "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+      "use_settling_preview": false,
+      "outcome": "returned",
+      "action": {
+        "item_idx": 5,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.6103559136390686,
+          -0.2478378713130951,
+          1.033853530883789
+        ]
+      },
+      "seconds": 0.9312029459999849,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 8,
+        "rejections": {
+          "transport": 7
+        },
+        "previews": [],
+        "elapsed": 0.9227049099999931,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            -1
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ]
+        ]
+      }
+    },
+    {
+      "snapshot": "aligned-b-task001-seed42",
+      "snapshot_sha256": "cf9a3b2daf1d96f1a909d70d94e0d3d7033964754a7216cc829b7d49ca2f65c2",
+      "use_settling_preview": true,
+      "outcome": "NoValidAction",
+      "error": "No authorized candidate: {'candidate_checks': 6500, 'combinations_visited': 60, 'authorizations': 14, 'rejections': {'transport': 11}, 'previews': [{'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 0, 'place_pos': [0.5826834440231323, -0.2478378713130951, 1.033853530883789]}, 'safe': False, 'displacement': 0.4711238923477874, 'angle_degrees': 22.861214261231176, 'final_position': [0.15253029179422292, -0.1496714122898531, 0.8686586947317457], 'final_orientation': [-0.01628876013071673, -0.19748540907845077, 0.0031441526024682254, 0.9801654471562101], 'seconds': 1.4793474230000356, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.03980193181504901, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 2, 'place_pos': [0.7653559446334839, -0.2478378713130951, 1.1888536214828491]}, 'safe': False, 'displacement': 0.33460898268381434, 'angle_degrees': 9.551898928776215, 'final_position': [0.45172025055812776, -0.17308162131170543, 1.0993699593969883], 'final_orientation': [-0.01816636058701399, 0.6477385668685465, -0.011132894070282298, 0.7615646991580716], 'seconds': 1.4271478289999777, 'steps': 300, 'deadline_exceeded': False, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.040910014491024105, 'inclusion_margin': -0.005}, {'action': {'item_idx': 0, 'container_idx': 0, 'orientation': 2, 'place_pos': [0.42768344283103943, -0.2478378713130951, 1.1888536214828491]}, 'safe': False, 'displacement': 0.749621734609371, 'angle_degrees': 92.73560986959932, 'final_position': [-0.16159848008280314, -0.19297678908742802, 0.7287777342829711], 'final_orientation': [-0.15716925815879973, -0.011645279592188926, 0.005088539212227009, 0.987489908060694], 'seconds': 1.212500265000017, 'steps': 250, 'deadline_exceeded': True, 'previously_inside': 12, 'newly_outside': [], 'lost_volume': 0.0, 'max_previous_displacement': 0.038412002895937034, 'inclusion_margin': -0.005}], 'elapsed': 5.255364132000068, 'candidate_basins': [[0, 4, 0, 2], [0, 4, 2, 1], [0, 4, 0, 1], [0, 4, 0, 0], [0, 6, -2, 2], [0, 6, -2, 1], [0, 4, 2, 2], [0, 6, 2, -1], [0, 4, -1, 1], [0, 4, -1, 2], [0, 6, -3, 1], [0, 6, -3, 2], [0, 6, 3, -1], [0, 6, 1, -1], [0, 5, 0, -2], [0, 5, 1, -2], [0, 5, -1, -2]]}",
+      "seconds": 5.268665703000124,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 11
+        },
+        "previews": [
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 0,
+              "place_pos": [
+                0.5826834440231323,
+                -0.2478378713130951,
+                1.033853530883789
+              ]
+            },
+            "safe": false,
+            "displacement": 0.4711238923477874,
+            "angle_degrees": 22.861214261231176,
+            "final_position": [
+              0.15253029179422292,
+              -0.1496714122898531,
+              0.8686586947317457
+            ],
+            "final_orientation": [
+              -0.01628876013071673,
+              -0.19748540907845077,
+              0.0031441526024682254,
+              0.9801654471562101
+            ],
+            "seconds": 1.4793474230000356,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 12,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.03980193181504901,
+            "inclusion_margin": -0.005
+          },
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 2,
+              "place_pos": [
+                0.7653559446334839,
+                -0.2478378713130951,
+                1.1888536214828491
+              ]
+            },
+            "safe": false,
+            "displacement": 0.33460898268381434,
+            "angle_degrees": 9.551898928776215,
+            "final_position": [
+              0.45172025055812776,
+              -0.17308162131170543,
+              1.0993699593969883
+            ],
+            "final_orientation": [
+              -0.01816636058701399,
+              0.6477385668685465,
+              -0.011132894070282298,
+              0.7615646991580716
+            ],
+            "seconds": 1.4271478289999777,
+            "steps": 300,
+            "deadline_exceeded": false,
+            "previously_inside": 12,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.040910014491024105,
+            "inclusion_margin": -0.005
+          },
+          {
+            "action": {
+              "item_idx": 0,
+              "container_idx": 0,
+              "orientation": 2,
+              "place_pos": [
+                0.42768344283103943,
+                -0.2478378713130951,
+                1.1888536214828491
+              ]
+            },
+            "safe": false,
+            "displacement": 0.749621734609371,
+            "angle_degrees": 92.73560986959932,
+            "final_position": [
+              -0.16159848008280314,
+              -0.19297678908742802,
+              0.7287777342829711
+            ],
+            "final_orientation": [
+              -0.15716925815879973,
+              -0.011645279592188926,
+              0.005088539212227009,
+              0.987489908060694
+            ],
+            "seconds": 1.212500265000017,
+            "steps": 250,
+            "deadline_exceeded": true,
+            "previously_inside": 12,
+            "newly_outside": [],
+            "lost_volume": 0.0,
+            "max_previous_displacement": 0.038412002895937034,
+            "inclusion_margin": -0.005
+          }
+        ],
+        "elapsed": 5.255364132000068,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            6,
+            2,
+            -1
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            3,
+            -1
+          ],
+          [
+            0,
+            6,
+            1,
+            -1
+          ],
+          [
+            0,
+            5,
+            0,
+            -2
+          ],
+          [
+            0,
+            5,
+            1,
+            -2
+          ],
+          [
+            0,
+            5,
+            -1,
+            -2
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,614 @@
+{
+  "source_hashes": {
+    "agent.py": "cd21b089c232e4917fa9d5884d6c85ac21326b50ac74ccb462e4b399165fdec9",
+    "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+    "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+    "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+    "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+    "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+    "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3"
+  },
+  "timing_contended": true,
+  "trials": [
+    {
+      "snapshot": "native-b-task001-seed42",
+      "snapshot_sha256": "ac1309e9dde2eb2dc6ffbe5d8713584adbc2f73f68dc6badaf950a952870a3e5",
+      "variant": "current",
+      "shortlist_limit": 96,
+      "max_authorizations": 96,
+      "backfill_weight": 0.0,
+      "max_candidate_checks": 6500,
+      "outcome": "returned",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7388619780540466,
+          -0.33933404088020325,
+          1.1566648483276367
+        ]
+      },
+      "seconds": 1.4687664200000654,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 57,
+        "authorizations": 10,
+        "rejections": {
+          "transport": 9
+        },
+        "previews": [],
+        "elapsed": 1.457329540000046,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            7,
+            2,
+            -1
+          ],
+          [
+            0,
+            7,
+            3,
+            -1
+          ]
+        ]
+      },
+      "preview": {
+        "safe": true,
+        "displacement": 0.057630513313093955,
+        "angle_degrees": 1.06243664086438,
+        "final_position": [
+          0.7303964991584144,
+          -0.3315540034522448,
+          1.1001928840496176
+        ],
+        "final_orientation": [
+          -0.009257273816741999,
+          -0.0005098754841916975,
+          0.7071020771664763,
+          0.7070507021249093
+        ],
+        "seconds": 1.665624194999964,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 15,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.04833261313168801,
+        "inclusion_margin": -0.005
+      }
+    },
+    {
+      "snapshot": "native-b-task001-seed42",
+      "snapshot_sha256": "ac1309e9dde2eb2dc6ffbe5d8713584adbc2f73f68dc6badaf950a952870a3e5",
+      "variant": "wide",
+      "shortlist_limit": 4096,
+      "max_authorizations": 512,
+      "backfill_weight": 0.0,
+      "max_candidate_checks": 6500,
+      "outcome": "returned",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 3,
+        "place_pos": [
+          0.7388619780540466,
+          -0.33933404088020325,
+          1.1566648483276367
+        ]
+      },
+      "seconds": 1.275984557999891,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 57,
+        "authorizations": 10,
+        "rejections": {
+          "transport": 9
+        },
+        "previews": [],
+        "elapsed": 1.2591816780000045,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            2,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            6,
+            0,
+            -2
+          ],
+          [
+            0,
+            4,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            0,
+            -1
+          ],
+          [
+            0,
+            7,
+            2,
+            -1
+          ],
+          [
+            0,
+            7,
+            3,
+            -1
+          ]
+        ]
+      },
+      "preview": {
+        "safe": true,
+        "displacement": 0.057630513313093955,
+        "angle_degrees": 1.06243664086438,
+        "final_position": [
+          0.7303964991584144,
+          -0.3315540034522448,
+          1.1001928840496176
+        ],
+        "final_orientation": [
+          -0.009257273816741999,
+          -0.0005098754841916975,
+          0.7071020771664763,
+          0.7070507021249093
+        ],
+        "seconds": 2.0413946640001086,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 15,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.04833261313168801,
+        "inclusion_margin": -0.005
+      }
+    },
+    {
+      "snapshot": "native-backfill8-b-task001-seed42",
+      "snapshot_sha256": "2715f3534949e1dadd139498c412a8a4282d6356ca2166bf61be52e5187a2677",
+      "variant": "current",
+      "shortlist_limit": 96,
+      "max_authorizations": 96,
+      "backfill_weight": 8.0,
+      "max_candidate_checks": 6500,
+      "outcome": "returned",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.5350000262260437,
+          0.17299999296665192
+        ]
+      },
+      "seconds": 1.6023317180001868,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 13
+        },
+        "previews": [],
+        "elapsed": 1.5899570209999183,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            3,
+            0
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            -2
+          ]
+        ]
+      },
+      "preview": {
+        "safe": true,
+        "displacement": 0.031070931963648917,
+        "angle_degrees": 0.10219474063680663,
+        "final_position": [
+          -9.264903457729604e-05,
+          -0.5349354596672742,
+          0.1419292662225672
+        ],
+        "final_orientation": [
+          -0.0006818820297269495,
+          -0.0005746592062770142,
+          1.1902569176317598e-05,
+          0.9999996023309324
+        ],
+        "seconds": 1.1894298010001876,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.0002478782678243192,
+        "inclusion_margin": -0.005
+      }
+    },
+    {
+      "snapshot": "native-backfill8-b-task001-seed42",
+      "snapshot_sha256": "2715f3534949e1dadd139498c412a8a4282d6356ca2166bf61be52e5187a2677",
+      "variant": "wide",
+      "shortlist_limit": 4096,
+      "max_authorizations": 512,
+      "backfill_weight": 8.0,
+      "max_candidate_checks": 6500,
+      "outcome": "returned",
+      "action": {
+        "item_idx": 0,
+        "container_idx": 0,
+        "orientation": 0,
+        "place_pos": [
+          0.0,
+          -0.5350000262260437,
+          0.17299999296665192
+        ]
+      },
+      "seconds": 1.5361303709996719,
+      "diagnostics": {
+        "candidate_checks": 6500,
+        "combinations_visited": 60,
+        "authorizations": 14,
+        "rejections": {
+          "transport": 13
+        },
+        "previews": [],
+        "elapsed": 1.5209824250000565,
+        "candidate_basins": [
+          [
+            0,
+            4,
+            0,
+            2
+          ],
+          [
+            0,
+            4,
+            0,
+            1
+          ],
+          [
+            0,
+            6,
+            -2,
+            2
+          ],
+          [
+            0,
+            6,
+            -2,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            1
+          ],
+          [
+            0,
+            6,
+            -3,
+            1
+          ],
+          [
+            0,
+            4,
+            -1,
+            2
+          ],
+          [
+            0,
+            4,
+            -1,
+            0
+          ],
+          [
+            0,
+            4,
+            2,
+            0
+          ],
+          [
+            0,
+            6,
+            -1,
+            2
+          ],
+          [
+            0,
+            6,
+            -3,
+            2
+          ],
+          [
+            0,
+            6,
+            -1,
+            1
+          ],
+          [
+            0,
+            4,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            -2
+          ],
+          [
+            0,
+            0,
+            -1,
+            -2
+          ],
+          [
+            0,
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            3,
+            0
+          ],
+          [
+            0,
+            4,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            3,
+            -2
+          ]
+        ]
+      },
+      "preview": {
+        "safe": true,
+        "displacement": 0.031070931963648917,
+        "angle_degrees": 0.10219474063680663,
+        "final_position": [
+          -9.264903457729604e-05,
+          -0.5349354596672742,
+          0.1419292662225672
+        ],
+        "final_orientation": [
+          -0.0006818820297269495,
+          -0.0005746592062770142,
+          1.1902569176317598e-05,
+          0.9999996023309324
+        ],
+        "seconds": 1.2250773759997173,
+        "steps": 300,
+        "deadline_exceeded": false,
+        "previously_inside": 9,
+        "newly_outside": [],
+        "lost_volume": 0.0,
+        "max_previous_displacement": 0.0002478782678243192,
+        "inclusion_margin": -0.005
+      }
+    }
+  ]
+}

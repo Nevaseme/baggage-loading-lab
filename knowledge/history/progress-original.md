@@ -1,3 +1,5 @@
+> Historical record. Current instructions: root AGENTS.md. Current development context: docs/development.md.
+
 # Baggage-Loading Algorithm Progress
 
 This file is the source of record for submitted algorithms and verified SIGNATE results. Metrics not present in the authoritative evaluation result are left as `pending`; they must not be inferred from the total score.

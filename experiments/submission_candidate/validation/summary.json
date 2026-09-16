@@ -1,0 +1,279 @@
+{
+  "public_score": null,
+  "execution_hosts": [
+    "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+  ],
+  "campaign": "Six serial episodes; no extra warmup; frozen ZIP extraction; 8 s strict policy limit.",
+  "cases": [
+    {
+      "case": "c-original",
+      "outcome": "terminal_rejection",
+      "safe_count": 23,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 25.185267526307992,
+        "num_placed_items": 0.5476190476190477
+      },
+      "policy_time_seconds": {
+        "count": 24,
+        "max": 4.942013272000054,
+        "p50": 1.3413813140000173,
+        "p95": 3.718554433349958,
+        "p99": 4.680320560460031
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 23,
+          "cargo_mass": 244.0,
+          "mass_weighted_cog_world": [
+            0.1749425637563746,
+            -0.050007496181233395,
+            0.6953148643617962
+          ],
+          "mass_weighted_cog_local": [
+            0.1749425637563746,
+            -0.050007496181233395,
+            0.6953148643617962
+          ],
+          "raw_packed_volume": 1.407575
+        }
+      ],
+      "first_failure_step": 23,
+      "first_failure_status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "error": null
+    },
+    {
+      "case": "c-shuffle17",
+      "outcome": "terminal_rejection",
+      "safe_count": 16,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 17.970950051874905,
+        "num_placed_items": 0.38095238095238093
+      },
+      "policy_time_seconds": {
+        "count": 17,
+        "max": 2.311294076999957,
+        "p50": 0.911729207999997,
+        "p95": 2.118054785800041,
+        "p99": 2.2726462187599736
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 16,
+          "cargo_mass": 170.0,
+          "mass_weighted_cog_world": [
+            0.19800803936947367,
+            -0.0918795617052432,
+            0.7100041650104457
+          ],
+          "mass_weighted_cog_local": [
+            0.19800803936947367,
+            -0.0918795617052432,
+            0.7100041650104457
+          ],
+          "raw_packed_volume": 1.006075
+        }
+      ],
+      "first_failure_step": 16,
+      "first_failure_status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "error": null
+    },
+    {
+      "case": "c-two-containers",
+      "outcome": "completed",
+      "safe_count": 42,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 21.787956251415476,
+        "num_placed_items": 1.0
+      },
+      "policy_time_seconds": {
+        "count": 42,
+        "max": 3.864219933999948,
+        "p50": 1.2749102774999983,
+        "p95": 2.816532269700047,
+        "p99": 3.621357889089982
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 24,
+          "cargo_mass": 234.0,
+          "mass_weighted_cog_world": [
+            0.13257921152898078,
+            -0.05383027960791301,
+            0.6117508709584442
+          ],
+          "mass_weighted_cog_local": [
+            0.13257921152898078,
+            -0.05383027960791301,
+            0.6117508709584442
+          ],
+          "raw_packed_volume": 1.33925
+        },
+        {
+          "container_index": 1,
+          "packed_count": 18,
+          "cargo_mass": 220.0,
+          "mass_weighted_cog_world": [
+            3.1641982068095005,
+            0.10515008231540189,
+            0.6048820413420447
+          ],
+          "mass_weighted_cog_local": [
+            0.06419820680950039,
+            0.10515008231540189,
+            0.6048820413420447
+          ],
+          "raw_packed_volume": 1.3015750000000001
+        }
+      ],
+      "first_failure_step": null,
+      "first_failure_status": null,
+      "error": null
+    },
+    {
+      "case": "b-shuffle17",
+      "outcome": "terminal_rejection",
+      "safe_count": 24,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 25.2247912652537,
+        "num_placed_items": 0.5714285714285714
+      },
+      "policy_time_seconds": {
+        "count": 25,
+        "max": 6.506913015999999,
+        "p50": 1.9944028930000286,
+        "p95": 4.764049606399995,
+        "p99": 6.159989080479997
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 24,
+          "cargo_mass": 252.0,
+          "mass_weighted_cog_world": [
+            0.17094936178586845,
+            -0.01904790039861372,
+            0.6584711781455668
+          ],
+          "mass_weighted_cog_local": [
+            0.17094936178586845,
+            -0.01904790039861372,
+            0.6584711781455668
+          ],
+          "raw_packed_volume": 1.5388500000000003
+        }
+      ],
+      "first_failure_step": 24,
+      "first_failure_status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "error": null
+    },
+    {
+      "case": "b-lookahead3",
+      "outcome": "terminal_rejection",
+      "safe_count": 25,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 29.555728471913444,
+        "num_placed_items": 0.5952380952380952
+      },
+      "policy_time_seconds": {
+        "count": 26,
+        "max": 7.2331843189999745,
+        "p50": 1.7385139890000119,
+        "p95": 3.2952950872499684,
+        "p99": 6.260667353249971
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 25,
+          "cargo_mass": 265.0,
+          "mass_weighted_cog_world": [
+            0.22840899507343201,
+            0.02444960676818996,
+            0.6454561757319164
+          ],
+          "mass_weighted_cog_local": [
+            0.22840899507343201,
+            0.02444960676818996,
+            0.6454561757319164
+          ],
+          "raw_packed_volume": 1.5534500000000002
+        }
+      ],
+      "first_failure_step": 25,
+      "first_failure_status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "error": null
+    },
+    {
+      "case": "b-lookahead40",
+      "outcome": "terminal_rejection",
+      "safe_count": 24,
+      "total_count": 42,
+      "evaluation": {
+        "fill_score": 29.300059285608416,
+        "num_placed_items": 0.5714285714285714
+      },
+      "policy_time_seconds": {
+        "count": 25,
+        "max": 4.386719546999984,
+        "p50": 2.2705911140000126,
+        "p95": 3.6094145885999973,
+        "p99": 4.207506248999987
+      },
+      "layout_proxies": [
+        {
+          "container_index": 0,
+          "packed_count": 24,
+          "cargo_mass": 272.0,
+          "mass_weighted_cog_world": [
+            0.24189042332983,
+            0.015226677235215058,
+            0.6885025929654132
+          ],
+          "mass_weighted_cog_local": [
+            0.24189042332983,
+            0.015226677235215058,
+            0.6885025929654132
+          ],
+          "raw_packed_volume": 1.6323000000000003
+        }
+      ],
+      "first_failure_step": 24,
+      "first_failure_status": {
+        "is_included": false,
+        "is_valid": false,
+        "is_placed_safe": false
+      },
+      "error": null
+    }
+  ],
+  "metrics_limits": [
+    "CoG and fill are local proxies, not the Public aggregate.",
+    "Per-action support and displacement/rotation diagnostics are preview estimates.",
+    "Exact post-placement motion magnitudes and separate soft/priority scorer components are unavailable in these runner records.",
+    "The strict runner has no fallback; official sample logs show no timeout fallback."
+  ]
+}

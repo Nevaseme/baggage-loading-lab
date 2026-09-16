@@ -1,0 +1,6 @@
+Attempted command:
+wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading && PYTHONPATH=.:simulator/.test_deps_linux python3 -m unittest simulator.tests.run_physics_smoke.PhysicsSmokeCliTests -v'
+
+Sandbox result before WSL process startup:
+Wsl/Service/CreateInstance/E_ACCESSDENIED
+Access is denied.

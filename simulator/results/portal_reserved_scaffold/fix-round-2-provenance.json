@@ -1,0 +1,57 @@
+{
+  "fix_round": "2",
+  "working_directory": "C:\\Users\\TAKUMI\\projects\\Baggage-Loading\\simulator",
+  "runtime": {
+    "python_executable": "simulator/.venv_wsl/bin/python",
+    "python_executable_resolved": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator/.venv_wsl/bin/python",
+    "python_version": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+    "numpy_version": "2.5.2",
+    "pybullet_api_version": "202010061",
+    "pythonpath": ".:tests:.test_deps_linux"
+  },
+  "commands": {
+    "focused": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m unittest tests.test_replay_historical_predicates -v'",
+    "regression": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m unittest tests.test_replay_historical_predicates tests.test_run_historical_conservative_extreme_point_physics tests.test_run_support_extreme_fusion_physics -v'",
+    "compile": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m py_compile tests/replay_historical_predicates.py tests/run_historical_conservative_extreme_point_physics.py tests/test_replay_historical_predicates.py'",
+    "replay": "wsl.exe -e bash -lc 'cd /mnt/c/Users/TAKUMI/projects/Baggage-Loading/simulator && PYTHONPATH=.:tests:.test_deps_linux ./.venv_wsl/bin/python -m tests.replay_historical_predicates --manifest results/portal_reserved_scaffold/historical-task000-snapshots/manifest.json --episode-result results/portal_reserved_scaffold/historical-task000-captured.json --output results/portal_reserved_scaffold/historical-task000-predicate-recall.json'"
+  },
+  "source_hashes": {
+    "replay_historical_predicates.py": "b96c74cc094f349d0929222da0075e3fb0306e561650ea273a583f2e0b78bc3d",
+    "run_historical_conservative_extreme_point_physics.py": "9a21ca63619617552b8c45650da2e79d0862d5e1ac84899cd3f193d526f612d3",
+    "test_replay_historical_predicates.py": "dda77550da3dcd59dbb561092344536a82743804ecf203cf44c3ab43edc26412"
+  },
+  "raw_logs": {
+    "focused": "simulator/results/portal_reserved_scaffold/fix-round-2-focused.log",
+    "regression": "simulator/results/portal_reserved_scaffold/fix-round-2-regression.log",
+    "compile": "simulator/results/portal_reserved_scaffold/fix-round-2-compile.log",
+    "replay": "simulator/results/portal_reserved_scaffold/fix-round-2-replay.log",
+    "timeout_probe": "simulator/results/portal_reserved_scaffold/fix-round-2-timeout-probe.log",
+    "physical_existing": "simulator/results/portal_reserved_scaffold/fix-round-1-physical.log"
+  },
+  "timeout_probe": {
+    "test": "tests.test_run_historical_conservative_extreme_point_physics.HistoricalConservativeExtremePointRunnerTests.test_worker_exception_is_bounded_and_never_steps",
+    "runs": [
+      {"run": 1, "result": "pass", "assertion_elapsed_seconds": 1.081},
+      {"run": 2, "result": "fail", "assertion_elapsed_seconds": 2.5643100539982697},
+      {"run": 3, "result": "fail", "assertion_elapsed_seconds": 2.0873972459994548}
+    ],
+    "threshold_seconds": 2.0,
+    "test_and_threshold_changed": false
+  },
+  "physical_artifact_invariance": {
+    "physical_rerun_required": false,
+    "reason": "Fix round 2 changes replay validation and tests only; the capture runner is unchanged.",
+    "snapshot_manifest_sha256": "ec47a1b1c5e2af001dbaabb5777e426d61cee34c9ad4bcd24fac72099ea356c2",
+    "historical_artifact_before_manifest_sha256": "E0C136ADE443B6610F1944509FBD007F793CEFC9F61E3D8201E41259143D3B6C",
+    "historical_artifact_after_manifest_sha256": "E0C136ADE443B6610F1944509FBD007F793CEFC9F61E3D8201E41259143D3B6C",
+    "replay_rows": 26,
+    "known_safe_exact_mask_recall": "4/25",
+    "failed_action_acceptance": "0/1"
+  },
+  "submit_manifest": {
+    "recipe": "Enumerate regular files recursively under submit/, derive POSIX relative paths, sort paths lexicographically by code point, emit one UTF-8 line per file as <relative_path> TAB <lowercase SHA-256(file bytes)> LF, then SHA-256 the complete UTF-8 manifest text.",
+    "file_count": 20,
+    "sha256": "95e6acacfb773b80b26df4d18a9ecaa514cd8cfeea4623f46aebd830b01b870c",
+    "matches_parent_baseline": true
+  }
+}
