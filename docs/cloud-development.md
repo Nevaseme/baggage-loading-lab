@@ -4,6 +4,11 @@ Use this repository as a submission/result notebook. No GitHub Release, tag,
 version-numbering ceremony, or release approval is needed. Preserve each ZIP and
 its result in a separate `deliverables/YYYY-MM-DD-technique/` folder.
 
+[Verification record](../knowledge/validation/2026-09-16-cloud-readiness.md):
+the standalone setup, ZIP build, and official A/B smoke passed both in a clean
+Linux environment and on GitHub-hosted Ubuntu. Connected GitHub file access was
+also verified. The user's individual web ChatGPT execution session remains untested.
+
 ## What a ChatGPT session needs
 
 GitHub access provides project context. Execution additionally needs a writable

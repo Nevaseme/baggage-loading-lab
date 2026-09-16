@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "kind": "two_item_official_lifecycle_smoke",
+  "full_score_evaluation": false,
+  "public_score": null,
+  "status": "passed",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "executable": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/.venv-cloud-check/bin/python",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "dependencies": {
+    "numpy": "2.5.2",
+    "gymnasium": "1.2.3",
+    "pybullet": "3.2.7",
+    "pillow": "10.3.0"
+  },
+  "script_sha256": "8c02c74ba77ff3a9ac577890a05e04e0a168c3b7f912a0e711b38487791d3525",
+  "package": {
+    "output": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/.lab/cloud-smoke/clean-linux/agent.zip",
+    "package_name": "support_recovery_packing",
+    "sha256": "40da95f00f099605fd9eeaa9abf211fa70e2b1b4f17a85ebb2b8a14f85a07e90",
+    "source_sha256": {
+      "__init__.py": "8ae9a2b67ab54e36251e43257c031573e09bc6028bc97f010bf15377f8bcc1a3",
+      "agent.py": "0307af43630662c1bd0f32743b3c65567a5ed7c741a5d0d12806aee3bc2e3daf",
+      "candidates.py": "d77928d6badd41df4e8c3bed89fe98bd829931946b7fdde09ea1c35f61ec81b8",
+      "geometry.py": "3164e4402ebce26f11e36bc6f6c277400f9d29517c2eca88c64a3388250fadec",
+      "historical.py": "ebe909962ab3a0722abb5ed3e67a42dceb64b116dd1f374c9ef739fdd3967f82",
+      "native.py": "5f930a15d24028e2b62b741353e162df69f84a86a10dfea4f138f28262fcbd6c",
+      "planner.py": "66ede65a68e6a7a87f1bb6c3aec848c92e76d56d4b1e4c69a33cdb997b482e4f",
+      "preview.py": "9b55e56bca2429aa0befe2546ad157e31f1a36593bdc8fddecb55349f8ccb44c",
+      "terminal.py": "615af9a6960554e049d1fb009dc28751b295736da7a602ef8f0fe7ae47bb4683"
+    },
+    "file_count": 10
+  },
+  "extracted_source_verified": true,
+  "sample_config_sha256": "8225400e80927df2e18b6d4315ae26d3202c173cdda581022c7cf3fc9ee8a6f2",
+  "config_sha256": "8dde3cd0a7a4f28f95023b9b5ac1884ee0bce06a6731f38d996094784acc2e27",
+  "task_modes": {
+    "000": "A",
+    "001": "B"
+  },
+  "items_per_task": 2,
+  "limits": {
+    "000": {
+      "init_timeout": 10.0,
+      "optimization_timeout": 180.0,
+      "policy_timeout": 8.0,
+      "max_mem": 12
+    },
+    "001": {
+      "init_timeout": 10.0,
+      "optimization_timeout": 180.0,
+      "policy_timeout": 10.0,
+      "max_mem": 12
+    }
+  },
+  "process_timeout_seconds": 296.0,
+  "child_environment": {
+    "PYTHONPATH": "/mnt/c/Users/TAKUMI/projects/Baggage-Loading/.lab/cloud-smoke/clean-linux/extracted",
+    "PYTHONNOUSERSITE": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1"
+  },
+  "runner_exit_code": 0,
+  "official_results": {
+    "000": {
+      "evaluation": {
+        "fill_score": 0,
+        "num_placed_items": 1.0
+      },
+      "message": "ok",
+      "status": "success",
+      "place_states": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "time_results": {
+        "optimization": 0.06734485900000209,
+        "policy": 0.2917902919999733
+      }
+    },
+    "001": {
+      "evaluation": {
+        "fill_score": 0,
+        "num_placed_items": 1.0
+      },
+      "message": "ok",
+      "status": "success",
+      "place_states": {
+        "is_included": true,
+        "is_valid": true,
+        "is_placed_safe": true
+      },
+      "time_results": {
+        "optimization": 0,
+        "policy": 0.32817358800002694
+      }
+    }
+  },
+  "result_sha256": "29ae352eeb9dea9babac90c2005f2a5ea94ca5c44fbf6d999b8b86c28667b9ad",
+  "elapsed_seconds": 16.49456477199999
+}
