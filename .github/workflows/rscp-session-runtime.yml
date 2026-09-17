@@ -1,0 +1,36 @@
+name: RSCP session runtime
+on:
+  push:
+    branches: [work/route-support-continuation-20260917]
+    paths: [.github/workflows/rscp-session-runtime.yml]
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Prepare portable Python and exact source snapshot
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/rscp-transfer"
+          curl -fL --retry 3 'https://github.com/astral-sh/python-build-standalone/releases/download/20260203/cpython-3.12.12%2B20260203-x86_64-unknown-linux-gnu-install_only_stripped.tar.gz' -o "$RUNNER_TEMP/python.tar.gz"
+          tar -xzf "$RUNNER_TEMP/python.tar.gz" -C "$RUNNER_TEMP/rscp-transfer"
+          "$RUNNER_TEMP/rscp-transfer/python/bin/python3" -m pip install --disable-pip-version-check -r requirements-cloud.txt
+          "$RUNNER_TEMP/rscp-transfer/python/bin/python3" -c 'import numpy, gymnasium, pybullet, PIL; print(numpy.__version__, gymnasium.__version__, PIL.__version__)'
+          git archive HEAD | gzip > "$RUNNER_TEMP/rscp-transfer/source.tar.gz"
+          git rev-parse HEAD > "$RUNNER_TEMP/rscp-transfer/SOURCE_COMMIT.txt"
+          tar -czf "$RUNNER_TEMP/rscp-transfer/runtime.tar.gz" -C "$RUNNER_TEMP/rscp-transfer" python
+          rm -rf "$RUNNER_TEMP/rscp-transfer/python"
+          cd "$RUNNER_TEMP/rscp-transfer"
+          sha256sum runtime.tar.gz source.tar.gz > SHA256SUMS
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rscp-session-runtime-source
+          path: ${{ runner.temp }}/rscp-transfer/
+          retention-days: 1
+          compression-level: 0
